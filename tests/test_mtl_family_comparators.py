@@ -295,9 +295,9 @@ class TestCommandLineContract(unittest.TestCase):
         self.assertEqual(tuple(arguments.seeds), family.DEFAULT_SEEDS)
 
     def test_family_only_settings_are_not_command_line_flags(self):
-        # README.md documents a short Python driver for the dropout diagnostic
+        # REPRODUCIBILITY.md documents a short driver for the dropout diagnostic
         # precisely because these settings have no flag. If a flag is ever
-        # added, that README section must be rewritten, so fail here.
+        # added, that guide section must be rewritten, so fail here.
         for flag, value in (
             ("--deep-balanced-dropout", "0.1"),
             ("--separate-hidden-size", "128"),

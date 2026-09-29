@@ -9,7 +9,7 @@ assignment, model metadata, figures, and weather-file descriptors.
 Recommended environment and commands, run from the extracted archive root. The
 exact analysis and the surrogate screen were produced in two different
 environments, so each has its own requirement file; install them in separate
-virtual environments (see README.md, section 1):
+virtual environments (see REPRODUCIBILITY.md, section 1):
 
     python -m pip install -r requirements-exact.txt
     python scripts/reproduce_exhaustive_analysis.py
