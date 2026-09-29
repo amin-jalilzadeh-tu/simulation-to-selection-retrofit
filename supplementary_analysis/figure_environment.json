@@ -1,0 +1,15 @@
+{
+  "python": "3.14.6",
+  "matplotlib": "3.10.8",
+  "numpy": "2.4.6",
+  "freetype": "2.6.1",
+  "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+  "figures": [
+    "fig_workflow",
+    "fig_package_tradeoffs",
+    "fig_component_comparisons",
+    "fig_model_comparison",
+    "fig_smaa_summary"
+  ],
+  "note": "Environment for the main-figure generators. Figures 2 and 3 use the approved journal layout with all package outcomes and floor-stratified paired comparisons. Plot values are checked against retained tables; pixel rendering may differ with library versions."
+}

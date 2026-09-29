@@ -1,0 +1,4 @@
+weather_case,legacy_filename,epw_header,sha256,annual_mean_dry_bulb_c,jja_mean_dry_bulb_c,hdd18_c_day,cdd18_c_day,jja_daily_mean_p95_c
+Present TMYx,2020.epw,"Lelystad Airport; Climate.OneBuilding SRC-TMYx; 1994-2023",15fd5f381b3e01dca8cbfaa5aeec4a24e3f7c97223d07777d65fcf60f14714c2,10.46,17.15,2826.6,76.2,22.24
+Mid-century,2050.epw,"Future Weather Generator v1.4.0; 11-model ensemble; SSP245 2050",bd00dc4d989609c870bd0cfaeb5c6125c4f370018a6c433dca25736b04015e38,12.57,20.40,2239.4,258.1,25.13
+Late-century,2100.epw,"Future Weather Generator v1.4.0; 11-model ensemble; SSP585 2080",7a2cbb882de690772b4a4b4c24962edb7a98ee9cff0568e14281d9c00d4167f0,14.50,21.88,1708.1,430.3,26.68

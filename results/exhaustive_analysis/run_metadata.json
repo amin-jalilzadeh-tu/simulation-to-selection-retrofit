@@ -1,0 +1,122 @@
+{
+  "script": "scripts/reproduce_exhaustive_analysis.py",
+  "software_versions": {
+    "python": "3.13.9",
+    "numpy": "2.3.5",
+    "pandas": "2.3.3",
+    "matplotlib": "3.10.6"
+  },
+  "input_sha256": {
+    "inputs/2020_merged_simulation_results.csv": "a3c4375e922f2fc9de33078ce4dd3a1187d8f8d4f99a543efbcf56734eebedcd",
+    "inputs/2050_merged_simulation_results.csv": "101791a20c8892b2cb402cff984de2eb1b227c9915c10cb46970fc806a34b9d9",
+    "inputs/2100_merged_simulation_results.csv": "23fdb895fa937a1aa7877e7dda82490b5396c452395897a6d4e936fef288643c"
+  },
+  "heating_energy_definition": "Annual archived boiler heating-energy indicator: sum of the daily BOILER:Boiler Heating Energy output, divided by 1e9 (GJ/year). The final archive-generation workflow renamed this output to Gas Consumption [J](Daily) in the distributed merged CSV; it is not a fuel or metered-gas quantity.",
+  "heating_energy_source_modes": {
+    "retained_renamed_boiler_heating_energy_output": 1875
+  },
+  "heating_energy_source_row_counts": {
+    "1": 1875
+  },
+  "temperature_primary_definition": "count of selected-zone daily mean air temperatures T < 24 C",
+  "temperature_source_rows": {
+    "BLOCK BUILDINGBLOCK1 STOREY 0:Zone Mean Air Temperature [C](Daily)": 1875
+  },
+  "temperature_threshold_sensitivity_c": [
+    23.0,
+    24.0,
+    25.0,
+    26.0
+  ],
+  "temperature_provenance_counts": {
+    "at_or_below_17_5_c": 1,
+    "legacy_strict_17_5_to_24_band": 600990,
+    "at_or_above_24_c": 83384
+  },
+  "infiltration_design_flow_definition": {
+    "formula": "clip(0.025 * (0.45*f_window + 0.35*f_wall + 0.10*f_roof + 0.10*f_floor), 0.013, 0.025)",
+    "units": "m3/s",
+    "factor_maps": {
+      "windows_U_Factor": {
+        "2.9": 1.0,
+        "1.2": 0.8,
+        "1.21": 0.7,
+        "0.8": 0.6,
+        "0.81": 0.5
+      },
+      "groundfloor_thermal_resistance": {
+        "0.41": 1.0,
+        "4.8": 0.9,
+        "5.0": 0.8,
+        "5.5": 0.7,
+        "5.6": 0.7
+      },
+      "ext_walls_thermal_resistance": {
+        "0.45": 1.0,
+        "4.2": 0.8,
+        "4.4": 0.6,
+        "6.5": 0.5,
+        "6.7": 0.5
+      },
+      "roof_thermal_resistance": {
+        "0.48": 1.0,
+        "4.5": 0.9,
+        "4.7": 0.8,
+        "8.5": 0.7,
+        "8.7": 0.7
+      }
+    }
+  },
+  "cost_definition": "unweighted sum of current component-specific cost rates (proxy)",
+  "carbon_definition": "unweighted sum of current component-specific A1-A3 rates (proxy)",
+  "pareto_objectives": [
+    "minimize annual_heating_energy_gj",
+    "minimize cost_rate_sum_proxy",
+    "minimize carbon_rate_sum_proxy",
+    "maximize days_below_24_c"
+  ],
+  "mcdm_method": "min-max normalization on each horizon's Pareto front, then weighted-sum minimization",
+  "stakeholder_profiles": {
+    "cost_priority": [
+      0.1,
+      0.7,
+      0.1,
+      0.1
+    ],
+    "carbon_priority": [
+      0.1,
+      0.1,
+      0.7,
+      0.1
+    ],
+    "energy_priority": [
+      0.7,
+      0.1,
+      0.1,
+      0.1
+    ],
+    "days_below_24_priority": [
+      0.1,
+      0.1,
+      0.1,
+      0.7
+    ],
+    "balanced": [
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ]
+  },
+  "figure_definitions": {
+    "correlation_2020_corrected": "Pearson correlations across all 625 configurations in 2020",
+    "pareto_mcdm_2020_corrected": "All 2020 configurations, exact four-objective Pareto front, and min-max-normalized weighted-sum stakeholder selections",
+    "below_24_horizons": "Days with selected-zone daily-mean temperature below 24 C for the baseline, horizon-specific equal-weight selections, and horizon-specific minimum-indicator configurations",
+    "temperature_threshold_sensitivity": "Reference-solution sensitivity to upper thresholds 23, 24, 25, and 26 C"
+  },
+  "temperature_figure_horizon_labels": {
+    "2020_dataset": "Present",
+    "2050_dataset": "Mid-century",
+    "legacy_2100_dataset": "Late-century"
+  }
+}

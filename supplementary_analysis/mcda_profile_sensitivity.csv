@@ -1,0 +1,16 @@
+horizon,profile,weighted_sum_selection,asf_selection,agreement,asf_stable_over_rho_grid
+2020,Cost,1,16,False,True
+2020,GWP,3,15,False,True
+2020,Energy,550,319,False,True
+2020,D24,25,138,False,True
+2020,Balanced,25,138,False,True
+2050,Cost,1,16,False,True
+2050,GWP,11,15,False,True
+2050,Energy,395,294,False,True
+2050,D24,15,15,True,True
+2050,Balanced,13,138,False,True
+2100,Cost,1,16,False,True
+2100,GWP,1,15,False,True
+2100,Energy,250,295,False,True
+2100,D24,15,138,False,True
+2100,Balanced,13,138,False,True

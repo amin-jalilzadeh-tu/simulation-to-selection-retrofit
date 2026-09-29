@@ -1,0 +1,10 @@
+horizon,series,simulation_id,days_below_24_c,horizon_label
+2020,Do-nothing baseline,1,361,Present
+2050,Do-nothing baseline,1,339,Mid-century
+2100,Do-nothing baseline,1,321,Late-century
+2020,Horizon-specific equal-weight selection,25,365,Present
+2050,Horizon-specific equal-weight selection,13,342,Mid-century
+2100,Horizon-specific equal-weight selection,13,325,Late-century
+2020,Horizon-specific minimum-indicator configuration,625,362,Present
+2050,Horizon-specific minimum-indicator configuration,625,300,Mid-century
+2100,Horizon-specific minimum-indicator configuration,599,264,Late-century

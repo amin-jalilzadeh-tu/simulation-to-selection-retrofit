@@ -1,0 +1,28 @@
+# Reproduces results/surrogate_validation/, results/surrogate_validation_family4/ and
+# results/surrogate_validation_family4_dropout_diagnostic/ via scripts/validate_mtl_family.py.
+#
+# Every pin below is the value recorded under "software_versions" in the
+# model_metadata.json of those three directories; all three record the same
+# environment, which is NOT the environment recorded in
+# results/exhaustive_analysis/run_metadata.json.
+#
+# Interpreter: Python 3.14.6
+
+numpy==2.5.1
+pandas==3.0.5
+scikit-learn==1.9.0
+torch==2.13.0
+
+# matplotlib is a hard import of this script even though it draws no figures:
+# scripts/validate_mtl_family.py imports scripts/reproduce_exhaustive_analysis.py
+# for extract_horizon, pareto_mask_minimization, STAKEHOLDER_PROFILES and sha256,
+# and that module imports matplotlib at module level. model_metadata.json does not
+# record a matplotlib version, so the pin below is the one recorded in
+# results/exhaustive_analysis/run_metadata.json. Nothing in the surrogate outputs
+# depends on it.
+matplotlib==3.10.6
+
+# Not pinned, and why:
+#   joblib  - installed as a scikit-learn dependency, never imported directly. No
+#             released artifact records its version. The random forest runs with
+#             n_jobs=1 and a per-fold random_state, so results do not depend on it.

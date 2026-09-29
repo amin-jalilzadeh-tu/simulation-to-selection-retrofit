@@ -1,0 +1,13 @@
+horizon,selection,tie_count,simulation_id,scenario,windows_U_Factor,groundfloor_thermal_resistance,ext_walls_thermal_resistance,roof_thermal_resistance,infiltration_design_flow_m3_s,annual_heating_energy_gj,heating_energy_reduction_percent,cost_rate_sum_proxy,carbon_rate_sum_proxy,days_below_23_c,days_below_24_c,days_below_25_c,days_below_26_c,days_at_or_below_17_5_c,legacy_static_band_days,days_at_or_above_24_c
+2020,do_nothing_baseline,1,1,SG_current_Insul_current_TR_current_BW_current,2.9,0.41,0.45,0.48,0.025,37.570556156041825,0.0,0.0,0.0,359,361,364,365,0,361,4
+2020,minimum_heating_energy,1,625,SG_retrofit_4_Insul_retrofit_4_TR_retrofit_4_BW_retrofit_4,0.81,5.6,6.7,8.7,0.013500000000000002,17.470063240355348,53.50065309707709,1091.0,146.18,356,362,365,365,0,362,3
+2020,maximum_days_below_24_first_id,84,19,SG_current_Insul_current_TR_retrofit_3_BW_retrofit_3,2.9,0.41,6.5,8.5,0.019875000000000004,26.39898484592166,29.734910667069357,301.0,35.66,361,365,365,365,0,365,0
+2020,all_components_retrofit_state_4,1,625,SG_retrofit_4_Insul_retrofit_4_TR_retrofit_4_BW_retrofit_4,0.81,5.6,6.7,8.7,0.013500000000000002,17.470063240355348,53.50065309707709,1091.0,146.18,356,362,365,365,0,362,3
+2050,do_nothing_baseline,1,1,SG_current_Insul_current_TR_current_BW_current,2.9,0.41,0.45,0.48,0.025,29.960081137605304,0.0,0.0,0.0,324,339,346,358,0,339,26
+2050,minimum_heating_energy,1,625,SG_retrofit_4_Insul_retrofit_4_TR_retrofit_4_BW_retrofit_4,0.81,5.6,6.7,8.7,0.013500000000000002,12.751411269693511,57.438662428426504,1091.0,146.18,283,300,318,340,0,300,65
+2050,maximum_days_below_24_first_id,16,384,SG_retrofit_3_Insul_current_TR_retrofit_1_BW_retrofit_3,0.8,0.41,6.5,4.5,0.015875,16.009134656902773,46.56511581736532,584.5,190.45,322,346,352,363,0,346,19
+2050,all_components_retrofit_state_4,1,625,SG_retrofit_4_Insul_retrofit_4_TR_retrofit_4_BW_retrofit_4,0.81,5.6,6.7,8.7,0.013500000000000002,12.751411269693511,57.438662428426504,1091.0,146.18,283,300,318,340,0,300,65
+2100,do_nothing_baseline,1,1,SG_current_Insul_current_TR_current_BW_current,2.9,0.41,0.45,0.48,0.025,22.166712550710866,0.0,0.0,0.0,297,321,343,356,0,321,44
+2100,minimum_heating_energy,1,599,SG_retrofit_4_Insul_retrofit_3_TR_retrofit_4_BW_retrofit_3,0.81,5.5,6.5,8.7,0.013500000000000002,9.098499676832315,58.95422175923631,1048.9,158.84,241,264,296,321,0,264,101
+2100,maximum_days_below_24_first_id,2,269,SG_retrofit_2_Insul_current_TR_retrofit_3_BW_retrofit_3,1.21,0.41,6.5,8.5,0.0165,12.566684708297089,43.30830663523858,786.0,85.66,301,329,349,359,0,329,36
+2100,all_components_retrofit_state_4,1,625,SG_retrofit_4_Insul_retrofit_4_TR_retrofit_4_BW_retrofit_4,0.81,5.6,6.7,8.7,0.013500000000000002,9.10606721116994,58.920082577252,1091.0,146.18,241,263,296,318,0,263,102

@@ -1,0 +1,4 @@
+horizon,configuration_count,pareto_count,days_below_24_min,days_below_24_max,maximum_days_below_24_tie_count,baseline_simulation_id,baseline_annual_heating_energy_gj,baseline_days_below_24_c,minimum_heating_energy_simulation_id,minimum_annual_heating_energy_gj,minimum_heating_energy_reduction_percent,minimum_heating_energy_days_below_24_c,all_state_4_simulation_id,all_state_4_annual_heating_energy_gj,all_state_4_days_below_24_c
+2020,625,242,359,365,84,1,37.570556156041825,361,625,17.470063240355348,53.50065309707709,362,625,17.470063240355348,362
+2050,625,258,300,346,16,1,29.960081137605304,339,625,12.751411269693511,57.438662428426504,300,625,12.751411269693511,300
+2100,625,267,262,329,2,1,22.166712550710866,321,599,9.098499676832315,58.95422175923631,264,625,9.10606721116994,263

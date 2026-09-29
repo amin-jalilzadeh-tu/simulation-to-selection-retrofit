@@ -1,0 +1,64 @@
+{
+  "design": "exact-index",
+  "model": "shared_mtl_nn_mgda",
+  "repeat_seed": 43,
+  "outer_fold": 1,
+  "horizon": 2020,
+  "profile": "days_below_24_priority",
+  "exact_id": 145,
+  "predicted_id": 1,
+  "selection_agreement": false,
+  "selected_on_exact_subset_front": true,
+  "selected_on_exact_full_grid_front": true,
+  "regret": 0.444064413291913,
+  "profile_weights_E_C_G_minusD": [
+    0.1,
+    0.1,
+    0.1,
+    0.7
+  ],
+  "exact_front_minimization_ideal": [
+    17.509182047500207,
+    0.0,
+    0.0,
+    -365.0
+  ],
+  "exact_front_spans_E_C_G_minusD": [
+    20.061374108541617,
+    1070.9,
+    196.66,
+    6.0
+  ],
+  "weighted_regret_contributions_E_C_G_minusD": [
+    0.07406480856923568,
+    -0.04734335605565412,
+    -0.049323705888335206,
+    0.4666666666666666
+  ],
+  "objective_order": [
+    "E_H",
+    "I_C",
+    "I_G",
+    "minus_D24"
+  ],
+  "exact_selection_true_E_C_G_D": [
+    22.712137826192265,
+    507.0,
+    97.0,
+    365.0
+  ],
+  "surrogate_selection_true_E_C_G_D": [
+    37.570556156041825,
+    0.0,
+    0.0,
+    361.0
+  ],
+  "exact_selection_raw_predicted_E_D": [
+    22.686965942382812,
+    365.6815185546875
+  ],
+  "surrogate_selection_raw_predicted_E_D": [
+    36.06365966796875,
+    371.7745971679687
+  ]
+}

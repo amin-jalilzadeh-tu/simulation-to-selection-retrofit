@@ -1,0 +1,1501 @@
+weather_code,weather,component,existing_option_simulation_id,replacement_option_simulation_id,floor_group,floor_state_before,floor_state_after,heating_saved_gj,additional_threshold_days
+2020,Present TMYx,floor,1,101,changed,0,4,2.049215096683909,2.0
+2020,Present TMYx,floor,2,102,changed,0,4,2.368982914976531,4.0
+2020,Present TMYx,floor,3,103,changed,0,4,2.3794725772165,4.0
+2020,Present TMYx,floor,4,104,changed,0,4,2.4811463003278362,4.0
+2020,Present TMYx,floor,5,105,changed,0,4,2.439496180267991,4.0
+2020,Present TMYx,floor,6,106,changed,0,4,2.2263191263732587,2.0
+2020,Present TMYx,floor,7,107,changed,0,4,2.31105722533864,2.0
+2020,Present TMYx,floor,8,108,changed,0,4,2.458094129846092,2.0
+2020,Present TMYx,floor,9,109,changed,0,4,2.266980262516025,2.0
+2020,Present TMYx,floor,10,110,changed,0,4,2.246125861299113,2.0
+2020,Present TMYx,floor,11,111,changed,0,4,2.1558660275122854,2.0
+2020,Present TMYx,floor,12,112,changed,0,4,2.3253655712493213,2.0
+2020,Present TMYx,floor,13,113,changed,0,4,2.327606389554763,2.0
+2020,Present TMYx,floor,14,114,changed,0,4,2.5241059881759043,2.0
+2020,Present TMYx,floor,15,115,changed,0,4,2.4044210016404364,2.0
+2020,Present TMYx,floor,16,116,changed,0,4,2.2325975183183537,2.0
+2020,Present TMYx,floor,17,117,changed,0,4,2.4517661777148163,2.0
+2020,Present TMYx,floor,18,118,changed,0,4,2.514121696599947,2.0
+2020,Present TMYx,floor,19,119,changed,0,4,2.5679624389415494,3.0
+2020,Present TMYx,floor,20,120,changed,0,4,2.5378956385447395,3.0
+2020,Present TMYx,floor,21,121,changed,0,4,2.217577568975347,2.0
+2020,Present TMYx,floor,22,122,changed,0,4,2.4989912371811407,2.0
+2020,Present TMYx,floor,23,123,changed,0,4,2.459251336535818,2.0
+2020,Present TMYx,floor,24,124,changed,0,4,2.521913196372349,3.0
+2020,Present TMYx,floor,25,125,changed,0,4,2.5814379217358585,3.0
+2020,Present TMYx,floor,126,226,changed,0,4,2.2755813399198317,3.0
+2020,Present TMYx,floor,127,227,changed,0,4,2.6896779849880907,4.0
+2020,Present TMYx,floor,128,228,changed,0,4,2.689930437719827,4.0
+2020,Present TMYx,floor,129,229,changed,0,4,2.6964363875041926,4.0
+2020,Present TMYx,floor,130,230,changed,0,4,2.7531194720218295,4.0
+2020,Present TMYx,floor,131,231,changed,0,4,2.4397274519649343,2.0
+2020,Present TMYx,floor,132,232,changed,0,4,2.8564157733846933,3.0
+2020,Present TMYx,floor,133,233,changed,0,4,2.7834786880386915,3.0
+2020,Present TMYx,floor,134,234,changed,0,4,2.3818823904580775,3.0
+2020,Present TMYx,floor,135,235,changed,0,4,2.6051802176185355,3.0
+2020,Present TMYx,floor,136,236,changed,0,4,2.583303784980309,2.0
+2020,Present TMYx,floor,137,237,changed,0,4,2.701161495003202,3.0
+2020,Present TMYx,floor,138,238,changed,0,4,2.8519701702112954,3.0
+2020,Present TMYx,floor,139,239,changed,0,4,2.4425060784942794,3.0
+2020,Present TMYx,floor,140,240,changed,0,4,2.4754243190889405,3.0
+2020,Present TMYx,floor,141,241,changed,0,4,2.4092194308904986,2.0
+2020,Present TMYx,floor,142,242,changed,0,4,2.3259706529906836,3.0
+2020,Present TMYx,floor,143,243,changed,0,4,2.4750300633736515,3.0
+2020,Present TMYx,floor,144,244,changed,0,4,2.562468640742697,3.0
+2020,Present TMYx,floor,145,245,changed,0,4,2.4818720276501907,3.0
+2020,Present TMYx,floor,146,246,changed,0,4,2.4517217330692453,2.0
+2020,Present TMYx,floor,147,247,changed,0,4,2.530940651016806,3.0
+2020,Present TMYx,floor,148,248,changed,0,4,2.527706726955909,3.0
+2020,Present TMYx,floor,149,249,changed,0,4,2.622512211850289,3.0
+2020,Present TMYx,floor,150,250,changed,0,4,2.6216905184041863,3.0
+2020,Present TMYx,floor,251,351,changed,0,4,2.126643650856497,2.0
+2020,Present TMYx,floor,252,352,changed,0,4,2.6131567038449326,4.0
+2020,Present TMYx,floor,253,353,changed,0,4,2.4695439292569716,4.0
+2020,Present TMYx,floor,254,354,changed,0,4,2.3230836364094003,4.0
+2020,Present TMYx,floor,255,355,changed,0,4,2.3711498587061755,4.0
+2020,Present TMYx,floor,256,356,changed,0,4,2.5301030244177234,2.0
+2020,Present TMYx,floor,257,357,changed,0,4,2.9318995045533143,3.0
+2020,Present TMYx,floor,258,358,changed,0,4,2.865189729501296,3.0
+2020,Present TMYx,floor,259,359,changed,0,4,2.7768128335242963,3.0
+2020,Present TMYx,floor,260,360,changed,0,4,2.4512421349238736,3.0
+2020,Present TMYx,floor,261,361,changed,0,4,2.4025513225081845,2.0
+2020,Present TMYx,floor,262,362,changed,0,4,2.6807518376577235,3.0
+2020,Present TMYx,floor,263,363,changed,0,4,2.7451297908317507,3.0
+2020,Present TMYx,floor,264,364,changed,0,4,2.5462023693872986,3.0
+2020,Present TMYx,floor,265,365,changed,0,4,2.4956313742979894,3.0
+2020,Present TMYx,floor,266,366,changed,0,4,2.5597901172593325,2.0
+2020,Present TMYx,floor,267,367,changed,0,4,2.42268275170294,3.0
+2020,Present TMYx,floor,268,368,changed,0,4,2.3839389664457222,3.0
+2020,Present TMYx,floor,269,369,changed,0,4,2.526249295620403,3.0
+2020,Present TMYx,floor,270,370,changed,0,4,2.666489924097924,3.0
+2020,Present TMYx,floor,271,371,changed,0,4,2.482341245573849,2.0
+2020,Present TMYx,floor,272,372,changed,0,4,2.454903331964367,3.0
+2020,Present TMYx,floor,273,373,changed,0,4,2.5342778949701597,3.0
+2020,Present TMYx,floor,274,374,changed,0,4,2.833088656158438,3.0
+2020,Present TMYx,floor,275,375,changed,0,4,2.846673793567696,3.0
+2020,Present TMYx,floor,376,476,changed,0,4,2.069864358441002,3.0
+2020,Present TMYx,floor,377,477,changed,0,4,2.596973738195082,4.0
+2020,Present TMYx,floor,378,478,changed,0,4,2.5135187452041166,4.0
+2020,Present TMYx,floor,379,479,changed,0,4,2.9224221209561385,4.0
+2020,Present TMYx,floor,380,480,changed,0,4,2.749320253278146,4.0
+2020,Present TMYx,floor,381,481,changed,0,4,2.432092786949415,3.0
+2020,Present TMYx,floor,382,482,changed,0,4,2.832000676685979,3.0
+2020,Present TMYx,floor,383,483,changed,0,4,2.901295606910349,3.0
+2020,Present TMYx,floor,384,484,changed,0,4,2.6408784065886266,3.0
+2020,Present TMYx,floor,385,485,changed,0,4,2.5608397352659154,3.0
+2020,Present TMYx,floor,386,486,changed,0,4,2.439616483007235,3.0
+2020,Present TMYx,floor,387,487,changed,0,4,2.8874966742533807,3.0
+2020,Present TMYx,floor,388,488,changed,0,4,2.848863953097162,3.0
+2020,Present TMYx,floor,389,489,changed,0,4,2.5843385118591975,3.0
+2020,Present TMYx,floor,390,490,changed,0,4,2.683653763455254,3.0
+2020,Present TMYx,floor,391,491,changed,0,4,2.338895958460558,3.0
+2020,Present TMYx,floor,392,492,changed,0,4,2.5459895283260465,3.0
+2020,Present TMYx,floor,393,493,changed,0,4,2.4909907960821194,3.0
+2020,Present TMYx,floor,394,494,changed,0,4,2.951656115009257,3.0
+2020,Present TMYx,floor,395,495,changed,0,4,2.8871426176820805,3.0
+2020,Present TMYx,floor,396,496,changed,0,4,2.371049062133281,3.0
+2020,Present TMYx,floor,397,497,changed,0,4,2.616463377522109,3.0
+2020,Present TMYx,floor,398,498,changed,0,4,2.576885642857036,3.0
+2020,Present TMYx,floor,399,499,changed,0,4,2.9160639876019587,3.0
+2020,Present TMYx,floor,400,500,changed,0,4,2.600449731068043,3.0
+2020,Present TMYx,floor,501,601,changed,0,4,2.3624231081467286,3.0
+2020,Present TMYx,floor,502,602,changed,0,4,2.5073687677115366,4.0
+2020,Present TMYx,floor,503,603,changed,0,4,2.373312026285628,4.0
+2020,Present TMYx,floor,504,604,changed,0,4,2.6235001175257224,4.0
+2020,Present TMYx,floor,505,605,changed,0,4,2.7463849040382264,4.0
+2020,Present TMYx,floor,506,606,changed,0,4,2.372472571260868,3.0
+2020,Present TMYx,floor,507,607,changed,0,4,2.8097410681750468,3.0
+2020,Present TMYx,floor,508,608,changed,0,4,3.039594302246382,3.0
+2020,Present TMYx,floor,509,609,changed,0,4,2.64247555253295,3.0
+2020,Present TMYx,floor,510,610,changed,0,4,2.651089781039655,3.0
+2020,Present TMYx,floor,511,611,changed,0,4,2.1955685695325613,3.0
+2020,Present TMYx,floor,512,612,changed,0,4,2.7739617388397093,3.0
+2020,Present TMYx,floor,513,613,changed,0,4,2.5058689612446017,3.0
+2020,Present TMYx,floor,514,614,changed,0,4,2.634140432005598,3.0
+2020,Present TMYx,floor,515,615,changed,0,4,2.592566187028268,3.0
+2020,Present TMYx,floor,516,616,changed,0,4,2.2310519214436155,3.0
+2020,Present TMYx,floor,517,617,changed,0,4,2.5516373461552355,3.0
+2020,Present TMYx,floor,518,618,changed,0,4,2.702173126945091,3.0
+2020,Present TMYx,floor,519,619,changed,0,4,2.576075910815856,3.0
+2020,Present TMYx,floor,520,620,changed,0,4,2.7896413575229175,3.0
+2020,Present TMYx,floor,521,621,changed,0,4,2.209266313520736,3.0
+2020,Present TMYx,floor,522,622,changed,0,4,2.5396075018365636,3.0
+2020,Present TMYx,floor,523,623,changed,0,4,2.71499075282539,3.0
+2020,Present TMYx,floor,524,624,changed,0,4,2.8730922595728217,3.0
+2020,Present TMYx,floor,525,625,changed,0,4,2.8369705798942633,3.0
+2020,Present TMYx,windows,1,376,existing,0,0,5.463112905107863,-1.0
+2020,Present TMYx,windows,2,377,existing,0,0,5.678536542809724,-1.0
+2020,Present TMYx,windows,3,378,existing,0,0,5.643206412233308,-1.0
+2020,Present TMYx,windows,4,379,existing,0,0,5.575898746029889,-1.0
+2020,Present TMYx,windows,5,380,existing,0,0,5.738655758034202,-1.0
+2020,Present TMYx,windows,6,381,existing,0,0,5.481747605944793,-2.0
+2020,Present TMYx,windows,7,382,existing,0,0,5.2091513269892005,-1.0
+2020,Present TMYx,windows,8,383,existing,0,0,5.165904442663308,-1.0
+2020,Present TMYx,windows,9,384,existing,0,0,5.4739888125890666,-1.0
+2020,Present TMYx,windows,10,385,existing,0,0,5.443514044718629,-1.0
+2020,Present TMYx,windows,11,386,existing,0,0,5.44061372606814,-2.0
+2020,Present TMYx,windows,12,387,existing,0,0,5.248408815059943,-1.0
+2020,Present TMYx,windows,13,388,existing,0,0,5.1219784815365905,-1.0
+2020,Present TMYx,windows,14,389,existing,0,0,5.657738171462093,-1.0
+2020,Present TMYx,windows,15,390,existing,0,0,5.453653089999033,-1.0
+2020,Present TMYx,windows,16,391,existing,0,0,5.549453947640217,-2.0
+2020,Present TMYx,windows,17,392,existing,0,0,5.4250179364993585,-1.0
+2020,Present TMYx,windows,18,393,existing,0,0,5.34969265363949,-1.0
+2020,Present TMYx,windows,19,394,existing,0,0,5.50477891044283,0.0
+2020,Present TMYx,windows,20,395,existing,0,0,5.492050726364063,0.0
+2020,Present TMYx,windows,21,396,existing,0,0,5.391666285195036,-2.0
+2020,Present TMYx,windows,22,397,existing,0,0,5.392348527927204,-1.0
+2020,Present TMYx,windows,23,398,existing,0,0,5.417990436267441,-1.0
+2020,Present TMYx,windows,24,399,existing,0,0,5.435105411533534,0.0
+2020,Present TMYx,windows,25,400,existing,0,0,5.519664009215415,0.0
+2020,Present TMYx,windows,26,401,insulated,1,1,5.750598959748999,-1.0
+2020,Present TMYx,windows,27,402,insulated,1,1,5.811644840582915,-1.0
+2020,Present TMYx,windows,28,403,insulated,1,1,5.66380277076448,-1.0
+2020,Present TMYx,windows,29,404,insulated,1,1,5.826848761872167,-1.0
+2020,Present TMYx,windows,30,405,insulated,1,1,5.967183512466981,-1.0
+2020,Present TMYx,windows,31,406,insulated,1,1,5.633015927083548,-1.0
+2020,Present TMYx,windows,32,407,insulated,1,1,5.8043239882773,0.0
+2020,Present TMYx,windows,33,408,insulated,1,1,5.731237785847924,0.0
+2020,Present TMYx,windows,34,409,insulated,1,1,5.3976835246456325,0.0
+2020,Present TMYx,windows,35,410,insulated,1,1,5.3833457698057465,-1.0
+2020,Present TMYx,windows,36,411,insulated,1,1,5.705307189625472,-1.0
+2020,Present TMYx,windows,37,412,insulated,1,1,5.675097855915151,0.0
+2020,Present TMYx,windows,38,413,insulated,1,1,5.633594778697002,0.0
+2020,Present TMYx,windows,39,414,insulated,1,1,5.457868208812634,-1.0
+2020,Present TMYx,windows,40,415,insulated,1,1,5.4960227815289215,-1.0
+2020,Present TMYx,windows,41,416,insulated,1,1,5.544567960048813,0.0
+2020,Present TMYx,windows,42,417,insulated,1,1,5.399528355300983,0.0
+2020,Present TMYx,windows,43,418,insulated,1,1,5.4610819427700505,-1.0
+2020,Present TMYx,windows,44,419,insulated,1,1,5.822593689459161,-1.0
+2020,Present TMYx,windows,45,420,insulated,1,1,5.7472561690668655,-1.0
+2020,Present TMYx,windows,46,421,insulated,1,1,5.576669794992341,0.0
+2020,Present TMYx,windows,47,422,insulated,1,1,5.5001715786851655,0.0
+2020,Present TMYx,windows,48,423,insulated,1,1,5.450858384316135,-1.0
+2020,Present TMYx,windows,49,424,insulated,1,1,5.632293778816578,-1.0
+2020,Present TMYx,windows,50,425,insulated,1,1,5.632281579301036,-1.0
+2020,Present TMYx,windows,51,426,insulated,2,2,5.729539941969321,-1.0
+2020,Present TMYx,windows,52,427,insulated,2,2,5.6728317491476865,-1.0
+2020,Present TMYx,windows,53,428,insulated,2,2,6.015511071849815,-1.0
+2020,Present TMYx,windows,54,429,insulated,2,2,5.869529604502912,-1.0
+2020,Present TMYx,windows,55,430,insulated,2,2,6.019005134258979,-1.0
+2020,Present TMYx,windows,56,431,insulated,2,2,5.873564368334364,-1.0
+2020,Present TMYx,windows,57,432,insulated,2,2,5.735345646738594,0.0
+2020,Present TMYx,windows,58,433,insulated,2,2,5.723956702490394,0.0
+2020,Present TMYx,windows,59,434,insulated,2,2,5.917932645048534,0.0
+2020,Present TMYx,windows,60,435,insulated,2,2,5.7496630103190824,0.0
+2020,Present TMYx,windows,61,436,insulated,2,2,5.648897536167841,-1.0
+2020,Present TMYx,windows,62,437,insulated,2,2,5.910340310908293,0.0
+2020,Present TMYx,windows,63,438,insulated,2,2,5.6367604225997745,0.0
+2020,Present TMYx,windows,64,439,insulated,2,2,5.805864895831874,0.0
+2020,Present TMYx,windows,65,440,insulated,2,2,5.734070444255458,0.0
+2020,Present TMYx,windows,66,441,insulated,2,2,5.416461453839247,-1.0
+2020,Present TMYx,windows,67,442,insulated,2,2,5.447360958507957,0.0
+2020,Present TMYx,windows,68,443,insulated,2,2,5.419968550481254,0.0
+2020,Present TMYx,windows,69,444,insulated,2,2,5.710295542050726,0.0
+2020,Present TMYx,windows,70,445,insulated,2,2,5.7492399547498145,0.0
+2020,Present TMYx,windows,71,446,insulated,2,2,5.653764641392481,0.0
+2020,Present TMYx,windows,72,447,insulated,2,2,5.3882027714066005,0.0
+2020,Present TMYx,windows,73,448,insulated,2,2,5.39153905045632,0.0
+2020,Present TMYx,windows,74,449,insulated,2,2,5.863952365987469,0.0
+2020,Present TMYx,windows,75,450,insulated,2,2,5.75041357451844,0.0
+2020,Present TMYx,windows,76,451,insulated,3,3,5.693602943518577,0.0
+2020,Present TMYx,windows,77,452,insulated,3,3,5.912371663462153,-1.0
+2020,Present TMYx,windows,78,453,insulated,3,3,5.637196116911724,-1.0
+2020,Present TMYx,windows,79,454,insulated,3,3,5.895351386452017,-1.0
+2020,Present TMYx,windows,80,455,insulated,3,3,5.845502465190535,-1.0
+2020,Present TMYx,windows,81,456,insulated,3,3,5.7626540744028105,-1.0
+2020,Present TMYx,windows,82,457,insulated,3,3,5.8042944646494625,-1.0
+2020,Present TMYx,windows,83,458,insulated,3,3,5.730999218767323,0.0
+2020,Present TMYx,windows,84,459,insulated,3,3,5.4951734188162895,0.0
+2020,Present TMYx,windows,85,460,insulated,3,3,5.367057274161926,0.0
+2020,Present TMYx,windows,86,461,insulated,3,3,5.842686884717541,-1.0
+2020,Present TMYx,windows,87,462,insulated,3,3,5.69354267172719,0.0
+2020,Present TMYx,windows,88,463,insulated,3,3,5.8042256726640495,0.0
+2020,Present TMYx,windows,89,464,insulated,3,3,5.3906495586857375,0.0
+2020,Present TMYx,windows,90,465,insulated,3,3,5.455386447370767,0.0
+2020,Present TMYx,windows,91,466,insulated,3,3,5.660249470704034,-1.0
+2020,Present TMYx,windows,92,467,insulated,3,3,5.38843213111257,0.0
+2020,Present TMYx,windows,93,468,insulated,3,3,5.3368008481589335,0.0
+2020,Present TMYx,windows,94,469,insulated,3,3,5.900792204348647,0.0
+2020,Present TMYx,windows,95,470,insulated,3,3,5.750116934994921,0.0
+2020,Present TMYx,windows,96,471,insulated,3,3,5.509501201974189,-1.0
+2020,Present TMYx,windows,97,472,insulated,3,3,5.500442335154435,0.0
+2020,Present TMYx,windows,98,473,insulated,3,3,5.3187164981179045,0.0
+2020,Present TMYx,windows,99,474,insulated,3,3,5.676874205011657,0.0
+2020,Present TMYx,windows,100,475,insulated,3,3,5.596834372660631,0.0
+2020,Present TMYx,windows,101,476,insulated,4,4,5.483762166864956,0.0
+2020,Present TMYx,windows,102,477,insulated,4,4,5.906527366028275,-1.0
+2020,Present TMYx,windows,103,478,insulated,4,4,5.7772525802209245,-1.0
+2020,Present TMYx,windows,104,479,insulated,4,4,6.017174566658191,-1.0
+2020,Present TMYx,windows,105,480,insulated,4,4,6.048479831044357,-1.0
+2020,Present TMYx,windows,106,481,insulated,4,4,5.68752126652095,-1.0
+2020,Present TMYx,windows,107,482,insulated,4,4,5.7300947783365395,0.0
+2020,Present TMYx,windows,108,483,insulated,4,4,5.609105919727565,0.0
+2020,Present TMYx,windows,109,484,insulated,4,4,5.847886956661668,0.0
+2020,Present TMYx,windows,110,485,insulated,4,4,5.7582279186854315,0.0
+2020,Present TMYx,windows,111,486,insulated,4,4,5.7243641815630895,-1.0
+2020,Present TMYx,windows,112,487,insulated,4,4,5.810539918064002,0.0
+2020,Present TMYx,windows,113,488,insulated,4,4,5.643236045078989,0.0
+2020,Present TMYx,windows,114,489,insulated,4,4,5.717970695145386,0.0
+2020,Present TMYx,windows,115,490,insulated,4,4,5.732885851813851,0.0
+2020,Present TMYx,windows,116,491,insulated,4,4,5.655752387782421,-1.0
+2020,Present TMYx,windows,117,492,insulated,4,4,5.519241287110589,0.0
+2020,Present TMYx,windows,118,493,insulated,4,4,5.326561753121663,0.0
+2020,Present TMYx,windows,119,494,insulated,4,4,5.888472586510538,0.0
+2020,Present TMYx,windows,120,495,insulated,4,4,5.841297705501404,0.0
+2020,Present TMYx,windows,121,496,insulated,4,4,5.54513777835297,-1.0
+2020,Present TMYx,windows,122,497,insulated,4,4,5.509820668268173,0.0
+2020,Present TMYx,windows,123,498,insulated,4,4,5.535624742588659,0.0
+2020,Present TMYx,windows,124,499,insulated,4,4,5.829256202763144,0.0
+2020,Present TMYx,windows,125,500,insulated,4,4,5.538675818547599,0.0
+2020,Present TMYx,facade,1,5,existing,0,0,5.80828634720919,-3.0
+2020,Present TMYx,facade,6,10,existing,0,0,6.142819299821891,-3.0
+2020,Present TMYx,facade,11,15,existing,0,0,6.049270872188064,-3.0
+2020,Present TMYx,facade,16,20,existing,0,0,5.985493136789646,-4.0
+2020,Present TMYx,facade,21,25,existing,0,0,5.882028797000238,-4.0
+2020,Present TMYx,facade,26,30,insulated,1,1,6.568634630113344,-1.0
+2020,Present TMYx,facade,31,35,insulated,1,1,6.372805970264473,-3.0
+2020,Present TMYx,facade,36,40,insulated,1,1,6.413483221216175,-3.0
+2020,Present TMYx,facade,41,45,insulated,1,1,6.276957186185104,-2.0
+2020,Present TMYx,facade,46,50,insulated,1,1,6.402630696180015,-2.0
+2020,Present TMYx,facade,51,55,insulated,2,2,6.336531452715231,-1.0
+2020,Present TMYx,facade,56,60,insulated,2,2,6.253521433802238,-3.0
+2020,Present TMYx,facade,61,65,insulated,2,2,6.121554701483639,-3.0
+2020,Present TMYx,facade,66,70,insulated,2,2,6.259117262264585,-3.0
+2020,Present TMYx,facade,71,75,insulated,2,2,6.311165508311074,-2.0
+2020,Present TMYx,facade,76,80,insulated,3,3,6.492580925508804,-1.0
+2020,Present TMYx,facade,81,85,insulated,3,3,6.535540032061601,-3.0
+2020,Present TMYx,facade,86,90,insulated,3,3,6.550837741952442,-3.0
+2020,Present TMYx,facade,91,95,insulated,3,3,6.449325519743663,-3.0
+2020,Present TMYx,facade,96,100,insulated,3,3,6.219991685757467,-3.0
+2020,Present TMYx,facade,101,105,insulated,4,4,6.198567430793272,-1.0
+2020,Present TMYx,facade,106,110,insulated,4,4,6.1626260347477455,-3.0
+2020,Present TMYx,facade,111,115,insulated,4,4,6.297825846316215,-3.0
+2020,Present TMYx,facade,116,120,insulated,4,4,6.290791257016032,-3.0
+2020,Present TMYx,facade,121,125,insulated,4,4,6.24588914976075,-3.0
+2020,Present TMYx,facade,126,130,existing,0,0,6.086670023775245,-3.0
+2020,Present TMYx,facade,131,135,existing,0,0,6.116408335541809,-3.0
+2020,Present TMYx,facade,136,140,existing,0,0,6.1356440309203215,-3.0
+2020,Present TMYx,facade,141,145,existing,0,0,6.059137854804931,-3.0
+2020,Present TMYx,facade,146,150,existing,0,0,5.857468752628886,-3.0
+2020,Present TMYx,facade,151,155,insulated,1,1,6.478180568101898,-1.0
+2020,Present TMYx,facade,156,160,insulated,1,1,6.213118498909104,-2.0
+2020,Present TMYx,facade,161,165,insulated,1,1,6.061630331198607,-2.0
+2020,Present TMYx,facade,166,170,insulated,1,1,6.009579954544954,-2.0
+2020,Present TMYx,facade,171,175,insulated,1,1,6.137823893739146,-2.0
+2020,Present TMYx,facade,176,180,insulated,2,2,6.8361408332789075,-1.0
+2020,Present TMYx,facade,181,185,insulated,2,2,6.260469962936817,-2.0
+2020,Present TMYx,facade,186,190,insulated,2,2,6.311402081625065,-2.0
+2020,Present TMYx,facade,191,195,insulated,2,2,5.993783694853196,-2.0
+2020,Present TMYx,facade,196,200,insulated,2,2,6.195144699353065,-2.0
+2020,Present TMYx,facade,201,205,insulated,3,3,6.62571466866018,-2.0
+2020,Present TMYx,facade,206,210,insulated,3,3,6.246041755525997,-2.0
+2020,Present TMYx,facade,211,215,insulated,3,3,6.083341488530266,-2.0
+2020,Present TMYx,facade,216,220,insulated,3,3,6.075898346379901,-2.0
+2020,Present TMYx,facade,221,225,insulated,3,3,6.0137400124120965,-2.0
+2020,Present TMYx,facade,226,230,insulated,4,4,6.5642081558772425,-2.0
+2020,Present TMYx,facade,231,235,insulated,4,4,6.28186110119541,-2.0
+2020,Present TMYx,facade,236,240,insulated,4,4,6.027764565028953,-2.0
+2020,Present TMYx,facade,241,245,insulated,4,4,6.131790451564623,-2.0
+2020,Present TMYx,facade,246,250,insulated,4,4,6.027437537963827,-2.0
+2020,Present TMYx,facade,251,255,existing,0,0,6.0260304364899255,-3.0
+2020,Present TMYx,facade,256,260,existing,0,0,6.2036236178607,-3.0
+2020,Present TMYx,facade,261,265,existing,0,0,6.056613350592748,-3.0
+2020,Present TMYx,facade,266,270,existing,0,0,6.117855722368866,-3.0
+2020,Present TMYx,facade,271,275,existing,0,0,5.9643841246154246,-3.0
+2020,Present TMYx,facade,276,280,insulated,1,1,6.617160539383455,-1.0
+2020,Present TMYx,facade,281,285,insulated,1,1,6.266892600541571,-2.0
+2020,Present TMYx,facade,286,290,insulated,1,1,6.010141020103479,-2.0
+2020,Present TMYx,facade,291,295,insulated,1,1,5.957843098374163,-3.0
+2020,Present TMYx,facade,296,300,insulated,1,1,6.3068940324401055,-3.0
+2020,Present TMYx,facade,301,305,insulated,2,2,6.256004860808019,-1.0
+2020,Present TMYx,facade,306,310,insulated,2,2,5.971040834590113,-2.0
+2020,Present TMYx,facade,311,315,insulated,2,2,6.247367990188675,-2.0
+2020,Present TMYx,facade,316,320,insulated,2,2,6.308936226279009,-2.0
+2020,Present TMYx,facade,321,325,insulated,2,2,6.322812495737079,-2.0
+2020,Present TMYx,facade,326,330,insulated,3,3,6.272913237617249,-2.0
+2020,Present TMYx,facade,331,335,insulated,3,3,6.087021699707478,-2.0
+2020,Present TMYx,facade,336,340,insulated,3,3,6.224776612988162,-2.0
+2020,Present TMYx,facade,341,345,insulated,3,3,6.325265354303916,-2.0
+2020,Present TMYx,facade,346,350,insulated,3,3,6.276956131831543,-2.0
+2020,Present TMYx,facade,351,355,insulated,4,4,6.270536644339604,-1.0
+2020,Present TMYx,facade,356,360,insulated,4,4,6.12476272836685,-2.0
+2020,Present TMYx,facade,361,365,insulated,4,4,6.149693402382553,-2.0
+2020,Present TMYx,facade,366,370,insulated,4,4,6.224555529207457,-2.0
+2020,Present TMYx,facade,371,375,insulated,4,4,6.328716672609271,-2.0
+2020,Present TMYx,facade,376,380,existing,0,0,6.083829200135529,-3.0
+2020,Present TMYx,facade,381,385,existing,0,0,6.104585738595727,-2.0
+2020,Present TMYx,facade,386,390,existing,0,0,6.062310236118957,-2.0
+2020,Present TMYx,facade,391,395,existing,0,0,5.9280899155134925,-2.0
+2020,Present TMYx,facade,396,400,existing,0,0,6.010026521020617,-2.0
+2020,Present TMYx,facade,401,405,insulated,1,1,6.785219182831327,-1.0
+2020,Present TMYx,facade,406,410,insulated,1,1,6.123135812986671,-3.0
+2020,Present TMYx,facade,411,415,insulated,1,1,6.204198813119625,-3.0
+2020,Present TMYx,facade,416,420,insulated,1,1,6.479645395203157,-3.0
+2020,Present TMYx,facade,421,425,insulated,1,1,6.45824248048871,-3.0
+2020,Present TMYx,facade,426,430,insulated,2,2,6.625996645004889,-1.0
+2020,Present TMYx,facade,431,435,insulated,2,2,6.129620075786956,-2.0
+2020,Present TMYx,facade,436,440,insulated,2,2,6.2067276095712565,-2.0
+2020,Present TMYx,facade,441,445,insulated,2,2,6.5918957631751525,-2.0
+2020,Present TMYx,facade,446,450,insulated,2,2,6.407814441437033,-2.0
+2020,Present TMYx,facade,451,455,insulated,3,3,6.6444804471807615,-2.0
+2020,Present TMYx,facade,456,460,insulated,3,3,6.139943231820716,-2.0
+2020,Present TMYx,facade,461,465,insulated,3,3,6.1635373046056685,-2.0
+2020,Present TMYx,facade,466,470,insulated,3,3,6.53919298403455,-2.0
+2020,Present TMYx,facade,471,475,insulated,3,3,6.307324856443909,-2.0
+2020,Present TMYx,facade,476,480,insulated,4,4,6.763285094972673,-2.0
+2020,Present TMYx,facade,481,485,insulated,4,4,6.233332686912227,-2.0
+2020,Present TMYx,facade,486,490,insulated,4,4,6.3063475165669765,-2.0
+2020,Present TMYx,facade,491,495,insulated,4,4,6.476336574735015,-2.0
+2020,Present TMYx,facade,496,500,insulated,4,4,6.239427189955379,-2.0
+2020,Present TMYx,facade,501,505,existing,0,0,6.419920690247437,-3.0
+2020,Present TMYx,facade,506,510,existing,0,0,5.959441622960156,-2.0
+2020,Present TMYx,facade,511,515,existing,0,0,5.921482418274035,-2.0
+2020,Present TMYx,facade,516,520,existing,0,0,5.9647036006780425,-2.0
+2020,Present TMYx,facade,521,525,existing,0,0,5.942685526142952,-2.0
+2020,Present TMYx,facade,526,530,insulated,1,1,6.710883634795593,-1.0
+2020,Present TMYx,facade,531,535,insulated,1,1,6.171677562114777,-3.0
+2020,Present TMYx,facade,536,540,insulated,1,1,6.1757156345253,-3.0
+2020,Present TMYx,facade,541,545,insulated,1,1,6.328306423899079,-3.0
+2020,Present TMYx,facade,546,550,insulated,1,1,6.44954696745452,-3.0
+2020,Present TMYx,facade,551,555,insulated,2,2,6.656542268604664,-2.0
+2020,Present TMYx,facade,556,560,insulated,2,2,6.236125321586858,-2.0
+2020,Present TMYx,facade,561,565,insulated,2,2,6.206891566937596,-2.0
+2020,Present TMYx,facade,566,570,insulated,2,2,6.621074534496714,-2.0
+2020,Present TMYx,facade,571,575,insulated,2,2,6.58058700336629,-2.0
+2020,Present TMYx,facade,576,580,insulated,3,3,6.623849489011505,-2.0
+2020,Present TMYx,facade,581,585,insulated,3,3,6.290219723661426,-2.0
+2020,Present TMYx,facade,586,590,insulated,3,3,6.204070706224478,-2.0
+2020,Present TMYx,facade,591,595,insulated,3,3,6.171821618446931,-2.0
+2020,Present TMYx,facade,596,600,insulated,3,3,6.529715063943296,-2.0
+2020,Present TMYx,facade,601,605,insulated,4,4,6.803882486138935,-2.0
+2020,Present TMYx,facade,606,610,insulated,4,4,6.238058832738943,-2.0
+2020,Present TMYx,facade,611,615,insulated,4,4,6.318480035769742,-2.0
+2020,Present TMYx,facade,616,620,insulated,4,4,6.5232930367573445,-2.0
+2020,Present TMYx,facade,621,625,insulated,4,4,6.57038979251648,-2.0
+2020,Present TMYx,roof,1,21,existing,0,0,5.274843541991409,0.0
+2020,Present TMYx,roof,2,22,existing,0,0,5.3892783303581595,0.0
+2020,Present TMYx,roof,3,23,existing,0,0,5.282735542852723,0.0
+2020,Present TMYx,roof,4,24,existing,0,0,5.359041384262284,-1.0
+2020,Present TMYx,roof,5,25,existing,0,0,5.348585991782457,-1.0
+2020,Present TMYx,roof,26,46,insulated,1,1,5.760732874920549,-1.0
+2020,Present TMYx,roof,27,47,insulated,1,1,5.494094084012797,-2.0
+2020,Present TMYx,roof,28,48,insulated,1,1,5.441209759858506,-2.0
+2020,Present TMYx,roof,29,49,insulated,1,1,5.421558091154832,-2.0
+2020,Present TMYx,roof,30,50,insulated,1,1,5.5947289409872205,-2.0
+2020,Present TMYx,roof,51,71,insulated,2,2,5.584251869747735,-1.0
+2020,Present TMYx,roof,52,72,insulated,2,2,5.439765050977854,-2.0
+2020,Present TMYx,roof,53,73,insulated,2,2,5.479417935478612,-2.0
+2020,Present TMYx,roof,54,74,insulated,2,2,5.267923217971212,-2.0
+2020,Present TMYx,roof,55,75,insulated,2,2,5.558885925343578,-2.0
+2020,Present TMYx,roof,76,96,insulated,3,3,5.613028890279473,0.0
+2020,Present TMYx,roof,77,97,insulated,3,3,5.646245623121793,-2.0
+2020,Present TMYx,roof,78,98,insulated,3,3,5.575360764793359,-2.0
+2020,Present TMYx,roof,79,99,insulated,3,3,5.38401341395404,-2.0
+2020,Present TMYx,roof,80,100,insulated,3,3,5.340439650528136,-2.0
+2020,Present TMYx,roof,101,121,insulated,4,4,5.443206014282847,0.0
+2020,Present TMYx,roof,102,122,insulated,4,4,5.519286652562769,-2.0
+2020,Present TMYx,roof,103,123,insulated,4,4,5.362514302172041,-2.0
+2020,Present TMYx,roof,104,124,insulated,4,4,5.399808280306797,-2.0
+2020,Present TMYx,roof,105,125,insulated,4,4,5.490527733250325,-2.0
+2020,Present TMYx,roof,126,146,existing,0,0,5.342717559092836,0.0
+2020,Present TMYx,roof,127,147,existing,0,0,5.270106416061548,0.0
+2020,Present TMYx,roof,128,148,existing,0,0,5.167130243305724,0.0
+2020,Present TMYx,roof,129,149,existing,0,0,5.054272145979258,0.0
+2020,Present TMYx,roof,130,150,existing,0,0,5.113516287946478,0.0
+2020,Present TMYx,roof,151,171,insulated,1,1,5.337979931290537,0.0
+2020,Present TMYx,roof,152,172,insulated,1,1,5.285231440607561,-1.0
+2020,Present TMYx,roof,153,173,insulated,1,1,5.202260582912476,-1.0
+2020,Present TMYx,roof,154,174,insulated,1,1,4.857508776163826,-1.0
+2020,Present TMYx,roof,155,175,insulated,1,1,4.997623256927785,-1.0
+2020,Present TMYx,roof,176,196,insulated,2,2,5.563447527817122,0.0
+2020,Present TMYx,roof,177,197,insulated,2,2,4.914727161038041,-1.0
+2020,Present TMYx,roof,178,198,insulated,2,2,5.228663947815953,-1.0
+2020,Present TMYx,roof,179,199,insulated,2,2,4.831762353249374,-1.0
+2020,Present TMYx,roof,180,200,insulated,2,2,4.922451393891279,-1.0
+2020,Present TMYx,roof,201,221,insulated,3,3,5.635913921389481,-1.0
+2020,Present TMYx,roof,202,222,insulated,3,3,5.153553102969706,-1.0
+2020,Present TMYx,roof,203,223,insulated,3,3,5.180037187661156,-1.0
+2020,Present TMYx,roof,204,224,insulated,3,3,5.057563208149894,-1.0
+2020,Present TMYx,roof,205,225,insulated,3,3,5.023939265141397,-1.0
+2020,Present TMYx,roof,226,246,insulated,4,4,5.51885795224225,-1.0
+2020,Present TMYx,roof,227,247,insulated,4,4,5.111369082090263,-1.0
+2020,Present TMYx,roof,228,248,insulated,4,4,5.004906532541806,-1.0
+2020,Present TMYx,roof,229,249,insulated,4,4,4.980347970325354,-1.0
+2020,Present TMYx,roof,230,250,insulated,4,4,4.982087334328835,-1.0
+2020,Present TMYx,roof,251,271,existing,0,0,5.19406141349058,0.0
+2020,Present TMYx,roof,252,272,existing,0,0,5.274775346803324,0.0
+2020,Present TMYx,roof,253,273,existing,0,0,5.06371687308906,0.0
+2020,Present TMYx,roof,254,274,existing,0,0,5.114111363566948,0.0
+2020,Present TMYx,roof,255,275,existing,0,0,5.132415101616079,0.0
+2020,Present TMYx,roof,276,296,insulated,1,1,5.541213183040622,0.0
+2020,Present TMYx,roof,277,297,insulated,1,1,5.043004498882095,-1.0
+2020,Present TMYx,roof,278,298,insulated,1,1,5.207621320762673,-1.0
+2020,Present TMYx,roof,279,299,insulated,1,1,5.334430344216898,-1.0
+2020,Present TMYx,roof,280,300,insulated,1,1,5.230946676097272,-2.0
+2020,Present TMYx,roof,301,321,insulated,2,2,5.520418340552112,0.0
+2020,Present TMYx,roof,302,322,insulated,2,2,5.126433384152499,-1.0
+2020,Present TMYx,roof,303,323,insulated,2,2,5.111507899378079,-1.0
+2020,Present TMYx,roof,304,324,insulated,2,2,5.52859109907741,-1.0
+2020,Present TMYx,roof,305,325,insulated,2,2,5.5872259754811715,-1.0
+2020,Present TMYx,roof,326,346,insulated,3,3,5.490146368864167,-1.0
+2020,Present TMYx,roof,327,347,insulated,3,3,5.163249894695625,-1.0
+2020,Present TMYx,roof,328,348,insulated,3,3,5.16740045438916,-1.0
+2020,Present TMYx,roof,329,349,insulated,3,3,5.419132182335783,-1.0
+2020,Present TMYx,roof,330,350,insulated,3,3,5.494189263078461,-1.0
+2020,Present TMYx,roof,351,371,insulated,4,4,5.549759008207932,0.0
+2020,Present TMYx,roof,352,372,insulated,4,4,5.116521974922758,-1.0
+2020,Present TMYx,roof,353,373,insulated,4,4,5.128450838802248,-1.0
+2020,Present TMYx,roof,354,374,insulated,4,4,5.624116383315986,-1.0
+2020,Present TMYx,roof,355,375,insulated,4,4,5.6079390364776,-1.0
+2020,Present TMYx,roof,376,396,existing,0,0,5.203396922078582,-1.0
+2020,Present TMYx,roof,377,397,existing,0,0,5.10309031547564,0.0
+2020,Present TMYx,roof,378,398,existing,0,0,5.057519566886857,0.0
+2020,Present TMYx,roof,379,399,existing,0,0,5.218248049765929,0.0
+2020,Present TMYx,roof,380,400,existing,0,0,5.12959424296367,0.0
+2020,Present TMYx,roof,401,421,insulated,1,1,5.586803710163892,0.0
+2020,Present TMYx,roof,402,422,insulated,1,1,5.182620822115048,-1.0
+2020,Present TMYx,roof,403,423,insulated,1,1,5.22826537341016,-2.0
+2020,Present TMYx,roof,404,424,insulated,1,1,5.227003108099243,-2.0
+2020,Present TMYx,roof,405,425,insulated,1,1,5.259827007821276,-2.0
+2020,Present TMYx,roof,426,446,insulated,2,2,5.508476569170895,0.0
+2020,Present TMYx,roof,427,447,insulated,2,2,5.155136073236768,-1.0
+2020,Present TMYx,roof,428,448,insulated,2,2,4.8554459140851165,-1.0
+2020,Present TMYx,roof,429,449,insulated,2,2,5.26234597945577,-1.0
+2020,Present TMYx,roof,430,450,insulated,2,2,5.290294365603039,-1.0
+2020,Present TMYx,roof,451,471,insulated,3,3,5.4289271487350845,-1.0
+2020,Present TMYx,roof,452,472,insulated,3,3,5.234316294814075,-1.0
+2020,Present TMYx,roof,453,473,insulated,3,3,5.2568811459995395,-1.0
+2020,Present TMYx,roof,454,474,insulated,3,3,5.165536232513681,-1.0
+2020,Present TMYx,roof,455,475,insulated,3,3,5.091771557998232,-1.0
+2020,Present TMYx,roof,476,496,insulated,4,4,5.504581625770861,-1.0
+2020,Present TMYx,roof,477,497,insulated,4,4,5.122579954802667,-1.0
+2020,Present TMYx,roof,478,498,insulated,4,4,5.120886464539776,-1.0
+2020,Present TMYx,roof,479,499,insulated,4,4,5.211889916411749,-1.0
+2020,Present TMYx,roof,480,500,insulated,4,4,4.980723720753566,-1.0
+2020,Present TMYx,roof,501,521,existing,0,0,5.59315246697,-1.0
+2020,Present TMYx,roof,502,522,existing,0,0,5.176316749215669,0.0
+2020,Present TMYx,roof,503,523,existing,0,0,5.009465051926821,0.0
+2020,Present TMYx,roof,504,524,existing,0,0,5.010502721421524,0.0
+2020,Present TMYx,roof,505,525,existing,0,0,5.115917302865515,0.0
+2020,Present TMYx,roof,526,546,insulated,1,1,5.356830994022172,0.0
+2020,Present TMYx,roof,527,547,insulated,1,1,5.153285637789818,-1.0
+2020,Present TMYx,roof,528,548,insulated,1,1,5.324450127144885,-2.0
+2020,Present TMYx,roof,529,549,insulated,1,1,4.850363169789521,-2.0
+2020,Present TMYx,roof,530,550,insulated,1,1,5.095494326681099,-2.0
+2020,Present TMYx,roof,551,571,insulated,2,2,5.476396224112186,-1.0
+2020,Present TMYx,roof,552,572,insulated,2,2,5.045705050597746,-1.0
+2020,Present TMYx,roof,553,573,insulated,2,2,5.381459856750634,-1.0
+2020,Present TMYx,roof,554,574,insulated,2,2,5.146860841753426,-1.0
+2020,Present TMYx,roof,555,575,insulated,2,2,5.400440958873812,-1.0
+2020,Present TMYx,roof,576,596,insulated,3,3,5.364721431407272,-1.0
+2020,Present TMYx,roof,577,597,insulated,3,3,5.197605786417437,-1.0
+2020,Present TMYx,roof,578,598,insulated,3,3,5.360387362083177,-1.0
+2020,Present TMYx,roof,579,599,insulated,3,3,5.169994544476683,-1.0
+2020,Present TMYx,roof,580,600,insulated,3,3,5.270587006339063,-1.0
+2020,Present TMYx,roof,601,621,insulated,4,4,5.439995672344008,-1.0
+2020,Present TMYx,roof,602,622,insulated,4,4,5.208555483340696,-1.0
+2020,Present TMYx,roof,603,623,insulated,4,4,5.351143778466582,-1.0
+2020,Present TMYx,roof,604,624,insulated,4,4,5.260094863468623,-1.0
+2020,Present TMYx,roof,605,625,insulated,4,4,5.206502978721552,-1.0
+2050,SSP2-4.5 / 2050,floor,1,101,changed,0,4,2.2991917436709315,19.0
+2050,SSP2-4.5 / 2050,floor,2,102,changed,0,4,2.4073819015374696,30.0
+2050,SSP2-4.5 / 2050,floor,3,103,changed,0,4,2.3043923320723216,31.0
+2050,SSP2-4.5 / 2050,floor,4,104,changed,0,4,2.5524476670870335,33.0
+2050,SSP2-4.5 / 2050,floor,5,105,changed,0,4,2.360402243770981,33.0
+2050,SSP2-4.5 / 2050,floor,6,106,changed,0,4,2.103628606321408,19.0
+2050,SSP2-4.5 / 2050,floor,7,107,changed,0,4,2.2681292715453054,31.0
+2050,SSP2-4.5 / 2050,floor,8,108,changed,0,4,2.22789215439877,32.0
+2050,SSP2-4.5 / 2050,floor,9,109,changed,0,4,2.339984765205884,34.0
+2050,SSP2-4.5 / 2050,floor,10,110,changed,0,4,2.397263058134442,34.0
+2050,SSP2-4.5 / 2050,floor,11,111,changed,0,4,1.8719104640712487,19.0
+2050,SSP2-4.5 / 2050,floor,12,112,changed,0,4,2.350468468964003,31.0
+2050,SSP2-4.5 / 2050,floor,13,113,changed,0,4,2.2235304428007012,32.0
+2050,SSP2-4.5 / 2050,floor,14,114,changed,0,4,2.182886932502523,34.0
+2050,SSP2-4.5 / 2050,floor,15,115,changed,0,4,2.2989932803990634,34.0
+2050,SSP2-4.5 / 2050,floor,16,116,changed,0,4,1.7427795940158965,19.0
+2050,SSP2-4.5 / 2050,floor,17,117,changed,0,4,2.480417572038853,31.0
+2050,SSP2-4.5 / 2050,floor,18,118,changed,0,4,2.291133287850517,33.0
+2050,SSP2-4.5 / 2050,floor,19,119,changed,0,4,2.3752070897831814,34.0
+2050,SSP2-4.5 / 2050,floor,20,120,changed,0,4,2.368237054234225,34.0
+2050,SSP2-4.5 / 2050,floor,21,121,changed,0,4,1.7188402400557976,19.0
+2050,SSP2-4.5 / 2050,floor,22,122,changed,0,4,2.4417551428589803,31.0
+2050,SSP2-4.5 / 2050,floor,23,123,changed,0,4,2.4863964671017413,33.0
+2050,SSP2-4.5 / 2050,floor,24,124,changed,0,4,2.429114982856099,34.0
+2050,SSP2-4.5 / 2050,floor,25,125,changed,0,4,2.2516529965636174,34.0
+2050,SSP2-4.5 / 2050,floor,126,226,changed,0,4,2.375763860318454,22.0
+2050,SSP2-4.5 / 2050,floor,127,227,changed,0,4,2.601869503963446,37.0
+2050,SSP2-4.5 / 2050,floor,128,228,changed,0,4,2.561419755699795,40.0
+2050,SSP2-4.5 / 2050,floor,129,229,changed,0,4,2.622997042640428,40.0
+2050,SSP2-4.5 / 2050,floor,130,230,changed,0,4,2.54535854870997,40.0
+2050,SSP2-4.5 / 2050,floor,131,231,changed,0,4,2.156782498885562,26.0
+2050,SSP2-4.5 / 2050,floor,132,232,changed,0,4,2.486728773139294,37.0
+2050,SSP2-4.5 / 2050,floor,133,233,changed,0,4,2.348311510500004,37.0
+2050,SSP2-4.5 / 2050,floor,134,234,changed,0,4,2.467191077682516,41.0
+2050,SSP2-4.5 / 2050,floor,135,235,changed,0,4,2.4100010876130575,41.0
+2050,SSP2-4.5 / 2050,floor,136,236,changed,0,4,2.3230399206969743,26.0
+2050,SSP2-4.5 / 2050,floor,137,237,changed,0,4,2.502558915045512,37.0
+2050,SSP2-4.5 / 2050,floor,138,238,changed,0,4,2.463766660849421,37.0
+2050,SSP2-4.5 / 2050,floor,139,239,changed,0,4,2.522888508871924,41.0
+2050,SSP2-4.5 / 2050,floor,140,240,changed,0,4,2.4996199941192963,41.0
+2050,SSP2-4.5 / 2050,floor,141,241,changed,0,4,2.0575326198131627,26.0
+2050,SSP2-4.5 / 2050,floor,142,242,changed,0,4,2.271038090699385,37.0
+2050,SSP2-4.5 / 2050,floor,143,243,changed,0,4,2.2387747310956563,38.0
+2050,SSP2-4.5 / 2050,floor,144,244,changed,0,4,2.5033552727026933,41.0
+2050,SSP2-4.5 / 2050,floor,145,245,changed,0,4,2.408229140751237,41.0
+2050,SSP2-4.5 / 2050,floor,146,246,changed,0,4,2.104973510254773,26.0
+2050,SSP2-4.5 / 2050,floor,147,247,changed,0,4,2.4431397944584994,37.0
+2050,SSP2-4.5 / 2050,floor,148,248,changed,0,4,2.3240206105768273,38.0
+2050,SSP2-4.5 / 2050,floor,149,249,changed,0,4,2.3996920632228615,41.0
+2050,SSP2-4.5 / 2050,floor,150,250,changed,0,4,2.412028555452082,41.0
+2050,SSP2-4.5 / 2050,floor,251,351,changed,0,4,2.4860388698891356,23.0
+2050,SSP2-4.5 / 2050,floor,252,352,changed,0,4,2.471552994770871,39.0
+2050,SSP2-4.5 / 2050,floor,253,353,changed,0,4,2.6578207467732042,41.0
+2050,SSP2-4.5 / 2050,floor,254,354,changed,0,4,2.5627032322260064,43.0
+2050,SSP2-4.5 / 2050,floor,255,355,changed,0,4,2.5502953852953745,42.0
+2050,SSP2-4.5 / 2050,floor,256,356,changed,0,4,1.9821448757825095,26.0
+2050,SSP2-4.5 / 2050,floor,257,357,changed,0,4,2.4226605101383143,37.0
+2050,SSP2-4.5 / 2050,floor,258,358,changed,0,4,2.4835834256863354,40.0
+2050,SSP2-4.5 / 2050,floor,259,359,changed,0,4,2.4456162210674552,43.0
+2050,SSP2-4.5 / 2050,floor,260,360,changed,0,4,2.3625643398359344,43.0
+2050,SSP2-4.5 / 2050,floor,261,361,changed,0,4,2.098401026943165,26.0
+2050,SSP2-4.5 / 2050,floor,262,362,changed,0,4,2.37915961562355,37.0
+2050,SSP2-4.5 / 2050,floor,263,363,changed,0,4,2.5308582676204914,40.0
+2050,SSP2-4.5 / 2050,floor,264,364,changed,0,4,2.308945051327127,43.0
+2050,SSP2-4.5 / 2050,floor,265,365,changed,0,4,2.3862667085109326,43.0
+2050,SSP2-4.5 / 2050,floor,266,366,changed,0,4,1.992290046151794,26.0
+2050,SSP2-4.5 / 2050,floor,267,367,changed,0,4,2.374106578650375,37.0
+2050,SSP2-4.5 / 2050,floor,268,368,changed,0,4,2.3888707964689235,40.0
+2050,SSP2-4.5 / 2050,floor,269,369,changed,0,4,2.3780389765555707,43.0
+2050,SSP2-4.5 / 2050,floor,270,370,changed,0,4,2.468344843556494,43.0
+2050,SSP2-4.5 / 2050,floor,271,371,changed,0,4,1.9794794476599513,26.0
+2050,SSP2-4.5 / 2050,floor,272,372,changed,0,4,2.463609753817675,37.0
+2050,SSP2-4.5 / 2050,floor,273,373,changed,0,4,2.4335276021088887,40.0
+2050,SSP2-4.5 / 2050,floor,274,374,changed,0,4,2.3547249955022274,43.0
+2050,SSP2-4.5 / 2050,floor,275,375,changed,0,4,2.390549300602631,43.0
+2050,SSP2-4.5 / 2050,floor,376,476,changed,0,4,2.372902580783233,25.0
+2050,SSP2-4.5 / 2050,floor,377,477,changed,0,4,2.5608718510671657,43.0
+2050,SSP2-4.5 / 2050,floor,378,478,changed,0,4,2.594613475636944,43.0
+2050,SSP2-4.5 / 2050,floor,379,479,changed,0,4,2.8350528628492953,43.0
+2050,SSP2-4.5 / 2050,floor,380,480,changed,0,4,2.80081786441097,43.0
+2050,SSP2-4.5 / 2050,floor,381,481,changed,0,4,2.2402144716806838,28.0
+2050,SSP2-4.5 / 2050,floor,382,482,changed,0,4,2.584014618313228,43.0
+2050,SSP2-4.5 / 2050,floor,383,483,changed,0,4,2.375862770627622,45.0
+2050,SSP2-4.5 / 2050,floor,384,484,changed,0,4,2.436076582456595,46.0
+2050,SSP2-4.5 / 2050,floor,385,485,changed,0,4,2.391800434647454,46.0
+2050,SSP2-4.5 / 2050,floor,386,486,changed,0,4,2.197791667845216,28.0
+2050,SSP2-4.5 / 2050,floor,387,487,changed,0,4,2.595843683885022,44.0
+2050,SSP2-4.5 / 2050,floor,388,488,changed,0,4,2.4684885598637685,45.0
+2050,SSP2-4.5 / 2050,floor,389,489,changed,0,4,2.274791723775097,46.0
+2050,SSP2-4.5 / 2050,floor,390,490,changed,0,4,2.3501185907576208,46.0
+2050,SSP2-4.5 / 2050,floor,391,491,changed,0,4,1.938071943205756,28.0
+2050,SSP2-4.5 / 2050,floor,392,492,changed,0,4,2.371473449395838,43.0
+2050,SSP2-4.5 / 2050,floor,393,493,changed,0,4,2.280943096435797,45.0
+2050,SSP2-4.5 / 2050,floor,394,494,changed,0,4,2.332067362513069,46.0
+2050,SSP2-4.5 / 2050,floor,395,495,changed,0,4,2.3450610334482356,46.0
+2050,SSP2-4.5 / 2050,floor,396,496,changed,0,4,2.203409657532319,28.0
+2050,SSP2-4.5 / 2050,floor,397,497,changed,0,4,2.4492673646365457,43.0
+2050,SSP2-4.5 / 2050,floor,398,498,changed,0,4,2.3925158757115117,45.0
+2050,SSP2-4.5 / 2050,floor,399,499,changed,0,4,2.341007037394153,46.0
+2050,SSP2-4.5 / 2050,floor,400,500,changed,0,4,2.371918996653548,46.0
+2050,SSP2-4.5 / 2050,floor,501,601,changed,0,4,2.3914889968295228,26.0
+2050,SSP2-4.5 / 2050,floor,502,602,changed,0,4,2.63324907745087,43.0
+2050,SSP2-4.5 / 2050,floor,503,603,changed,0,4,2.4523087527907386,44.0
+2050,SSP2-4.5 / 2050,floor,504,604,changed,0,4,2.7701717894543876,44.0
+2050,SSP2-4.5 / 2050,floor,505,605,changed,0,4,2.664069757705711,44.0
+2050,SSP2-4.5 / 2050,floor,506,606,changed,0,4,2.1655671518663517,29.0
+2050,SSP2-4.5 / 2050,floor,507,607,changed,0,4,2.409416017042295,44.0
+2050,SSP2-4.5 / 2050,floor,508,608,changed,0,4,2.2344406052302848,45.0
+2050,SSP2-4.5 / 2050,floor,509,609,changed,0,4,2.2937488847923593,46.0
+2050,SSP2-4.5 / 2050,floor,510,610,changed,0,4,2.339364925851534,46.0
+2050,SSP2-4.5 / 2050,floor,511,611,changed,0,4,2.26099475755284,29.0
+2050,SSP2-4.5 / 2050,floor,512,612,changed,0,4,2.4544516318918443,45.0
+2050,SSP2-4.5 / 2050,floor,513,613,changed,0,4,2.191192387595631,45.0
+2050,SSP2-4.5 / 2050,floor,514,614,changed,0,4,2.195888606359011,46.0
+2050,SSP2-4.5 / 2050,floor,515,615,changed,0,4,2.3241737556080757,46.0
+2050,SSP2-4.5 / 2050,floor,516,616,changed,0,4,2.0678288452807045,29.0
+2050,SSP2-4.5 / 2050,floor,517,617,changed,0,4,2.444400489227757,45.0
+2050,SSP2-4.5 / 2050,floor,518,618,changed,0,4,2.3687075335938967,45.0
+2050,SSP2-4.5 / 2050,floor,519,619,changed,0,4,2.4159202480565813,46.0
+2050,SSP2-4.5 / 2050,floor,520,620,changed,0,4,2.5177134987096252,46.0
+2050,SSP2-4.5 / 2050,floor,521,621,changed,0,4,2.285759428022356,29.0
+2050,SSP2-4.5 / 2050,floor,522,622,changed,0,4,2.414597086790881,45.0
+2050,SSP2-4.5 / 2050,floor,523,623,changed,0,4,2.432388399209625,45.0
+2050,SSP2-4.5 / 2050,floor,524,624,changed,0,4,2.4720564507671643,46.0
+2050,SSP2-4.5 / 2050,floor,525,625,changed,0,4,2.506954217236119,46.0
+2050,SSP2-4.5 / 2050,windows,1,376,existing,0,0,4.545461578595457,0.0
+2050,SSP2-4.5 / 2050,windows,2,377,existing,0,0,4.651241429904715,-2.0
+2050,SSP2-4.5 / 2050,windows,3,378,existing,0,0,4.658208057263888,-2.0
+2050,SSP2-4.5 / 2050,windows,4,379,existing,0,0,4.518944713038703,-1.0
+2050,SSP2-4.5 / 2050,windows,5,380,existing,0,0,4.48159446433354,-1.0
+2050,SSP2-4.5 / 2050,windows,6,381,existing,0,0,4.509703298851971,-2.0
+2050,SSP2-4.5 / 2050,windows,7,382,existing,0,0,4.557631330311889,-2.0
+2050,SSP2-4.5 / 2050,windows,8,383,existing,0,0,4.6064254575384815,-3.0
+2050,SSP2-4.5 / 2050,windows,9,384,existing,0,0,4.630592174725042,-3.0
+2050,SSP2-4.5 / 2050,windows,10,385,existing,0,0,4.714106486329577,-3.0
+2050,SSP2-4.5 / 2050,windows,11,386,existing,0,0,4.493317467287387,-2.0
+2050,SSP2-4.5 / 2050,windows,12,387,existing,0,0,4.615305503202354,-2.0
+2050,SSP2-4.5 / 2050,windows,13,388,existing,0,0,4.637989684314277,-3.0
+2050,SSP2-4.5 / 2050,windows,14,389,existing,0,0,4.660155712554797,-3.0
+2050,SSP2-4.5 / 2050,windows,15,390,existing,0,0,4.729508094687512,-3.0
+2050,SSP2-4.5 / 2050,windows,16,391,existing,0,0,4.477213349458236,-2.0
+2050,SSP2-4.5 / 2050,windows,17,392,existing,0,0,4.775673472295821,-2.0
+2050,SSP2-4.5 / 2050,windows,18,393,existing,0,0,4.614717349085602,-2.0
+2050,SSP2-4.5 / 2050,windows,19,394,existing,0,0,4.69449454845879,-3.0
+2050,SSP2-4.5 / 2050,windows,20,395,existing,0,0,4.620403361759031,-3.0
+2050,SSP2-4.5 / 2050,windows,21,396,existing,0,0,4.315746114983931,-2.0
+2050,SSP2-4.5 / 2050,windows,22,397,existing,0,0,4.663296239538507,-2.0
+2050,SSP2-4.5 / 2050,windows,23,398,existing,0,0,4.674301255629771,-2.0
+2050,SSP2-4.5 / 2050,windows,24,399,existing,0,0,4.657618457652207,-3.0
+2050,SSP2-4.5 / 2050,windows,25,400,existing,0,0,4.603734550632806,-3.0
+2050,SSP2-4.5 / 2050,windows,26,401,insulated,1,1,4.724776621934211,5.0
+2050,SSP2-4.5 / 2050,windows,27,402,insulated,1,1,4.814189735722579,8.0
+2050,SSP2-4.5 / 2050,windows,28,403,insulated,1,1,4.870474530254693,9.0
+2050,SSP2-4.5 / 2050,windows,29,404,insulated,1,1,4.826381094918659,10.0
+2050,SSP2-4.5 / 2050,windows,30,405,insulated,1,1,4.959799164864972,10.0
+2050,SSP2-4.5 / 2050,windows,31,406,insulated,1,1,4.7597808545475075,5.0
+2050,SSP2-4.5 / 2050,windows,32,407,insulated,1,1,4.763662561520526,9.0
+2050,SSP2-4.5 / 2050,windows,33,408,insulated,1,1,4.801129432663643,7.0
+2050,SSP2-4.5 / 2050,windows,34,409,insulated,1,1,4.86440549933727,9.0
+2050,SSP2-4.5 / 2050,windows,35,410,insulated,1,1,4.591784163330329,10.0
+2050,SSP2-4.5 / 2050,windows,36,411,insulated,1,1,4.809088359429236,5.0
+2050,SSP2-4.5 / 2050,windows,37,412,insulated,1,1,4.887173485491502,8.0
+2050,SSP2-4.5 / 2050,windows,38,413,insulated,1,1,4.76405809874427,7.0
+2050,SSP2-4.5 / 2050,windows,39,414,insulated,1,1,4.719185766567909,10.0
+2050,SSP2-4.5 / 2050,windows,40,415,insulated,1,1,4.6293200768842695,9.0
+2050,SSP2-4.5 / 2050,windows,41,416,insulated,1,1,4.55015892266141,5.0
+2050,SSP2-4.5 / 2050,windows,42,417,insulated,1,1,4.6532653432598945,8.0
+2050,SSP2-4.5 / 2050,windows,43,418,insulated,1,1,4.5831733902330445,7.0
+2050,SSP2-4.5 / 2050,windows,44,419,insulated,1,1,4.639800119655272,9.0
+2050,SSP2-4.5 / 2050,windows,45,420,insulated,1,1,4.630884349425809,9.0
+2050,SSP2-4.5 / 2050,windows,46,421,insulated,1,1,4.816474055740436,5.0
+2050,SSP2-4.5 / 2050,windows,47,422,insulated,1,1,4.692441612696596,8.0
+2050,SSP2-4.5 / 2050,windows,48,423,insulated,1,1,4.6751785449555765,7.0
+2050,SSP2-4.5 / 2050,windows,49,424,insulated,1,1,4.68445879412976,9.0
+2050,SSP2-4.5 / 2050,windows,50,425,insulated,1,1,4.637796757550175,9.0
+2050,SSP2-4.5 / 2050,windows,51,426,insulated,2,2,4.626542615996417,6.0
+2050,SSP2-4.5 / 2050,windows,52,427,insulated,2,2,4.857698304080529,10.0
+2050,SSP2-4.5 / 2050,windows,53,428,insulated,2,2,4.963356582438262,11.0
+2050,SSP2-4.5 / 2050,windows,54,429,insulated,2,2,4.9447601735545454,9.0
+2050,SSP2-4.5 / 2050,windows,55,430,insulated,2,2,4.851790963977688,9.0
+2050,SSP2-4.5 / 2050,windows,56,431,insulated,2,2,4.5879114994576895,5.0
+2050,SSP2-4.5 / 2050,windows,57,432,insulated,2,2,5.017715143566736,7.0
+2050,SSP2-4.5 / 2050,windows,58,433,insulated,2,2,4.7239817230352354,11.0
+2050,SSP2-4.5 / 2050,windows,59,434,insulated,2,2,4.646178162008663,10.0
+2050,SSP2-4.5 / 2050,windows,60,435,insulated,2,2,4.706006077214425,10.0
+2050,SSP2-4.5 / 2050,windows,61,436,insulated,2,2,4.648224881637418,5.0
+2050,SSP2-4.5 / 2050,windows,62,437,insulated,2,2,4.8190662659966605,8.0
+2050,SSP2-4.5 / 2050,windows,63,438,insulated,2,2,4.730764960239048,11.0
+2050,SSP2-4.5 / 2050,windows,64,439,insulated,2,2,4.641873544710322,10.0
+2050,SSP2-4.5 / 2050,windows,65,440,insulated,2,2,4.753016164322174,10.0
+2050,SSP2-4.5 / 2050,windows,66,441,insulated,2,2,4.783178618391968,6.0
+2050,SSP2-4.5 / 2050,windows,67,442,insulated,2,2,4.784485928997713,8.0
+2050,SSP2-4.5 / 2050,windows,68,443,insulated,2,2,4.493567119031166,11.0
+2050,SSP2-4.5 / 2050,windows,69,444,insulated,2,2,4.540806316944581,10.0
+2050,SSP2-4.5 / 2050,windows,70,445,insulated,2,2,4.676701163849646,10.0
+2050,SSP2-4.5 / 2050,windows,71,446,insulated,2,2,4.7527266881340005,6.0
+2050,SSP2-4.5 / 2050,windows,72,447,insulated,2,2,4.796419405118021,8.0
+2050,SSP2-4.5 / 2050,windows,73,448,insulated,2,2,4.555634947129514,11.0
+2050,SSP2-4.5 / 2050,windows,74,449,insulated,2,2,4.650788942239215,10.0
+2050,SSP2-4.5 / 2050,windows,75,450,insulated,2,2,4.703322099281051,10.0
+2050,SSP2-4.5 / 2050,windows,76,451,insulated,3,3,4.804367405678345,6.0
+2050,SSP2-4.5 / 2050,windows,77,452,insulated,3,3,4.819082922817493,11.0
+2050,SSP2-4.5 / 2050,windows,78,453,insulated,3,3,4.8736091840415625,10.0
+2050,SSP2-4.5 / 2050,windows,79,454,insulated,3,3,4.730660634105554,9.0
+2050,SSP2-4.5 / 2050,windows,80,455,insulated,3,3,5.015760796068751,9.0
+2050,SSP2-4.5 / 2050,windows,81,456,insulated,3,3,4.961458702100376,7.0
+2050,SSP2-4.5 / 2050,windows,82,457,insulated,3,3,4.865957208608297,10.0
+2050,SSP2-4.5 / 2050,windows,83,458,insulated,3,3,4.718551340889526,11.0
+2050,SSP2-4.5 / 2050,windows,84,459,insulated,3,3,4.5698707360208815,10.0
+2050,SSP2-4.5 / 2050,windows,85,460,insulated,3,3,4.61675860412433,10.0
+2050,SSP2-4.5 / 2050,windows,86,461,insulated,3,3,4.829688594810332,7.0
+2050,SSP2-4.5 / 2050,windows,87,462,insulated,3,3,4.845647321320449,10.0
+2050,SSP2-4.5 / 2050,windows,88,463,insulated,3,3,4.683091444302832,11.0
+2050,SSP2-4.5 / 2050,windows,89,464,insulated,3,3,4.6523654538595896,10.0
+2050,SSP2-4.5 / 2050,windows,90,465,insulated,3,3,4.617977699036183,9.0
+2050,SSP2-4.5 / 2050,windows,91,466,insulated,3,3,4.749553424618572,7.0
+2050,SSP2-4.5 / 2050,windows,92,467,insulated,3,3,4.741206568092416,11.0
+2050,SSP2-4.5 / 2050,windows,93,468,insulated,3,3,4.602056820407421,10.0
+2050,SSP2-4.5 / 2050,windows,94,469,insulated,3,3,4.606403824963689,10.0
+2050,SSP2-4.5 / 2050,windows,95,470,insulated,3,3,4.683740569746897,9.0
+2050,SSP2-4.5 / 2050,windows,96,471,insulated,3,3,4.922263264066618,7.0
+2050,SSP2-4.5 / 2050,windows,97,472,insulated,3,3,4.719412901871824,11.0
+2050,SSP2-4.5 / 2050,windows,98,473,insulated,3,3,4.566927851611794,10.0
+2050,SSP2-4.5 / 2050,windows,99,474,insulated,3,3,4.880782605681855,10.0
+2050,SSP2-4.5 / 2050,windows,100,475,insulated,3,3,4.7738782146738465,9.0
+2050,SSP2-4.5 / 2050,windows,101,476,insulated,4,4,4.619172415707759,6.0
+2050,SSP2-4.5 / 2050,windows,102,477,insulated,4,4,4.804731379434411,11.0
+2050,SSP2-4.5 / 2050,windows,103,478,insulated,4,4,4.94842920082851,10.0
+2050,SSP2-4.5 / 2050,windows,104,479,insulated,4,4,4.801549908800965,9.0
+2050,SSP2-4.5 / 2050,windows,105,480,insulated,4,4,4.922010084973529,9.0
+2050,SSP2-4.5 / 2050,windows,106,481,insulated,4,4,4.646289164211247,7.0
+2050,SSP2-4.5 / 2050,windows,107,482,insulated,4,4,4.873516677079811,10.0
+2050,SSP2-4.5 / 2050,windows,108,483,insulated,4,4,4.754396073767333,10.0
+2050,SSP2-4.5 / 2050,windows,109,484,insulated,4,4,4.726683991975753,9.0
+2050,SSP2-4.5 / 2050,windows,110,485,insulated,4,4,4.708643862842589,9.0
+2050,SSP2-4.5 / 2050,windows,111,486,insulated,4,4,4.819198671061354,7.0
+2050,SSP2-4.5 / 2050,windows,112,487,insulated,4,4,4.860680718123373,11.0
+2050,SSP2-4.5 / 2050,windows,113,488,insulated,4,4,4.882947801377345,10.0
+2050,SSP2-4.5 / 2050,windows,114,489,insulated,4,4,4.752060503827371,9.0
+2050,SSP2-4.5 / 2050,windows,115,490,insulated,4,4,4.7806334050460695,9.0
+2050,SSP2-4.5 / 2050,windows,116,491,insulated,4,4,4.672505698648095,7.0
+2050,SSP2-4.5 / 2050,windows,117,492,insulated,4,4,4.666729349652806,10.0
+2050,SSP2-4.5 / 2050,windows,118,493,insulated,4,4,4.604527157670882,10.0
+2050,SSP2-4.5 / 2050,windows,119,494,insulated,4,4,4.6513548211886775,9.0
+2050,SSP2-4.5 / 2050,windows,120,495,insulated,4,4,4.597227340973042,9.0
+2050,SSP2-4.5 / 2050,windows,121,496,insulated,4,4,4.800315532460452,7.0
+2050,SSP2-4.5 / 2050,windows,122,497,insulated,4,4,4.6708084613160725,10.0
+2050,SSP2-4.5 / 2050,windows,123,498,insulated,4,4,4.580420664239542,10.0
+2050,SSP2-4.5 / 2050,windows,124,499,insulated,4,4,4.569510512190261,9.0
+2050,SSP2-4.5 / 2050,windows,125,500,insulated,4,4,4.724000550722737,9.0
+2050,SSP2-4.5 / 2050,facade,1,5,existing,0,0,5.357548420718707,-3.0
+2050,SSP2-4.5 / 2050,facade,6,10,existing,0,0,5.28806759520721,-3.0
+2050,SSP2-4.5 / 2050,facade,11,15,existing,0,0,5.244117857761061,-3.0
+2050,SSP2-4.5 / 2050,facade,16,20,existing,0,0,5.143568024119517,-3.0
+2050,SSP2-4.5 / 2050,facade,21,25,existing,0,0,5.070156342390245,-3.0
+2050,SSP2-4.5 / 2050,facade,26,30,insulated,1,1,5.417254897035271,11.0
+2050,SSP2-4.5 / 2050,facade,31,35,insulated,1,1,5.784610757023049,10.0
+2050,SSP2-4.5 / 2050,facade,36,40,insulated,1,1,5.77054154147234,11.0
+2050,SSP2-4.5 / 2050,facade,41,45,insulated,1,1,5.633921769062194,11.0
+2050,SSP2-4.5 / 2050,facade,46,50,insulated,1,1,5.756908605698378,11.0
+2050,SSP2-4.5 / 2050,facade,51,55,insulated,2,2,5.355747981633016,12.0
+2050,SSP2-4.5 / 2050,facade,56,60,insulated,2,2,5.581284113390144,11.0
+2050,SSP2-4.5 / 2050,facade,61,65,insulated,2,2,5.59104242449521,11.0
+2050,SSP2-4.5 / 2050,facade,66,70,insulated,2,2,5.748828889717473,11.0
+2050,SSP2-4.5 / 2050,facade,71,75,insulated,2,2,5.670519149615906,11.0
+2050,SSP2-4.5 / 2050,facade,76,80,insulated,3,3,5.344231869673148,12.0
+2050,SSP2-4.5 / 2050,facade,81,85,insulated,3,3,5.866647811499078,11.0
+2050,SSP2-4.5 / 2050,facade,86,90,insulated,3,3,5.683175666034554,12.0
+2050,SSP2-4.5 / 2050,facade,91,95,insulated,3,3,5.691223936948614,12.0
+2050,SSP2-4.5 / 2050,facade,96,100,insulated,3,3,5.6019961211120055,12.0
+2050,SSP2-4.5 / 2050,facade,101,105,insulated,4,4,5.418758920818757,11.0
+2050,SSP2-4.5 / 2050,facade,106,110,insulated,4,4,5.581702047020244,12.0
+2050,SSP2-4.5 / 2050,facade,111,115,insulated,4,4,5.671200674088876,12.0
+2050,SSP2-4.5 / 2050,facade,116,120,insulated,4,4,5.7690254843378455,12.0
+2050,SSP2-4.5 / 2050,facade,121,125,insulated,4,4,5.602969098898065,12.0
+2050,SSP2-4.5 / 2050,facade,126,130,existing,0,0,5.2704763487093125,-4.0
+2050,SSP2-4.5 / 2050,facade,131,135,existing,0,0,5.3897754917510206,-3.0
+2050,SSP2-4.5 / 2050,facade,136,140,existing,0,0,5.412428174076265,-3.0
+2050,SSP2-4.5 / 2050,facade,141,145,existing,0,0,5.074342257463751,-3.0
+2050,SSP2-4.5 / 2050,facade,146,150,existing,0,0,5.230189390991065,-3.0
+2050,SSP2-4.5 / 2050,facade,151,155,insulated,1,1,5.654392835114312,12.0
+2050,SSP2-4.5 / 2050,facade,156,160,insulated,1,1,5.544064126474819,14.0
+2050,SSP2-4.5 / 2050,facade,161,165,insulated,1,1,5.780417682929476,14.0
+2050,SSP2-4.5 / 2050,facade,166,170,insulated,1,1,5.58631213371938,14.0
+2050,SSP2-4.5 / 2050,facade,171,175,insulated,1,1,5.544387922437693,14.0
+2050,SSP2-4.5 / 2050,facade,176,180,insulated,2,2,5.661496089732854,13.0
+2050,SSP2-4.5 / 2050,facade,181,185,insulated,2,2,5.616423779889603,13.0
+2050,SSP2-4.5 / 2050,facade,186,190,insulated,2,2,5.581740713182976,13.0
+2050,SSP2-4.5 / 2050,facade,191,195,insulated,2,2,5.624943253316523,13.0
+2050,SSP2-4.5 / 2050,facade,196,200,insulated,2,2,5.49637529057509,13.0
+2050,SSP2-4.5 / 2050,facade,201,205,insulated,3,3,5.6646573912933995,14.0
+2050,SSP2-4.5 / 2050,facade,206,210,insulated,3,3,5.595428594627094,13.0
+2050,SSP2-4.5 / 2050,facade,211,215,insulated,3,3,5.635221001189576,12.0
+2050,SSP2-4.5 / 2050,facade,216,220,insulated,3,3,5.505679479277843,12.0
+2050,SSP2-4.5 / 2050,facade,221,225,insulated,3,3,5.503558701584915,12.0
+2050,SSP2-4.5 / 2050,facade,226,230,insulated,4,4,5.440071037100829,14.0
+2050,SSP2-4.5 / 2050,facade,231,235,insulated,4,4,5.642994080478516,12.0
+2050,SSP2-4.5 / 2050,facade,236,240,insulated,4,4,5.589008247498587,12.0
+2050,SSP2-4.5 / 2050,facade,241,245,insulated,4,4,5.4250387784018255,12.0
+2050,SSP2-4.5 / 2050,facade,246,250,insulated,4,4,5.537244436188374,12.0
+2050,SSP2-4.5 / 2050,facade,251,255,existing,0,0,5.350650499427772,-3.0
+2050,SSP2-4.5 / 2050,facade,256,260,existing,0,0,5.359938886189578,-3.0
+2050,SSP2-4.5 / 2050,facade,261,265,existing,0,0,5.457004709461906,-3.0
+2050,SSP2-4.5 / 2050,facade,266,270,existing,0,0,5.098476869055261,-3.0
+2050,SSP2-4.5 / 2050,facade,271,275,existing,0,0,5.153726538362928,-3.0
+2050,SSP2-4.5 / 2050,facade,276,280,insulated,1,1,5.484293882004067,13.0
+2050,SSP2-4.5 / 2050,facade,281,285,insulated,1,1,5.582051517307477,11.0
+2050,SSP2-4.5 / 2050,facade,286,290,insulated,1,1,5.6534914633963815,12.0
+2050,SSP2-4.5 / 2050,facade,291,295,insulated,1,1,5.557755764514326,12.0
+2050,SSP2-4.5 / 2050,facade,296,300,insulated,1,1,5.635030538601887,12.0
+2050,SSP2-4.5 / 2050,facade,301,305,insulated,2,2,5.637278106086768,14.0
+2050,SSP2-4.5 / 2050,facade,306,310,insulated,2,2,5.644831115094108,12.0
+2050,SSP2-4.5 / 2050,facade,311,315,insulated,2,2,5.595712447986726,12.0
+2050,SSP2-4.5 / 2050,facade,316,320,insulated,2,2,5.581703567303544,12.0
+2050,SSP2-4.5 / 2050,facade,321,325,insulated,2,2,5.459518811269142,12.0
+2050,SSP2-4.5 / 2050,facade,326,330,insulated,3,3,5.562152889131404,16.0
+2050,SSP2-4.5 / 2050,facade,331,335,insulated,3,3,5.538264975768783,13.0
+2050,SSP2-4.5 / 2050,facade,336,340,insulated,3,3,5.657850427343433,14.0
+2050,SSP2-4.5 / 2050,facade,341,345,insulated,3,3,5.467596037334147,14.0
+2050,SSP2-4.5 / 2050,facade,346,350,insulated,3,3,5.635589996158126,14.0
+2050,SSP2-4.5 / 2050,facade,351,355,insulated,4,4,5.414907014834011,16.0
+2050,SSP2-4.5 / 2050,facade,356,360,insulated,4,4,5.740358350243003,14.0
+2050,SSP2-4.5 / 2050,facade,361,365,insulated,4,4,5.744870391029673,14.0
+2050,SSP2-4.5 / 2050,facade,366,370,insulated,4,4,5.574531666459961,14.0
+2050,SSP2-4.5 / 2050,facade,371,375,insulated,4,4,5.564796391305608,14.0
+2050,SSP2-4.5 / 2050,facade,376,380,existing,0,0,5.29368130645679,-4.0
+2050,SSP2-4.5 / 2050,facade,381,385,existing,0,0,5.492470782684816,-4.0
+2050,SSP2-4.5 / 2050,facade,386,390,existing,0,0,5.480308485161187,-4.0
+2050,SSP2-4.5 / 2050,facade,391,395,existing,0,0,5.286758036420313,-4.0
+2050,SSP2-4.5 / 2050,facade,396,400,existing,0,0,5.3581447780391205,-4.0
+2050,SSP2-4.5 / 2050,facade,401,405,insulated,1,1,5.652277439966031,16.0
+2050,SSP2-4.5 / 2050,facade,406,410,insulated,1,1,5.616614065805871,15.0
+2050,SSP2-4.5 / 2050,facade,411,415,insulated,1,1,5.590773258927374,15.0
+2050,SSP2-4.5 / 2050,facade,416,420,insulated,1,1,5.714647195826593,15.0
+2050,SSP2-4.5 / 2050,facade,421,425,insulated,1,1,5.578231307508117,15.0
+2050,SSP2-4.5 / 2050,facade,426,430,insulated,2,2,5.580996329614287,15.0
+2050,SSP2-4.5 / 2050,facade,431,435,insulated,2,2,5.69937869114688,16.0
+2050,SSP2-4.5 / 2050,facade,436,440,insulated,2,2,5.6958337071799665,16.0
+2050,SSP2-4.5 / 2050,facade,441,445,insulated,2,2,5.642351435175151,15.0
+2050,SSP2-4.5 / 2050,facade,446,450,insulated,2,2,5.6211145607629565,15.0
+2050,SSP2-4.5 / 2050,facade,451,455,insulated,3,3,5.555625260063554,15.0
+2050,SSP2-4.5 / 2050,facade,456,460,insulated,3,3,5.521947713523032,14.0
+2050,SSP2-4.5 / 2050,facade,461,465,insulated,3,3,5.471464770260406,14.0
+2050,SSP2-4.5 / 2050,facade,466,470,insulated,3,3,5.625411082076939,14.0
+2050,SSP2-4.5 / 2050,facade,471,475,insulated,3,3,5.453611071719234,14.0
+2050,SSP2-4.5 / 2050,facade,476,480,insulated,4,4,5.721596590084527,14.0
+2050,SSP2-4.5 / 2050,facade,481,485,insulated,4,4,5.644056745651586,14.0
+2050,SSP2-4.5 / 2050,facade,486,490,insulated,4,4,5.632635408073591,14.0
+2050,SSP2-4.5 / 2050,facade,491,495,insulated,4,4,5.693747126662792,14.0
+2050,SSP2-4.5 / 2050,facade,496,500,insulated,4,4,5.52665411716035,14.0
+2050,SSP2-4.5 / 2050,facade,501,505,existing,0,0,5.272627164919143,-4.0
+2050,SSP2-4.5 / 2050,facade,506,510,existing,0,0,5.34185404389771,-3.0
+2050,SSP2-4.5 / 2050,facade,511,515,existing,0,0,5.415732288971732,-3.0
+2050,SSP2-4.5 / 2050,facade,516,520,existing,0,0,5.032514305046218,-3.0
+2050,SSP2-4.5 / 2050,facade,521,525,existing,0,0,5.264722078228054,-3.0
+2050,SSP2-4.5 / 2050,facade,526,530,insulated,1,1,5.708397987370233,16.0
+2050,SSP2-4.5 / 2050,facade,531,535,insulated,1,1,5.471995071424924,15.0
+2050,SSP2-4.5 / 2050,facade,536,540,insulated,1,1,5.452922721830468,15.0
+2050,SSP2-4.5 / 2050,facade,541,545,insulated,1,1,5.497925199336644,15.0
+2050,SSP2-4.5 / 2050,facade,546,550,insulated,1,1,5.476422251350684,15.0
+2050,SSP2-4.5 / 2050,facade,551,555,insulated,2,2,5.609790567997958,15.0
+2050,SSP2-4.5 / 2050,facade,556,560,insulated,2,2,5.47375077319073,14.0
+2050,SSP2-4.5 / 2050,facade,561,565,insulated,2,2,5.451853839588729,14.0
+2050,SSP2-4.5 / 2050,facade,566,570,insulated,2,2,5.5357481923039416,14.0
+2050,SSP2-4.5 / 2050,facade,571,575,insulated,2,2,5.37632390512281,14.0
+2050,SSP2-4.5 / 2050,facade,576,580,insulated,3,3,5.687301385345954,14.0
+2050,SSP2-4.5 / 2050,facade,581,585,insulated,3,3,5.464253012547784,14.0
+2050,SSP2-4.5 / 2050,facade,586,590,insulated,3,3,5.378034242728749,14.0
+2050,SSP2-4.5 / 2050,facade,591,595,insulated,3,3,5.5233351238972155,14.0
+2050,SSP2-4.5 / 2050,facade,596,600,insulated,3,3,5.351572311693294,14.0
+2050,SSP2-4.5 / 2050,facade,601,605,insulated,4,4,5.5452079257953315,14.0
+2050,SSP2-4.5 / 2050,facade,606,610,insulated,4,4,5.515651817882892,14.0
+2050,SSP2-4.5 / 2050,facade,611,615,insulated,4,4,5.478911287026968,14.0
+2050,SSP2-4.5 / 2050,facade,616,620,insulated,4,4,5.482398958475139,14.0
+2050,SSP2-4.5 / 2050,facade,621,625,insulated,4,4,5.4859168674418175,14.0
+2050,SSP2-4.5 / 2050,roof,1,21,existing,0,0,4.6612543700316245,-1.0
+2050,SSP2-4.5 / 2050,roof,2,22,existing,0,0,4.412384382791004,-1.0
+2050,SSP2-4.5 / 2050,roof,3,23,existing,0,0,4.411049140225327,-2.0
+2050,SSP2-4.5 / 2050,roof,4,24,existing,0,0,4.451447515110814,-1.0
+2050,SSP2-4.5 / 2050,roof,5,25,existing,0,0,4.373862291703162,-1.0
+2050,SSP2-4.5 / 2050,roof,26,46,insulated,1,1,4.152628603386063,0.0
+2050,SSP2-4.5 / 2050,roof,27,47,insulated,1,1,4.377285333252015,-2.0
+2050,SSP2-4.5 / 2050,roof,28,48,insulated,1,1,4.460709400868229,0.0
+2050,SSP2-4.5 / 2050,roof,29,49,insulated,1,1,4.271106574367028,0.0
+2050,SSP2-4.5 / 2050,roof,30,50,insulated,1,1,4.49228231204917,0.0
+2050,SSP2-4.5 / 2050,roof,51,71,insulated,2,2,4.104804132790392,0.0
+2050,SSP2-4.5 / 2050,roof,52,72,insulated,2,2,4.427953277394305,0.0
+2050,SSP2-4.5 / 2050,roof,53,73,insulated,2,2,4.597278580309755,0.0
+2050,SSP2-4.5 / 2050,roof,54,74,insulated,2,2,4.57508266065555,-1.0
+2050,SSP2-4.5 / 2050,roof,55,75,insulated,2,2,4.419575300773282,-1.0
+2050,SSP2-4.5 / 2050,roof,76,96,insulated,3,3,4.131805644113324,0.0
+2050,SSP2-4.5 / 2050,roof,77,97,insulated,3,3,4.5409171067455425,0.0
+2050,SSP2-4.5 / 2050,roof,78,98,insulated,3,3,4.544891780457732,0.0
+2050,SSP2-4.5 / 2050,roof,79,99,insulated,3,3,4.1701863385112965,-1.0
+2050,SSP2-4.5 / 2050,roof,80,100,insulated,3,3,4.389569895552182,0.0
+2050,SSP2-4.5 / 2050,roof,101,121,insulated,4,4,4.080902866416491,-1.0
+2050,SSP2-4.5 / 2050,roof,102,122,insulated,4,4,4.446757624112514,0.0
+2050,SSP2-4.5 / 2050,roof,103,123,insulated,4,4,4.593053275254746,0.0
+2050,SSP2-4.5 / 2050,roof,104,124,insulated,4,4,4.32811483087988,0.0
+2050,SSP2-4.5 / 2050,roof,105,125,insulated,4,4,4.2651130444957985,0.0
+2050,SSP2-4.5 / 2050,roof,126,146,existing,0,0,4.552893364903198,-4.0
+2050,SSP2-4.5 / 2050,roof,127,147,existing,0,0,4.471299709870728,-1.0
+2050,SSP2-4.5 / 2050,roof,128,148,existing,0,0,4.4618039756576735,-1.0
+2050,SSP2-4.5 / 2050,roof,129,149,existing,0,0,4.424624606414312,-3.0
+2050,SSP2-4.5 / 2050,roof,130,150,existing,0,0,4.5126064071849505,-3.0
+2050,SSP2-4.5 / 2050,roof,151,171,insulated,1,1,4.33617472644406,-3.0
+2050,SSP2-4.5 / 2050,roof,152,172,insulated,1,1,4.292918253074468,0.0
+2050,SSP2-4.5 / 2050,roof,153,173,insulated,1,1,4.323620909923481,-1.0
+2050,SSP2-4.5 / 2050,roof,154,174,insulated,1,1,4.313546251880281,0.0
+2050,SSP2-4.5 / 2050,roof,155,175,insulated,1,1,4.2261698137674415,-1.0
+2050,SSP2-4.5 / 2050,roof,176,196,insulated,2,2,4.35391789773184,-1.0
+2050,SSP2-4.5 / 2050,roof,177,197,insulated,2,2,4.495984575171223,0.0
+2050,SSP2-4.5 / 2050,roof,178,198,insulated,2,2,4.1873327119357135,-1.0
+2050,SSP2-4.5 / 2050,roof,179,199,insulated,2,2,4.124752398658353,-1.0
+2050,SSP2-4.5 / 2050,roof,180,200,insulated,2,2,4.188797098574076,-1.0
+2050,SSP2-4.5 / 2050,roof,201,221,insulated,3,3,4.3126064333543255,0.0
+2050,SSP2-4.5 / 2050,roof,202,222,insulated,3,3,4.247841443772165,-1.0
+2050,SSP2-4.5 / 2050,roof,203,223,insulated,3,3,4.201825527268454,-3.0
+2050,SSP2-4.5 / 2050,roof,204,224,insulated,3,3,4.132796769238281,-2.0
+2050,SSP2-4.5 / 2050,roof,205,225,insulated,3,3,4.1515077436458405,-2.0
+2050,SSP2-4.5 / 2050,roof,226,246,insulated,4,4,4.282103014839517,0.0
+2050,SSP2-4.5 / 2050,roof,227,247,insulated,4,4,4.312570000365781,-1.0
+2050,SSP2-4.5 / 2050,roof,228,248,insulated,4,4,4.224404830534706,-3.0
+2050,SSP2-4.5 / 2050,roof,229,249,insulated,4,4,4.201319626996746,-2.0
+2050,SSP2-4.5 / 2050,roof,230,250,insulated,4,4,4.379276413927062,-2.0
+2050,SSP2-4.5 / 2050,roof,251,271,existing,0,0,4.644968030126929,-3.0
+2050,SSP2-4.5 / 2050,roof,252,272,existing,0,0,4.30044501155972,0.0
+2050,SSP2-4.5 / 2050,roof,253,273,existing,0,0,4.482853772545848,-1.0
+2050,SSP2-4.5 / 2050,roof,254,274,existing,0,0,4.489922716499301,-2.0
+2050,SSP2-4.5 / 2050,roof,255,275,existing,0,0,4.448044069062085,-3.0
+2050,SSP2-4.5 / 2050,roof,276,296,insulated,1,1,4.12957451128106,0.0
+2050,SSP2-4.5 / 2050,roof,277,297,insulated,1,1,4.257077738362982,0.0
+2050,SSP2-4.5 / 2050,roof,278,298,insulated,1,1,4.294325942931412,-2.0
+2050,SSP2-4.5 / 2050,roof,279,299,insulated,1,1,4.154680116797849,-1.0
+2050,SSP2-4.5 / 2050,roof,280,300,insulated,1,1,4.28031116787888,-1.0
+2050,SSP2-4.5 / 2050,roof,301,321,insulated,2,2,4.26739191393639,0.0
+2050,SSP2-4.5 / 2050,roof,302,322,insulated,2,2,4.231580356448658,-1.0
+2050,SSP2-4.5 / 2050,roof,303,323,insulated,2,2,4.2099464956552435,-2.0
+2050,SSP2-4.5 / 2050,roof,304,324,insulated,2,2,4.2791694933559,-2.0
+2050,SSP2-4.5 / 2050,roof,305,325,insulated,2,2,4.089632619118763,-2.0
+2050,SSP2-4.5 / 2050,roof,326,346,insulated,3,3,4.132562592347256,0.0
+2050,SSP2-4.5 / 2050,roof,327,347,insulated,3,3,4.289376524538119,-2.0
+2050,SSP2-4.5 / 2050,roof,328,348,insulated,3,3,4.36555061981225,-2.0
+2050,SSP2-4.5 / 2050,roof,329,349,insulated,3,3,4.300772482716743,-2.0
+2050,SSP2-4.5 / 2050,roof,330,350,insulated,3,3,4.205999699373978,-2.0
+2050,SSP2-4.5 / 2050,roof,351,371,insulated,4,4,4.138408607897745,0.0
+2050,SSP2-4.5 / 2050,roof,352,372,insulated,4,4,4.292501770606524,-2.0
+2050,SSP2-4.5 / 2050,roof,353,373,insulated,4,4,4.258560627881533,-2.0
+2050,SSP2-4.5 / 2050,roof,354,374,insulated,4,4,4.281944479775522,-2.0
+2050,SSP2-4.5 / 2050,roof,355,375,insulated,4,4,4.288297984369342,-2.0
+2050,SSP2-4.5 / 2050,roof,376,396,existing,0,0,4.431538906420098,-3.0
+2050,SSP2-4.5 / 2050,roof,377,397,existing,0,0,4.424439192424796,-1.0
+2050,SSP2-4.5 / 2050,roof,378,398,existing,0,0,4.42714233859121,-2.0
+2050,SSP2-4.5 / 2050,roof,379,399,existing,0,0,4.590121259724318,-3.0
+2050,SSP2-4.5 / 2050,roof,380,400,existing,0,0,4.496002378002428,-3.0
+2050,SSP2-4.5 / 2050,roof,401,421,insulated,1,1,4.2443260371922875,0.0
+2050,SSP2-4.5 / 2050,roof,402,422,insulated,1,1,4.2555372102260325,-2.0
+2050,SSP2-4.5 / 2050,roof,403,423,insulated,1,1,4.265413415569112,-2.0
+2050,SSP2-4.5 / 2050,roof,404,424,insulated,1,1,4.1291842735781294,-1.0
+2050,SSP2-4.5 / 2050,roof,405,425,insulated,1,1,4.1702799047343735,-1.0
+2050,SSP2-4.5 / 2050,roof,426,446,insulated,2,2,4.230988204927975,0.0
+2050,SSP2-4.5 / 2050,roof,427,447,insulated,2,2,4.366674378431798,-2.0
+2050,SSP2-4.5 / 2050,roof,428,448,insulated,2,2,4.189556945001007,0.0
+2050,SSP2-4.5 / 2050,roof,429,449,insulated,2,2,4.2811114293402195,0.0
+2050,SSP2-4.5 / 2050,roof,430,450,insulated,2,2,4.271106436076645,0.0
+2050,SSP2-4.5 / 2050,roof,451,471,insulated,3,3,4.249701502501598,1.0
+2050,SSP2-4.5 / 2050,roof,452,472,insulated,3,3,4.441247085799873,0.0
+2050,SSP2-4.5 / 2050,roof,453,473,insulated,3,3,4.238210448027964,0.0
+2050,SSP2-4.5 / 2050,roof,454,474,insulated,3,3,4.320308310087597,0.0
+2050,SSP2-4.5 / 2050,roof,455,475,insulated,3,3,4.147687314157277,0.0
+2050,SSP2-4.5 / 2050,roof,476,496,insulated,4,4,4.262045983169184,0.0
+2050,SSP2-4.5 / 2050,roof,477,497,insulated,4,4,4.312834705994176,-1.0
+2050,SSP2-4.5 / 2050,roof,478,498,insulated,4,4,4.225044738665778,0.0
+2050,SSP2-4.5 / 2050,roof,479,499,insulated,4,4,4.096075434269176,0.0
+2050,SSP2-4.5 / 2050,roof,480,500,insulated,4,4,4.067103510245007,0.0
+2050,SSP2-4.5 / 2050,roof,501,521,existing,0,0,4.363124384736054,-3.0
+2050,SSP2-4.5 / 2050,roof,502,522,existing,0,0,4.472427785170957,-2.0
+2050,SSP2-4.5 / 2050,roof,503,523,existing,0,0,4.30207537032671,-1.0
+2050,SSP2-4.5 / 2050,roof,504,524,existing,0,0,4.410299343729152,-2.0
+2050,SSP2-4.5 / 2050,roof,505,525,existing,0,0,4.355219298044965,-2.0
+2050,SSP2-4.5 / 2050,roof,526,546,insulated,1,1,4.2719015532430085,0.0
+2050,SSP2-4.5 / 2050,roof,527,547,insulated,1,1,4.329162888839562,-2.0
+2050,SSP2-4.5 / 2050,roof,528,548,insulated,1,1,4.351368148552265,-1.0
+2050,SSP2-4.5 / 2050,roof,529,549,insulated,1,1,4.0782871755708126,-1.0
+2050,SSP2-4.5 / 2050,roof,530,550,insulated,1,1,4.039925817223459,-1.0
+2050,SSP2-4.5 / 2050,roof,551,571,insulated,2,2,4.373541613197645,1.0
+2050,SSP2-4.5 / 2050,roof,552,572,insulated,2,2,4.172391705049231,-1.0
+2050,SSP2-4.5 / 2050,roof,553,573,insulated,2,2,4.156003454790078,0.0
+2050,SSP2-4.5 / 2050,roof,554,574,insulated,2,2,4.096978121220193,0.0
+2050,SSP2-4.5 / 2050,roof,555,575,insulated,2,2,4.1400749503224965,0.0
+2050,SSP2-4.5 / 2050,roof,576,596,insulated,3,3,4.492332441815758,0.0
+2050,SSP2-4.5 / 2050,roof,577,597,insulated,3,3,4.293267932389487,0.0
+2050,SSP2-4.5 / 2050,roof,578,598,insulated,3,3,4.118935907987849,0.0
+2050,SSP2-4.5 / 2050,roof,579,599,insulated,3,3,4.144297988580513,0.0
+2050,SSP2-4.5 / 2050,roof,580,600,insulated,3,3,4.156603368163099,0.0
+2050,SSP2-4.5 / 2050,roof,601,621,insulated,4,4,4.257394815928887,0.0
+2050,SSP2-4.5 / 2050,roof,602,622,insulated,4,4,4.253775794510968,0.0
+2050,SSP2-4.5 / 2050,roof,603,623,insulated,4,4,4.282155016745596,0.0
+2050,SSP2-4.5 / 2050,roof,604,624,insulated,4,4,4.112184005041929,0.0
+2050,SSP2-4.5 / 2050,roof,605,625,insulated,4,4,4.198103757575373,0.0
+2100,SSP5-8.5 / 2080,floor,1,101,changed,0,4,2.101116678611387,31.0
+2100,SSP5-8.5 / 2080,floor,2,102,changed,0,4,2.385504676931845,42.0
+2100,SSP5-8.5 / 2080,floor,3,103,changed,0,4,2.216428613555671,42.0
+2100,SSP5-8.5 / 2080,floor,4,104,changed,0,4,2.3893112739045215,43.0
+2100,SSP5-8.5 / 2080,floor,5,105,changed,0,4,2.1058585093876694,43.0
+2100,SSP5-8.5 / 2080,floor,6,106,changed,0,4,2.093373010478821,31.0
+2100,SSP5-8.5 / 2080,floor,7,107,changed,0,4,2.3360160719462044,41.0
+2100,SSP5-8.5 / 2080,floor,8,108,changed,0,4,2.309459223819056,43.0
+2100,SSP5-8.5 / 2080,floor,9,109,changed,0,4,2.331558613811815,44.0
+2100,SSP5-8.5 / 2080,floor,10,110,changed,0,4,2.0592755651695427,44.0
+2100,SSP5-8.5 / 2080,floor,11,111,changed,0,4,2.111838962385317,31.0
+2100,SSP5-8.5 / 2080,floor,12,112,changed,0,4,2.261738697237865,41.0
+2100,SSP5-8.5 / 2080,floor,13,113,changed,0,4,2.360196896148926,43.0
+2100,SSP5-8.5 / 2080,floor,14,114,changed,0,4,2.164670566380929,45.0
+2100,SSP5-8.5 / 2080,floor,15,115,changed,0,4,2.217112644641368,45.0
+2100,SSP5-8.5 / 2080,floor,16,116,changed,0,4,2.156699380218683,31.0
+2100,SSP5-8.5 / 2080,floor,17,117,changed,0,4,2.1971422028439367,41.0
+2100,SSP5-8.5 / 2080,floor,18,118,changed,0,4,2.2224900925541107,43.0
+2100,SSP5-8.5 / 2080,floor,19,119,changed,0,4,2.2874581765475988,45.0
+2100,SSP5-8.5 / 2080,floor,20,120,changed,0,4,2.2180594857674443,46.0
+2100,SSP5-8.5 / 2080,floor,21,121,changed,0,4,1.9732007278662032,31.0
+2100,SSP5-8.5 / 2080,floor,22,122,changed,0,4,2.1765907196011725,41.0
+2100,SSP5-8.5 / 2080,floor,23,123,changed,0,4,2.2067182331428192,43.0
+2100,SSP5-8.5 / 2080,floor,24,124,changed,0,4,2.351977280327901,45.0
+2100,SSP5-8.5 / 2080,floor,25,125,changed,0,4,2.2853560612790016,46.0
+2100,SSP5-8.5 / 2080,floor,126,226,changed,0,4,2.1636800676510184,37.0
+2100,SSP5-8.5 / 2080,floor,127,227,changed,0,4,2.355166712680994,51.0
+2100,SSP5-8.5 / 2080,floor,128,228,changed,0,4,2.436278031305486,51.0
+2100,SSP5-8.5 / 2080,floor,129,229,changed,0,4,2.3421148105290612,53.0
+2100,SSP5-8.5 / 2080,floor,130,230,changed,0,4,2.4171972173176606,53.0
+2100,SSP5-8.5 / 2080,floor,131,231,changed,0,4,2.334750803537329,39.0
+2100,SSP5-8.5 / 2080,floor,132,232,changed,0,4,2.1756396260315576,49.0
+2100,SSP5-8.5 / 2080,floor,133,233,changed,0,4,2.3404899928193164,52.0
+2100,SSP5-8.5 / 2080,floor,134,234,changed,0,4,2.31235303967048,53.0
+2100,SSP5-8.5 / 2080,floor,135,235,changed,0,4,2.3232365655991316,53.0
+2100,SSP5-8.5 / 2080,floor,136,236,changed,0,4,2.107645073885795,39.0
+2100,SSP5-8.5 / 2080,floor,137,237,changed,0,4,2.2359275207488842,51.0
+2100,SSP5-8.5 / 2080,floor,138,238,changed,0,4,2.3924478194155636,52.0
+2100,SSP5-8.5 / 2080,floor,139,239,changed,0,4,2.405723266442827,53.0
+2100,SSP5-8.5 / 2080,floor,140,240,changed,0,4,2.2567780444720533,53.0
+2100,SSP5-8.5 / 2080,floor,141,241,changed,0,4,2.1368781616031924,39.0
+2100,SSP5-8.5 / 2080,floor,142,242,changed,0,4,2.257698382550979,51.0
+2100,SSP5-8.5 / 2080,floor,143,243,changed,0,4,2.2495733220820586,52.0
+2100,SSP5-8.5 / 2080,floor,144,244,changed,0,4,2.3335913951800507,54.0
+2100,SSP5-8.5 / 2080,floor,145,245,changed,0,4,2.170907684323268,54.0
+2100,SSP5-8.5 / 2080,floor,146,246,changed,0,4,2.1122346155282834,39.0
+2100,SSP5-8.5 / 2080,floor,147,247,changed,0,4,2.285339436903511,51.0
+2100,SSP5-8.5 / 2080,floor,148,248,changed,0,4,2.2700917716635214,52.0
+2100,SSP5-8.5 / 2080,floor,149,249,changed,0,4,2.3278304052648817,54.0
+2100,SSP5-8.5 / 2080,floor,150,250,changed,0,4,2.354805314203613,54.0
+2100,SSP5-8.5 / 2080,floor,251,351,changed,0,4,2.191782163382971,38.0
+2100,SSP5-8.5 / 2080,floor,252,352,changed,0,4,2.3712321391493525,52.0
+2100,SSP5-8.5 / 2080,floor,253,353,changed,0,4,2.2967696052478317,53.0
+2100,SSP5-8.5 / 2080,floor,254,354,changed,0,4,2.2374487416475244,54.0
+2100,SSP5-8.5 / 2080,floor,255,355,changed,0,4,2.443955049776376,55.0
+2100,SSP5-8.5 / 2080,floor,256,356,changed,0,4,2.2956789103574096,39.0
+2100,SSP5-8.5 / 2080,floor,257,357,changed,0,4,2.3992779330331615,52.0
+2100,SSP5-8.5 / 2080,floor,258,358,changed,0,4,2.3263953762590894,53.0
+2100,SSP5-8.5 / 2080,floor,259,359,changed,0,4,2.2773036064541152,54.0
+2100,SSP5-8.5 / 2080,floor,260,360,changed,0,4,2.2621709513729638,56.0
+2100,SSP5-8.5 / 2080,floor,261,361,changed,0,4,2.1933944411308826,39.0
+2100,SSP5-8.5 / 2080,floor,262,362,changed,0,4,2.325895664517178,52.0
+2100,SSP5-8.5 / 2080,floor,263,363,changed,0,4,2.3683165470076712,54.0
+2100,SSP5-8.5 / 2080,floor,264,364,changed,0,4,2.2947187791369217,56.0
+2100,SSP5-8.5 / 2080,floor,265,365,changed,0,4,2.3869658850065765,58.0
+2100,SSP5-8.5 / 2080,floor,266,366,changed,0,4,1.955029923466812,39.0
+2100,SSP5-8.5 / 2080,floor,267,367,changed,0,4,2.1861387827425016,52.0
+2100,SSP5-8.5 / 2080,floor,268,368,changed,0,4,2.2175931459390146,53.0
+2100,SSP5-8.5 / 2080,floor,269,369,changed,0,4,2.370355001938771,59.0
+2100,SSP5-8.5 / 2080,floor,270,370,changed,0,4,2.1566497302932,59.0
+2100,SSP5-8.5 / 2080,floor,271,371,changed,0,4,2.281309165379815,39.0
+2100,SSP5-8.5 / 2080,floor,272,372,changed,0,4,2.3323654329682775,52.0
+2100,SSP5-8.5 / 2080,floor,273,373,changed,0,4,2.1877165655974267,53.0
+2100,SSP5-8.5 / 2080,floor,274,374,changed,0,4,2.307141140851936,59.0
+2100,SSP5-8.5 / 2080,floor,275,375,changed,0,4,2.3842441137420494,58.0
+2100,SSP5-8.5 / 2080,floor,376,476,changed,0,4,2.1737819141425554,40.0
+2100,SSP5-8.5 / 2080,floor,377,477,changed,0,4,2.256010783884239,55.0
+2100,SSP5-8.5 / 2080,floor,378,478,changed,0,4,2.4266849862412823,59.0
+2100,SSP5-8.5 / 2080,floor,379,479,changed,0,4,2.215826014663959,61.0
+2100,SSP5-8.5 / 2080,floor,380,480,changed,0,4,2.403959841876814,61.0
+2100,SSP5-8.5 / 2080,floor,381,481,changed,0,4,2.1488638479379087,39.0
+2100,SSP5-8.5 / 2080,floor,382,482,changed,0,4,2.290337858024131,57.0
+2100,SSP5-8.5 / 2080,floor,383,483,changed,0,4,2.3164781155104492,61.0
+2100,SSP5-8.5 / 2080,floor,384,484,changed,0,4,2.300734483707794,63.0
+2100,SSP5-8.5 / 2080,floor,385,485,changed,0,4,2.2437043389660474,63.0
+2100,SSP5-8.5 / 2080,floor,386,486,changed,0,4,2.193167450830879,40.0
+2100,SSP5-8.5 / 2080,floor,387,487,changed,0,4,2.2442098546396263,57.0
+2100,SSP5-8.5 / 2080,floor,388,488,changed,0,4,2.314065865819213,62.0
+2100,SSP5-8.5 / 2080,floor,389,489,changed,0,4,2.2652549362236787,63.0
+2100,SSP5-8.5 / 2080,floor,390,490,changed,0,4,2.2866524788802334,63.0
+2100,SSP5-8.5 / 2080,floor,391,491,changed,0,4,2.290207931412157,40.0
+2100,SSP5-8.5 / 2080,floor,392,492,changed,0,4,2.2966162745297556,57.0
+2100,SSP5-8.5 / 2080,floor,393,493,changed,0,4,2.301527744522044,63.0
+2100,SSP5-8.5 / 2080,floor,394,494,changed,0,4,2.3211265141473287,62.0
+2100,SSP5-8.5 / 2080,floor,395,495,changed,0,4,2.2921895779932697,63.0
+2100,SSP5-8.5 / 2080,floor,396,496,changed,0,4,2.3494232146231155,40.0
+2100,SSP5-8.5 / 2080,floor,397,497,changed,0,4,2.3761659019966306,57.0
+2100,SSP5-8.5 / 2080,floor,398,498,changed,0,4,2.3781988395946687,63.0
+2100,SSP5-8.5 / 2080,floor,399,499,changed,0,4,2.330932592034891,62.0
+2100,SSP5-8.5 / 2080,floor,400,500,changed,0,4,2.2518671031875215,63.0
+2100,SSP5-8.5 / 2080,floor,501,601,changed,0,4,1.9958904584177475,39.0
+2100,SSP5-8.5 / 2080,floor,502,602,changed,0,4,2.2292302283656724,59.0
+2100,SSP5-8.5 / 2080,floor,503,603,changed,0,4,2.242269275701549,59.0
+2100,SSP5-8.5 / 2080,floor,504,604,changed,0,4,2.343738545879866,63.0
+2100,SSP5-8.5 / 2080,floor,505,605,changed,0,4,2.3520737411382253,63.0
+2100,SSP5-8.5 / 2080,floor,506,606,changed,0,4,2.1224875186631067,41.0
+2100,SSP5-8.5 / 2080,floor,507,607,changed,0,4,2.342837098008159,60.0
+2100,SSP5-8.5 / 2080,floor,508,608,changed,0,4,2.246052922415169,62.0
+2100,SSP5-8.5 / 2080,floor,509,609,changed,0,4,2.3756600866150155,63.0
+2100,SSP5-8.5 / 2080,floor,510,610,changed,0,4,2.274238607048913,64.0
+2100,SSP5-8.5 / 2080,floor,511,611,changed,0,4,2.210326888845147,41.0
+2100,SSP5-8.5 / 2080,floor,512,612,changed,0,4,2.2211100299218884,61.0
+2100,SSP5-8.5 / 2080,floor,513,613,changed,0,4,2.3420398558318034,62.0
+2100,SSP5-8.5 / 2080,floor,514,614,changed,0,4,2.2677120050610213,64.0
+2100,SSP5-8.5 / 2080,floor,515,615,changed,0,4,2.2940843501377994,64.0
+2100,SSP5-8.5 / 2080,floor,516,616,changed,0,4,2.0750299435490813,41.0
+2100,SSP5-8.5 / 2080,floor,517,617,changed,0,4,2.364070586707152,62.0
+2100,SSP5-8.5 / 2080,floor,518,618,changed,0,4,2.2130155335531168,62.0
+2100,SSP5-8.5 / 2080,floor,519,619,changed,0,4,2.3400282192495006,64.0
+2100,SSP5-8.5 / 2080,floor,520,620,changed,0,4,2.413246423849806,64.0
+2100,SSP5-8.5 / 2080,floor,521,621,changed,0,4,2.051055387868141,41.0
+2100,SSP5-8.5 / 2080,floor,522,622,changed,0,4,2.2363466609318348,62.0
+2100,SSP5-8.5 / 2080,floor,523,623,changed,0,4,2.2206436352592895,62.0
+2100,SSP5-8.5 / 2080,floor,524,624,changed,0,4,2.349588603040644,64.0
+2100,SSP5-8.5 / 2080,floor,525,625,changed,0,4,2.358545472313663,64.0
+2100,SSP5-8.5 / 2080,windows,1,376,existing,0,0,3.4380163797756538,-2.0
+2100,SSP5-8.5 / 2080,windows,2,377,existing,0,0,3.663153643433171,0.0
+2100,SSP5-8.5 / 2080,windows,3,378,existing,0,0,3.489899847248086,-1.0
+2100,SSP5-8.5 / 2080,windows,4,379,existing,0,0,3.530608694986297,-3.0
+2100,SSP5-8.5 / 2080,windows,5,380,existing,0,0,3.338697765328483,-3.0
+2100,SSP5-8.5 / 2080,windows,6,381,existing,0,0,3.480097443373955,-3.0
+2100,SSP5-8.5 / 2080,windows,7,382,existing,0,0,3.549991696010819,-2.0
+2100,SSP5-8.5 / 2080,windows,8,383,existing,0,0,3.566258921875189,-1.0
+2100,SSP5-8.5 / 2080,windows,9,384,existing,0,0,3.4847391597562005,-1.0
+2100,SSP5-8.5 / 2080,windows,10,385,existing,0,0,3.5432546221852945,-1.0
+2100,SSP5-8.5 / 2080,windows,11,386,existing,0,0,3.352994818444822,-3.0
+2100,SSP5-8.5 / 2080,windows,12,387,existing,0,0,3.550767776060848,-2.0
+2100,SSP5-8.5 / 2080,windows,13,388,existing,0,0,3.6295626074231304,-1.0
+2100,SSP5-8.5 / 2080,windows,14,389,existing,0,0,3.5153885072632445,-1.0
+2100,SSP5-8.5 / 2080,windows,15,390,existing,0,0,3.5153048554868906,-1.0
+2100,SSP5-8.5 / 2080,windows,16,391,existing,0,0,3.4084023796331664,-3.0
+2100,SSP5-8.5 / 2080,windows,17,392,existing,0,0,3.5285819997790746,-2.0
+2100,SSP5-8.5 / 2080,windows,18,393,existing,0,0,3.460299767506081,-2.0
+2100,SSP5-8.5 / 2080,windows,19,394,existing,0,0,3.5111709155849056,-1.0
+2100,SSP5-8.5 / 2080,windows,20,395,existing,0,0,3.454359227440303,-1.0
+2100,SSP5-8.5 / 2080,windows,21,396,existing,0,0,3.287018814024634,-3.0
+2100,SSP5-8.5 / 2080,windows,22,397,existing,0,0,3.406504469541513,-2.0
+2100,SSP5-8.5 / 2080,windows,23,398,existing,0,0,3.4038270465965876,-2.0
+2100,SSP5-8.5 / 2080,windows,24,399,existing,0,0,3.5390940662376167,-1.0
+2100,SSP5-8.5 / 2080,windows,25,400,existing,0,0,3.5762813414507626,-1.0
+2100,SSP5-8.5 / 2080,windows,26,401,insulated,1,1,3.598455671238458,6.0
+2100,SSP5-8.5 / 2080,windows,27,402,insulated,1,1,3.5073303614525155,11.0
+2100,SSP5-8.5 / 2080,windows,28,403,insulated,1,1,3.4825468136049604,13.0
+2100,SSP5-8.5 / 2080,windows,29,404,insulated,1,1,3.6220049398657377,16.0
+2100,SSP5-8.5 / 2080,windows,30,405,insulated,1,1,3.5947820376738377,16.0
+2100,SSP5-8.5 / 2080,windows,31,406,insulated,1,1,3.687538407176385,8.0
+2100,SSP5-8.5 / 2080,windows,32,407,insulated,1,1,3.5764324768985354,12.0
+2100,SSP5-8.5 / 2080,windows,33,408,insulated,1,1,3.7446764474853858,10.0
+2100,SSP5-8.5 / 2080,windows,34,409,insulated,1,1,3.562657474505638,11.0
+2100,SSP5-8.5 / 2080,windows,35,410,insulated,1,1,3.4976248621518344,11.0
+2100,SSP5-8.5 / 2080,windows,36,411,insulated,1,1,3.4455151594012943,7.0
+2100,SSP5-8.5 / 2080,windows,37,412,insulated,1,1,3.594138699466864,12.0
+2100,SSP5-8.5 / 2080,windows,38,413,insulated,1,1,3.6504084484150336,11.0
+2100,SSP5-8.5 / 2080,windows,39,414,insulated,1,1,3.571783108292667,11.0
+2100,SSP5-8.5 / 2080,windows,40,415,insulated,1,1,3.507162381351792,12.0
+2100,SSP5-8.5 / 2080,windows,41,416,insulated,1,1,3.6414134813058556,7.0
+2100,SSP5-8.5 / 2080,windows,42,417,insulated,1,1,3.685620195621043,12.0
+2100,SSP5-8.5 / 2080,windows,43,418,insulated,1,1,3.665936181459596,11.0
+2100,SSP5-8.5 / 2080,windows,44,419,insulated,1,1,3.5889069019703435,11.0
+2100,SSP5-8.5 / 2080,windows,45,420,insulated,1,1,3.4360007434870763,12.0
+2100,SSP5-8.5 / 2080,windows,46,421,insulated,1,1,3.5892099436414853,7.0
+2100,SSP5-8.5 / 2080,windows,47,422,insulated,1,1,3.494091723356293,12.0
+2100,SSP5-8.5 / 2080,windows,48,423,insulated,1,1,3.724200414651172,10.0
+2100,SSP5-8.5 / 2080,windows,49,424,insulated,1,1,3.515422648643792,11.0
+2100,SSP5-8.5 / 2080,windows,50,425,insulated,1,1,3.624728346183545,12.0
+2100,SSP5-8.5 / 2080,windows,51,426,insulated,2,2,3.511105758962124,5.0
+2100,SSP5-8.5 / 2080,windows,52,427,insulated,2,2,3.487329631293628,12.0
+2100,SSP5-8.5 / 2080,windows,53,428,insulated,2,2,3.547725682047906,15.0
+2100,SSP5-8.5 / 2080,windows,54,429,insulated,2,2,3.6433664988294616,16.0
+2100,SSP5-8.5 / 2080,windows,55,430,insulated,2,2,3.558338073147091,16.0
+2100,SSP5-8.5 / 2080,windows,56,431,insulated,2,2,3.7086709450833037,8.0
+2100,SSP5-8.5 / 2080,windows,57,432,insulated,2,2,3.665811761113856,12.0
+2100,SSP5-8.5 / 2080,windows,58,433,insulated,2,2,3.5415590346380164,14.0
+2100,SSP5-8.5 / 2080,windows,59,434,insulated,2,2,3.499962626534776,19.0
+2100,SSP5-8.5 / 2080,windows,60,435,insulated,2,2,3.5985709935364625,19.0
+2100,SSP5-8.5 / 2080,windows,61,436,insulated,2,2,3.4331349055531657,7.0
+2100,SSP5-8.5 / 2080,windows,62,437,insulated,2,2,3.5081885414153913,12.0
+2100,SSP5-8.5 / 2080,windows,63,438,insulated,2,2,3.437139619510301,15.0
+2100,SSP5-8.5 / 2080,windows,64,439,insulated,2,2,3.488735997785323,19.0
+2100,SSP5-8.5 / 2080,windows,65,440,insulated,2,2,3.537370358459073,19.0
+2100,SSP5-8.5 / 2080,windows,66,441,insulated,2,2,3.6143999038842836,7.0
+2100,SSP5-8.5 / 2080,windows,67,442,insulated,2,2,3.5162398169073814,11.0
+2100,SSP5-8.5 / 2080,windows,68,443,insulated,2,2,3.5884360050143673,16.0
+2100,SSP5-8.5 / 2080,windows,69,444,insulated,2,2,3.5725498461314515,18.0
+2100,SSP5-8.5 / 2080,windows,70,445,insulated,2,2,3.694208654230966,17.0
+2100,SSP5-8.5 / 2080,windows,71,446,insulated,2,2,3.5796561071550688,7.0
+2100,SSP5-8.5 / 2080,windows,72,447,insulated,2,2,3.5723759253261207,11.0
+2100,SSP5-8.5 / 2080,windows,73,448,insulated,2,2,3.603372245990421,16.0
+2100,SSP5-8.5 / 2080,windows,74,449,insulated,2,2,3.5744788836726578,18.0
+2100,SSP5-8.5 / 2080,windows,75,450,insulated,2,2,3.488787849807524,17.0
+2100,SSP5-8.5 / 2080,windows,76,451,insulated,3,3,3.535780615203464,7.0
+2100,SSP5-8.5 / 2080,windows,77,452,insulated,3,3,3.5707490961370283,13.0
+2100,SSP5-8.5 / 2080,windows,78,453,insulated,3,3,3.5930988868572076,17.0
+2100,SSP5-8.5 / 2080,windows,79,454,insulated,3,3,3.421157283795907,15.0
+2100,SSP5-8.5 / 2080,windows,80,455,insulated,3,3,3.610731477288059,15.0
+2100,SSP5-8.5 / 2080,windows,81,456,insulated,3,3,3.356944432576455,5.0
+2100,SSP5-8.5 / 2080,windows,82,457,insulated,3,3,3.6096076479713535,14.0
+2100,SSP5-8.5 / 2080,windows,83,458,insulated,3,3,3.487368971967122,17.0
+2100,SSP5-8.5 / 2080,windows,84,459,insulated,3,3,3.6448320526768736,18.0
+2100,SSP5-8.5 / 2080,windows,85,460,insulated,3,3,3.5444491693710027,18.0
+2100,SSP5-8.5 / 2080,windows,86,461,insulated,3,3,3.3698155354738013,6.0
+2100,SSP5-8.5 / 2080,windows,87,462,insulated,3,3,3.5171967075554704,14.0
+2100,SSP5-8.5 / 2080,windows,88,463,insulated,3,3,3.629343599896643,17.0
+2100,SSP5-8.5 / 2080,windows,89,464,insulated,3,3,3.5323882519541687,17.0
+2100,SSP5-8.5 / 2080,windows,90,465,insulated,3,3,3.500535469950888,17.0
+2100,SSP5-8.5 / 2080,windows,91,466,insulated,3,3,3.50819790395966,6.0
+2100,SSP5-8.5 / 2080,windows,92,467,insulated,3,3,3.5695723040214364,14.0
+2100,SSP5-8.5 / 2080,windows,93,468,insulated,3,3,3.4759214691517943,17.0
+2100,SSP5-8.5 / 2080,windows,94,469,insulated,3,3,3.555604053465716,17.0
+2100,SSP5-8.5 / 2080,windows,95,470,insulated,3,3,3.5391827436404455,17.0
+2100,SSP5-8.5 / 2080,windows,96,471,insulated,3,3,3.5911999980075375,6.0
+2100,SSP5-8.5 / 2080,windows,97,472,insulated,3,3,3.521305024198039,14.0
+2100,SSP5-8.5 / 2080,windows,98,473,insulated,3,3,3.658234190702146,17.0
+2100,SSP5-8.5 / 2080,windows,99,474,insulated,3,3,3.5136108071005,17.0
+2100,SSP5-8.5 / 2080,windows,100,475,insulated,3,3,3.69647136380998,17.0
+2100,SSP5-8.5 / 2080,windows,101,476,insulated,4,4,3.5106816153068223,7.0
+2100,SSP5-8.5 / 2080,windows,102,477,insulated,4,4,3.5336597503855653,13.0
+2100,SSP5-8.5 / 2080,windows,103,478,insulated,4,4,3.7001562199336977,16.0
+2100,SSP5-8.5 / 2080,windows,104,479,insulated,4,4,3.3571234357457342,15.0
+2100,SSP5-8.5 / 2080,windows,105,480,insulated,4,4,3.6367990978176277,15.0
+2100,SSP5-8.5 / 2080,windows,106,481,insulated,4,4,3.5355882808330428,5.0
+2100,SSP5-8.5 / 2080,windows,107,482,insulated,4,4,3.5043134820887456,14.0
+2100,SSP5-8.5 / 2080,windows,108,483,insulated,4,4,3.573277813566582,17.0
+2100,SSP5-8.5 / 2080,windows,109,484,insulated,4,4,3.4539150296521797,18.0
+2100,SSP5-8.5 / 2080,windows,110,485,insulated,4,4,3.727683395981799,18.0
+2100,SSP5-8.5 / 2080,windows,111,486,insulated,4,4,3.4343233068903842,6.0
+2100,SSP5-8.5 / 2080,windows,112,487,insulated,4,4,3.5332389334626093,14.0
+2100,SSP5-8.5 / 2080,windows,113,488,insulated,4,4,3.5834315770934175,18.0
+2100,SSP5-8.5 / 2080,windows,114,489,insulated,4,4,3.6159728771059942,17.0
+2100,SSP5-8.5 / 2080,windows,115,490,insulated,4,4,3.584844689725756,17.0
+2100,SSP5-8.5 / 2080,windows,116,491,insulated,4,4,3.5419109308266403,6.0
+2100,SSP5-8.5 / 2080,windows,117,492,insulated,4,4,3.6280560714648935,14.0
+2100,SSP5-8.5 / 2080,windows,118,493,insulated,4,4,3.5393374194740144,18.0
+2100,SSP5-8.5 / 2080,windows,119,494,insulated,4,4,3.5448392531846356,16.0
+2100,SSP5-8.5 / 2080,windows,120,495,insulated,4,4,3.5284893196661287,16.0
+2100,SSP5-8.5 / 2080,windows,121,496,insulated,4,4,3.6632413007815465,6.0
+2100,SSP5-8.5 / 2080,windows,122,497,insulated,4,4,3.6060796519369713,14.0
+2100,SSP5-8.5 / 2080,windows,123,498,insulated,4,4,3.575307653048437,18.0
+2100,SSP5-8.5 / 2080,windows,124,499,insulated,4,4,3.5180493779446067,16.0
+2100,SSP5-8.5 / 2080,windows,125,500,insulated,4,4,3.5427923833592825,16.0
+2100,SSP5-8.5 / 2080,facade,1,5,existing,0,0,3.8733137822791797,-1.0
+2100,SSP5-8.5 / 2080,facade,6,10,existing,0,0,3.8839674052893702,-5.0
+2100,SSP5-8.5 / 2080,facade,11,15,existing,0,0,3.699924534124131,-5.0
+2100,SSP5-8.5 / 2080,facade,16,20,existing,0,0,3.854782560233465,-5.0
+2100,SSP5-8.5 / 2080,facade,21,25,existing,0,0,3.6570171731829237,-5.0
+2100,SSP5-8.5 / 2080,facade,26,30,insulated,1,1,4.005775196508733,9.0
+2100,SSP5-8.5 / 2080,facade,31,35,insulated,1,1,3.9870481257072665,10.0
+2100,SSP5-8.5 / 2080,facade,36,40,insulated,1,1,3.8198665197046537,9.0
+2100,SSP5-8.5 / 2080,facade,41,45,insulated,1,1,4.066411912561076,9.0
+2100,SSP5-8.5 / 2080,facade,46,50,insulated,1,1,3.8076511784800395,9.0
+2100,SSP5-8.5 / 2080,facade,51,55,insulated,2,2,3.815504143336362,10.0
+2100,SSP5-8.5 / 2080,facade,56,60,insulated,2,2,3.9846992511643204,9.0
+2100,SSP5-8.5 / 2080,facade,61,65,insulated,2,2,3.8243775364490205,8.0
+2100,SSP5-8.5 / 2080,facade,66,70,insulated,2,2,3.8723604113433705,9.0
+2100,SSP5-8.5 / 2080,facade,71,75,insulated,2,2,3.921750074527665,9.0
+2100,SSP5-8.5 / 2080,facade,76,80,insulated,3,3,3.8987308772905322,11.0
+2100,SSP5-8.5 / 2080,facade,81,85,insulated,3,3,3.801249018618634,8.0
+2100,SSP5-8.5 / 2080,facade,86,90,insulated,3,3,3.9018100318899123,9.0
+2100,SSP5-8.5 / 2080,facade,91,95,insulated,3,3,3.9253698781653465,9.0
+2100,SSP5-8.5 / 2080,facade,96,100,insulated,3,3,3.8924856227040703,9.0
+2100,SSP5-8.5 / 2080,facade,101,105,insulated,4,4,3.878055613055462,11.0
+2100,SSP5-8.5 / 2080,facade,106,110,insulated,4,4,3.849869959980092,8.0
+2100,SSP5-8.5 / 2080,facade,111,115,insulated,4,4,3.805198216380182,9.0
+2100,SSP5-8.5 / 2080,facade,116,120,insulated,4,4,3.9161426657822265,10.0
+2100,SSP5-8.5 / 2080,facade,121,125,insulated,4,4,3.969172506595722,10.0
+2100,SSP5-8.5 / 2080,facade,126,130,existing,0,0,3.764729814434631,-1.0
+2100,SSP5-8.5 / 2080,facade,131,135,existing,0,0,3.891360205329235,-3.0
+2100,SSP5-8.5 / 2080,facade,136,140,existing,0,0,3.8102622132974275,-2.0
+2100,SSP5-8.5 / 2080,facade,141,145,existing,0,0,3.8692259391570545,-3.0
+2100,SSP5-8.5 / 2080,facade,146,150,existing,0,0,3.7292139737662815,-3.0
+2100,SSP5-8.5 / 2080,facade,151,155,insulated,1,1,3.985238157732139,12.0
+2100,SSP5-8.5 / 2080,facade,156,160,insulated,1,1,3.902446621271876,10.0
+2100,SSP5-8.5 / 2080,facade,161,165,insulated,1,1,3.9566281491121096,10.0
+2100,SSP5-8.5 / 2080,facade,166,170,insulated,1,1,3.9817716171467836,10.0
+2100,SSP5-8.5 / 2080,facade,171,175,insulated,1,1,3.951275636150422,10.0
+2100,SSP5-8.5 / 2080,facade,176,180,insulated,2,2,4.052652637590636,14.0
+2100,SSP5-8.5 / 2080,facade,181,185,insulated,2,2,3.970689152268518,12.0
+2100,SSP5-8.5 / 2080,facade,186,190,insulated,2,2,3.893144774854946,12.0
+2100,SSP5-8.5 / 2080,facade,191,195,insulated,2,2,3.8879270027698336,11.0
+2100,SSP5-8.5 / 2080,facade,196,200,insulated,2,2,3.9806932619628714,11.0
+2100,SSP5-8.5 / 2080,facade,201,205,insulated,3,3,4.063362906426896,15.0
+2100,SSP5-8.5 / 2080,facade,206,210,insulated,3,3,3.909111822980565,11.0
+2100,SSP5-8.5 / 2080,facade,211,215,insulated,3,3,3.8964576713747032,12.0
+2100,SSP5-8.5 / 2080,facade,216,220,insulated,3,3,3.922333848926918,12.0
+2100,SSP5-8.5 / 2080,facade,221,225,insulated,3,3,3.983772080058113,12.0
+2100,SSP5-8.5 / 2080,facade,226,230,insulated,4,4,4.018246964101273,15.0
+2100,SSP5-8.5 / 2080,facade,231,235,insulated,4,4,3.879845967391038,11.0
+2100,SSP5-8.5 / 2080,facade,236,240,insulated,4,4,3.959395183883686,12.0
+2100,SSP5-8.5 / 2080,facade,241,245,insulated,4,4,3.90325546187713,12.0
+2100,SSP5-8.5 / 2080,facade,246,250,insulated,4,4,3.9717846724416113,12.0
+2100,SSP5-8.5 / 2080,facade,251,255,existing,0,0,3.5522080716123963,0.0
+2100,SSP5-8.5 / 2080,facade,256,260,existing,0,0,3.932395848558347,-2.0
+2100,SSP5-8.5 / 2080,facade,261,265,existing,0,0,3.843740839954707,-3.0
+2100,SSP5-8.5 / 2080,facade,266,270,existing,0,0,3.7349297856144865,-4.0
+2100,SSP5-8.5 / 2080,facade,271,275,existing,0,0,3.8095493327596284,-3.0
+2100,SSP5-8.5 / 2080,facade,276,280,insulated,1,1,3.9407800685839387,12.0
+2100,SSP5-8.5 / 2080,facade,281,285,insulated,1,1,3.9048236567197776,10.0
+2100,SSP5-8.5 / 2080,facade,286,290,insulated,1,1,3.9141489721273537,10.0
+2100,SSP5-8.5 / 2080,facade,291,295,insulated,1,1,3.9280591263399707,10.0
+2100,SSP5-8.5 / 2080,facade,296,300,insulated,1,1,3.894423661673514,10.0
+2100,SSP5-8.5 / 2080,facade,301,305,insulated,2,2,3.8775261348683525,15.0
+2100,SSP5-8.5 / 2080,facade,306,310,insulated,2,2,4.015500890857616,12.0
+2100,SSP5-8.5 / 2080,facade,311,315,insulated,2,2,3.915861009180402,12.0
+2100,SSP5-8.5 / 2080,facade,316,320,insulated,2,2,4.075217708595504,12.0
+2100,SSP5-8.5 / 2080,facade,321,325,insulated,2,2,3.8542136567231537,11.0
+2100,SSP5-8.5 / 2080,facade,326,330,insulated,3,3,3.918122613785446,16.0
+2100,SSP5-8.5 / 2080,facade,331,335,insulated,3,3,3.925280422964459,14.0
+2100,SSP5-8.5 / 2080,facade,336,340,insulated,3,3,3.9009216326638896,15.0
+2100,SSP5-8.5 / 2080,facade,341,345,insulated,3,3,3.886731765059272,15.0
+2100,SSP5-8.5 / 2080,facade,346,350,insulated,3,3,3.917534766669789,15.0
+2100,SSP5-8.5 / 2080,facade,351,355,insulated,4,4,3.804380958005801,17.0
+2100,SSP5-8.5 / 2080,facade,356,360,insulated,4,4,3.898887889573901,15.0
+2100,SSP5-8.5 / 2080,facade,361,365,insulated,4,4,4.037312283830401,16.0
+2100,SSP5-8.5 / 2080,facade,366,370,insulated,4,4,3.9365495924408744,16.0
+2100,SSP5-8.5 / 2080,facade,371,375,insulated,4,4,3.9124842811218628,16.0
+2100,SSP5-8.5 / 2080,facade,376,380,existing,0,0,3.773995167832009,-2.0
+2100,SSP5-8.5 / 2080,facade,381,385,existing,0,0,3.9471245841007097,-3.0
+2100,SSP5-8.5 / 2080,facade,386,390,existing,0,0,3.8622345711661996,-3.0
+2100,SSP5-8.5 / 2080,facade,391,395,existing,0,0,3.900739408040602,-3.0
+2100,SSP5-8.5 / 2080,facade,396,400,existing,0,0,3.946279700609052,-3.0
+2100,SSP5-8.5 / 2080,facade,401,405,insulated,1,1,4.002101562944112,19.0
+2100,SSP5-8.5 / 2080,facade,406,410,insulated,1,1,3.797134580682716,13.0
+2100,SSP5-8.5 / 2080,facade,411,415,insulated,1,1,3.8815137416551515,14.0
+2100,SSP5-8.5 / 2080,facade,416,420,insulated,1,1,3.8609991747422967,14.0
+2100,SSP5-8.5 / 2080,facade,421,425,insulated,1,1,3.8431695810220994,14.0
+2100,SSP5-8.5 / 2080,facade,426,430,insulated,2,2,3.862736457521329,21.0
+2100,SSP5-8.5 / 2080,facade,431,435,insulated,2,2,3.874599299617479,20.0
+2100,SSP5-8.5 / 2080,facade,436,440,insulated,2,2,3.928612989354928,20.0
+2100,SSP5-8.5 / 2080,facade,441,445,insulated,2,2,3.952169161690053,19.0
+2100,SSP5-8.5 / 2080,facade,446,450,insulated,2,2,3.8308818171801207,19.0
+2100,SSP5-8.5 / 2080,facade,451,455,insulated,3,3,3.9736817393751274,19.0
+2100,SSP5-8.5 / 2080,facade,456,460,insulated,3,3,3.988753755413182,21.0
+2100,SSP5-8.5 / 2080,facade,461,465,insulated,3,3,4.032529966366999,20.0
+2100,SSP5-8.5 / 2080,facade,466,470,insulated,3,3,3.956354717846132,20.0
+2100,SSP5-8.5 / 2080,facade,471,475,insulated,3,3,3.997756988506513,20.0
+2100,SSP5-8.5 / 2080,facade,476,480,insulated,4,4,4.0041730955662675,19.0
+2100,SSP5-8.5 / 2080,facade,481,485,insulated,4,4,4.041965075128848,21.0
+2100,SSP5-8.5 / 2080,facade,486,490,insulated,4,4,3.955719599215554,20.0
+2100,SSP5-8.5 / 2080,facade,491,495,insulated,4,4,3.902721054621715,20.0
+2100,SSP5-8.5 / 2080,facade,496,500,insulated,4,4,3.848723589173458,20.0
+2100,SSP5-8.5 / 2080,facade,501,505,existing,0,0,3.716310317808521,-3.0
+2100,SSP5-8.5 / 2080,facade,506,510,existing,0,0,3.7547440692967484,-3.0
+2100,SSP5-8.5 / 2080,facade,511,515,existing,0,0,3.8290852786757217,-3.0
+2100,SSP5-8.5 / 2080,facade,516,520,existing,0,0,3.7118337651507076,-3.0
+2100,SSP5-8.5 / 2080,facade,521,525,existing,0,0,3.7731395785807678,-3.0
+2100,SSP5-8.5 / 2080,facade,526,530,insulated,1,1,3.9454294864056614,22.0
+2100,SSP5-8.5 / 2080,facade,531,535,insulated,1,1,3.8564920091866473,16.0
+2100,SSP5-8.5 / 2080,facade,536,540,insulated,1,1,3.953871727611416,17.0
+2100,SSP5-8.5 / 2080,facade,541,545,insulated,1,1,3.944422128888659,17.0
+2100,SSP5-8.5 / 2080,facade,546,550,insulated,1,1,3.968750765016434,17.0
+2100,SSP5-8.5 / 2080,facade,551,555,insulated,2,2,3.9554371291822683,19.0
+2100,SSP5-8.5 / 2080,facade,556,560,insulated,2,2,4.031192425814696,19.0
+2100,SSP5-8.5 / 2080,facade,561,565,insulated,2,2,4.012074838494993,19.0
+2100,SSP5-8.5 / 2080,facade,566,570,insulated,2,2,3.952566915022725,19.0
+2100,SSP5-8.5 / 2080,facade,571,575,insulated,2,2,4.010964216820691,19.0
+2100,SSP5-8.5 / 2080,facade,576,580,insulated,3,3,3.8832036345879732,21.0
+2100,SSP5-8.5 / 2080,facade,581,585,insulated,3,3,3.9148451028777362,19.0
+2100,SSP5-8.5 / 2080,facade,586,590,insulated,3,3,3.8660920464607145,20.0
+2100,SSP5-8.5 / 2080,facade,591,595,insulated,3,3,4.061024550182243,20.0
+2100,SSP5-8.5 / 2080,facade,596,600,insulated,3,3,4.006183230824519,20.0
+2100,SSP5-8.5 / 2080,facade,601,605,insulated,4,4,4.072493600528999,21.0
+2100,SSP5-8.5 / 2080,facade,606,610,insulated,4,4,3.9064951576825546,20.0
+2100,SSP5-8.5 / 2080,facade,611,615,insulated,4,4,3.912842739968374,20.0
+2100,SSP5-8.5 / 2080,facade,616,620,insulated,4,4,4.050050245451432,20.0
+2100,SSP5-8.5 / 2080,facade,621,625,insulated,4,4,4.08062966302629,20.0
+2100,SSP5-8.5 / 2080,roof,1,21,existing,0,0,3.228594967767087,0.0
+2100,SSP5-8.5 / 2080,roof,2,22,existing,0,0,3.4027281523612274,-1.0
+2100,SSP5-8.5 / 2080,roof,3,23,existing,0,0,3.292212194985952,-3.0
+2100,SSP5-8.5 / 2080,roof,4,24,existing,0,0,3.104581091197982,-4.0
+2100,SSP5-8.5 / 2080,roof,5,25,existing,0,0,3.012298358670831,-4.0
+2100,SSP5-8.5 / 2080,roof,26,46,insulated,1,1,3.3148027524788404,-1.0
+2100,SSP5-8.5 / 2080,roof,27,47,insulated,1,1,3.240454496237703,-4.0
+2100,SSP5-8.5 / 2080,roof,28,48,insulated,1,1,2.966658059814451,-1.0
+2100,SSP5-8.5 / 2080,roof,29,49,insulated,1,1,3.265729655502776,-1.0
+2100,SSP5-8.5 / 2080,roof,30,50,insulated,1,1,3.116678734450147,-1.0
+2100,SSP5-8.5 / 2080,roof,51,71,insulated,2,2,3.0886636461322965,-2.0
+2100,SSP5-8.5 / 2080,roof,52,72,insulated,2,2,3.1126667031545363,-2.0
+2100,SSP5-8.5 / 2080,roof,53,73,insulated,2,2,3.151526582423614,-3.0
+2100,SSP5-8.5 / 2080,roof,54,74,insulated,2,2,3.25418195778,-4.0
+2100,SSP5-8.5 / 2080,roof,55,75,insulated,2,2,3.1949095773235996,-3.0
+2100,SSP5-8.5 / 2080,roof,76,96,insulated,3,3,3.1964230564276264,0.0
+2100,SSP5-8.5 / 2080,roof,77,97,insulated,3,3,3.2786647094470283,-2.0
+2100,SSP5-8.5 / 2080,roof,78,98,insulated,3,3,3.0292014688170745,-1.0
+2100,SSP5-8.5 / 2080,roof,79,99,insulated,3,3,3.0938049449728826,-2.0
+2100,SSP5-8.5 / 2080,roof,80,100,insulated,3,3,3.1901778018411644,-2.0
+2100,SSP5-8.5 / 2080,roof,101,121,insulated,4,4,3.1006790170219034,0.0
+2100,SSP5-8.5 / 2080,roof,102,122,insulated,4,4,3.193814195030555,-2.0
+2100,SSP5-8.5 / 2080,roof,103,123,insulated,4,4,3.2825018145731004,-2.0
+2100,SSP5-8.5 / 2080,roof,104,124,insulated,4,4,3.0672470976213617,-2.0
+2100,SSP5-8.5 / 2080,roof,105,125,insulated,4,4,3.1917959105621634,-1.0
+2100,SSP5-8.5 / 2080,roof,126,146,existing,0,0,3.2348166771489772,-2.0
+2100,SSP5-8.5 / 2080,roof,127,147,existing,0,0,3.2665994173059545,-3.0
+2100,SSP5-8.5 / 2080,roof,128,148,existing,0,0,3.2002837217287006,-4.0
+2100,SSP5-8.5 / 2080,roof,129,149,existing,0,0,3.13296920550143,-4.0
+2100,SSP5-8.5 / 2080,roof,130,150,existing,0,0,3.199300836480628,-4.0
+2100,SSP5-8.5 / 2080,roof,151,171,insulated,1,1,3.287255476731744,0.0
+2100,SSP5-8.5 / 2080,roof,152,172,insulated,1,1,3.154738830541545,-1.0
+2100,SSP5-8.5 / 2080,roof,153,173,insulated,1,1,3.3409414038564,-3.0
+2100,SSP5-8.5 / 2080,roof,154,174,insulated,1,1,3.2668174849956575,-2.0
+2100,SSP5-8.5 / 2080,roof,155,175,insulated,1,1,3.2532929551500267,-2.0
+2100,SSP5-8.5 / 2080,roof,176,196,insulated,2,2,3.1505887843661835,0.0
+2100,SSP5-8.5 / 2080,roof,177,197,insulated,2,2,3.1417639947225915,-3.0
+2100,SSP5-8.5 / 2080,roof,178,198,insulated,2,2,3.326346955958927,-4.0
+2100,SSP5-8.5 / 2080,roof,179,199,insulated,2,2,3.167159747758104,-4.0
+2100,SSP5-8.5 / 2080,roof,180,200,insulated,2,2,3.0786294087384185,-3.0
+2100,SSP5-8.5 / 2080,roof,201,221,insulated,3,3,3.2715908562089755,0.0
+2100,SSP5-8.5 / 2080,roof,202,222,insulated,3,3,3.06109703287604,-4.0
+2100,SSP5-8.5 / 2080,roof,203,223,insulated,3,3,2.967884722680571,-3.0
+2100,SSP5-8.5 / 2080,roof,204,224,insulated,3,3,3.230431621175917,-3.0
+2100,SSP5-8.5 / 2080,roof,205,225,insulated,3,3,3.1920000298401927,-3.0
+2100,SSP5-8.5 / 2080,roof,226,246,insulated,4,4,3.1833712250262423,0.0
+2100,SSP5-8.5 / 2080,roof,227,247,insulated,4,4,3.1967721415284718,-3.0
+2100,SSP5-8.5 / 2080,roof,228,248,insulated,4,4,3.034097462086736,-3.0
+2100,SSP5-8.5 / 2080,roof,229,249,insulated,4,4,3.1186848002372507,-3.0
+2100,SSP5-8.5 / 2080,roof,230,250,insulated,4,4,3.1369089333665805,-3.0
+2100,SSP5-8.5 / 2080,roof,251,271,existing,0,0,3.0490129378150783,-1.0
+2100,SSP5-8.5 / 2080,roof,252,272,existing,0,0,3.3121896671462956,-3.0
+2100,SSP5-8.5 / 2080,roof,253,273,existing,0,0,3.3202105395301817,-4.0
+2100,SSP5-8.5 / 2080,roof,254,274,existing,0,0,3.2186773867058243,-6.0
+2100,SSP5-8.5 / 2080,roof,255,275,existing,0,0,3.3063541989623104,-4.0
+2100,SSP5-8.5 / 2080,roof,276,296,insulated,1,1,3.2229960386666487,0.0
+2100,SSP5-8.5 / 2080,roof,277,297,insulated,1,1,3.124142766403942,-2.0
+2100,SSP5-8.5 / 2080,roof,278,298,insulated,1,1,3.3389938971334754,-3.0
+2100,SSP5-8.5 / 2080,roof,279,299,insulated,1,1,3.1838225471805046,-2.0
+2100,SSP5-8.5 / 2080,roof,280,300,insulated,1,1,3.176639631756224,-2.0
+2100,SSP5-8.5 / 2080,roof,301,321,insulated,2,2,3.2411312623122477,0.0
+2100,SSP5-8.5 / 2080,roof,302,322,insulated,2,2,3.1611334589973463,-3.0
+2100,SSP5-8.5 / 2080,roof,303,323,insulated,2,2,3.074395994362769,-3.0
+2100,SSP5-8.5 / 2080,roof,304,324,insulated,2,2,3.061162779658506,-4.0
+2100,SSP5-8.5 / 2080,roof,305,325,insulated,2,2,3.217818784167049,-4.0
+2100,SSP5-8.5 / 2080,roof,326,346,insulated,3,3,3.153592831623543,0.0
+2100,SSP5-8.5 / 2080,roof,327,347,insulated,3,3,3.1422599088895957,-3.0
+2100,SSP5-8.5 / 2080,roof,328,348,insulated,3,3,3.1176732342605913,-3.0
+2100,SSP5-8.5 / 2080,roof,329,349,insulated,3,3,3.221652184058726,-2.0
+2100,SSP5-8.5 / 2080,roof,330,350,insulated,3,3,3.153004984507886,-1.0
+2100,SSP5-8.5 / 2080,roof,351,371,insulated,4,4,3.1385399398119223,0.0
+2100,SSP5-8.5 / 2080,roof,352,372,insulated,4,4,3.2733229609652206,-3.0
+2100,SSP5-8.5 / 2080,roof,353,373,insulated,4,4,3.2111574998797767,-4.0
+2100,SSP5-8.5 / 2080,roof,354,374,insulated,4,4,3.288369785910236,-1.0
+2100,SSP5-8.5 / 2080,roof,355,375,insulated,4,4,3.246643262927984,-1.0
+2100,SSP5-8.5 / 2080,roof,376,396,existing,0,0,3.0775974020160675,-1.0
+2100,SSP5-8.5 / 2080,roof,377,397,existing,0,0,3.1460789784695695,-3.0
+2100,SSP5-8.5 / 2080,roof,378,398,existing,0,0,3.2061393943344534,-4.0
+2100,SSP5-8.5 / 2080,roof,379,399,existing,0,0,3.113066462449302,-2.0
+2100,SSP5-8.5 / 2080,roof,380,400,existing,0,0,3.2498819347931107,-2.0
+2100,SSP5-8.5 / 2080,roof,401,421,insulated,1,1,3.3055570248818675,0.0
+2100,SSP5-8.5 / 2080,roof,402,422,insulated,1,1,3.2272158581414807,-3.0
+2100,SSP5-8.5 / 2080,roof,403,423,insulated,1,1,3.2083116608606623,-4.0
+2100,SSP5-8.5 / 2080,roof,404,424,insulated,1,1,3.1591473642808303,-6.0
+2100,SSP5-8.5 / 2080,roof,405,425,insulated,1,1,3.1466250429598546,-5.0
+2100,SSP5-8.5 / 2080,roof,426,446,insulated,2,2,3.1572139943252413,0.0
+2100,SSP5-8.5 / 2080,roof,427,447,insulated,2,2,3.197712997187029,-3.0
+2100,SSP5-8.5 / 2080,roof,428,448,insulated,2,2,3.207173146366129,-2.0
+2100,SSP5-8.5 / 2080,roof,429,449,insulated,2,2,3.1852943426231963,-2.0
+2100,SSP5-8.5 / 2080,roof,430,450,insulated,2,2,3.1253593539840328,-2.0
+2100,SSP5-8.5 / 2080,roof,451,471,insulated,3,3,3.2518424392317,-1.0
+2100,SSP5-8.5 / 2080,roof,452,472,insulated,3,3,3.229220637508039,-1.0
+2100,SSP5-8.5 / 2080,roof,453,473,insulated,3,3,3.094336772662013,-1.0
+2100,SSP5-8.5 / 2080,roof,454,474,insulated,3,3,3.186258468277476,0.0
+2100,SSP5-8.5 / 2080,roof,455,475,insulated,3,3,3.2759176883630854,0.0
+2100,SSP5-8.5 / 2080,roof,476,496,insulated,4,4,3.2532387024966276,-1.0
+2100,SSP5-8.5 / 2080,roof,477,497,insulated,4,4,3.266234096581961,-1.0
+2100,SSP5-8.5 / 2080,roof,478,498,insulated,4,4,3.15765324768784,0.0
+2100,SSP5-8.5 / 2080,roof,479,499,insulated,4,4,3.228173039820234,-1.0
+2100,SSP5-8.5 / 2080,roof,480,500,insulated,4,4,3.097789196103818,0.0
+2100,SSP5-8.5 / 2080,roof,501,521,existing,0,0,3.077812288736636,-2.0
+2100,SSP5-8.5 / 2080,roof,502,522,existing,0,0,3.17091713074724,-4.0
+2100,SSP5-8.5 / 2080,roof,503,523,existing,0,0,3.2266200744904374,-3.0
+2100,SSP5-8.5 / 2080,roof,504,524,existing,0,0,3.1721709623092433,-2.0
+2100,SSP5-8.5 / 2080,roof,505,525,existing,0,0,3.134641549508883,-2.0
+2100,SSP5-8.5 / 2080,roof,526,546,insulated,1,1,3.1599169796403803,0.0
+2100,SSP5-8.5 / 2080,roof,527,547,insulated,1,1,3.189396075071544,-3.0
+2100,SSP5-8.5 / 2080,roof,528,548,insulated,1,1,3.2511060210696296,-5.0
+2100,SSP5-8.5 / 2080,roof,529,549,insulated,1,1,3.0725248032407837,-5.0
+2100,SSP5-8.5 / 2080,roof,530,550,insulated,1,1,3.183238258251153,-5.0
+2100,SSP5-8.5 / 2080,roof,551,571,insulated,2,2,3.1828233885836674,-1.0
+2100,SSP5-8.5 / 2080,roof,552,572,insulated,2,2,3.133841392685502,-2.0
+2100,SSP5-8.5 / 2080,roof,553,573,insulated,2,2,3.258141789287473,-1.0
+2100,SSP5-8.5 / 2080,roof,554,574,insulated,2,2,3.1510745984964856,-1.0
+2100,SSP5-8.5 / 2080,roof,555,575,insulated,2,2,3.23835047622209,-1.0
+2100,SSP5-8.5 / 2080,roof,576,596,insulated,3,3,3.1059348007750245,0.0
+2100,SSP5-8.5 / 2080,roof,577,597,insulated,3,3,3.142877840202857,1.0
+2100,SSP5-8.5 / 2080,roof,578,598,insulated,3,3,3.1079880929083323,0.0
+2100,SSP5-8.5 / 2080,roof,579,599,insulated,3,3,3.270064693522052,0.0
+2100,SSP5-8.5 / 2080,roof,580,600,insulated,3,3,3.22891439701157,-1.0
+2100,SSP5-8.5 / 2080,roof,601,621,insulated,4,4,3.1329772181870297,0.0
+2100,SSP5-8.5 / 2080,roof,602,622,insulated,4,4,3.1780335633134023,-1.0
+2100,SSP5-8.5 / 2080,roof,603,623,insulated,4,4,3.204994434048178,0.0
+2100,SSP5-8.5 / 2080,roof,604,624,insulated,4,4,3.1780210194700214,-1.0
+2100,SSP5-8.5 / 2080,roof,605,625,insulated,4,4,3.141113280684321,-1.0

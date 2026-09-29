@@ -1,0 +1,13 @@
+horizon,upper_threshold_c,pareto_count,baseline_simulation_id,baseline_days_below_threshold,minimum_heating_energy_simulation_id,minimum_heating_energy_days_below_threshold,minimum_energy_minus_baseline_days,selected_equal_weight_simulation_id,selected_equal_weight_scenario,selected_equal_weight_days_below_threshold
+2020,23.0,247,1,359,625,356,-3,15,SG_current_Insul_current_TR_retrofit_2_BW_retrofit_4,361
+2020,24.0,242,1,361,625,362,1,25,SG_current_Insul_current_TR_retrofit_4_BW_retrofit_4,365
+2020,25.0,212,1,364,625,365,1,63,SG_current_Insul_retrofit_2_TR_retrofit_2_BW_retrofit_2,365
+2020,26.0,211,1,365,625,365,0,63,SG_current_Insul_retrofit_2_TR_retrofit_2_BW_retrofit_2,365
+2050,23.0,277,1,324,625,283,-41,13,SG_current_Insul_current_TR_retrofit_2_BW_retrofit_2,322
+2050,24.0,258,1,339,625,300,-39,13,SG_current_Insul_current_TR_retrofit_2_BW_retrofit_2,342
+2050,25.0,262,1,346,625,318,-28,13,SG_current_Insul_current_TR_retrofit_2_BW_retrofit_2,349
+2050,26.0,254,1,358,625,340,-18,13,SG_current_Insul_current_TR_retrofit_2_BW_retrofit_2,360
+2100,23.0,265,1,297,599,241,-56,13,SG_current_Insul_current_TR_retrofit_2_BW_retrofit_2,301
+2100,24.0,267,1,321,599,264,-57,13,SG_current_Insul_current_TR_retrofit_2_BW_retrofit_2,325
+2100,25.0,270,1,343,599,296,-47,13,SG_current_Insul_current_TR_retrofit_2_BW_retrofit_2,345
+2100,26.0,288,1,356,599,321,-35,13,SG_current_Insul_current_TR_retrofit_2_BW_retrofit_2,358

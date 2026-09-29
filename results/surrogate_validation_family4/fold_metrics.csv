@@ -1,0 +1,1621 @@
+repeat_seed,outer_fold,model,target,metric,value,unit,n_test_rows
+17,1,deep_balanced_mtl_nn,annual_heating_energy_gj,mae,1.1473608391555672,GJ/year,375
+17,2,deep_balanced_mtl_nn,annual_heating_energy_gj,mae,0.79571380655911439,GJ/year,375
+17,3,deep_balanced_mtl_nn,annual_heating_energy_gj,mae,0.94444988980029454,GJ/year,375
+17,4,deep_balanced_mtl_nn,annual_heating_energy_gj,mae,1.1551502840086965,GJ/year,375
+17,5,deep_balanced_mtl_nn,annual_heating_energy_gj,mae,1.1475959178157369,GJ/year,375
+29,1,deep_balanced_mtl_nn,annual_heating_energy_gj,mae,1.3248776431676454,GJ/year,375
+29,2,deep_balanced_mtl_nn,annual_heating_energy_gj,mae,0.89256122104560653,GJ/year,375
+29,3,deep_balanced_mtl_nn,annual_heating_energy_gj,mae,0.8824539388956476,GJ/year,375
+29,4,deep_balanced_mtl_nn,annual_heating_energy_gj,mae,0.97991437931931125,GJ/year,375
+29,5,deep_balanced_mtl_nn,annual_heating_energy_gj,mae,1.200733166809119,GJ/year,375
+43,1,deep_balanced_mtl_nn,annual_heating_energy_gj,mae,0.71157700475411656,GJ/year,375
+43,2,deep_balanced_mtl_nn,annual_heating_energy_gj,mae,0.66951008589890348,GJ/year,375
+43,3,deep_balanced_mtl_nn,annual_heating_energy_gj,mae,1.0509990015952881,GJ/year,375
+43,4,deep_balanced_mtl_nn,annual_heating_energy_gj,mae,0.91775972082303514,GJ/year,375
+43,5,deep_balanced_mtl_nn,annual_heating_energy_gj,mae,1.1633093295228045,GJ/year,375
+17,1,deep_balanced_mtl_nn,annual_heating_energy_gj,r2,0.90889831101312502,dimensionless,375
+17,2,deep_balanced_mtl_nn,annual_heating_energy_gj,r2,0.94680607201266298,dimensionless,375
+17,3,deep_balanced_mtl_nn,annual_heating_energy_gj,r2,0.9133112852555294,dimensionless,375
+17,4,deep_balanced_mtl_nn,annual_heating_energy_gj,r2,0.88978801739246705,dimensionless,375
+17,5,deep_balanced_mtl_nn,annual_heating_energy_gj,r2,0.90305747050484508,dimensionless,375
+29,1,deep_balanced_mtl_nn,annual_heating_energy_gj,r2,0.8828794731696662,dimensionless,375
+29,2,deep_balanced_mtl_nn,annual_heating_energy_gj,r2,0.92435215366767953,dimensionless,375
+29,3,deep_balanced_mtl_nn,annual_heating_energy_gj,r2,0.93266393585962137,dimensionless,375
+29,4,deep_balanced_mtl_nn,annual_heating_energy_gj,r2,0.91883115609026333,dimensionless,375
+29,5,deep_balanced_mtl_nn,annual_heating_energy_gj,r2,0.89177450288023652,dimensionless,375
+43,1,deep_balanced_mtl_nn,annual_heating_energy_gj,r2,0.9583371806733294,dimensionless,375
+43,2,deep_balanced_mtl_nn,annual_heating_energy_gj,r2,0.9615883594426633,dimensionless,375
+43,3,deep_balanced_mtl_nn,annual_heating_energy_gj,r2,0.89988486229281883,dimensionless,375
+43,4,deep_balanced_mtl_nn,annual_heating_energy_gj,r2,0.93631750769181843,dimensionless,375
+43,5,deep_balanced_mtl_nn,annual_heating_energy_gj,r2,0.90529371994869468,dimensionless,375
+17,1,deep_balanced_mtl_nn,annual_heating_energy_gj,rmse,1.7079436433786115,GJ/year,375
+17,2,deep_balanced_mtl_nn,annual_heating_energy_gj,rmse,1.2110824352371274,GJ/year,375
+17,3,deep_balanced_mtl_nn,annual_heating_energy_gj,rmse,1.5964456800237656,GJ/year,375
+17,4,deep_balanced_mtl_nn,annual_heating_energy_gj,rmse,1.8239262341025029,GJ/year,375
+17,5,deep_balanced_mtl_nn,annual_heating_energy_gj,rmse,1.68880996837409,GJ/year,375
+29,1,deep_balanced_mtl_nn,annual_heating_energy_gj,rmse,1.8525734679430488,GJ/year,375
+29,2,deep_balanced_mtl_nn,annual_heating_energy_gj,rmse,1.4750504482260154,GJ/year,375
+29,3,deep_balanced_mtl_nn,annual_heating_energy_gj,rmse,1.4338238269747778,GJ/year,375
+29,4,deep_balanced_mtl_nn,annual_heating_energy_gj,rmse,1.5522771653660286,GJ/year,375
+29,5,deep_balanced_mtl_nn,annual_heating_energy_gj,rmse,1.8214771937789038,GJ/year,375
+43,1,deep_balanced_mtl_nn,annual_heating_energy_gj,rmse,1.0749446190501057,GJ/year,375
+43,2,deep_balanced_mtl_nn,annual_heating_energy_gj,rmse,1.1035065652558125,GJ/year,375
+43,3,deep_balanced_mtl_nn,annual_heating_energy_gj,rmse,1.720903565994234,GJ/year,375
+43,4,deep_balanced_mtl_nn,annual_heating_energy_gj,rmse,1.3724732489237197,GJ/year,375
+43,5,deep_balanced_mtl_nn,annual_heating_energy_gj,rmse,1.6985650499873899,GJ/year,375
+17,1,deep_balanced_mtl_nn,carbon_rate_sum_proxy,mae,11.8611490238444,rate-index points,375
+17,2,deep_balanced_mtl_nn,carbon_rate_sum_proxy,mae,11.151415473225912,rate-index points,375
+17,3,deep_balanced_mtl_nn,carbon_rate_sum_proxy,mae,12.867210143229167,rate-index points,375
+17,4,deep_balanced_mtl_nn,carbon_rate_sum_proxy,mae,12.652048863525389,rate-index points,375
+17,5,deep_balanced_mtl_nn,carbon_rate_sum_proxy,mae,11.486363913167317,rate-index points,375
+29,1,deep_balanced_mtl_nn,carbon_rate_sum_proxy,mae,12.515653323160805,rate-index points,375
+29,2,deep_balanced_mtl_nn,carbon_rate_sum_proxy,mae,12.823846064453125,rate-index points,375
+29,3,deep_balanced_mtl_nn,carbon_rate_sum_proxy,mae,11.893156821695962,rate-index points,375
+29,4,deep_balanced_mtl_nn,carbon_rate_sum_proxy,mae,13.307895384521485,rate-index points,375
+29,5,deep_balanced_mtl_nn,carbon_rate_sum_proxy,mae,13.348447529296873,rate-index points,375
+43,1,deep_balanced_mtl_nn,carbon_rate_sum_proxy,mae,11.123379868570963,rate-index points,375
+43,2,deep_balanced_mtl_nn,carbon_rate_sum_proxy,mae,10.11480463663737,rate-index points,375
+43,3,deep_balanced_mtl_nn,carbon_rate_sum_proxy,mae,13.343044952392578,rate-index points,375
+43,4,deep_balanced_mtl_nn,carbon_rate_sum_proxy,mae,10.726271977539062,rate-index points,375
+43,5,deep_balanced_mtl_nn,carbon_rate_sum_proxy,mae,13.100465106201169,rate-index points,375
+17,1,deep_balanced_mtl_nn,carbon_rate_sum_proxy,r2,0.93048276554737108,dimensionless,375
+17,2,deep_balanced_mtl_nn,carbon_rate_sum_proxy,r2,0.93056018169766996,dimensionless,375
+17,3,deep_balanced_mtl_nn,carbon_rate_sum_proxy,r2,0.91299791398825569,dimensionless,375
+17,4,deep_balanced_mtl_nn,carbon_rate_sum_proxy,r2,0.91442093272523262,dimensionless,375
+17,5,deep_balanced_mtl_nn,carbon_rate_sum_proxy,r2,0.92670215400374401,dimensionless,375
+29,1,deep_balanced_mtl_nn,carbon_rate_sum_proxy,r2,0.91933310394746215,dimensionless,375
+29,2,deep_balanced_mtl_nn,carbon_rate_sum_proxy,r2,0.91922412982668145,dimensionless,375
+29,3,deep_balanced_mtl_nn,carbon_rate_sum_proxy,r2,0.92741818612755922,dimensionless,375
+29,4,deep_balanced_mtl_nn,carbon_rate_sum_proxy,r2,0.89779784992037381,dimensionless,375
+29,5,deep_balanced_mtl_nn,carbon_rate_sum_proxy,r2,0.90266639421155326,dimensionless,375
+43,1,deep_balanced_mtl_nn,carbon_rate_sum_proxy,r2,0.92589010040720898,dimensionless,375
+43,2,deep_balanced_mtl_nn,carbon_rate_sum_proxy,r2,0.94800441466029906,dimensionless,375
+43,3,deep_balanced_mtl_nn,carbon_rate_sum_proxy,r2,0.91334249143530211,dimensionless,375
+43,4,deep_balanced_mtl_nn,carbon_rate_sum_proxy,r2,0.92923026413345233,dimensionless,375
+43,5,deep_balanced_mtl_nn,carbon_rate_sum_proxy,r2,0.92261874350008766,dimensionless,375
+17,1,deep_balanced_mtl_nn,carbon_rate_sum_proxy,rmse,14.682739000554189,rate-index points,375
+17,2,deep_balanced_mtl_nn,carbon_rate_sum_proxy,rmse,13.765777367403187,rate-index points,375
+17,3,deep_balanced_mtl_nn,carbon_rate_sum_proxy,rmse,15.962982590249785,rate-index points,375
+17,4,deep_balanced_mtl_nn,carbon_rate_sum_proxy,rmse,15.264350919053079,rate-index points,375
+17,5,deep_balanced_mtl_nn,carbon_rate_sum_proxy,rmse,14.389101481865954,rate-index points,375
+29,1,deep_balanced_mtl_nn,carbon_rate_sum_proxy,rmse,15.988023312657926,rate-index points,375
+29,2,deep_balanced_mtl_nn,carbon_rate_sum_proxy,rmse,15.434350493786814,rate-index points,375
+29,3,deep_balanced_mtl_nn,carbon_rate_sum_proxy,rmse,14.639520296846358,rate-index points,375
+29,4,deep_balanced_mtl_nn,carbon_rate_sum_proxy,rmse,16.523507870332566,rate-index points,375
+29,5,deep_balanced_mtl_nn,carbon_rate_sum_proxy,rmse,16.031273094245183,rate-index points,375
+43,1,deep_balanced_mtl_nn,carbon_rate_sum_proxy,rmse,13.970267944022167,rate-index points,375
+43,2,deep_balanced_mtl_nn,carbon_rate_sum_proxy,rmse,12.222665761708937,rate-index points,375
+43,3,deep_balanced_mtl_nn,carbon_rate_sum_proxy,rmse,16.209937052750064,rate-index points,375
+43,4,deep_balanced_mtl_nn,carbon_rate_sum_proxy,rmse,13.756271301275914,rate-index points,375
+43,5,deep_balanced_mtl_nn,carbon_rate_sum_proxy,rmse,15.813626882500785,rate-index points,375
+17,1,deep_balanced_mtl_nn,cost_rate_sum_proxy,mae,111.29460795898437,rate-index points,375
+17,2,deep_balanced_mtl_nn,cost_rate_sum_proxy,mae,113.16916139322917,rate-index points,375
+17,3,deep_balanced_mtl_nn,cost_rate_sum_proxy,mae,109.99252641601562,rate-index points,375
+17,4,deep_balanced_mtl_nn,cost_rate_sum_proxy,mae,124.08316730143228,rate-index points,375
+17,5,deep_balanced_mtl_nn,cost_rate_sum_proxy,mae,113.48312534179686,rate-index points,375
+29,1,deep_balanced_mtl_nn,cost_rate_sum_proxy,mae,108.74715013020835,rate-index points,375
+29,2,deep_balanced_mtl_nn,cost_rate_sum_proxy,mae,123.69595782877603,rate-index points,375
+29,3,deep_balanced_mtl_nn,cost_rate_sum_proxy,mae,112.18964313151044,rate-index points,375
+29,4,deep_balanced_mtl_nn,cost_rate_sum_proxy,mae,125.25796829427084,rate-index points,375
+29,5,deep_balanced_mtl_nn,cost_rate_sum_proxy,mae,123.63007184244793,rate-index points,375
+43,1,deep_balanced_mtl_nn,cost_rate_sum_proxy,mae,97.718270182291661,rate-index points,375
+43,2,deep_balanced_mtl_nn,cost_rate_sum_proxy,mae,88.86794322916667,rate-index points,375
+43,3,deep_balanced_mtl_nn,cost_rate_sum_proxy,mae,125.29254104817709,rate-index points,375
+43,4,deep_balanced_mtl_nn,cost_rate_sum_proxy,mae,106.43222215169273,rate-index points,375
+43,5,deep_balanced_mtl_nn,cost_rate_sum_proxy,mae,128.64142140299481,rate-index points,375
+17,1,deep_balanced_mtl_nn,cost_rate_sum_proxy,r2,0.69797534847556886,dimensionless,375
+17,2,deep_balanced_mtl_nn,cost_rate_sum_proxy,r2,0.65611187442543284,dimensionless,375
+17,3,deep_balanced_mtl_nn,cost_rate_sum_proxy,r2,0.71949309994616883,dimensionless,375
+17,4,deep_balanced_mtl_nn,cost_rate_sum_proxy,r2,0.669539562075818,dimensionless,375
+17,5,deep_balanced_mtl_nn,cost_rate_sum_proxy,r2,0.68754554586389993,dimensionless,375
+29,1,deep_balanced_mtl_nn,cost_rate_sum_proxy,r2,0.65608704595710532,dimensionless,375
+29,2,deep_balanced_mtl_nn,cost_rate_sum_proxy,r2,0.64134239637511703,dimensionless,375
+29,3,deep_balanced_mtl_nn,cost_rate_sum_proxy,r2,0.70423615290219166,dimensionless,375
+29,4,deep_balanced_mtl_nn,cost_rate_sum_proxy,r2,0.66189490252041971,dimensionless,375
+29,5,deep_balanced_mtl_nn,cost_rate_sum_proxy,r2,0.64172846063499533,dimensionless,375
+43,1,deep_balanced_mtl_nn,cost_rate_sum_proxy,r2,0.75576148126770026,dimensionless,375
+43,2,deep_balanced_mtl_nn,cost_rate_sum_proxy,r2,0.78124265261664005,dimensionless,375
+43,3,deep_balanced_mtl_nn,cost_rate_sum_proxy,r2,0.67990006992863961,dimensionless,375
+43,4,deep_balanced_mtl_nn,cost_rate_sum_proxy,r2,0.667762231690612,dimensionless,375
+43,5,deep_balanced_mtl_nn,cost_rate_sum_proxy,r2,0.62174220682439574,dimensionless,375
+17,1,deep_balanced_mtl_nn,cost_rate_sum_proxy,rmse,134.06400033751268,rate-index points,375
+17,2,deep_balanced_mtl_nn,cost_rate_sum_proxy,rmse,132.3666883767842,rate-index points,375
+17,3,deep_balanced_mtl_nn,cost_rate_sum_proxy,rmse,127.15031288458263,rate-index points,375
+17,4,deep_balanced_mtl_nn,cost_rate_sum_proxy,rmse,142.82152819152239,rate-index points,375
+17,5,deep_balanced_mtl_nn,cost_rate_sum_proxy,rmse,134.28472136369655,rate-index points,375
+29,1,deep_balanced_mtl_nn,cost_rate_sum_proxy,rmse,132.49352529125946,rate-index points,375
+29,2,deep_balanced_mtl_nn,cost_rate_sum_proxy,rmse,144.41182280098394,rate-index points,375
+29,3,deep_balanced_mtl_nn,cost_rate_sum_proxy,rmse,133.97826485732679,rate-index points,375
+29,4,deep_balanced_mtl_nn,cost_rate_sum_proxy,rmse,143.83944637764975,rate-index points,375
+29,5,deep_balanced_mtl_nn,cost_rate_sum_proxy,rmse,143.45061662126676,rate-index points,375
+43,1,deep_balanced_mtl_nn,cost_rate_sum_proxy,rmse,118.48995153281528,rate-index points,375
+43,2,deep_balanced_mtl_nn,cost_rate_sum_proxy,rmse,110.49604882800637,rate-index points,375
+43,3,deep_balanced_mtl_nn,cost_rate_sum_proxy,rmse,141.08175305669243,rate-index points,375
+43,4,deep_balanced_mtl_nn,cost_rate_sum_proxy,rmse,131.37143687142805,rate-index points,375
+43,5,deep_balanced_mtl_nn,cost_rate_sum_proxy,rmse,149.73915142642409,rate-index points,375
+17,1,deep_balanced_mtl_nn,days_below_24_c,mae,2.9454801432291666,days/year,375
+17,2,deep_balanced_mtl_nn,days_below_24_c,mae,2.4174887695312499,days/year,375
+17,3,deep_balanced_mtl_nn,days_below_24_c,mae,3.5165756835937501,days/year,375
+17,4,deep_balanced_mtl_nn,days_below_24_c,mae,3.432906982421875,days/year,375
+17,5,deep_balanced_mtl_nn,days_below_24_c,mae,3.7847980957031249,days/year,375
+29,1,deep_balanced_mtl_nn,days_below_24_c,mae,3.163066162109375,days/year,375
+29,2,deep_balanced_mtl_nn,days_below_24_c,mae,2.8184957682291665,days/year,375
+29,3,deep_balanced_mtl_nn,days_below_24_c,mae,2.7679876302083333,days/year,375
+29,4,deep_balanced_mtl_nn,days_below_24_c,mae,3.1155846354166665,days/year,375
+29,5,deep_balanced_mtl_nn,days_below_24_c,mae,3.2109055989583335,days/year,375
+43,1,deep_balanced_mtl_nn,days_below_24_c,mae,2.7487861328125001,days/year,375
+43,2,deep_balanced_mtl_nn,days_below_24_c,mae,2.7517323404947915,days/year,375
+43,3,deep_balanced_mtl_nn,days_below_24_c,mae,3.8068268229166669,days/year,375
+43,4,deep_balanced_mtl_nn,days_below_24_c,mae,2.8118699544270833,days/year,375
+43,5,deep_balanced_mtl_nn,days_below_24_c,mae,2.7852399902343752,days/year,375
+17,1,deep_balanced_mtl_nn,days_below_24_c,r2,0.98813274931245443,dimensionless,375
+17,2,deep_balanced_mtl_nn,days_below_24_c,r2,0.99236033902744525,dimensionless,375
+17,3,deep_balanced_mtl_nn,days_below_24_c,r2,0.98581692357491191,dimensionless,375
+17,4,deep_balanced_mtl_nn,days_below_24_c,r2,0.98367640013628854,dimensionless,375
+17,5,deep_balanced_mtl_nn,days_below_24_c,r2,0.97925805671323563,dimensionless,375
+29,1,deep_balanced_mtl_nn,days_below_24_c,r2,0.9861557413593105,dimensionless,375
+29,2,deep_balanced_mtl_nn,days_below_24_c,r2,0.98836096091805137,dimensionless,375
+29,3,deep_balanced_mtl_nn,days_below_24_c,r2,0.99057101087765909,dimensionless,375
+29,4,deep_balanced_mtl_nn,days_below_24_c,r2,0.98558727867630669,dimensionless,375
+29,5,deep_balanced_mtl_nn,days_below_24_c,r2,0.98698492308289487,dimensionless,375
+43,1,deep_balanced_mtl_nn,days_below_24_c,r2,0.99115313701301155,dimensionless,375
+43,2,deep_balanced_mtl_nn,days_below_24_c,r2,0.99124257764005319,dimensionless,375
+43,3,deep_balanced_mtl_nn,days_below_24_c,r2,0.97956320714727141,dimensionless,375
+43,4,deep_balanced_mtl_nn,days_below_24_c,r2,0.9894446581594607,dimensionless,375
+43,5,deep_balanced_mtl_nn,days_below_24_c,r2,0.98921106606658804,dimensionless,375
+17,1,deep_balanced_mtl_nn,days_below_24_c,rmse,3.7716772430462306,days/year,375
+17,2,deep_balanced_mtl_nn,days_below_24_c,rmse,3.0700371066410437,days/year,375
+17,3,deep_balanced_mtl_nn,days_below_24_c,rmse,4.2450475860399726,days/year,375
+17,4,deep_balanced_mtl_nn,days_below_24_c,rmse,4.4514348537903068,days/year,375
+17,5,deep_balanced_mtl_nn,days_below_24_c,rmse,5.0034003749855884,days/year,375
+29,1,deep_balanced_mtl_nn,days_below_24_c,rmse,4.0265220252507445,days/year,375
+29,2,deep_balanced_mtl_nn,days_below_24_c,rmse,3.8601304980774431,days/year,375
+29,3,deep_balanced_mtl_nn,days_below_24_c,rmse,3.4066663694179886,days/year,375
+29,4,deep_balanced_mtl_nn,days_below_24_c,rmse,4.2212684417514179,days/year,375
+29,5,deep_balanced_mtl_nn,days_below_24_c,rmse,3.9607205693189056,days/year,375
+43,1,deep_balanced_mtl_nn,days_below_24_c,rmse,3.3490444167549702,days/year,375
+43,2,deep_balanced_mtl_nn,days_below_24_c,rmse,3.2550428275017236,days/year,375
+43,3,deep_balanced_mtl_nn,days_below_24_c,rmse,4.9439623576731808,days/year,375
+43,4,deep_balanced_mtl_nn,days_below_24_c,rmse,3.6044777409448248,days/year,375
+43,5,deep_balanced_mtl_nn,days_below_24_c,rmse,3.6317446824056638,days/year,375
+17,1,deep_balanced_mtl_nn_mgda,annual_heating_energy_gj,mae,1.0652792032207199,GJ/year,375
+17,2,deep_balanced_mtl_nn_mgda,annual_heating_energy_gj,mae,0.85138096598722302,GJ/year,375
+17,3,deep_balanced_mtl_nn_mgda,annual_heating_energy_gj,mae,0.73341956382251938,GJ/year,375
+17,4,deep_balanced_mtl_nn_mgda,annual_heating_energy_gj,mae,1.0719528326376673,GJ/year,375
+17,5,deep_balanced_mtl_nn_mgda,annual_heating_energy_gj,mae,1.2171160875692304,GJ/year,375
+29,1,deep_balanced_mtl_nn_mgda,annual_heating_energy_gj,mae,0.99450498653116282,GJ/year,375
+29,2,deep_balanced_mtl_nn_mgda,annual_heating_energy_gj,mae,0.85143586178978137,GJ/year,375
+29,3,deep_balanced_mtl_nn_mgda,annual_heating_energy_gj,mae,0.96508676109463754,GJ/year,375
+29,4,deep_balanced_mtl_nn_mgda,annual_heating_energy_gj,mae,0.94872043882483781,GJ/year,375
+29,5,deep_balanced_mtl_nn_mgda,annual_heating_energy_gj,mae,0.95491560805092923,GJ/year,375
+43,1,deep_balanced_mtl_nn_mgda,annual_heating_energy_gj,mae,0.9727648659331658,GJ/year,375
+43,2,deep_balanced_mtl_nn_mgda,annual_heating_energy_gj,mae,1.1783511561672417,GJ/year,375
+43,3,deep_balanced_mtl_nn_mgda,annual_heating_energy_gj,mae,0.97278052667908244,GJ/year,375
+43,4,deep_balanced_mtl_nn_mgda,annual_heating_energy_gj,mae,1.0923273907580215,GJ/year,375
+43,5,deep_balanced_mtl_nn_mgda,annual_heating_energy_gj,mae,1.0862220257308737,GJ/year,375
+17,1,deep_balanced_mtl_nn_mgda,annual_heating_energy_gj,r2,0.92875999330319359,dimensionless,375
+17,2,deep_balanced_mtl_nn_mgda,annual_heating_energy_gj,r2,0.94585395600696609,dimensionless,375
+17,3,deep_balanced_mtl_nn_mgda,annual_heating_energy_gj,r2,0.96303118026906764,dimensionless,375
+17,4,deep_balanced_mtl_nn_mgda,annual_heating_energy_gj,r2,0.91422240983972147,dimensionless,375
+17,5,deep_balanced_mtl_nn_mgda,annual_heating_energy_gj,r2,0.88609772621507565,dimensionless,375
+29,1,deep_balanced_mtl_nn_mgda,annual_heating_energy_gj,r2,0.92969261298800265,dimensionless,375
+29,2,deep_balanced_mtl_nn_mgda,annual_heating_energy_gj,r2,0.94842905907802144,dimensionless,375
+29,3,deep_balanced_mtl_nn_mgda,annual_heating_energy_gj,r2,0.92212833978743336,dimensionless,375
+29,4,deep_balanced_mtl_nn_mgda,annual_heating_energy_gj,r2,0.92352765043757212,dimensionless,375
+29,5,deep_balanced_mtl_nn_mgda,annual_heating_energy_gj,r2,0.93273381884519346,dimensionless,375
+43,1,deep_balanced_mtl_nn_mgda,annual_heating_energy_gj,r2,0.91643648212433537,dimensionless,375
+43,2,deep_balanced_mtl_nn_mgda,annual_heating_energy_gj,r2,0.89286098382299961,dimensionless,375
+43,3,deep_balanced_mtl_nn_mgda,annual_heating_energy_gj,r2,0.93206850674097508,dimensionless,375
+43,4,deep_balanced_mtl_nn_mgda,annual_heating_energy_gj,r2,0.91709234334358147,dimensionless,375
+43,5,deep_balanced_mtl_nn_mgda,annual_heating_energy_gj,r2,0.91095907094097239,dimensionless,375
+17,1,deep_balanced_mtl_nn_mgda,annual_heating_energy_gj,rmse,1.5103315607009757,GJ/year,375
+17,2,deep_balanced_mtl_nn_mgda,annual_heating_energy_gj,rmse,1.2218729229773697,GJ/year,375
+17,3,deep_balanced_mtl_nn_mgda,annual_heating_energy_gj,rmse,1.0425350304014442,GJ/year,375
+17,4,deep_balanced_mtl_nn_mgda,annual_heating_energy_gj,rmse,1.6090879515673957,GJ/year,375
+17,5,deep_balanced_mtl_nn_mgda,annual_heating_energy_gj,rmse,1.8305846103635783,GJ/year,375
+29,1,deep_balanced_mtl_nn_mgda,annual_heating_energy_gj,rmse,1.4353552762763673,GJ/year,375
+29,2,deep_balanced_mtl_nn_mgda,annual_heating_energy_gj,rmse,1.217898561053558,GJ/year,375
+29,3,deep_balanced_mtl_nn_mgda,annual_heating_energy_gj,rmse,1.5419193059024854,GJ/year,375
+29,4,deep_balanced_mtl_nn_mgda,annual_heating_energy_gj,rmse,1.5067000601693423,GJ/year,375
+29,5,deep_balanced_mtl_nn_mgda,annual_heating_energy_gj,rmse,1.4360095545864702,GJ/year,375
+43,1,deep_balanced_mtl_nn_mgda,annual_heating_energy_gj,rmse,1.5223696586932107,GJ/year,375
+43,2,deep_balanced_mtl_nn_mgda,annual_heating_energy_gj,rmse,1.8429659874121083,GJ/year,375
+43,3,deep_balanced_mtl_nn_mgda,annual_heating_energy_gj,rmse,1.4175625806173791,GJ/year,375
+43,4,deep_balanced_mtl_nn_mgda,annual_heating_energy_gj,rmse,1.5659979258379395,GJ/year,375
+43,5,deep_balanced_mtl_nn_mgda,annual_heating_energy_gj,rmse,1.6469773853939262,GJ/year,375
+17,1,deep_balanced_mtl_nn_mgda,carbon_rate_sum_proxy,mae,13.167586997477212,rate-index points,375
+17,2,deep_balanced_mtl_nn_mgda,carbon_rate_sum_proxy,mae,11.654297943115234,rate-index points,375
+17,3,deep_balanced_mtl_nn_mgda,carbon_rate_sum_proxy,mae,12.673475962320964,rate-index points,375
+17,4,deep_balanced_mtl_nn_mgda,carbon_rate_sum_proxy,mae,11.900568736979166,rate-index points,375
+17,5,deep_balanced_mtl_nn_mgda,carbon_rate_sum_proxy,mae,14.067791713053383,rate-index points,375
+29,1,deep_balanced_mtl_nn_mgda,carbon_rate_sum_proxy,mae,13.115674663492838,rate-index points,375
+29,2,deep_balanced_mtl_nn_mgda,carbon_rate_sum_proxy,mae,13.231459266357424,rate-index points,375
+29,3,deep_balanced_mtl_nn_mgda,carbon_rate_sum_proxy,mae,12.503319400227864,rate-index points,375
+29,4,deep_balanced_mtl_nn_mgda,carbon_rate_sum_proxy,mae,13.397354941813152,rate-index points,375
+29,5,deep_balanced_mtl_nn_mgda,carbon_rate_sum_proxy,mae,12.534951565755206,rate-index points,375
+43,1,deep_balanced_mtl_nn_mgda,carbon_rate_sum_proxy,mae,12.272450397135415,rate-index points,375
+43,2,deep_balanced_mtl_nn_mgda,carbon_rate_sum_proxy,mae,15.095903994954428,rate-index points,375
+43,3,deep_balanced_mtl_nn_mgda,carbon_rate_sum_proxy,mae,13.921917938232422,rate-index points,375
+43,4,deep_balanced_mtl_nn_mgda,carbon_rate_sum_proxy,mae,12.140774117838543,rate-index points,375
+43,5,deep_balanced_mtl_nn_mgda,carbon_rate_sum_proxy,mae,14.664133422444662,rate-index points,375
+17,1,deep_balanced_mtl_nn_mgda,carbon_rate_sum_proxy,r2,0.9169830672739584,dimensionless,375
+17,2,deep_balanced_mtl_nn_mgda,carbon_rate_sum_proxy,r2,0.9196902122519155,dimensionless,375
+17,3,deep_balanced_mtl_nn_mgda,carbon_rate_sum_proxy,r2,0.91861253674399879,dimensionless,375
+17,4,deep_balanced_mtl_nn_mgda,carbon_rate_sum_proxy,r2,0.92253661509093066,dimensionless,375
+17,5,deep_balanced_mtl_nn_mgda,carbon_rate_sum_proxy,r2,0.89889196751671607,dimensionless,375
+29,1,deep_balanced_mtl_nn_mgda,carbon_rate_sum_proxy,r2,0.91867799887944734,dimensionless,375
+29,2,deep_balanced_mtl_nn_mgda,carbon_rate_sum_proxy,r2,0.91687864806971087,dimensionless,375
+29,3,deep_balanced_mtl_nn_mgda,carbon_rate_sum_proxy,r2,0.91784775380779382,dimensionless,375
+29,4,deep_balanced_mtl_nn_mgda,carbon_rate_sum_proxy,r2,0.89664848319255686,dimensionless,375
+29,5,deep_balanced_mtl_nn_mgda,carbon_rate_sum_proxy,r2,0.91347599162199145,dimensionless,375
+43,1,deep_balanced_mtl_nn_mgda,carbon_rate_sum_proxy,r2,0.9099422277812792,dimensionless,375
+43,2,deep_balanced_mtl_nn_mgda,carbon_rate_sum_proxy,r2,0.88552930074768055,dimensionless,375
+43,3,deep_balanced_mtl_nn_mgda,carbon_rate_sum_proxy,r2,0.90780065828188683,dimensionless,375
+43,4,deep_balanced_mtl_nn_mgda,carbon_rate_sum_proxy,r2,0.91332943446687542,dimensionless,375
+43,5,deep_balanced_mtl_nn_mgda,carbon_rate_sum_proxy,r2,0.90825463680306484,dimensionless,375
+17,1,deep_balanced_mtl_nn_mgda,carbon_rate_sum_proxy,rmse,16.045164618146025,rate-index points,375
+17,2,deep_balanced_mtl_nn_mgda,carbon_rate_sum_proxy,rmse,14.804055092540001,rate-index points,375
+17,3,deep_balanced_mtl_nn_mgda,carbon_rate_sum_proxy,rmse,15.439312701279336,rate-index points,375
+17,4,deep_balanced_mtl_nn_mgda,carbon_rate_sum_proxy,rmse,14.522547393864919,rate-index points,375
+17,5,deep_balanced_mtl_nn_mgda,carbon_rate_sum_proxy,rmse,16.89977408697295,rate-index points,375
+29,1,deep_balanced_mtl_nn_mgda,carbon_rate_sum_proxy,rmse,16.052812319795937,rate-index points,375
+29,2,deep_balanced_mtl_nn_mgda,carbon_rate_sum_proxy,rmse,15.656829952580644,rate-index points,375
+29,3,deep_balanced_mtl_nn_mgda,carbon_rate_sum_proxy,rmse,15.574806460662426,rate-index points,375
+29,4,deep_balanced_mtl_nn_mgda,carbon_rate_sum_proxy,rmse,16.616159900851915,rate-index points,375
+29,5,deep_balanced_mtl_nn_mgda,carbon_rate_sum_proxy,rmse,15.114887586897519,rate-index points,375
+43,1,deep_balanced_mtl_nn_mgda,carbon_rate_sum_proxy,rmse,15.400230570981069,rate-index points,375
+43,2,deep_balanced_mtl_nn_mgda,carbon_rate_sum_proxy,rmse,18.135513954723155,rate-index points,375
+43,3,deep_balanced_mtl_nn_mgda,carbon_rate_sum_proxy,rmse,16.72022583989764,rate-index points,375
+43,4,deep_balanced_mtl_nn_mgda,carbon_rate_sum_proxy,rmse,15.223438610205385,rate-index points,375
+43,5,deep_balanced_mtl_nn_mgda,carbon_rate_sum_proxy,rmse,17.218910194462019,rate-index points,375
+17,1,deep_balanced_mtl_nn_mgda,cost_rate_sum_proxy,mae,117.5758280110677,rate-index points,375
+17,2,deep_balanced_mtl_nn_mgda,cost_rate_sum_proxy,mae,117.09490384114584,rate-index points,375
+17,3,deep_balanced_mtl_nn_mgda,cost_rate_sum_proxy,mae,111.23410721028647,rate-index points,375
+17,4,deep_balanced_mtl_nn_mgda,cost_rate_sum_proxy,mae,116.6241364095052,rate-index points,375
+17,5,deep_balanced_mtl_nn_mgda,cost_rate_sum_proxy,mae,116.2441465983073,rate-index points,375
+29,1,deep_balanced_mtl_nn_mgda,cost_rate_sum_proxy,mae,111.35706946614583,rate-index points,375
+29,2,deep_balanced_mtl_nn_mgda,cost_rate_sum_proxy,mae,121.97962695312501,rate-index points,375
+29,3,deep_balanced_mtl_nn_mgda,cost_rate_sum_proxy,mae,108.70497656249999,rate-index points,375
+29,4,deep_balanced_mtl_nn_mgda,cost_rate_sum_proxy,mae,122.92252016601562,rate-index points,375
+29,5,deep_balanced_mtl_nn_mgda,cost_rate_sum_proxy,mae,117.49836059570312,rate-index points,375
+43,1,deep_balanced_mtl_nn_mgda,cost_rate_sum_proxy,mae,110.65555048828124,rate-index points,375
+43,2,deep_balanced_mtl_nn_mgda,cost_rate_sum_proxy,mae,113.31604912109374,rate-index points,375
+43,3,deep_balanced_mtl_nn_mgda,cost_rate_sum_proxy,mae,134.32250341796876,rate-index points,375
+43,4,deep_balanced_mtl_nn_mgda,cost_rate_sum_proxy,mae,106.02181479492188,rate-index points,375
+43,5,deep_balanced_mtl_nn_mgda,cost_rate_sum_proxy,mae,134.64804469401039,rate-index points,375
+17,1,deep_balanced_mtl_nn_mgda,cost_rate_sum_proxy,r2,0.6734213956648869,dimensionless,375
+17,2,deep_balanced_mtl_nn_mgda,cost_rate_sum_proxy,r2,0.6356296311698022,dimensionless,375
+17,3,deep_balanced_mtl_nn_mgda,cost_rate_sum_proxy,r2,0.71601534289445667,dimensionless,375
+17,4,deep_balanced_mtl_nn_mgda,cost_rate_sum_proxy,r2,0.69968251544064364,dimensionless,375
+17,5,deep_balanced_mtl_nn_mgda,cost_rate_sum_proxy,r2,0.68495384349140309,dimensionless,375
+29,1,deep_balanced_mtl_nn_mgda,cost_rate_sum_proxy,r2,0.65121909836661196,dimensionless,375
+29,2,deep_balanced_mtl_nn_mgda,cost_rate_sum_proxy,r2,0.67149607886276585,dimensionless,375
+29,3,deep_balanced_mtl_nn_mgda,cost_rate_sum_proxy,r2,0.72300805955974079,dimensionless,375
+29,4,deep_balanced_mtl_nn_mgda,cost_rate_sum_proxy,r2,0.67498925938868259,dimensionless,375
+29,5,deep_balanced_mtl_nn_mgda,cost_rate_sum_proxy,r2,0.65782416532283072,dimensionless,375
+43,1,deep_balanced_mtl_nn_mgda,cost_rate_sum_proxy,r2,0.70520325712200205,dimensionless,375
+43,2,deep_balanced_mtl_nn_mgda,cost_rate_sum_proxy,r2,0.66778030534666621,dimensionless,375
+43,3,deep_balanced_mtl_nn_mgda,cost_rate_sum_proxy,r2,0.64390186877148459,dimensionless,375
+43,4,deep_balanced_mtl_nn_mgda,cost_rate_sum_proxy,r2,0.68278573207055748,dimensionless,375
+43,5,deep_balanced_mtl_nn_mgda,cost_rate_sum_proxy,r2,0.6044568639381116,dimensionless,375
+17,1,deep_balanced_mtl_nn_mgda,cost_rate_sum_proxy,rmse,139.40708383307691,rate-index points,375
+17,2,deep_balanced_mtl_nn_mgda,cost_rate_sum_proxy,rmse,136.25160904565752,rate-index points,375
+17,3,deep_balanced_mtl_nn_mgda,cost_rate_sum_proxy,rmse,127.93609698325152,rate-index points,375
+17,4,deep_balanced_mtl_nn_mgda,cost_rate_sum_proxy,rmse,136.15206967618479,rate-index points,375
+17,5,deep_balanced_mtl_nn_mgda,cost_rate_sum_proxy,rmse,134.8404940769824,rate-index points,375
+29,1,deep_balanced_mtl_nn_mgda,cost_rate_sum_proxy,rmse,133.42792629824677,rate-index points,375
+29,2,deep_balanced_mtl_nn_mgda,cost_rate_sum_proxy,rmse,138.20794434900887,rate-index points,375
+29,3,deep_balanced_mtl_nn_mgda,cost_rate_sum_proxy,rmse,129.65682186613503,rate-index points,375
+29,4,deep_balanced_mtl_nn_mgda,cost_rate_sum_proxy,rmse,141.02658850084785,rate-index points,375
+29,5,deep_balanced_mtl_nn_mgda,cost_rate_sum_proxy,rmse,140.19125777484049,rate-index points,375
+43,1,deep_balanced_mtl_nn_mgda,cost_rate_sum_proxy,rmse,130.17745704678359,rate-index points,375
+43,2,deep_balanced_mtl_nn_mgda,cost_rate_sum_proxy,rmse,136.16895722636227,rate-index points,375
+43,3,deep_balanced_mtl_nn_mgda,cost_rate_sum_proxy,rmse,148.80341735059443,rate-index points,375
+43,4,deep_balanced_mtl_nn_mgda,cost_rate_sum_proxy,rmse,128.36682694130002,rate-index points,375
+43,5,deep_balanced_mtl_nn_mgda,cost_rate_sum_proxy,rmse,153.12226748879462,rate-index points,375
+17,1,deep_balanced_mtl_nn_mgda,days_below_24_c,mae,2.6652856445312501,days/year,375
+17,2,deep_balanced_mtl_nn_mgda,days_below_24_c,mae,2.041329345703125,days/year,375
+17,3,deep_balanced_mtl_nn_mgda,days_below_24_c,mae,1.8823870442708333,days/year,375
+17,4,deep_balanced_mtl_nn_mgda,days_below_24_c,mae,2.2544287109374999,days/year,375
+17,5,deep_balanced_mtl_nn_mgda,days_below_24_c,mae,3.2988562011718749,days/year,375
+29,1,deep_balanced_mtl_nn_mgda,days_below_24_c,mae,1.9647853190104168,days/year,375
+29,2,deep_balanced_mtl_nn_mgda,days_below_24_c,mae,2.7234822591145833,days/year,375
+29,3,deep_balanced_mtl_nn_mgda,days_below_24_c,mae,2.2115494791666666,days/year,375
+29,4,deep_balanced_mtl_nn_mgda,days_below_24_c,mae,2.7694921061197917,days/year,375
+29,5,deep_balanced_mtl_nn_mgda,days_below_24_c,mae,1.7616961263020834,days/year,375
+43,1,deep_balanced_mtl_nn_mgda,days_below_24_c,mae,2.9364984537760415,days/year,375
+43,2,deep_balanced_mtl_nn_mgda,days_below_24_c,mae,2.8931036783854167,days/year,375
+43,3,deep_balanced_mtl_nn_mgda,days_below_24_c,mae,2.5282376302083334,days/year,375
+43,4,deep_balanced_mtl_nn_mgda,days_below_24_c,mae,2.0647459309895835,days/year,375
+43,5,deep_balanced_mtl_nn_mgda,days_below_24_c,mae,2.9036986490885415,days/year,375
+17,1,deep_balanced_mtl_nn_mgda,days_below_24_c,r2,0.98940961692262386,dimensionless,375
+17,2,deep_balanced_mtl_nn_mgda,days_below_24_c,r2,0.99346705845811045,dimensionless,375
+17,3,deep_balanced_mtl_nn_mgda,days_below_24_c,r2,0.99491104576180522,dimensionless,375
+17,4,deep_balanced_mtl_nn_mgda,days_below_24_c,r2,0.99291531519653631,dimensionless,375
+17,5,deep_balanced_mtl_nn_mgda,days_below_24_c,r2,0.98662357360981057,dimensionless,375
+29,1,deep_balanced_mtl_nn_mgda,days_below_24_c,r2,0.9940864592651788,dimensionless,375
+29,2,deep_balanced_mtl_nn_mgda,days_below_24_c,r2,0.99035710572909175,dimensionless,375
+29,3,deep_balanced_mtl_nn_mgda,days_below_24_c,r2,0.99371108820259402,dimensionless,375
+29,4,deep_balanced_mtl_nn_mgda,days_below_24_c,r2,0.989533686336451,dimensionless,375
+29,5,deep_balanced_mtl_nn_mgda,days_below_24_c,r2,0.99552829937726028,dimensionless,375
+43,1,deep_balanced_mtl_nn_mgda,days_below_24_c,r2,0.98867758786377202,dimensionless,375
+43,2,deep_balanced_mtl_nn_mgda,days_below_24_c,r2,0.98905995904606392,dimensionless,375
+43,3,deep_balanced_mtl_nn_mgda,days_below_24_c,r2,0.99108161555222229,dimensionless,375
+43,4,deep_balanced_mtl_nn_mgda,days_below_24_c,r2,0.99438861561490088,dimensionless,375
+43,5,deep_balanced_mtl_nn_mgda,days_below_24_c,r2,0.98763298135757482,dimensionless,375
+17,1,deep_balanced_mtl_nn_mgda,days_below_24_c,rmse,3.5629956979477919,days/year,375
+17,2,deep_balanced_mtl_nn_mgda,days_below_24_c,rmse,2.8389710744227994,days/year,375
+17,3,deep_balanced_mtl_nn_mgda,days_below_24_c,rmse,2.5427965538958213,days/year,375
+17,4,deep_balanced_mtl_nn_mgda,days_below_24_c,rmse,2.9325965433290722,days/year,375
+17,5,deep_balanced_mtl_nn_mgda,days_below_24_c,rmse,4.0180060610252468,days/year,375
+29,1,deep_balanced_mtl_nn_mgda,days_below_24_c,rmse,2.6315948225754768,days/year,375
+29,2,deep_balanced_mtl_nn_mgda,days_below_24_c,rmse,3.513557993305191,days/year,375
+29,3,deep_balanced_mtl_nn_mgda,days_below_24_c,rmse,2.782177202937723,days/year,375
+29,4,deep_balanced_mtl_nn_mgda,days_below_24_c,rmse,3.5972187563802338,days/year,375
+29,5,deep_balanced_mtl_nn_mgda,days_below_24_c,rmse,2.3215989268469079,days/year,375
+43,1,deep_balanced_mtl_nn_mgda,days_below_24_c,rmse,3.7887481414887665,days/year,375
+43,2,deep_balanced_mtl_nn_mgda,days_below_24_c,rmse,3.6381284888765282,days/year,375
+43,3,deep_balanced_mtl_nn_mgda,days_below_24_c,rmse,3.2659676513536922,days/year,375
+43,4,deep_balanced_mtl_nn_mgda,days_below_24_c,rmse,2.6280958848800324,days/year,375
+43,5,deep_balanced_mtl_nn_mgda,days_below_24_c,rmse,3.8882891206912054,days/year,375
+17,1,gradient_boosting,annual_heating_energy_gj,mae,0.12744704597957052,GJ/year,375
+17,2,gradient_boosting,annual_heating_energy_gj,mae,0.11938649354951709,GJ/year,375
+17,3,gradient_boosting,annual_heating_energy_gj,mae,0.10629499871963705,GJ/year,375
+17,4,gradient_boosting,annual_heating_energy_gj,mae,0.11648519978675884,GJ/year,375
+17,5,gradient_boosting,annual_heating_energy_gj,mae,0.13354712707325711,GJ/year,375
+29,1,gradient_boosting,annual_heating_energy_gj,mae,0.1605085696582228,GJ/year,375
+29,2,gradient_boosting,annual_heating_energy_gj,mae,0.11273730202913716,GJ/year,375
+29,3,gradient_boosting,annual_heating_energy_gj,mae,0.12853553889466535,GJ/year,375
+29,4,gradient_boosting,annual_heating_energy_gj,mae,0.12393652165135745,GJ/year,375
+29,5,gradient_boosting,annual_heating_energy_gj,mae,0.11464195005607909,GJ/year,375
+43,1,gradient_boosting,annual_heating_energy_gj,mae,0.13300169999299308,GJ/year,375
+43,2,gradient_boosting,annual_heating_energy_gj,mae,0.14092213089473729,GJ/year,375
+43,3,gradient_boosting,annual_heating_energy_gj,mae,0.13383498099087598,GJ/year,375
+43,4,gradient_boosting,annual_heating_energy_gj,mae,0.12685978465928285,GJ/year,375
+43,5,gradient_boosting,annual_heating_energy_gj,mae,0.14437048621948056,GJ/year,375
+17,1,gradient_boosting,annual_heating_energy_gj,r2,0.99848709511035716,dimensionless,375
+17,2,gradient_boosting,annual_heating_energy_gj,r2,0.99868379270253671,dimensionless,375
+17,3,gradient_boosting,annual_heating_energy_gj,r2,0.99902701799876115,dimensionless,375
+17,4,gradient_boosting,annual_heating_energy_gj,r2,0.99818022089255765,dimensionless,375
+17,5,gradient_boosting,annual_heating_energy_gj,r2,0.99819642916657947,dimensionless,375
+29,1,gradient_boosting,annual_heating_energy_gj,r2,0.99759160382732914,dimensionless,375
+29,2,gradient_boosting,annual_heating_energy_gj,r2,0.99884110413940408,dimensionless,375
+29,3,gradient_boosting,annual_heating_energy_gj,r2,0.99825543229997316,dimensionless,375
+29,4,gradient_boosting,annual_heating_energy_gj,r2,0.9978562901655994,dimensionless,375
+29,5,gradient_boosting,annual_heating_energy_gj,r2,0.9988669097962356,dimensionless,375
+43,1,gradient_boosting,annual_heating_energy_gj,r2,0.99723827911626195,dimensionless,375
+43,2,gradient_boosting,annual_heating_energy_gj,r2,0.99841937568986217,dimensionless,375
+43,3,gradient_boosting,annual_heating_energy_gj,r2,0.99824764281088696,dimensionless,375
+43,4,gradient_boosting,annual_heating_energy_gj,r2,0.99813323875600934,dimensionless,375
+43,5,gradient_boosting,annual_heating_energy_gj,r2,0.99726073493602541,dimensionless,375
+17,1,gradient_boosting,annual_heating_energy_gj,rmse,0.22009801975798943,GJ/year,375
+17,2,gradient_boosting,annual_heating_energy_gj,rmse,0.19050431720974673,GJ/year,375
+17,3,gradient_boosting,annual_heating_energy_gj,rmse,0.16913179856183735,GJ/year,375
+17,4,gradient_boosting,annual_heating_energy_gj,rmse,0.23437009702080319,GJ/year,375
+17,5,gradient_boosting,annual_heating_energy_gj,rmse,0.23035105825095442,GJ/year,375
+29,1,gradient_boosting,annual_heating_energy_gj,rmse,0.26565799799538875,GJ/year,375
+29,2,gradient_boosting,annual_heating_energy_gj,rmse,0.18257058011932858,GJ/year,375
+29,3,gradient_boosting,annual_heating_energy_gj,rmse,0.23078939193161779,GJ/year,375
+29,4,gradient_boosting,annual_heating_energy_gj,rmse,0.25226534240810033,GJ/year,375
+29,5,gradient_boosting,annual_heating_energy_gj,rmse,0.18637651454238668,GJ/year,375
+43,1,gradient_boosting,annual_heating_energy_gj,rmse,0.27675893734062379,GJ/year,375
+43,2,gradient_boosting,annual_heating_energy_gj,rmse,0.22385037268542962,GJ/year,375
+43,3,gradient_boosting,annual_heating_energy_gj,rmse,0.22767637983209194,GJ/year,375
+43,4,gradient_boosting,annual_heating_energy_gj,rmse,0.23498397730679813,GJ/year,375
+43,5,gradient_boosting,annual_heating_energy_gj,rmse,0.28887491043568481,GJ/year,375
+17,1,gradient_boosting,carbon_rate_sum_proxy,mae,1.2866715223136458,rate-index points,375
+17,2,gradient_boosting,carbon_rate_sum_proxy,mae,0.87405254814152311,rate-index points,375
+17,3,gradient_boosting,carbon_rate_sum_proxy,mae,1.1783412389126093,rate-index points,375
+17,4,gradient_boosting,carbon_rate_sum_proxy,mae,1.222788548275396,rate-index points,375
+17,5,gradient_boosting,carbon_rate_sum_proxy,mae,0.93833629090204251,rate-index points,375
+29,1,gradient_boosting,carbon_rate_sum_proxy,mae,0.9094266577877852,rate-index points,375
+29,2,gradient_boosting,carbon_rate_sum_proxy,mae,1.054142896470126,rate-index points,375
+29,3,gradient_boosting,carbon_rate_sum_proxy,mae,1.1836260079030088,rate-index points,375
+29,4,gradient_boosting,carbon_rate_sum_proxy,mae,1.1252306785974109,rate-index points,375
+29,5,gradient_boosting,carbon_rate_sum_proxy,mae,1.1370566582080854,rate-index points,375
+43,1,gradient_boosting,carbon_rate_sum_proxy,mae,1.0851814358611465,rate-index points,375
+43,2,gradient_boosting,carbon_rate_sum_proxy,mae,1.2395066630458833,rate-index points,375
+43,3,gradient_boosting,carbon_rate_sum_proxy,mae,1.3233258671721939,rate-index points,375
+43,4,gradient_boosting,carbon_rate_sum_proxy,mae,0.87190090855190161,rate-index points,375
+43,5,gradient_boosting,carbon_rate_sum_proxy,mae,1.2404794002286657,rate-index points,375
+17,1,gradient_boosting,carbon_rate_sum_proxy,r2,0.99896882701237477,dimensionless,375
+17,2,gradient_boosting,carbon_rate_sum_proxy,r2,0.99941385342131794,dimensionless,375
+17,3,gradient_boosting,carbon_rate_sum_proxy,r2,0.99913707516329497,dimensionless,375
+17,4,gradient_boosting,carbon_rate_sum_proxy,r2,0.99903812015927973,dimensionless,375
+17,5,gradient_boosting,carbon_rate_sum_proxy,r2,0.99939501664288233,dimensionless,375
+29,1,gradient_boosting,carbon_rate_sum_proxy,r2,0.99943515885084089,dimensionless,375
+29,2,gradient_boosting,carbon_rate_sum_proxy,r2,0.999353256287977,dimensionless,375
+29,3,gradient_boosting,carbon_rate_sum_proxy,r2,0.99906510136486615,dimensionless,375
+29,4,gradient_boosting,carbon_rate_sum_proxy,r2,0.99916112059402806,dimensionless,375
+29,5,gradient_boosting,carbon_rate_sum_proxy,r2,0.9990369838297154,dimensionless,375
+43,1,gradient_boosting,carbon_rate_sum_proxy,r2,0.99909199233925827,dimensionless,375
+43,2,gradient_boosting,carbon_rate_sum_proxy,r2,0.99912431749552333,dimensionless,375
+43,3,gradient_boosting,carbon_rate_sum_proxy,r2,0.99882072893006124,dimensionless,375
+43,4,gradient_boosting,carbon_rate_sum_proxy,r2,0.99951056335646271,dimensionless,375
+43,5,gradient_boosting,carbon_rate_sum_proxy,r2,0.99913012312624994,dimensionless,375
+17,1,gradient_boosting,carbon_rate_sum_proxy,rmse,1.788243270861231,rate-index points,375
+17,2,gradient_boosting,carbon_rate_sum_proxy,rmse,1.2647350974610509,rate-index points,375
+17,3,gradient_boosting,carbon_rate_sum_proxy,rmse,1.5897751042625894,rate-index points,375
+17,4,gradient_boosting,carbon_rate_sum_proxy,rmse,1.6182848882943572,rate-index points,375
+17,5,gradient_boosting,carbon_rate_sum_proxy,rmse,1.307253409487656,rate-index points,375
+29,1,gradient_boosting,carbon_rate_sum_proxy,rmse,1.3378587508793269,rate-index points,375
+29,2,gradient_boosting,carbon_rate_sum_proxy,rmse,1.3810634862063398,rate-index points,375
+29,3,gradient_boosting,carbon_rate_sum_proxy,rmse,1.6614803156048352,rate-index points,375
+29,4,gradient_boosting,carbon_rate_sum_proxy,rmse,1.4970006946670749,rate-index points,375
+29,5,gradient_boosting,carbon_rate_sum_proxy,rmse,1.5946060078072148,rate-index points,375
+43,1,gradient_boosting,carbon_rate_sum_proxy,rmse,1.5463627505062816,rate-index points,375
+43,2,gradient_boosting,carbon_rate_sum_proxy,rmse,1.586193027264007,rate-index points,375
+43,3,gradient_boosting,carbon_rate_sum_proxy,rmse,1.8909717955281797,rate-index points,375
+43,4,gradient_boosting,carbon_rate_sum_proxy,rmse,1.1439977906304564,rate-index points,375
+43,5,gradient_boosting,carbon_rate_sum_proxy,rmse,1.6766503013424459,rate-index points,375
+17,1,gradient_boosting,cost_rate_sum_proxy,mae,10.6281261848442,rate-index points,375
+17,2,gradient_boosting,cost_rate_sum_proxy,mae,6.2213473782473105,rate-index points,375
+17,3,gradient_boosting,cost_rate_sum_proxy,mae,9.0110282581132228,rate-index points,375
+17,4,gradient_boosting,cost_rate_sum_proxy,mae,10.764459274135904,rate-index points,375
+17,5,gradient_boosting,cost_rate_sum_proxy,mae,10.399942975206017,rate-index points,375
+29,1,gradient_boosting,cost_rate_sum_proxy,mae,9.6511854425187078,rate-index points,375
+29,2,gradient_boosting,cost_rate_sum_proxy,mae,9.7877948529064689,rate-index points,375
+29,3,gradient_boosting,cost_rate_sum_proxy,mae,8.6219828031167065,rate-index points,375
+29,4,gradient_boosting,cost_rate_sum_proxy,mae,14.21259766250631,rate-index points,375
+29,5,gradient_boosting,cost_rate_sum_proxy,mae,8.2405197027037325,rate-index points,375
+43,1,gradient_boosting,cost_rate_sum_proxy,mae,8.2567883050586026,rate-index points,375
+43,2,gradient_boosting,cost_rate_sum_proxy,mae,10.516128491646988,rate-index points,375
+43,3,gradient_boosting,cost_rate_sum_proxy,mae,8.5536866352981953,rate-index points,375
+43,4,gradient_boosting,cost_rate_sum_proxy,mae,8.0869713447279228,rate-index points,375
+43,5,gradient_boosting,cost_rate_sum_proxy,mae,10.307944765248156,rate-index points,375
+17,1,gradient_boosting,cost_rate_sum_proxy,r2,0.99428915353687342,dimensionless,375
+17,2,gradient_boosting,cost_rate_sum_proxy,r2,0.99817772093363777,dimensionless,375
+17,3,gradient_boosting,cost_rate_sum_proxy,r2,0.99346862895703703,dimensionless,375
+17,4,gradient_boosting,cost_rate_sum_proxy,r2,0.99413648573566371,dimensionless,375
+17,5,gradient_boosting,cost_rate_sum_proxy,r2,0.9960572908512304,dimensionless,375
+29,1,gradient_boosting,cost_rate_sum_proxy,r2,0.99400910855738034,dimensionless,375
+29,2,gradient_boosting,cost_rate_sum_proxy,r2,0.99658450296833045,dimensionless,375
+29,3,gradient_boosting,cost_rate_sum_proxy,r2,0.9960740368207921,dimensionless,375
+29,4,gradient_boosting,cost_rate_sum_proxy,r2,0.99202212428978198,dimensionless,375
+29,5,gradient_boosting,cost_rate_sum_proxy,r2,0.99666155939428291,dimensionless,375
+43,1,gradient_boosting,cost_rate_sum_proxy,r2,0.99685491543685989,dimensionless,375
+43,2,gradient_boosting,cost_rate_sum_proxy,r2,0.99571878228997901,dimensionless,375
+43,3,gradient_boosting,cost_rate_sum_proxy,r2,0.99640646028693414,dimensionless,375
+43,4,gradient_boosting,cost_rate_sum_proxy,r2,0.99658637103843106,dimensionless,375
+43,5,gradient_boosting,cost_rate_sum_proxy,r2,0.99510638078583102,dimensionless,375
+17,1,gradient_boosting,cost_rate_sum_proxy,rmse,18.434918431820698,rate-index points,375
+17,2,gradient_boosting,cost_rate_sum_proxy,rmse,9.6355732372694671,rate-index points,375
+17,3,gradient_boosting,cost_rate_sum_proxy,rmse,19.40205972197105,rate-index points,375
+17,4,gradient_boosting,cost_rate_sum_proxy,rmse,19.024485990537425,rate-index points,375
+17,5,gradient_boosting,cost_rate_sum_proxy,rmse,15.084489346559108,rate-index points,375
+29,1,gradient_boosting,cost_rate_sum_proxy,rmse,17.487032347739621,rate-index points,375
+29,2,gradient_boosting,cost_rate_sum_proxy,rmse,14.092553256050495,rate-index points,375
+29,3,gradient_boosting,cost_rate_sum_proxy,rmse,15.436005218818485,rate-index points,375
+29,4,gradient_boosting,cost_rate_sum_proxy,rmse,22.09509008559289,rate-index points,375
+29,5,gradient_boosting,cost_rate_sum_proxy,rmse,13.847395345943305,rate-index points,375
+43,1,gradient_boosting,cost_rate_sum_proxy,rmse,13.445922590190921,rate-index points,375
+43,2,gradient_boosting,cost_rate_sum_proxy,rmse,15.457849725363156,rate-index points,375
+43,3,gradient_boosting,cost_rate_sum_proxy,rmse,14.948213159970303,rate-index points,375
+43,4,gradient_boosting,cost_rate_sum_proxy,rmse,13.316331768495477,rate-index points,375
+43,5,gradient_boosting,cost_rate_sum_proxy,rmse,17.031641685065356,rate-index points,375
+17,1,gradient_boosting,days_below_24_c,mae,0.36993596006754298,days/year,375
+17,2,gradient_boosting,days_below_24_c,mae,0.33569159959434636,days/year,375
+17,3,gradient_boosting,days_below_24_c,mae,0.34967570667458464,days/year,375
+17,4,gradient_boosting,days_below_24_c,mae,0.32017094936909279,days/year,375
+17,5,gradient_boosting,days_below_24_c,mae,0.3477925105534887,days/year,375
+29,1,gradient_boosting,days_below_24_c,mae,0.36901072071472768,days/year,375
+29,2,gradient_boosting,days_below_24_c,mae,0.33802298629718036,days/year,375
+29,3,gradient_boosting,days_below_24_c,mae,0.37707015204156746,days/year,375
+29,4,gradient_boosting,days_below_24_c,mae,0.31407266959700109,days/year,375
+29,5,gradient_boosting,days_below_24_c,mae,0.36149761895947236,days/year,375
+43,1,gradient_boosting,days_below_24_c,mae,0.34263324672105666,days/year,375
+43,2,gradient_boosting,days_below_24_c,mae,0.37287441330455173,days/year,375
+43,3,gradient_boosting,days_below_24_c,mae,0.33748125090397357,days/year,375
+43,4,gradient_boosting,days_below_24_c,mae,0.35431941451075183,days/year,375
+43,5,gradient_boosting,days_below_24_c,mae,0.40033703550474004,days/year,375
+17,1,gradient_boosting,days_below_24_c,r2,0.99970873510754965,dimensionless,375
+17,2,gradient_boosting,days_below_24_c,r2,0.99977168700498553,dimensionless,375
+17,3,gradient_boosting,days_below_24_c,r2,0.99976122815107082,dimensionless,375
+17,4,gradient_boosting,days_below_24_c,r2,0.99978362147007005,dimensionless,375
+17,5,gradient_boosting,days_below_24_c,r2,0.99972673547385815,dimensionless,375
+29,1,gradient_boosting,days_below_24_c,r2,0.99971568984332404,dimensionless,375
+29,2,gradient_boosting,days_below_24_c,r2,0.999779420906725,dimensionless,375
+29,3,gradient_boosting,days_below_24_c,r2,0.99972390647421516,dimensionless,375
+29,4,gradient_boosting,days_below_24_c,r2,0.99977564277853614,dimensionless,375
+29,5,gradient_boosting,days_below_24_c,r2,0.99969499124898997,dimensionless,375
+43,1,gradient_boosting,days_below_24_c,r2,0.9997199402009902,dimensionless,375
+43,2,gradient_boosting,days_below_24_c,r2,0.99969995222124108,dimensionless,375
+43,3,gradient_boosting,days_below_24_c,r2,0.99976407786132926,dimensionless,375
+43,4,gradient_boosting,days_below_24_c,r2,0.99975729448951967,dimensionless,375
+43,5,gradient_boosting,days_below_24_c,r2,0.99953666917443984,dimensionless,375
+17,1,gradient_boosting,days_below_24_c,rmse,0.590885772677754,days/year,375
+17,2,gradient_boosting,days_below_24_c,rmse,0.53072787359955897,days/year,375
+17,3,gradient_boosting,days_below_24_c,rmse,0.55079362196474846,days/year,375
+17,4,gradient_boosting,days_below_24_c,rmse,0.51250621299559729,days/year,375
+17,5,gradient_boosting,days_below_24_c,rmse,0.57429120355518071,days/year,375
+29,1,gradient_boosting,days_below_24_c,rmse,0.5770207278580064,days/year,375
+29,2,gradient_boosting,days_below_24_c,rmse,0.53140495218121653,days/year,375
+29,3,gradient_boosting,days_below_24_c,rmse,0.58294173235279556,days/year,375
+29,4,gradient_boosting,days_below_24_c,rmse,0.52667172419475616,days/year,375
+29,5,gradient_boosting,days_below_24_c,rmse,0.60632710642164267,days/year,375
+43,1,gradient_boosting,days_below_24_c,rmse,0.59587016794638437,days/year,375
+43,2,gradient_boosting,days_below_24_c,rmse,0.60250931722435708,days/year,375
+43,3,gradient_boosting,days_below_24_c,rmse,0.53119396495274795,days/year,375
+43,4,gradient_boosting,days_below_24_c,rmse,0.54657028243465999,days/year,375
+43,5,gradient_boosting,days_below_24_c,rmse,0.75261286872555355,days/year,375
+17,1,independent_stl_nn,annual_heating_energy_gj,mae,0.092461770291510204,GJ/year,375
+17,2,independent_stl_nn,annual_heating_energy_gj,mae,0.076352618034940742,GJ/year,375
+17,3,independent_stl_nn,annual_heating_energy_gj,mae,0.080571279214378747,GJ/year,375
+17,4,independent_stl_nn,annual_heating_energy_gj,mae,0.072894415809403229,GJ/year,375
+17,5,independent_stl_nn,annual_heating_energy_gj,mae,0.10576786812814042,GJ/year,375
+29,1,independent_stl_nn,annual_heating_energy_gj,mae,0.074246303923945586,GJ/year,375
+29,2,independent_stl_nn,annual_heating_energy_gj,mae,0.0739656579021645,GJ/year,375
+29,3,independent_stl_nn,annual_heating_energy_gj,mae,0.077153769898589269,GJ/year,375
+29,4,independent_stl_nn,annual_heating_energy_gj,mae,0.085403697172254864,GJ/year,375
+29,5,independent_stl_nn,annual_heating_energy_gj,mae,0.0953574928025165,GJ/year,375
+43,1,independent_stl_nn,annual_heating_energy_gj,mae,0.091871609400400248,GJ/year,375
+43,2,independent_stl_nn,annual_heating_energy_gj,mae,0.083912705490842024,GJ/year,375
+43,3,independent_stl_nn,annual_heating_energy_gj,mae,0.085529875365758928,GJ/year,375
+43,4,independent_stl_nn,annual_heating_energy_gj,mae,0.081088410789880813,GJ/year,375
+43,5,independent_stl_nn,annual_heating_energy_gj,mae,0.075645779576865163,GJ/year,375
+17,1,independent_stl_nn,annual_heating_energy_gj,r2,0.99951285435789705,dimensionless,375
+17,2,independent_stl_nn,annual_heating_energy_gj,r2,0.99963598228719286,dimensionless,375
+17,3,independent_stl_nn,annual_heating_energy_gj,r2,0.99951891270330884,dimensionless,375
+17,4,independent_stl_nn,annual_heating_energy_gj,r2,0.9995776737860218,dimensionless,375
+17,5,independent_stl_nn,annual_heating_energy_gj,r2,0.99918195579889046,dimensionless,375
+29,1,independent_stl_nn,annual_heating_energy_gj,r2,0.99957979249876727,dimensionless,375
+29,2,independent_stl_nn,annual_heating_energy_gj,r2,0.99960962198934533,dimensionless,375
+29,3,independent_stl_nn,annual_heating_energy_gj,r2,0.99967247447365937,dimensionless,375
+29,4,independent_stl_nn,annual_heating_energy_gj,r2,0.99951515238468225,dimensionless,375
+29,5,independent_stl_nn,annual_heating_energy_gj,r2,0.99929681191053321,dimensionless,375
+43,1,independent_stl_nn,annual_heating_energy_gj,r2,0.99922270064091046,dimensionless,375
+43,2,independent_stl_nn,annual_heating_energy_gj,r2,0.99957212444155996,dimensionless,375
+43,3,independent_stl_nn,annual_heating_energy_gj,r2,0.99948347279889938,dimensionless,375
+43,4,independent_stl_nn,annual_heating_energy_gj,r2,0.99941593051654098,dimensionless,375
+43,5,independent_stl_nn,annual_heating_energy_gj,r2,0.99964985691777331,dimensionless,375
+17,1,independent_stl_nn,annual_heating_energy_gj,rmse,0.12489347021884224,GJ/year,375
+17,2,independent_stl_nn,annual_heating_energy_gj,rmse,0.10018528390602463,GJ/year,375
+17,3,independent_stl_nn,annual_heating_energy_gj,rmse,0.11892818981679613,GJ/year,375
+17,4,independent_stl_nn,annual_heating_energy_gj,rmse,0.11290596371011777,GJ/year,375
+17,5,independent_stl_nn,annual_heating_energy_gj,rmse,0.15513578773027756,GJ/year,375
+29,1,independent_stl_nn,annual_heating_energy_gj,rmse,0.11096623006879433,GJ/year,375
+29,2,independent_stl_nn,annual_heating_energy_gj,rmse,0.1059622723237354,GJ/year,375
+29,3,independent_stl_nn,annual_heating_energy_gj,rmse,0.099998734924766117,GJ/year,375
+29,4,independent_stl_nn,annual_heating_energy_gj,rmse,0.11997126016710562,GJ/year,375
+29,5,independent_stl_nn,annual_heating_energy_gj,rmse,0.14682320373180488,GJ/year,375
+43,1,independent_stl_nn,annual_heating_energy_gj,rmse,0.14682699726196549,GJ/year,375
+43,2,independent_stl_nn,annual_heating_energy_gj,rmse,0.11646682401950528,GJ/year,375
+43,3,independent_stl_nn,annual_heating_energy_gj,rmse,0.12360990097677994,GJ/year,375
+43,4,independent_stl_nn,annual_heating_energy_gj,rmse,0.13143956716329239,GJ/year,375
+43,5,independent_stl_nn,annual_heating_energy_gj,rmse,0.10327984315663878,GJ/year,375
+17,1,independent_stl_nn,carbon_rate_sum_proxy,mae,7.3787176924641926,rate-index points,375
+17,2,independent_stl_nn,carbon_rate_sum_proxy,mae,7.201560439046224,rate-index points,375
+17,3,independent_stl_nn,carbon_rate_sum_proxy,mae,6.5869696826171884,rate-index points,375
+17,4,independent_stl_nn,carbon_rate_sum_proxy,mae,7.4714050980631512,rate-index points,375
+17,5,independent_stl_nn,carbon_rate_sum_proxy,mae,7.5742283931477861,rate-index points,375
+29,1,independent_stl_nn,carbon_rate_sum_proxy,mae,7.1465662223307271,rate-index points,375
+29,2,independent_stl_nn,carbon_rate_sum_proxy,mae,7.5198677242024736,rate-index points,375
+29,3,independent_stl_nn,carbon_rate_sum_proxy,mae,7.2604697786458336,rate-index points,375
+29,4,independent_stl_nn,carbon_rate_sum_proxy,mae,7.6828924975585915,rate-index points,375
+29,5,independent_stl_nn,carbon_rate_sum_proxy,mae,6.9064265694173166,rate-index points,375
+43,1,independent_stl_nn,carbon_rate_sum_proxy,mae,8.0031048828124991,rate-index points,375
+43,2,independent_stl_nn,carbon_rate_sum_proxy,mae,7.0675748075358058,rate-index points,375
+43,3,independent_stl_nn,carbon_rate_sum_proxy,mae,7.2639576416015617,rate-index points,375
+43,4,independent_stl_nn,carbon_rate_sum_proxy,mae,6.6054907250976562,rate-index points,375
+43,5,independent_stl_nn,carbon_rate_sum_proxy,mae,7.3214018774414047,rate-index points,375
+17,1,independent_stl_nn,carbon_rate_sum_proxy,r2,0.97474246325063651,dimensionless,375
+17,2,independent_stl_nn,carbon_rate_sum_proxy,r2,0.97226371227162289,dimensionless,375
+17,3,independent_stl_nn,carbon_rate_sum_proxy,r2,0.97895297379251223,dimensionless,375
+17,4,independent_stl_nn,carbon_rate_sum_proxy,r2,0.97086905788002564,dimensionless,375
+17,5,independent_stl_nn,carbon_rate_sum_proxy,r2,0.96644728520709089,dimensionless,375
+29,1,independent_stl_nn,carbon_rate_sum_proxy,r2,0.9745347329049816,dimensionless,375
+29,2,independent_stl_nn,carbon_rate_sum_proxy,r2,0.97020631826010795,dimensionless,375
+29,3,independent_stl_nn,carbon_rate_sum_proxy,r2,0.97535734998036261,dimensionless,375
+29,4,independent_stl_nn,carbon_rate_sum_proxy,r2,0.96603978222032616,dimensionless,375
+29,5,independent_stl_nn,carbon_rate_sum_proxy,r2,0.97364696067701384,dimensionless,375
+43,1,independent_stl_nn,carbon_rate_sum_proxy,r2,0.96413646202435022,dimensionless,375
+43,2,independent_stl_nn,carbon_rate_sum_proxy,r2,0.97560195346832013,dimensionless,375
+43,3,independent_stl_nn,carbon_rate_sum_proxy,r2,0.97548842822174908,dimensionless,375
+43,4,independent_stl_nn,carbon_rate_sum_proxy,r2,0.97574793912054036,dimensionless,375
+43,5,independent_stl_nn,carbon_rate_sum_proxy,r2,0.97565525110843876,dimensionless,375
+17,1,independent_stl_nn,carbon_rate_sum_proxy,rmse,8.8502661726441136,rate-index points,375
+17,2,independent_stl_nn,carbon_rate_sum_proxy,rmse,8.7000274028796749,rate-index points,375
+17,3,independent_stl_nn,carbon_rate_sum_proxy,rmse,7.851354342074786,rate-index points,375
+17,4,independent_stl_nn,carbon_rate_sum_proxy,rmse,8.9057773320643339,rate-index points,375
+17,5,independent_stl_nn,carbon_rate_sum_proxy,rmse,9.7353574513440648,rate-index points,375
+29,1,independent_stl_nn,carbon_rate_sum_proxy,rmse,8.982996233215875,rate-index points,375
+29,2,independent_stl_nn,carbon_rate_sum_proxy,rmse,9.3736691944527379,rate-index points,375
+29,3,independent_stl_nn,carbon_rate_sum_proxy,rmse,8.5301494866687317,rate-index points,375
+29,4,independent_stl_nn,carbon_rate_sum_proxy,rmse,9.5248351687218857,rate-index points,375
+29,5,independent_stl_nn,carbon_rate_sum_proxy,rmse,8.3416499528863515,rate-index points,375
+43,1,independent_stl_nn,carbon_rate_sum_proxy,rmse,9.7183646120607925,rate-index points,375
+43,2,independent_stl_nn,carbon_rate_sum_proxy,rmse,8.372597769036739,rate-index points,375
+43,3,independent_stl_nn,carbon_rate_sum_proxy,rmse,8.6211223661361416,rate-index points,375
+43,4,independent_stl_nn,carbon_rate_sum_proxy,rmse,8.0528807867163259,rate-index points,375
+43,5,independent_stl_nn,carbon_rate_sum_proxy,rmse,8.8698494492753621,rate-index points,375
+17,1,independent_stl_nn,cost_rate_sum_proxy,mae,30.799983593750007,rate-index points,375
+17,2,independent_stl_nn,cost_rate_sum_proxy,mae,26.649997574869797,rate-index points,375
+17,3,independent_stl_nn,cost_rate_sum_proxy,mae,25.2600307779948,rate-index points,375
+17,4,independent_stl_nn,cost_rate_sum_proxy,mae,24.713178385416672,rate-index points,375
+17,5,independent_stl_nn,cost_rate_sum_proxy,mae,32.729739029947922,rate-index points,375
+29,1,independent_stl_nn,cost_rate_sum_proxy,mae,22.235770930989588,rate-index points,375
+29,2,independent_stl_nn,cost_rate_sum_proxy,mae,21.308397119140636,rate-index points,375
+29,3,independent_stl_nn,cost_rate_sum_proxy,mae,22.823524153645835,rate-index points,375
+29,4,independent_stl_nn,cost_rate_sum_proxy,mae,34.547554052734377,rate-index points,375
+29,5,independent_stl_nn,cost_rate_sum_proxy,mae,28.49062293294271,rate-index points,375
+43,1,independent_stl_nn,cost_rate_sum_proxy,mae,56.889379703776036,rate-index points,375
+43,2,independent_stl_nn,cost_rate_sum_proxy,mae,31.780162158203126,rate-index points,375
+43,3,independent_stl_nn,cost_rate_sum_proxy,mae,32.245367268880209,rate-index points,375
+43,4,independent_stl_nn,cost_rate_sum_proxy,mae,26.864648128255212,rate-index points,375
+43,5,independent_stl_nn,cost_rate_sum_proxy,mae,29.496591861979173,rate-index points,375
+17,1,independent_stl_nn,cost_rate_sum_proxy,r2,0.95779835928986812,dimensionless,375
+17,2,independent_stl_nn,cost_rate_sum_proxy,r2,0.97238495312935713,dimensionless,375
+17,3,independent_stl_nn,cost_rate_sum_proxy,r2,0.98140318118986292,dimensionless,375
+17,4,independent_stl_nn,cost_rate_sum_proxy,r2,0.9840668141268385,dimensionless,375
+17,5,independent_stl_nn,cost_rate_sum_proxy,r2,0.96891964151139698,dimensionless,375
+29,1,independent_stl_nn,cost_rate_sum_proxy,r2,0.98236066079927298,dimensionless,375
+29,2,independent_stl_nn,cost_rate_sum_proxy,r2,0.98762971545454603,dimensionless,375
+29,3,independent_stl_nn,cost_rate_sum_proxy,r2,0.98619999640641198,dimensionless,375
+29,4,independent_stl_nn,cost_rate_sum_proxy,r2,0.96431291814624609,dimensionless,375
+29,5,independent_stl_nn,cost_rate_sum_proxy,r2,0.96342899936519877,dimensionless,375
+43,1,independent_stl_nn,cost_rate_sum_proxy,r2,0.87654566479398899,dimensionless,375
+43,2,independent_stl_nn,cost_rate_sum_proxy,r2,0.95693969477274277,dimensionless,375
+43,3,independent_stl_nn,cost_rate_sum_proxy,r2,0.9639512341694948,dimensionless,375
+43,4,independent_stl_nn,cost_rate_sum_proxy,r2,0.97430050396727352,dimensionless,375
+43,5,independent_stl_nn,cost_rate_sum_proxy,r2,0.96293866364797276,dimensionless,375
+17,1,independent_stl_nn,cost_rate_sum_proxy,rmse,50.113605065598534,rate-index points,375
+17,2,independent_stl_nn,cost_rate_sum_proxy,rmse,37.509649494983499,rate-index points,375
+17,3,independent_stl_nn,cost_rate_sum_proxy,rmse,32.73896824697421,rate-index points,375
+17,4,independent_stl_nn,cost_rate_sum_proxy,rmse,31.360664038639577,rate-index points,375
+17,5,independent_stl_nn,cost_rate_sum_proxy,rmse,42.352227033129815,rate-index points,375
+29,1,independent_stl_nn,cost_rate_sum_proxy,rmse,30.006237625998146,rate-index points,375
+29,2,independent_stl_nn,cost_rate_sum_proxy,rmse,26.819617109534747,rate-index points,375
+29,3,independent_stl_nn,cost_rate_sum_proxy,rmse,28.940191823546684,rate-index points,375
+29,4,independent_stl_nn,cost_rate_sum_proxy,rmse,46.731278416631696,rate-index points,375
+29,5,independent_stl_nn,cost_rate_sum_proxy,rmse,45.831564892958113,rate-index points,375
+43,1,independent_stl_nn,cost_rate_sum_proxy,rmse,84.241795704060237,rate-index points,375
+43,2,independent_stl_nn,cost_rate_sum_proxy,rmse,49.023461856510693,rate-index points,375
+43,3,independent_stl_nn,cost_rate_sum_proxy,rmse,47.344905957601895,rate-index points,375
+43,4,independent_stl_nn,cost_rate_sum_proxy,rmse,36.537493661536004,rate-index points,375
+43,5,independent_stl_nn,cost_rate_sum_proxy,rmse,46.870756473904571,rate-index points,375
+17,1,independent_stl_nn,days_below_24_c,mae,0.51569580078124999,days/year,375
+17,2,independent_stl_nn,days_below_24_c,mae,0.52640608723958338,days/year,375
+17,3,independent_stl_nn,days_below_24_c,mae,0.63163264973958333,days/year,375
+17,4,independent_stl_nn,days_below_24_c,mae,0.55049788411458334,days/year,375
+17,5,independent_stl_nn,days_below_24_c,mae,0.58199471028645833,days/year,375
+29,1,independent_stl_nn,days_below_24_c,mae,0.53509415690104167,days/year,375
+29,2,independent_stl_nn,days_below_24_c,mae,0.53112434895833338,days/year,375
+29,3,independent_stl_nn,days_below_24_c,mae,0.52630940755208333,days/year,375
+29,4,independent_stl_nn,days_below_24_c,mae,0.62322509765625,days/year,375
+29,5,independent_stl_nn,days_below_24_c,mae,0.56712532552083328,days/year,375
+43,1,independent_stl_nn,days_below_24_c,mae,0.60286393229166668,days/year,375
+43,2,independent_stl_nn,days_below_24_c,mae,0.56084252929687495,days/year,375
+43,3,independent_stl_nn,days_below_24_c,mae,0.60451888020833333,days/year,375
+43,4,independent_stl_nn,days_below_24_c,mae,0.51335522460937499,days/year,375
+43,5,independent_stl_nn,days_below_24_c,mae,0.55341463216145836,days/year,375
+17,1,independent_stl_nn,days_below_24_c,r2,0.99953627504860298,dimensionless,375
+17,2,independent_stl_nn,days_below_24_c,r2,0.99941775663874211,dimensionless,375
+17,3,independent_stl_nn,days_below_24_c,r2,0.99938001646043562,dimensionless,375
+17,4,independent_stl_nn,days_below_24_c,r2,0.99944813752649808,dimensionless,375
+17,5,independent_stl_nn,days_below_24_c,r2,0.99943776375403415,dimensionless,375
+29,1,independent_stl_nn,days_below_24_c,r2,0.99949893907178322,dimensionless,375
+29,2,independent_stl_nn,days_below_24_c,r2,0.99946280211861072,dimensionless,375
+29,3,independent_stl_nn,days_below_24_c,r2,0.99949986404870816,dimensionless,375
+29,4,independent_stl_nn,days_below_24_c,r2,0.99935381727334316,dimensionless,375
+29,5,independent_stl_nn,days_below_24_c,r2,0.99923153232919981,dimensionless,375
+43,1,independent_stl_nn,days_below_24_c,r2,0.99934857090523876,dimensionless,375
+43,2,independent_stl_nn,days_below_24_c,r2,0.99943436751249171,dimensionless,375
+43,3,independent_stl_nn,days_below_24_c,r2,0.9992312990139568,dimensionless,375
+43,4,independent_stl_nn,days_below_24_c,r2,0.99944868320725411,dimensionless,375
+43,5,independent_stl_nn,days_below_24_c,r2,0.99943910855030249,dimensionless,375
+17,1,independent_stl_nn,days_below_24_c,rmse,0.74557218124339164,days/year,375
+17,2,independent_stl_nn,days_below_24_c,rmse,0.84753736590479223,days/year,375
+17,3,independent_stl_nn,days_below_24_c,rmse,0.88753894936472277,days/year,375
+17,4,independent_stl_nn,days_below_24_c,rmse,0.81847889108053051,days/year,375
+17,5,independent_stl_nn,days_below_24_c,rmse,0.82375858847411698,days/year,375
+29,1,independent_stl_nn,days_below_24_c,rmse,0.7660206833947496,days/year,375
+29,2,independent_stl_nn,days_below_24_c,rmse,0.8292979070579467,days/year,375
+29,3,independent_stl_nn,days_below_24_c,rmse,0.78458693665174029,days/year,375
+29,4,independent_stl_nn,days_below_24_c,rmse,0.89381502021961245,days/year,375
+29,5,independent_stl_nn,days_below_24_c,rmse,0.96241777417415542,days/year,375
+43,1,independent_stl_nn,days_below_24_c,rmse,0.90878224279371467,days/year,375
+43,2,independent_stl_nn,days_below_24_c,rmse,0.82724801165651474,days/year,375
+43,3,independent_stl_nn,days_below_24_c,rmse,0.95884300225779306,days/year,375
+43,4,independent_stl_nn,days_below_24_c,rmse,0.82377158432793529,days/year,375
+43,5,independent_stl_nn,days_below_24_c,rmse,0.8280669518150221,days/year,375
+17,1,random_forest,annual_heating_energy_gj,mae,0.32779713113950631,GJ/year,375
+17,2,random_forest,annual_heating_energy_gj,mae,0.20520741751229229,GJ/year,375
+17,3,random_forest,annual_heating_energy_gj,mae,0.2266161312613042,GJ/year,375
+17,4,random_forest,annual_heating_energy_gj,mae,0.3173366152473594,GJ/year,375
+17,5,random_forest,annual_heating_energy_gj,mae,0.29736419852712642,GJ/year,375
+29,1,random_forest,annual_heating_energy_gj,mae,0.2800566438167742,GJ/year,375
+29,2,random_forest,annual_heating_energy_gj,mae,0.31740144515791591,GJ/year,375
+29,3,random_forest,annual_heating_energy_gj,mae,0.22926369234917326,GJ/year,375
+29,4,random_forest,annual_heating_energy_gj,mae,0.29965082157489276,GJ/year,375
+29,5,random_forest,annual_heating_energy_gj,mae,0.33938491647502173,GJ/year,375
+43,1,random_forest,annual_heating_energy_gj,mae,0.20630682790085106,GJ/year,375
+43,2,random_forest,annual_heating_energy_gj,mae,0.35100951434282124,GJ/year,375
+43,3,random_forest,annual_heating_energy_gj,mae,0.22286448464119005,GJ/year,375
+43,4,random_forest,annual_heating_energy_gj,mae,0.26790263934854708,GJ/year,375
+43,5,random_forest,annual_heating_energy_gj,mae,0.35373182230518624,GJ/year,375
+17,1,random_forest,annual_heating_energy_gj,r2,0.98976730257330414,dimensionless,375
+17,2,random_forest,annual_heating_energy_gj,r2,0.99404851183040188,dimensionless,375
+17,3,random_forest,annual_heating_energy_gj,r2,0.99108650862594749,dimensionless,375
+17,4,random_forest,annual_heating_energy_gj,r2,0.98620462829831557,dimensionless,375
+17,5,random_forest,annual_heating_energy_gj,r2,0.98655484002648952,dimensionless,375
+29,1,random_forest,annual_heating_energy_gj,r2,0.98928972562677242,dimensionless,375
+29,2,random_forest,annual_heating_energy_gj,r2,0.98680208098429723,dimensionless,375
+29,3,random_forest,annual_heating_energy_gj,r2,0.9929226904691193,dimensionless,375
+29,4,random_forest,annual_heating_energy_gj,r2,0.98616685673174098,dimensionless,375
+29,5,random_forest,annual_heating_energy_gj,r2,0.98246943919675267,dimensionless,375
+43,1,random_forest,annual_heating_energy_gj,r2,0.99098417731341837,dimensionless,375
+43,2,random_forest,annual_heating_energy_gj,r2,0.9854340728822738,dimensionless,375
+43,3,random_forest,annual_heating_energy_gj,r2,0.99375362651454258,dimensionless,375
+43,4,random_forest,annual_heating_energy_gj,r2,0.98922243271716614,dimensionless,375
+43,5,random_forest,annual_heating_energy_gj,r2,0.9820854688734364,dimensionless,375
+17,1,random_forest,annual_heating_energy_gj,rmse,0.57240759584086787,GJ/year,375
+17,2,random_forest,annual_heating_energy_gj,rmse,0.40509367495868492,GJ/year,375
+17,3,random_forest,annual_heating_energy_gj,rmse,0.51191374218518682,GJ/year,375
+17,4,random_forest,annual_heating_energy_gj,rmse,0.64529688067901414,GJ/year,375
+17,5,random_forest,annual_heating_energy_gj,rmse,0.6289362067325478,GJ/year,375
+29,1,random_forest,annual_heating_energy_gj,rmse,0.56022080029482391,GJ/year,375
+29,2,random_forest,annual_heating_energy_gj,rmse,0.61611434314744717,GJ/year,375
+29,3,random_forest,annual_heating_energy_gj,rmse,0.46484270984905296,GJ/year,375
+29,4,random_forest,annual_heating_energy_gj,rmse,0.64081847803489644,GJ/year,375
+29,5,random_forest,annual_heating_energy_gj,rmse,0.73308924473545423,GJ/year,375
+43,1,random_forest,annual_heating_energy_gj,rmse,0.50005116489378931,GJ/year,375
+43,2,random_forest,annual_heating_energy_gj,rmse,0.67953614090532899,GJ/year,375
+43,3,random_forest,annual_heating_energy_gj,rmse,0.42985366511338508,GJ/year,375
+43,4,random_forest,annual_heating_energy_gj,rmse,0.5646173687630458,GJ/year,375
+43,5,random_forest,annual_heating_energy_gj,rmse,0.73874663809051611,GJ/year,375
+17,1,random_forest,carbon_rate_sum_proxy,mae,5.6342951111111104,rate-index points,375
+17,2,random_forest,carbon_rate_sum_proxy,mae,4.9917797333333125,rate-index points,375
+17,3,random_forest,carbon_rate_sum_proxy,mae,5.4181635555555605,rate-index points,375
+17,4,random_forest,carbon_rate_sum_proxy,mae,6.0936206222222147,rate-index points,375
+17,5,random_forest,carbon_rate_sum_proxy,mae,5.4266195555555727,rate-index points,375
+29,1,random_forest,carbon_rate_sum_proxy,mae,5.531529866666669,rate-index points,375
+29,2,random_forest,carbon_rate_sum_proxy,mae,5.4829134222222153,rate-index points,375
+29,3,random_forest,carbon_rate_sum_proxy,mae,5.5213091555555609,rate-index points,375
+29,4,random_forest,carbon_rate_sum_proxy,mae,5.3725447999999938,rate-index points,375
+29,5,random_forest,carbon_rate_sum_proxy,mae,5.8449086222222322,rate-index points,375
+43,1,random_forest,carbon_rate_sum_proxy,mae,5.4931241777777453,rate-index points,375
+43,2,random_forest,carbon_rate_sum_proxy,mae,5.7831923555555624,rate-index points,375
+43,3,random_forest,carbon_rate_sum_proxy,mae,6.0468030222222273,rate-index points,375
+43,4,random_forest,carbon_rate_sum_proxy,mae,5.1802445333333589,rate-index points,375
+43,5,random_forest,carbon_rate_sum_proxy,mae,6.3311984888888748,rate-index points,375
+17,1,random_forest,carbon_rate_sum_proxy,r2,0.98468674567293069,dimensionless,375
+17,2,random_forest,carbon_rate_sum_proxy,r2,0.98547964406966415,dimensionless,375
+17,3,random_forest,carbon_rate_sum_proxy,r2,0.98470307675778757,dimensionless,375
+17,4,random_forest,carbon_rate_sum_proxy,r2,0.97864062122731521,dimensionless,375
+17,5,random_forest,carbon_rate_sum_proxy,r2,0.98389623269008841,dimensionless,375
+29,1,random_forest,carbon_rate_sum_proxy,r2,0.98428384850205675,dimensionless,375
+29,2,random_forest,carbon_rate_sum_proxy,r2,0.98332886476347603,dimensionless,375
+29,3,random_forest,carbon_rate_sum_proxy,r2,0.98350428442299687,dimensionless,375
+29,4,random_forest,carbon_rate_sum_proxy,r2,0.98249425419806524,dimensionless,375
+29,5,random_forest,carbon_rate_sum_proxy,r2,0.9799661157371623,dimensionless,375
+43,1,random_forest,carbon_rate_sum_proxy,r2,0.98228926026612762,dimensionless,375
+43,2,random_forest,carbon_rate_sum_proxy,r2,0.98062055237478341,dimensionless,375
+43,3,random_forest,carbon_rate_sum_proxy,r2,0.98041826199410298,dimensionless,375
+43,4,random_forest,carbon_rate_sum_proxy,r2,0.98370544472752297,dimensionless,375
+43,5,random_forest,carbon_rate_sum_proxy,r2,0.98150858279494424,dimensionless,375
+17,1,random_forest,carbon_rate_sum_proxy,rmse,6.891195698067702,rate-index points,375
+17,2,random_forest,carbon_rate_sum_proxy,rmse,6.2948456355348084,rate-index points,375
+17,3,random_forest,carbon_rate_sum_proxy,rmse,6.6934689161110805,rate-index points,375
+17,4,random_forest,carbon_rate_sum_proxy,rmse,7.6258608416618099,rate-index points,375
+17,5,random_forest,carbon_rate_sum_proxy,rmse,6.7445318942545214,rate-index points,375
+29,1,random_forest,carbon_rate_sum_proxy,rmse,7.0570013909115437,rate-index points,375
+29,2,random_forest,carbon_rate_sum_proxy,rmse,7.0118097333434672,rate-index points,375
+29,3,random_forest,carbon_rate_sum_proxy,rmse,6.9790854760612362,rate-index points,375
+29,4,random_forest,carbon_rate_sum_proxy,rmse,6.8385266603989043,rate-index points,375
+29,5,random_forest,carbon_rate_sum_proxy,rmse,7.2730937637265916,rate-index points,375
+43,1,random_forest,carbon_rate_sum_proxy,rmse,6.8294381121761409,rate-index points,375
+43,2,random_forest,carbon_rate_sum_proxy,rmse,7.4619682539880889,rate-index points,375
+43,3,random_forest,carbon_rate_sum_proxy,rmse,7.7055536188111322,rate-index points,375
+43,4,random_forest,carbon_rate_sum_proxy,rmse,6.6008247258969215,rate-index points,375
+43,5,random_forest,carbon_rate_sum_proxy,rmse,7.7303418114495921,rate-index points,375
+17,1,random_forest,cost_rate_sum_proxy,mae,16.613833777777735,rate-index points,375
+17,2,random_forest,cost_rate_sum_proxy,mae,15.742232888888873,rate-index points,375
+17,3,random_forest,cost_rate_sum_proxy,mae,17.305080000000075,rate-index points,375
+17,4,random_forest,cost_rate_sum_proxy,mae,18.960658666666603,rate-index points,375
+17,5,random_forest,cost_rate_sum_proxy,mae,17.596678222222195,rate-index points,375
+29,1,random_forest,cost_rate_sum_proxy,mae,17.580418666666695,rate-index points,375
+29,2,random_forest,cost_rate_sum_proxy,mae,17.004537777777742,rate-index points,375
+29,3,random_forest,cost_rate_sum_proxy,mae,16.722557333333363,rate-index points,375
+29,4,random_forest,cost_rate_sum_proxy,mae,21.816257777777853,rate-index points,375
+29,5,random_forest,cost_rate_sum_proxy,mae,18.984914666666761,rate-index points,375
+43,1,random_forest,cost_rate_sum_proxy,mae,17.290434666666677,rate-index points,375
+43,2,random_forest,cost_rate_sum_proxy,mae,19.306967999999998,rate-index points,375
+43,3,random_forest,cost_rate_sum_proxy,mae,17.43206399999994,rate-index points,375
+43,4,random_forest,cost_rate_sum_proxy,mae,15.879956444444387,rate-index points,375
+43,5,random_forest,cost_rate_sum_proxy,mae,20.884625777777803,rate-index points,375
+17,1,random_forest,cost_rate_sum_proxy,r2,0.99289673010117296,dimensionless,375
+17,2,random_forest,cost_rate_sum_proxy,r2,0.99238223560292316,dimensionless,375
+17,3,random_forest,cost_rate_sum_proxy,r2,0.99036508816290192,dimensionless,375
+17,4,random_forest,cost_rate_sum_proxy,r2,0.98908780906375504,dimensionless,375
+17,5,random_forest,cost_rate_sum_proxy,r2,0.98989431314999909,dimensionless,375
+29,1,random_forest,cost_rate_sum_proxy,r2,0.99020628658420962,dimensionless,375
+29,2,random_forest,cost_rate_sum_proxy,r2,0.99189548737122724,dimensionless,375
+29,3,random_forest,cost_rate_sum_proxy,r2,0.99158255322772915,dimensionless,375
+29,4,random_forest,cost_rate_sum_proxy,r2,0.98074829715474177,dimensionless,375
+29,5,random_forest,cost_rate_sum_proxy,r2,0.98818900053645431,dimensionless,375
+43,1,random_forest,cost_rate_sum_proxy,r2,0.98892565786265485,dimensionless,375
+43,2,random_forest,cost_rate_sum_proxy,r2,0.98855763132993291,dimensionless,375
+43,3,random_forest,cost_rate_sum_proxy,r2,0.99150014149265542,dimensionless,375
+43,4,random_forest,cost_rate_sum_proxy,r2,0.99203918005445613,dimensionless,375
+43,5,random_forest,cost_rate_sum_proxy,r2,0.98816201887393074,dimensionless,375
+17,1,random_forest,cost_rate_sum_proxy,rmse,20.559859217452818,rate-index points,375
+17,2,random_forest,cost_rate_sum_proxy,rmse,19.70080089807217,rate-index points,375
+17,3,random_forest,cost_rate_sum_proxy,rmse,23.565113256595037,rate-index points,375
+17,4,random_forest,cost_rate_sum_proxy,rmse,25.95314044495484,rate-index points,375
+17,5,random_forest,cost_rate_sum_proxy,rmse,24.149945807733086,rate-index points,375
+29,1,random_forest,cost_rate_sum_proxy,rmse,22.35857311203522,rate-index points,375
+29,2,random_forest,cost_rate_sum_proxy,rmse,21.70831827090284,rate-index points,375
+29,3,random_forest,cost_rate_sum_proxy,rmse,22.602266695329824,rate-index points,375
+29,4,random_forest,cost_rate_sum_proxy,rmse,34.323116814769278,rate-index points,375
+29,5,random_forest,cost_rate_sum_proxy,rmse,26.045913230970793,rate-index points,375
+43,1,random_forest,cost_rate_sum_proxy,rmse,25.230938878019813,rate-index points,375
+43,2,random_forest,cost_rate_sum_proxy,rmse,25.271056141267824,rate-index points,375
+43,3,random_forest,cost_rate_sum_proxy,rmse,22.989731864928999,rate-index points,375
+43,4,random_forest,cost_rate_sum_proxy,rmse,20.335523184570913,rate-index points,375
+43,5,random_forest,cost_rate_sum_proxy,rmse,26.489895619866232,rate-index points,375
+17,1,random_forest,days_below_24_c,mae,0.64943111111111407,days/year,375
+17,2,random_forest,days_below_24_c,mae,0.52844444444444527,days/year,375
+17,3,random_forest,days_below_24_c,mae,0.50367111111111851,days/year,375
+17,4,random_forest,days_below_24_c,mae,0.65710222222223602,days/year,375
+17,5,random_forest,days_below_24_c,mae,0.80050666666668824,days/year,375
+29,1,random_forest,days_below_24_c,mae,0.68686222222225446,days/year,375
+29,2,random_forest,days_below_24_c,mae,0.78175111111110418,days/year,375
+29,3,random_forest,days_below_24_c,mae,0.57885333333334366,days/year,375
+29,4,random_forest,days_below_24_c,mae,0.93521777777781212,days/year,375
+29,5,random_forest,days_below_24_c,mae,0.68360000000000398,days/year,375
+43,1,random_forest,days_below_24_c,mae,0.56159111111108995,days/year,375
+43,2,random_forest,days_below_24_c,mae,0.75314666666667318,days/year,375
+43,3,random_forest,days_below_24_c,mae,0.6588799999999978,days/year,375
+43,4,random_forest,days_below_24_c,mae,0.56106666666669303,days/year,375
+43,5,random_forest,days_below_24_c,mae,0.61030222222225139,days/year,375
+17,1,random_forest,days_below_24_c,r2,0.99897975338276357,dimensionless,375
+17,2,random_forest,days_below_24_c,r2,0.99934828761036865,dimensionless,375
+17,3,random_forest,days_below_24_c,r2,0.99941168381153689,dimensionless,375
+17,4,random_forest,days_below_24_c,r2,0.99882903356279795,dimensionless,375
+17,5,random_forest,days_below_24_c,r2,0.99777253461758675,dimensionless,375
+29,1,random_forest,days_below_24_c,r2,0.99874782225134184,dimensionless,375
+29,2,random_forest,days_below_24_c,r2,0.99809083948967858,dimensionless,375
+29,3,random_forest,days_below_24_c,r2,0.99912189256001982,dimensionless,375
+29,4,random_forest,days_below_24_c,r2,0.99621026463193774,dimensionless,375
+29,5,random_forest,days_below_24_c,r2,0.99846616826487966,dimensionless,375
+43,1,random_forest,days_below_24_c,r2,0.99893676217193694,dimensionless,375
+43,2,random_forest,days_below_24_c,r2,0.99847204096017028,dimensionless,375
+43,3,random_forest,days_below_24_c,r2,0.99817608762458099,dimensionless,375
+43,4,random_forest,days_below_24_c,r2,0.9990461205447777,dimensionless,375
+43,5,random_forest,days_below_24_c,r2,0.9989862180620116,dimensionless,375
+17,1,random_forest,days_below_24_c,rmse,1.1058902899172849,days/year,375
+17,2,random_forest,days_below_24_c,rmse,0.89667398592634284,days/year,375
+17,3,random_forest,days_below_24_c,rmse,0.86457513436540745,days/year,375
+17,4,random_forest,days_below_24_c,rmse,1.1922416111087815,days/year,375
+17,5,random_forest,days_below_24_c,rmse,1.6396306088059402,days/year,375
+29,1,random_forest,days_below_24_c,rmse,1.2109555945004127,days/year,375
+29,2,random_forest,days_below_24_c,rmse,1.5633803357065987,days/year,375
+29,3,random_forest,days_below_24_c,rmse,1.0396109956239517,days/year,375
+29,4,random_forest,days_below_24_c,rmse,2.1645838741310404,days/year,375
+29,5,random_forest,days_below_24_c,rmse,1.35968934360431,days/year,375
+43,1,random_forest,days_below_24_c,rmse,1.1610247198057293,days/year,375
+43,2,random_forest,days_below_24_c,rmse,1.3596415104861406,days/year,375
+43,3,random_forest,days_below_24_c,rmse,1.4769669220699917,days/year,375
+43,4,random_forest,days_below_24_c,rmse,1.0835599489474337,days/year,375
+43,5,random_forest,days_below_24_c,rmse,1.1132643890828409,days/year,375
+17,1,separate_mtl_nn,annual_heating_energy_gj,mae,0.10766278330136086,GJ/year,375
+17,2,separate_mtl_nn,annual_heating_energy_gj,mae,0.08568071350748882,GJ/year,375
+17,3,separate_mtl_nn,annual_heating_energy_gj,mae,0.097004841156114061,GJ/year,375
+17,4,separate_mtl_nn,annual_heating_energy_gj,mae,0.075372174421715343,GJ/year,375
+17,5,separate_mtl_nn,annual_heating_energy_gj,mae,0.14435957600030422,GJ/year,375
+29,1,separate_mtl_nn,annual_heating_energy_gj,mae,0.10558479763552026,GJ/year,375
+29,2,separate_mtl_nn,annual_heating_energy_gj,mae,0.10625054127149217,GJ/year,375
+29,3,separate_mtl_nn,annual_heating_energy_gj,mae,0.084305358584529477,GJ/year,375
+29,4,separate_mtl_nn,annual_heating_energy_gj,mae,0.076710035597810755,GJ/year,375
+29,5,separate_mtl_nn,annual_heating_energy_gj,mae,0.089528861585678784,GJ/year,375
+43,1,separate_mtl_nn,annual_heating_energy_gj,mae,0.1607284028485505,GJ/year,375
+43,2,separate_mtl_nn,annual_heating_energy_gj,mae,0.10678461118398787,GJ/year,375
+43,3,separate_mtl_nn,annual_heating_energy_gj,mae,0.089695005603094027,GJ/year,375
+43,4,separate_mtl_nn,annual_heating_energy_gj,mae,0.10823996710229773,GJ/year,375
+43,5,separate_mtl_nn,annual_heating_energy_gj,mae,0.11663080871138436,GJ/year,375
+17,1,separate_mtl_nn,annual_heating_energy_gj,r2,0.99930878255257305,dimensionless,375
+17,2,separate_mtl_nn,annual_heating_energy_gj,r2,0.99953823700061006,dimensionless,375
+17,3,separate_mtl_nn,annual_heating_energy_gj,r2,0.99941226293093388,dimensionless,375
+17,4,separate_mtl_nn,annual_heating_energy_gj,r2,0.99965144189643218,dimensionless,375
+17,5,separate_mtl_nn,annual_heating_energy_gj,r2,0.99873007319202911,dimensionless,375
+29,1,separate_mtl_nn,annual_heating_energy_gj,r2,0.99933436909412787,dimensionless,375
+29,2,separate_mtl_nn,annual_heating_energy_gj,r2,0.99923607538051595,dimensionless,375
+29,3,separate_mtl_nn,annual_heating_energy_gj,r2,0.99959994381350736,dimensionless,375
+29,4,separate_mtl_nn,annual_heating_energy_gj,r2,0.99963668216881918,dimensionless,375
+29,5,separate_mtl_nn,annual_heating_energy_gj,r2,0.99948354325657851,dimensionless,375
+43,1,separate_mtl_nn,annual_heating_energy_gj,r2,0.99790734048249585,dimensionless,375
+43,2,separate_mtl_nn,annual_heating_energy_gj,r2,0.99936990448450491,dimensionless,375
+43,3,separate_mtl_nn,annual_heating_energy_gj,r2,0.99941028602099613,dimensionless,375
+43,4,separate_mtl_nn,annual_heating_energy_gj,r2,0.9993436640030654,dimensionless,375
+43,5,separate_mtl_nn,annual_heating_energy_gj,r2,0.99915587658984106,dimensionless,375
+17,1,separate_mtl_nn,annual_heating_energy_gj,rmse,0.14877078954753151,GJ/year,375
+17,2,separate_mtl_nn,annual_heating_energy_gj,rmse,0.11283718423507001,GJ/year,375
+17,3,separate_mtl_nn,annual_heating_energy_gj,rmse,0.13145115469737989,GJ/year,375
+17,4,separate_mtl_nn,annual_heating_energy_gj,rmse,0.10257238516391146,GJ/year,375
+17,5,separate_mtl_nn,annual_heating_energy_gj,rmse,0.19329158870294208,GJ/year,375
+29,1,separate_mtl_nn,annual_heating_energy_gj,rmse,0.13966116823876223,GJ/year,375
+29,2,separate_mtl_nn,annual_heating_energy_gj,rmse,0.14822922671802585,GJ/year,375
+29,3,separate_mtl_nn,annual_heating_energy_gj,rmse,0.11051784922510217,GJ/year,375
+29,4,separate_mtl_nn,annual_heating_energy_gj,rmse,0.10385273664762552,GJ/year,375
+29,5,separate_mtl_nn,annual_heating_energy_gj,rmse,0.12582760184935654,GJ/year,375
+43,1,separate_mtl_nn,annual_heating_energy_gj,rmse,0.24091345104437623,GJ/year,375
+43,2,separate_mtl_nn,annual_heating_energy_gj,rmse,0.1413340120767981,GJ/year,375
+43,3,separate_mtl_nn,annual_heating_energy_gj,rmse,0.13207705339016082,GJ/year,375
+43,4,separate_mtl_nn,annual_heating_energy_gj,rmse,0.13933395808122348,GJ/year,375
+43,5,separate_mtl_nn,annual_heating_energy_gj,rmse,0.16035989636318157,GJ/year,375
+17,1,separate_mtl_nn,carbon_rate_sum_proxy,mae,6.9364603621419265,rate-index points,375
+17,2,separate_mtl_nn,carbon_rate_sum_proxy,mae,7.3087163122558598,rate-index points,375
+17,3,separate_mtl_nn,carbon_rate_sum_proxy,mae,7.0015536698404954,rate-index points,375
+17,4,separate_mtl_nn,carbon_rate_sum_proxy,mae,7.0845157031249997,rate-index points,375
+17,5,separate_mtl_nn,carbon_rate_sum_proxy,mae,7.8575261185709619,rate-index points,375
+29,1,separate_mtl_nn,carbon_rate_sum_proxy,mae,7.2029323136393213,rate-index points,375
+29,2,separate_mtl_nn,carbon_rate_sum_proxy,mae,7.14007866373698,rate-index points,375
+29,3,separate_mtl_nn,carbon_rate_sum_proxy,mae,7.190670878906249,rate-index points,375
+29,4,separate_mtl_nn,carbon_rate_sum_proxy,mae,7.3316537919108065,rate-index points,375
+29,5,separate_mtl_nn,carbon_rate_sum_proxy,mae,6.71216897298177,rate-index points,375
+43,1,separate_mtl_nn,carbon_rate_sum_proxy,mae,8.5444178271484361,rate-index points,375
+43,2,separate_mtl_nn,carbon_rate_sum_proxy,mae,7.5788588399251315,rate-index points,375
+43,3,separate_mtl_nn,carbon_rate_sum_proxy,mae,7.5333177311197907,rate-index points,375
+43,4,separate_mtl_nn,carbon_rate_sum_proxy,mae,6.3550820792643234,rate-index points,375
+43,5,separate_mtl_nn,carbon_rate_sum_proxy,mae,7.7782903165690103,rate-index points,375
+17,1,separate_mtl_nn,carbon_rate_sum_proxy,r2,0.97707487444676289,dimensionless,375
+17,2,separate_mtl_nn,carbon_rate_sum_proxy,r2,0.97101578069692374,dimensionless,375
+17,3,separate_mtl_nn,carbon_rate_sum_proxy,r2,0.97607374037725769,dimensionless,375
+17,4,separate_mtl_nn,carbon_rate_sum_proxy,r2,0.97316989455122771,dimensionless,375
+17,5,separate_mtl_nn,carbon_rate_sum_proxy,r2,0.96581054592014126,dimensionless,375
+29,1,separate_mtl_nn,carbon_rate_sum_proxy,r2,0.97450565340831574,dimensionless,375
+29,2,separate_mtl_nn,carbon_rate_sum_proxy,r2,0.97353364772343609,dimensionless,375
+29,3,separate_mtl_nn,carbon_rate_sum_proxy,r2,0.97452418665390694,dimensionless,375
+29,4,separate_mtl_nn,carbon_rate_sum_proxy,r2,0.96796862342262835,dimensionless,375
+29,5,separate_mtl_nn,carbon_rate_sum_proxy,r2,0.97461308373751454,dimensionless,375
+43,1,separate_mtl_nn,carbon_rate_sum_proxy,r2,0.95319148480299987,dimensionless,375
+43,2,separate_mtl_nn,carbon_rate_sum_proxy,r2,0.96991513602710666,dimensionless,375
+43,3,separate_mtl_nn,carbon_rate_sum_proxy,r2,0.97420639770942929,dimensionless,375
+43,4,separate_mtl_nn,carbon_rate_sum_proxy,r2,0.97743594479525453,dimensionless,375
+43,5,separate_mtl_nn,carbon_rate_sum_proxy,r2,0.97199612398833135,dimensionless,375
+17,1,separate_mtl_nn,carbon_rate_sum_proxy,rmse,8.431730113128669,rate-index points,375
+17,2,separate_mtl_nn,carbon_rate_sum_proxy,rmse,8.8935931284079732,rate-index points,375
+17,3,separate_mtl_nn,carbon_rate_sum_proxy,rmse,8.3711786942651312,rate-index points,375
+17,4,separate_mtl_nn,carbon_rate_sum_proxy,rmse,8.546843604584323,rate-index points,375
+17,5,separate_mtl_nn,carbon_rate_sum_proxy,rmse,9.8272986086599694,rate-index points,375
+29,1,separate_mtl_nn,carbon_rate_sum_proxy,rmse,8.9881237364284647,rate-index points,375
+29,2,separate_mtl_nn,carbon_rate_sum_proxy,rmse,8.8347564168804276,rate-index points,375
+29,3,separate_mtl_nn,carbon_rate_sum_proxy,rmse,8.6731521793960962,rate-index points,375
+29,4,separate_mtl_nn,carbon_rate_sum_proxy,rmse,9.2503898708909151,rate-index points,375
+29,5,separate_mtl_nn,carbon_rate_sum_proxy,rmse,8.1873165394734198,rate-index points,375
+43,1,separate_mtl_nn,carbon_rate_sum_proxy,rmse,11.102711524755383,rate-index points,375
+43,2,separate_mtl_nn,carbon_rate_sum_proxy,rmse,9.2972974595248559,rate-index points,375
+43,3,separate_mtl_nn,carbon_rate_sum_proxy,rmse,8.8437046180092391,rate-index points,375
+43,4,separate_mtl_nn,carbon_rate_sum_proxy,rmse,7.7675761903498808,rate-index points,375
+43,5,separate_mtl_nn,carbon_rate_sum_proxy,rmse,9.5131133596709301,rate-index points,375
+17,1,separate_mtl_nn,cost_rate_sum_proxy,mae,52.887315917968749,rate-index points,375
+17,2,separate_mtl_nn,cost_rate_sum_proxy,mae,56.632665576171888,rate-index points,375
+17,3,separate_mtl_nn,cost_rate_sum_proxy,mae,46.847711295572921,rate-index points,375
+17,4,separate_mtl_nn,cost_rate_sum_proxy,mae,43.566608951822921,rate-index points,375
+17,5,separate_mtl_nn,cost_rate_sum_proxy,mae,62.184580566406247,rate-index points,375
+29,1,separate_mtl_nn,cost_rate_sum_proxy,mae,50.137615250651045,rate-index points,375
+29,2,separate_mtl_nn,cost_rate_sum_proxy,mae,51.495183837890622,rate-index points,375
+29,3,separate_mtl_nn,cost_rate_sum_proxy,mae,44.86248458658855,rate-index points,375
+29,4,separate_mtl_nn,cost_rate_sum_proxy,mae,62.641592659505207,rate-index points,375
+29,5,separate_mtl_nn,cost_rate_sum_proxy,mae,53.006227571614588,rate-index points,375
+43,1,separate_mtl_nn,cost_rate_sum_proxy,mae,62.868096679687497,rate-index points,375
+43,2,separate_mtl_nn,cost_rate_sum_proxy,mae,53.477272054036462,rate-index points,375
+43,3,separate_mtl_nn,cost_rate_sum_proxy,mae,51.027464013671874,rate-index points,375
+43,4,separate_mtl_nn,cost_rate_sum_proxy,mae,50.77878740234376,rate-index points,375
+43,5,separate_mtl_nn,cost_rate_sum_proxy,mae,52.706820458984382,rate-index points,375
+17,1,separate_mtl_nn,cost_rate_sum_proxy,r2,0.8880568220283771,dimensionless,375
+17,2,separate_mtl_nn,cost_rate_sum_proxy,r2,0.85696573468650095,dimensionless,375
+17,3,separate_mtl_nn,cost_rate_sum_proxy,r2,0.91383959852141039,dimensionless,375
+17,4,separate_mtl_nn,cost_rate_sum_proxy,r2,0.92447867738795697,dimensionless,375
+17,5,separate_mtl_nn,cost_rate_sum_proxy,r2,0.85866567693337603,dimensionless,375
+29,1,separate_mtl_nn,cost_rate_sum_proxy,r2,0.88503432598150844,dimensionless,375
+29,2,separate_mtl_nn,cost_rate_sum_proxy,r2,0.88587213157628719,dimensionless,375
+29,3,separate_mtl_nn,cost_rate_sum_proxy,r2,0.92891442053131301,dimensionless,375
+29,4,separate_mtl_nn,cost_rate_sum_proxy,r2,0.84788292675090315,dimensionless,375
+29,5,separate_mtl_nn,cost_rate_sum_proxy,r2,0.89897980660715648,dimensionless,375
+43,1,separate_mtl_nn,cost_rate_sum_proxy,r2,0.85501213400509379,dimensionless,375
+43,2,separate_mtl_nn,cost_rate_sum_proxy,r2,0.89296381364115718,dimensionless,375
+43,3,separate_mtl_nn,cost_rate_sum_proxy,r2,0.91008037326162472,dimensionless,375
+43,4,separate_mtl_nn,cost_rate_sum_proxy,r2,0.89414139052524011,dimensionless,375
+43,5,separate_mtl_nn,cost_rate_sum_proxy,r2,0.8935724696950107,dimensionless,375
+17,1,separate_mtl_nn,cost_rate_sum_proxy,rmse,81.618722747981408,rate-index points,375
+17,2,separate_mtl_nn,cost_rate_sum_proxy,rmse,85.367027294661909,rate-index points,375
+17,3,separate_mtl_nn,cost_rate_sum_proxy,rmse,70.469228332954742,rate-index points,375
+17,4,separate_mtl_nn,cost_rate_sum_proxy,rmse,68.276104163167929,rate-index points,375
+17,5,separate_mtl_nn,cost_rate_sum_proxy,rmse,90.314413070589438,rate-index points,375
+29,1,separate_mtl_nn,cost_rate_sum_proxy,rmse,76.604535457493469,rate-index points,375
+29,2,separate_mtl_nn,cost_rate_sum_proxy,rmse,81.462658983364733,rate-index points,375
+29,3,separate_mtl_nn,cost_rate_sum_proxy,rmse,65.68293635473249,rate-index points,375
+29,4,separate_mtl_nn,cost_rate_sum_proxy,rmse,96.48085068747983,rate-index points,375
+29,5,separate_mtl_nn,cost_rate_sum_proxy,rmse,76.172877596523691,rate-index points,375
+43,1,separate_mtl_nn,cost_rate_sum_proxy,rmse,91.293587171508761,rate-index points,375
+43,2,separate_mtl_nn,cost_rate_sum_proxy,rmse,77.291322397626018,rate-index points,375
+43,3,separate_mtl_nn,cost_rate_sum_proxy,rmse,74.774807831478725,rate-index points,375
+43,4,separate_mtl_nn,cost_rate_sum_proxy,rmse,74.15484680612407,rate-index points,375
+43,5,separate_mtl_nn,cost_rate_sum_proxy,rmse,79.427047226118574,rate-index points,375
+17,1,separate_mtl_nn,days_below_24_c,mae,0.73339916992187504,days/year,375
+17,2,separate_mtl_nn,days_below_24_c,mae,0.71502929687500005,days/year,375
+17,3,separate_mtl_nn,days_below_24_c,mae,0.68457218424479171,days/year,375
+17,4,separate_mtl_nn,days_below_24_c,mae,0.66621028645833336,days/year,375
+17,5,separate_mtl_nn,days_below_24_c,mae,1.1717036946614583,days/year,375
+29,1,separate_mtl_nn,days_below_24_c,mae,0.76640372721354166,days/year,375
+29,2,separate_mtl_nn,days_below_24_c,mae,0.80781306966145838,days/year,375
+29,3,separate_mtl_nn,days_below_24_c,mae,0.71785603841145829,days/year,375
+29,4,separate_mtl_nn,days_below_24_c,mae,0.70216316731770834,days/year,375
+29,5,separate_mtl_nn,days_below_24_c,mae,0.66498551432291664,days/year,375
+43,1,separate_mtl_nn,days_below_24_c,mae,1.2452642415364583,days/year,375
+43,2,separate_mtl_nn,days_below_24_c,mae,0.78175032552083334,days/year,375
+43,3,separate_mtl_nn,days_below_24_c,mae,0.77451041666666665,days/year,375
+43,4,separate_mtl_nn,days_below_24_c,mae,0.71579638671875001,days/year,375
+43,5,separate_mtl_nn,days_below_24_c,mae,0.85567683919270832,days/year,375
+17,1,separate_mtl_nn,days_below_24_c,r2,0.99912017951600596,dimensionless,375
+17,2,separate_mtl_nn,days_below_24_c,r2,0.9992897787052023,dimensionless,375
+17,3,separate_mtl_nn,days_below_24_c,r2,0.99935439711701979,dimensionless,375
+17,4,separate_mtl_nn,days_below_24_c,r2,0.99916516310234349,dimensionless,375
+17,5,separate_mtl_nn,days_below_24_c,r2,0.99792075334872465,dimensionless,375
+29,1,separate_mtl_nn,days_below_24_c,r2,0.99904971293577305,dimensionless,375
+29,2,separate_mtl_nn,days_below_24_c,r2,0.99906458915969065,dimensionless,375
+29,3,separate_mtl_nn,days_below_24_c,r2,0.99924315941128217,dimensionless,375
+29,4,separate_mtl_nn,days_below_24_c,r2,0.9991296745286643,dimensionless,375
+29,5,separate_mtl_nn,days_below_24_c,r2,0.99923885664486389,dimensionless,375
+43,1,separate_mtl_nn,days_below_24_c,r2,0.99791978883367471,dimensionless,375
+43,2,separate_mtl_nn,days_below_24_c,r2,0.99908693100374468,dimensionless,375
+43,3,separate_mtl_nn,days_below_24_c,r2,0.99907922462136989,dimensionless,375
+43,4,separate_mtl_nn,days_below_24_c,r2,0.99929687405423873,dimensionless,375
+43,5,separate_mtl_nn,days_below_24_c,r2,0.99891989229556555,dimensionless,375
+17,1,separate_mtl_nn,days_below_24_c,rmse,1.0269670216408624,days/year,375
+17,2,separate_mtl_nn,days_below_24_c,rmse,0.93605943798024016,days/year,375
+17,3,separate_mtl_nn,days_below_24_c,rmse,0.90569104138483914,days/year,375
+17,4,separate_mtl_nn,days_below_24_c,rmse,1.006683312353388,days/year,375
+17,5,separate_mtl_nn,days_below_24_c,rmse,1.584139929663551,days/year,375
+29,1,separate_mtl_nn,days_below_24_c,rmse,1.0549275532615112,days/year,375
+29,2,separate_mtl_nn,days_below_24_c,rmse,1.0943207218118411,days/year,375
+29,3,separate_mtl_nn,days_below_24_c,rmse,0.96515984111594566,days/year,375
+29,4,separate_mtl_nn,days_below_24_c,rmse,1.0373153946449083,days/year,375
+29,5,separate_mtl_nn,days_below_24_c,rmse,0.95782035998655612,days/year,375
+43,1,separate_mtl_nn,days_below_24_c,rmse,1.6239773524625827,days/year,375
+43,2,separate_mtl_nn,days_below_24_c,rmse,1.0510426932452128,days/year,375
+43,3,separate_mtl_nn,days_below_24_c,rmse,1.0494110500373628,days/year,375
+43,4,separate_mtl_nn,days_below_24_c,rmse,0.93029943787454916,days/year,375
+43,5,separate_mtl_nn,days_below_24_c,rmse,1.1491046297559109,days/year,375
+17,1,separate_mtl_nn_mgda,annual_heating_energy_gj,mae,0.095378403369726486,GJ/year,375
+17,2,separate_mtl_nn_mgda,annual_heating_energy_gj,mae,0.082884356877348006,GJ/year,375
+17,3,separate_mtl_nn_mgda,annual_heating_energy_gj,mae,0.084837344044335808,GJ/year,375
+17,4,separate_mtl_nn_mgda,annual_heating_energy_gj,mae,0.067750209061297251,GJ/year,375
+17,5,separate_mtl_nn_mgda,annual_heating_energy_gj,mae,0.10806880306735946,GJ/year,375
+29,1,separate_mtl_nn_mgda,annual_heating_energy_gj,mae,0.086704791906638323,GJ/year,375
+29,2,separate_mtl_nn_mgda,annual_heating_energy_gj,mae,0.084418363466336563,GJ/year,375
+29,3,separate_mtl_nn_mgda,annual_heating_energy_gj,mae,0.087315114665659596,GJ/year,375
+29,4,separate_mtl_nn_mgda,annual_heating_energy_gj,mae,0.092628175504702648,GJ/year,375
+29,5,separate_mtl_nn_mgda,annual_heating_energy_gj,mae,0.071794808834950902,GJ/year,375
+43,1,separate_mtl_nn_mgda,annual_heating_energy_gj,mae,0.20587321628067351,GJ/year,375
+43,2,separate_mtl_nn_mgda,annual_heating_energy_gj,mae,0.093450571880608818,GJ/year,375
+43,3,separate_mtl_nn_mgda,annual_heating_energy_gj,mae,0.1126815976692784,GJ/year,375
+43,4,separate_mtl_nn_mgda,annual_heating_energy_gj,mae,0.098431244245686111,GJ/year,375
+43,5,separate_mtl_nn_mgda,annual_heating_energy_gj,mae,0.086446415469669663,GJ/year,375
+17,1,separate_mtl_nn_mgda,annual_heating_energy_gj,r2,0.99949642552663842,dimensionless,375
+17,2,separate_mtl_nn_mgda,annual_heating_energy_gj,r2,0.99954526950594347,dimensionless,375
+17,3,separate_mtl_nn_mgda,annual_heating_energy_gj,r2,0.99960409759499214,dimensionless,375
+17,4,separate_mtl_nn_mgda,annual_heating_energy_gj,r2,0.99969693595021381,dimensionless,375
+17,5,separate_mtl_nn_mgda,annual_heating_energy_gj,r2,0.9990728654994111,dimensionless,375
+29,1,separate_mtl_nn_mgda,annual_heating_energy_gj,r2,0.99951691191860548,dimensionless,375
+29,2,separate_mtl_nn_mgda,annual_heating_energy_gj,r2,0.99949862443917414,dimensionless,375
+29,3,separate_mtl_nn_mgda,annual_heating_energy_gj,r2,0.99953695014361665,dimensionless,375
+29,4,separate_mtl_nn_mgda,annual_heating_energy_gj,r2,0.99931358719950991,dimensionless,375
+29,5,separate_mtl_nn_mgda,annual_heating_energy_gj,r2,0.99970145186039228,dimensionless,375
+43,1,separate_mtl_nn_mgda,annual_heating_energy_gj,r2,0.99639995316520336,dimensionless,375
+43,2,separate_mtl_nn_mgda,annual_heating_energy_gj,r2,0.99953300057085115,dimensionless,375
+43,3,separate_mtl_nn_mgda,annual_heating_energy_gj,r2,0.99930446931725625,dimensionless,375
+43,4,separate_mtl_nn_mgda,annual_heating_energy_gj,r2,0.99907785032230534,dimensionless,375
+43,5,separate_mtl_nn_mgda,annual_heating_energy_gj,r2,0.99956152036402923,dimensionless,375
+17,1,separate_mtl_nn_mgda,annual_heating_energy_gj,rmse,0.12698200365419476,GJ/year,375
+17,2,separate_mtl_nn_mgda,annual_heating_energy_gj,rmse,0.11197465018089692,GJ/year,375
+17,3,separate_mtl_nn_mgda,annual_heating_energy_gj,rmse,0.107886457716867,GJ/year,375
+17,4,separate_mtl_nn_mgda,annual_heating_energy_gj,rmse,0.09564451596495302,GJ/year,375
+17,5,separate_mtl_nn_mgda,annual_heating_energy_gj,rmse,0.16515623779496383,GJ/year,375
+29,1,separate_mtl_nn_mgda,annual_heating_energy_gj,rmse,0.1189794871754607,GJ/year,375
+29,2,separate_mtl_nn_mgda,annual_heating_energy_gj,rmse,0.12008538923898315,GJ/year,375
+29,3,separate_mtl_nn_mgda,annual_heating_energy_gj,rmse,0.11890108183546647,GJ/year,375
+29,4,separate_mtl_nn_mgda,annual_heating_energy_gj,rmse,0.14274709394607382,GJ/year,375
+29,5,separate_mtl_nn_mgda,annual_heating_energy_gj,rmse,0.095667875100750213,GJ/year,375
+43,1,separate_mtl_nn_mgda,annual_heating_energy_gj,rmse,0.31598454225885447,GJ/year,375
+43,2,separate_mtl_nn_mgda,annual_heating_energy_gj,rmse,0.12167508772916992,GJ/year,375
+43,3,separate_mtl_nn_mgda,annual_heating_energy_gj,rmse,0.14343819338810956,GJ/year,375
+43,4,separate_mtl_nn_mgda,annual_heating_energy_gj,rmse,0.16515608209417082,GJ/year,375
+43,5,separate_mtl_nn_mgda,annual_heating_energy_gj,rmse,0.11557595981412368,GJ/year,375
+17,1,separate_mtl_nn_mgda,carbon_rate_sum_proxy,mae,7.2565275028483072,rate-index points,375
+17,2,separate_mtl_nn_mgda,carbon_rate_sum_proxy,mae,7.4392984692382802,rate-index points,375
+17,3,separate_mtl_nn_mgda,carbon_rate_sum_proxy,mae,7.0506893253580722,rate-index points,375
+17,4,separate_mtl_nn_mgda,carbon_rate_sum_proxy,mae,7.4849835262044264,rate-index points,375
+17,5,separate_mtl_nn_mgda,carbon_rate_sum_proxy,mae,7.4688710913085927,rate-index points,375
+29,1,separate_mtl_nn_mgda,carbon_rate_sum_proxy,mae,7.2413423807779935,rate-index points,375
+29,2,separate_mtl_nn_mgda,carbon_rate_sum_proxy,mae,7.0355565327962228,rate-index points,375
+29,3,separate_mtl_nn_mgda,carbon_rate_sum_proxy,mae,7.2990047420247395,rate-index points,375
+29,4,separate_mtl_nn_mgda,carbon_rate_sum_proxy,mae,7.5188830387369769,rate-index points,375
+29,5,separate_mtl_nn_mgda,carbon_rate_sum_proxy,mae,6.9224934256998685,rate-index points,375
+43,1,separate_mtl_nn_mgda,carbon_rate_sum_proxy,mae,8.4889698038736974,rate-index points,375
+43,2,separate_mtl_nn_mgda,carbon_rate_sum_proxy,mae,7.0590616166178393,rate-index points,375
+43,3,separate_mtl_nn_mgda,carbon_rate_sum_proxy,mae,8.1826450651041647,rate-index points,375
+43,4,separate_mtl_nn_mgda,carbon_rate_sum_proxy,mae,6.2878262467447907,rate-index points,375
+43,5,separate_mtl_nn_mgda,carbon_rate_sum_proxy,mae,7.5376323372395833,rate-index points,375
+17,1,separate_mtl_nn_mgda,carbon_rate_sum_proxy,r2,0.9749966451324481,dimensionless,375
+17,2,separate_mtl_nn_mgda,carbon_rate_sum_proxy,r2,0.9705603639088658,dimensionless,375
+17,3,separate_mtl_nn_mgda,carbon_rate_sum_proxy,r2,0.97606918128561071,dimensionless,375
+17,4,separate_mtl_nn_mgda,carbon_rate_sum_proxy,r2,0.96885539419944966,dimensionless,375
+17,5,separate_mtl_nn_mgda,carbon_rate_sum_proxy,r2,0.96883999760220341,dimensionless,375
+29,1,separate_mtl_nn_mgda,carbon_rate_sum_proxy,r2,0.9744384840803233,dimensionless,375
+29,2,separate_mtl_nn_mgda,carbon_rate_sum_proxy,r2,0.97346429948700375,dimensionless,375
+29,3,separate_mtl_nn_mgda,carbon_rate_sum_proxy,r2,0.97281140644876474,dimensionless,375
+29,4,separate_mtl_nn_mgda,carbon_rate_sum_proxy,r2,0.96765632719744488,dimensionless,375
+29,5,separate_mtl_nn_mgda,carbon_rate_sum_proxy,r2,0.97350680518474042,dimensionless,375
+43,1,separate_mtl_nn_mgda,carbon_rate_sum_proxy,r2,0.95547499959509685,dimensionless,375
+43,2,separate_mtl_nn_mgda,carbon_rate_sum_proxy,r2,0.97337450897998379,dimensionless,375
+43,3,separate_mtl_nn_mgda,carbon_rate_sum_proxy,r2,0.96954911327495896,dimensionless,375
+43,4,separate_mtl_nn_mgda,carbon_rate_sum_proxy,r2,0.97820779871510044,dimensionless,375
+43,5,separate_mtl_nn_mgda,carbon_rate_sum_proxy,r2,0.97400251979193764,dimensionless,375
+17,1,separate_mtl_nn_mgda,carbon_rate_sum_proxy,rmse,8.8056207722197222,rate-index points,375
+17,2,separate_mtl_nn_mgda,carbon_rate_sum_proxy,rmse,8.9631914368009262,rate-index points,375
+17,3,separate_mtl_nn_mgda,carbon_rate_sum_proxy,rmse,8.3719762103327202,rate-index points,375
+17,4,separate_mtl_nn_mgda,carbon_rate_sum_proxy,rmse,9.208438383335432,rate-index points,375
+17,5,separate_mtl_nn_mgda,carbon_rate_sum_proxy,rmse,9.3818138292266866,rate-index points,375
+29,1,separate_mtl_nn_mgda,carbon_rate_sum_proxy,rmse,8.9999563420698987,rate-index points,375
+29,2,separate_mtl_nn_mgda,carbon_rate_sum_proxy,rmse,8.8463234427475719,rate-index points,375
+29,3,separate_mtl_nn_mgda,carbon_rate_sum_proxy,rmse,8.9599649063885067,rate-index points,375
+29,4,separate_mtl_nn_mgda,carbon_rate_sum_proxy,rmse,9.2953747401333207,rate-index points,375
+29,5,separate_mtl_nn_mgda,carbon_rate_sum_proxy,rmse,8.3638025724411627,rate-index points,375
+43,1,separate_mtl_nn_mgda,carbon_rate_sum_proxy,rmse,10.828507193939158,rate-index points,375
+43,2,separate_mtl_nn_mgda,carbon_rate_sum_proxy,rmse,8.7464438579261383,rate-index points,375
+43,3,separate_mtl_nn_mgda,carbon_rate_sum_proxy,rmse,9.6090001656824917,rate-index points,375
+43,4,separate_mtl_nn_mgda,carbon_rate_sum_proxy,rmse,7.6335665448621199,rate-index points,375
+43,5,separate_mtl_nn_mgda,carbon_rate_sum_proxy,rmse,9.1659867889670092,rate-index points,375
+17,1,separate_mtl_nn_mgda,cost_rate_sum_proxy,mae,55.114685888671879,rate-index points,375
+17,2,separate_mtl_nn_mgda,cost_rate_sum_proxy,mae,57.444625911458338,rate-index points,375
+17,3,separate_mtl_nn_mgda,cost_rate_sum_proxy,mae,48.354107779947924,rate-index points,375
+17,4,separate_mtl_nn_mgda,cost_rate_sum_proxy,mae,46.91699824218751,rate-index points,375
+17,5,separate_mtl_nn_mgda,cost_rate_sum_proxy,mae,50.810932682291664,rate-index points,375
+29,1,separate_mtl_nn_mgda,cost_rate_sum_proxy,mae,51.597369791666665,rate-index points,375
+29,2,separate_mtl_nn_mgda,cost_rate_sum_proxy,mae,51.844372574869794,rate-index points,375
+29,3,separate_mtl_nn_mgda,cost_rate_sum_proxy,mae,45.726914892578129,rate-index points,375
+29,4,separate_mtl_nn_mgda,cost_rate_sum_proxy,mae,66.148543082682295,rate-index points,375
+29,5,separate_mtl_nn_mgda,cost_rate_sum_proxy,mae,53.541750813802096,rate-index points,375
+43,1,separate_mtl_nn_mgda,cost_rate_sum_proxy,mae,64.484013704427085,rate-index points,375
+43,2,separate_mtl_nn_mgda,cost_rate_sum_proxy,mae,52.192070735677085,rate-index points,375
+43,3,separate_mtl_nn_mgda,cost_rate_sum_proxy,mae,59.808937809244796,rate-index points,375
+43,4,separate_mtl_nn_mgda,cost_rate_sum_proxy,mae,50.490055468750001,rate-index points,375
+43,5,separate_mtl_nn_mgda,cost_rate_sum_proxy,mae,51.370724625651043,rate-index points,375
+17,1,separate_mtl_nn_mgda,cost_rate_sum_proxy,r2,0.8769930174058379,dimensionless,375
+17,2,separate_mtl_nn_mgda,cost_rate_sum_proxy,r2,0.8515109131395644,dimensionless,375
+17,3,separate_mtl_nn_mgda,cost_rate_sum_proxy,r2,0.90958132939109337,dimensionless,375
+17,4,separate_mtl_nn_mgda,cost_rate_sum_proxy,r2,0.91339639655361426,dimensionless,375
+17,5,separate_mtl_nn_mgda,cost_rate_sum_proxy,r2,0.89499953760152984,dimensionless,375
+29,1,separate_mtl_nn_mgda,cost_rate_sum_proxy,r2,0.88023787920270213,dimensionless,375
+29,2,separate_mtl_nn_mgda,cost_rate_sum_proxy,r2,0.88680042273775639,dimensionless,375
+29,3,separate_mtl_nn_mgda,cost_rate_sum_proxy,r2,0.91474599002921386,dimensionless,375
+29,4,separate_mtl_nn_mgda,cost_rate_sum_proxy,r2,0.83671697152537594,dimensionless,375
+29,5,separate_mtl_nn_mgda,cost_rate_sum_proxy,r2,0.88943605585120067,dimensionless,375
+43,1,separate_mtl_nn_mgda,cost_rate_sum_proxy,r2,0.85575458843555285,dimensionless,375
+43,2,separate_mtl_nn_mgda,cost_rate_sum_proxy,r2,0.88983551137064021,dimensionless,375
+43,3,separate_mtl_nn_mgda,cost_rate_sum_proxy,r2,0.88640376187238479,dimensionless,375
+43,4,separate_mtl_nn_mgda,cost_rate_sum_proxy,r2,0.89157123524272386,dimensionless,375
+43,5,separate_mtl_nn_mgda,cost_rate_sum_proxy,r2,0.90418254254168962,dimensionless,375
+17,1,separate_mtl_nn_mgda,cost_rate_sum_proxy,rmse,85.557061644554693,rate-index points,375
+17,2,separate_mtl_nn_mgda,cost_rate_sum_proxy,rmse,86.979595147750445,rate-index points,375
+17,3,separate_mtl_nn_mgda,cost_rate_sum_proxy,rmse,72.189613658431171,rate-index points,375
+17,4,separate_mtl_nn_mgda,cost_rate_sum_proxy,rmse,73.114231593373972,rate-index points,375
+17,5,separate_mtl_nn_mgda,cost_rate_sum_proxy,rmse,77.844663945111932,rate-index points,375
+29,1,separate_mtl_nn_mgda,cost_rate_sum_proxy,rmse,78.18620383636231,rate-index points,375
+29,2,separate_mtl_nn_mgda,cost_rate_sum_proxy,rmse,81.130682809405499,rate-index points,375
+29,3,separate_mtl_nn_mgda,cost_rate_sum_proxy,rmse,71.931515995092326,rate-index points,375
+29,4,separate_mtl_nn_mgda,cost_rate_sum_proxy,rmse,99.959175901828488,rate-index points,375
+29,5,separate_mtl_nn_mgda,cost_rate_sum_proxy,rmse,79.689853050369607,rate-index points,375
+43,1,separate_mtl_nn_mgda,cost_rate_sum_proxy,rmse,91.059538879211502,rate-index points,375
+43,2,separate_mtl_nn_mgda,cost_rate_sum_proxy,rmse,78.412668849674063,rate-index points,375
+43,3,separate_mtl_nn_mgda,cost_rate_sum_proxy,rmse,84.044642192218873,rate-index points,375
+43,4,separate_mtl_nn_mgda,cost_rate_sum_proxy,rmse,75.049655784552257,rate-index points,375
+43,5,separate_mtl_nn_mgda,cost_rate_sum_proxy,rmse,75.363966298226046,rate-index points,375
+17,1,separate_mtl_nn_mgda,days_below_24_c,mae,0.76926416015624999,days/year,375
+17,2,separate_mtl_nn_mgda,days_below_24_c,mae,0.67329736328125001,days/year,375
+17,3,separate_mtl_nn_mgda,days_below_24_c,mae,0.66961637369791671,days/year,375
+17,4,separate_mtl_nn_mgda,days_below_24_c,mae,0.61867081705729166,days/year,375
+17,5,separate_mtl_nn_mgda,days_below_24_c,mae,0.74878605143229171,days/year,375
+29,1,separate_mtl_nn_mgda,days_below_24_c,mae,0.60912052408854167,days/year,375
+29,2,separate_mtl_nn_mgda,days_below_24_c,mae,0.69475699869791663,days/year,375
+29,3,separate_mtl_nn_mgda,days_below_24_c,mae,0.71849104817708331,days/year,375
+29,4,separate_mtl_nn_mgda,days_below_24_c,mae,0.65847412109375003,days/year,375
+29,5,separate_mtl_nn_mgda,days_below_24_c,mae,0.55113452148437503,days/year,375
+43,1,separate_mtl_nn_mgda,days_below_24_c,mae,1.2066321614583333,days/year,375
+43,2,separate_mtl_nn_mgda,days_below_24_c,mae,0.68116959635416663,days/year,375
+43,3,separate_mtl_nn_mgda,days_below_24_c,mae,0.79092594401041671,days/year,375
+43,4,separate_mtl_nn_mgda,days_below_24_c,mae,0.59525374348958338,days/year,375
+43,5,separate_mtl_nn_mgda,days_below_24_c,mae,0.62601106770833337,days/year,375
+17,1,separate_mtl_nn_mgda,days_below_24_c,r2,0.99907914642586626,dimensionless,375
+17,2,separate_mtl_nn_mgda,days_below_24_c,r2,0.99935554542582439,dimensionless,375
+17,3,separate_mtl_nn_mgda,days_below_24_c,r2,0.99941369056712437,dimensionless,375
+17,4,separate_mtl_nn_mgda,days_below_24_c,r2,0.99895879781598484,dimensionless,375
+17,5,separate_mtl_nn_mgda,days_below_24_c,r2,0.9990094567117328,dimensionless,375
+29,1,separate_mtl_nn_mgda,days_below_24_c,r2,0.99942876541385961,dimensionless,375
+29,2,separate_mtl_nn_mgda,days_below_24_c,r2,0.9991919542110842,dimensionless,375
+29,3,separate_mtl_nn_mgda,days_below_24_c,r2,0.99921867059674119,dimensionless,375
+29,4,separate_mtl_nn_mgda,days_below_24_c,r2,0.99905056891485544,dimensionless,375
+29,5,separate_mtl_nn_mgda,days_below_24_c,r2,0.9994735368996488,dimensionless,375
+43,1,separate_mtl_nn_mgda,days_below_24_c,r2,0.99751086684657531,dimensionless,375
+43,2,separate_mtl_nn_mgda,days_below_24_c,r2,0.99934095465536876,dimensionless,375
+43,3,separate_mtl_nn_mgda,days_below_24_c,r2,0.99901264325764816,dimensionless,375
+43,4,separate_mtl_nn_mgda,days_below_24_c,r2,0.99947532526003324,dimensionless,375
+43,5,separate_mtl_nn_mgda,days_below_24_c,r2,0.99938279754749804,dimensionless,375
+17,1,separate_mtl_nn_mgda,days_below_24_c,rmse,1.0506419858385818,days/year,375
+17,2,separate_mtl_nn_mgda,days_below_24_c,rmse,0.89166708805376571,days/year,375
+17,3,separate_mtl_nn_mgda,days_below_24_c,rmse,0.86309933524183058,days/year,375
+17,4,separate_mtl_nn_mgda,days_below_24_c,rmse,1.1242414331445267,days/year,375
+17,5,separate_mtl_nn_mgda,days_below_24_c,rmse,1.093395457655344,days/year,375
+29,1,separate_mtl_nn_mgda,days_below_24_c,rmse,0.81790426747470191,days/year,375
+29,2,separate_mtl_nn_mgda,days_below_24_c,rmse,1.0170947424614518,days/year,375
+29,3,separate_mtl_nn_mgda,days_below_24_c,rmse,0.98065019695622679,days/year,375
+29,4,separate_mtl_nn_mgda,days_below_24_c,rmse,1.0834321022385192,days/year,375
+29,5,separate_mtl_nn_mgda,days_below_24_c,rmse,0.79658991304337512,days/year,375
+43,1,separate_mtl_nn_mgda,days_below_24_c,rmse,1.7764390912091623,days/year,375
+43,2,separate_mtl_nn_mgda,days_below_24_c,rmse,0.89294807943314281,days/year,375
+43,3,separate_mtl_nn_mgda,days_below_24_c,rmse,1.0866904040757246,days/year,375
+43,4,separate_mtl_nn_mgda,days_below_24_c,rmse,0.80362099528275344,days/year,375
+43,5,separate_mtl_nn_mgda,days_below_24_c,rmse,0.8686400794167155,days/year,375
+17,1,shared_mtl_nn,annual_heating_energy_gj,mae,0.12675377465885534,GJ/year,375
+17,2,shared_mtl_nn,annual_heating_energy_gj,mae,0.10360360129976558,GJ/year,375
+17,3,shared_mtl_nn,annual_heating_energy_gj,mae,0.089255586514573923,GJ/year,375
+17,4,shared_mtl_nn,annual_heating_energy_gj,mae,0.11642347718201214,GJ/year,375
+17,5,shared_mtl_nn,annual_heating_energy_gj,mae,0.1655588653147306,GJ/year,375
+29,1,shared_mtl_nn,annual_heating_energy_gj,mae,0.11502574801576579,GJ/year,375
+29,2,shared_mtl_nn,annual_heating_energy_gj,mae,0.10443340918019521,GJ/year,375
+29,3,shared_mtl_nn,annual_heating_energy_gj,mae,0.13110748398741523,GJ/year,375
+29,4,shared_mtl_nn,annual_heating_energy_gj,mae,0.12412157899497354,GJ/year,375
+29,5,shared_mtl_nn,annual_heating_energy_gj,mae,0.10837598688406914,GJ/year,375
+43,1,shared_mtl_nn,annual_heating_energy_gj,mae,0.17054210294077371,GJ/year,375
+43,2,shared_mtl_nn,annual_heating_energy_gj,mae,0.11871113671353122,GJ/year,375
+43,3,shared_mtl_nn,annual_heating_energy_gj,mae,0.12946566296697351,GJ/year,375
+43,4,shared_mtl_nn,annual_heating_energy_gj,mae,0.10345169239711927,GJ/year,375
+43,5,shared_mtl_nn,annual_heating_energy_gj,mae,0.099591558311282288,GJ/year,375
+17,1,shared_mtl_nn,annual_heating_energy_gj,r2,0.99909757891473994,dimensionless,375
+17,2,shared_mtl_nn,annual_heating_energy_gj,r2,0.99932326193759069,dimensionless,375
+17,3,shared_mtl_nn,annual_heating_energy_gj,r2,0.99949979654227694,dimensionless,375
+17,4,shared_mtl_nn,annual_heating_energy_gj,r2,0.99865105483183259,dimensionless,375
+17,5,shared_mtl_nn,annual_heating_energy_gj,r2,0.99795445247004855,dimensionless,375
+29,1,shared_mtl_nn,annual_heating_energy_gj,r2,0.99918944532562959,dimensionless,375
+29,2,shared_mtl_nn,annual_heating_energy_gj,r2,0.99917188880153074,dimensionless,375
+29,3,shared_mtl_nn,annual_heating_energy_gj,r2,0.99848930316451789,dimensionless,375
+29,4,shared_mtl_nn,annual_heating_energy_gj,r2,0.99847153076056117,dimensionless,375
+29,5,shared_mtl_nn,annual_heating_energy_gj,r2,0.99928194367993051,dimensionless,375
+43,1,shared_mtl_nn,annual_heating_energy_gj,r2,0.99437738959684385,dimensionless,375
+43,2,shared_mtl_nn,annual_heating_energy_gj,r2,0.99903245834949794,dimensionless,375
+43,3,shared_mtl_nn,annual_heating_energy_gj,r2,0.99859605626828807,dimensionless,375
+43,4,shared_mtl_nn,annual_heating_energy_gj,r2,0.99918920977891779,dimensionless,375
+43,5,shared_mtl_nn,annual_heating_energy_gj,r2,0.99934726650458572,dimensionless,375
+17,1,shared_mtl_nn,annual_heating_energy_gj,rmse,0.16998669847760634,GJ/year,375
+17,2,shared_mtl_nn,annual_heating_energy_gj,rmse,0.1366007163176598,GJ/year,375
+17,3,shared_mtl_nn,annual_heating_energy_gj,rmse,0.12126799822567934,GJ/year,375
+17,4,shared_mtl_nn,annual_heating_energy_gj,rmse,0.20178552584403869,GJ/year,375
+17,5,shared_mtl_nn,annual_heating_energy_gj,rmse,0.24531742510684554,GJ/year,375
+29,1,shared_mtl_nn,annual_heating_energy_gj,rmse,0.15411683748673621,GJ/year,375
+29,2,shared_mtl_nn,annual_heating_energy_gj,rmse,0.15433091054899295,GJ/year,375
+29,3,shared_mtl_nn,annual_heating_energy_gj,rmse,0.21476355730888078,GJ/year,375
+29,4,shared_mtl_nn,annual_heating_energy_gj,rmse,0.21301144582750869,GJ/year,375
+29,5,shared_mtl_nn,annual_heating_energy_gj,rmse,0.14836730148294805,GJ/year,375
+43,1,shared_mtl_nn,annual_heating_energy_gj,rmse,0.39489420290288885,GJ/year,375
+43,2,shared_mtl_nn,annual_heating_energy_gj,rmse,0.17513717007378823,GJ/year,375
+43,3,shared_mtl_nn,annual_heating_energy_gj,rmse,0.20378936265487979,GJ/year,375
+43,4,shared_mtl_nn,annual_heating_energy_gj,rmse,0.15486315877820259,GJ/year,375
+43,5,shared_mtl_nn,annual_heating_energy_gj,rmse,0.14101351693101427,GJ/year,375
+17,1,shared_mtl_nn,carbon_rate_sum_proxy,mae,6.2199829618326818,rate-index points,375
+17,2,shared_mtl_nn,carbon_rate_sum_proxy,mae,6.3087967830403651,rate-index points,375
+17,3,shared_mtl_nn,carbon_rate_sum_proxy,mae,6.094544915364585,rate-index points,375
+17,4,shared_mtl_nn,carbon_rate_sum_proxy,mae,6.3271402742513017,rate-index points,375
+17,5,shared_mtl_nn,carbon_rate_sum_proxy,mae,6.2442226212565091,rate-index points,375
+29,1,shared_mtl_nn,carbon_rate_sum_proxy,mae,6.4817953861490851,rate-index points,375
+29,2,shared_mtl_nn,carbon_rate_sum_proxy,mae,5.8939812194824217,rate-index points,375
+29,3,shared_mtl_nn,carbon_rate_sum_proxy,mae,6.3305361450195301,rate-index points,375
+29,4,shared_mtl_nn,carbon_rate_sum_proxy,mae,6.4323414762369779,rate-index points,375
+29,5,shared_mtl_nn,carbon_rate_sum_proxy,mae,6.2681031909179676,rate-index points,375
+43,1,shared_mtl_nn,carbon_rate_sum_proxy,mae,6.382038150634763,rate-index points,375
+43,2,shared_mtl_nn,carbon_rate_sum_proxy,mae,6.4610720646158857,rate-index points,375
+43,3,shared_mtl_nn,carbon_rate_sum_proxy,mae,6.6018693282063783,rate-index points,375
+43,4,shared_mtl_nn,carbon_rate_sum_proxy,mae,5.310156971028646,rate-index points,375
+43,5,shared_mtl_nn,carbon_rate_sum_proxy,mae,6.6424792720540351,rate-index points,375
+17,1,shared_mtl_nn,carbon_rate_sum_proxy,r2,0.98172348413986377,dimensionless,375
+17,2,shared_mtl_nn,carbon_rate_sum_proxy,r2,0.97963253274728823,dimensionless,375
+17,3,shared_mtl_nn,carbon_rate_sum_proxy,r2,0.98230222211247886,dimensionless,375
+17,4,shared_mtl_nn,carbon_rate_sum_proxy,r2,0.9789769869611411,dimensionless,375
+17,5,shared_mtl_nn,carbon_rate_sum_proxy,r2,0.980223242638255,dimensionless,375
+29,1,shared_mtl_nn,carbon_rate_sum_proxy,r2,0.98037076513022725,dimensionless,375
+29,2,shared_mtl_nn,carbon_rate_sum_proxy,r2,0.9821047055963178,dimensionless,375
+29,3,shared_mtl_nn,carbon_rate_sum_proxy,r2,0.97947812524383515,dimensionless,375
+29,4,shared_mtl_nn,carbon_rate_sum_proxy,r2,0.9766788738218527,dimensionless,375
+29,5,shared_mtl_nn,carbon_rate_sum_proxy,r2,0.97912622851406161,dimensionless,375
+43,1,shared_mtl_nn,carbon_rate_sum_proxy,r2,0.97588909848479122,dimensionless,375
+43,2,shared_mtl_nn,carbon_rate_sum_proxy,r2,0.98075194894227213,dimensionless,375
+43,3,shared_mtl_nn,carbon_rate_sum_proxy,r2,0.97939870358016612,dimensionless,375
+43,4,shared_mtl_nn,carbon_rate_sum_proxy,r2,0.98445456713575008,dimensionless,375
+43,5,shared_mtl_nn,carbon_rate_sum_proxy,r2,0.98121613715844325,dimensionless,375
+17,1,shared_mtl_nn,carbon_rate_sum_proxy,rmse,7.5284841324807728,rate-index points,375
+17,2,shared_mtl_nn,carbon_rate_sum_proxy,rmse,7.4552973024500568,rate-index points,375
+17,3,shared_mtl_nn,carbon_rate_sum_proxy,rmse,7.1996034650287788,rate-index points,375
+17,4,shared_mtl_nn,carbon_rate_sum_proxy,rmse,7.5655768494746951,rate-index points,375
+17,5,shared_mtl_nn,carbon_rate_sum_proxy,rmse,7.4742154415117996,rate-index points,375
+29,1,shared_mtl_nn,carbon_rate_sum_proxy,rmse,7.886762912277316,rate-index points,375
+29,2,shared_mtl_nn,carbon_rate_sum_proxy,rmse,7.2646878705702447,rate-index points,375
+29,3,shared_mtl_nn,carbon_rate_sum_proxy,rmse,7.7843338578474492,rate-index points,375
+29,4,shared_mtl_nn,carbon_rate_sum_proxy,rmse,7.8930889091053436,rate-index points,375
+29,5,shared_mtl_nn,carbon_rate_sum_proxy,rmse,7.4239847071886071,rate-index points,375
+43,1,shared_mtl_nn,carbon_rate_sum_proxy,rmse,7.968440752744482,rate-index points,375
+43,2,shared_mtl_nn,carbon_rate_sum_proxy,rmse,7.436628402963902,rate-index points,375
+43,3,shared_mtl_nn,carbon_rate_sum_proxy,rmse,7.903610044352317,rate-index points,375
+43,4,shared_mtl_nn,carbon_rate_sum_proxy,rmse,6.4473070653210103,rate-index points,375
+43,5,shared_mtl_nn,carbon_rate_sum_proxy,rmse,7.7912305015077541,rate-index points,375
+17,1,shared_mtl_nn,cost_rate_sum_proxy,mae,33.5399451171875,rate-index points,375
+17,2,shared_mtl_nn,cost_rate_sum_proxy,mae,26.470913557942708,rate-index points,375
+17,3,shared_mtl_nn,cost_rate_sum_proxy,mae,25.139694677734379,rate-index points,375
+17,4,shared_mtl_nn,cost_rate_sum_proxy,mae,26.890479085286458,rate-index points,375
+17,5,shared_mtl_nn,cost_rate_sum_proxy,mae,26.242243554687505,rate-index points,375
+29,1,shared_mtl_nn,cost_rate_sum_proxy,mae,29.913689713541672,rate-index points,375
+29,2,shared_mtl_nn,cost_rate_sum_proxy,mae,24.869055631510424,rate-index points,375
+29,3,shared_mtl_nn,cost_rate_sum_proxy,mae,25.660622298177085,rate-index points,375
+29,4,shared_mtl_nn,cost_rate_sum_proxy,mae,37.10059988606772,rate-index points,375
+29,5,shared_mtl_nn,cost_rate_sum_proxy,mae,27.376803841145836,rate-index points,375
+43,1,shared_mtl_nn,cost_rate_sum_proxy,mae,39.605528906250001,rate-index points,375
+43,2,shared_mtl_nn,cost_rate_sum_proxy,mae,31.191458430989588,rate-index points,375
+43,3,shared_mtl_nn,cost_rate_sum_proxy,mae,28.25991225585938,rate-index points,375
+43,4,shared_mtl_nn,cost_rate_sum_proxy,mae,25.898572591145843,rate-index points,375
+43,5,shared_mtl_nn,cost_rate_sum_proxy,mae,26.504904003906248,rate-index points,375
+17,1,shared_mtl_nn,cost_rate_sum_proxy,r2,0.95003226804328333,dimensionless,375
+17,2,shared_mtl_nn,cost_rate_sum_proxy,r2,0.97439986144037605,dimensionless,375
+17,3,shared_mtl_nn,cost_rate_sum_proxy,r2,0.98175867985672027,dimensionless,375
+17,4,shared_mtl_nn,cost_rate_sum_proxy,r2,0.98103286329221562,dimensionless,375
+17,5,shared_mtl_nn,cost_rate_sum_proxy,r2,0.97987724673419352,dimensionless,375
+29,1,shared_mtl_nn,cost_rate_sum_proxy,r2,0.96014689481831406,dimensionless,375
+29,2,shared_mtl_nn,cost_rate_sum_proxy,r2,0.9812926741742708,dimensionless,375
+29,3,shared_mtl_nn,cost_rate_sum_proxy,r2,0.98294323501320835,dimensionless,375
+29,4,shared_mtl_nn,cost_rate_sum_proxy,r2,0.95141841748312506,dimensionless,375
+29,5,shared_mtl_nn,cost_rate_sum_proxy,r2,0.97661255040080297,dimensionless,375
+43,1,shared_mtl_nn,cost_rate_sum_proxy,r2,0.94938082118775158,dimensionless,375
+43,2,shared_mtl_nn,cost_rate_sum_proxy,r2,0.96451188500284779,dimensionless,375
+43,3,shared_mtl_nn,cost_rate_sum_proxy,r2,0.97802049038924044,dimensionless,375
+43,4,shared_mtl_nn,cost_rate_sum_proxy,r2,0.98017593074682241,dimensionless,375
+43,5,shared_mtl_nn,cost_rate_sum_proxy,r2,0.97983213064162933,dimensionless,375
+17,1,shared_mtl_nn,cost_rate_sum_proxy,rmse,54.530037558114074,rate-index points,375
+17,2,shared_mtl_nn,cost_rate_sum_proxy,rmse,36.11530372468232,rate-index points,375
+17,3,shared_mtl_nn,cost_rate_sum_proxy,rmse,32.424537612250816,rate-index points,375
+17,4,shared_mtl_nn,cost_rate_sum_proxy,rmse,34.216440307104619,rate-index points,375
+17,5,shared_mtl_nn,cost_rate_sum_proxy,rmse,34.078223226846141,rate-index points,375
+29,1,shared_mtl_nn,cost_rate_sum_proxy,rmse,45.102588885641595,rate-index points,375
+29,2,shared_mtl_nn,cost_rate_sum_proxy,rmse,32.98136180790064,rate-index points,375
+29,3,shared_mtl_nn,cost_rate_sum_proxy,rmse,32.174376421122332,rate-index points,375
+29,4,shared_mtl_nn,cost_rate_sum_proxy,rmse,54.524033051007159,rate-index points,375
+29,5,shared_mtl_nn,cost_rate_sum_proxy,rmse,36.651157663842547,rate-index points,375
+43,1,shared_mtl_nn,cost_rate_sum_proxy,rmse,53.94261434473335,rate-index points,375
+43,2,shared_mtl_nn,cost_rate_sum_proxy,rmse,44.504803739893553,rate-index points,375
+43,3,shared_mtl_nn,cost_rate_sum_proxy,rmse,36.968945004811083,rate-index points,375
+43,4,shared_mtl_nn,cost_rate_sum_proxy,rmse,32.090231688529023,rate-index points,375
+43,5,shared_mtl_nn,cost_rate_sum_proxy,rmse,34.575736127057262,rate-index points,375
+17,1,shared_mtl_nn,days_below_24_c,mae,0.90134545898437501,days/year,375
+17,2,shared_mtl_nn,days_below_24_c,mae,0.74089973958333333,days/year,375
+17,3,shared_mtl_nn,days_below_24_c,mae,0.76504679361979167,days/year,375
+17,4,shared_mtl_nn,days_below_24_c,mae,0.87551717122395833,days/year,375
+17,5,shared_mtl_nn,days_below_24_c,mae,1.1848706868489582,days/year,375
+29,1,shared_mtl_nn,days_below_24_c,mae,0.84533520507812498,days/year,375
+29,2,shared_mtl_nn,days_below_24_c,mae,0.80952107747395829,days/year,375
+29,3,shared_mtl_nn,days_below_24_c,mae,0.97580916341145829,days/year,375
+29,4,shared_mtl_nn,days_below_24_c,mae,0.85068562825520833,days/year,375
+29,5,shared_mtl_nn,days_below_24_c,mae,0.79782495117187502,days/year,375
+43,1,shared_mtl_nn,days_below_24_c,mae,1.1788484700520834,days/year,375
+43,2,shared_mtl_nn,days_below_24_c,mae,0.86539811197916672,days/year,375
+43,3,shared_mtl_nn,days_below_24_c,mae,0.88615559895833329,days/year,375
+43,4,shared_mtl_nn,days_below_24_c,mae,0.76258650716145837,days/year,375
+43,5,shared_mtl_nn,days_below_24_c,mae,0.86175024414062495,days/year,375
+17,1,shared_mtl_nn,days_below_24_c,r2,0.99867931057512982,dimensionless,375
+17,2,shared_mtl_nn,days_below_24_c,r2,0.99902202961209274,dimensionless,375
+17,3,shared_mtl_nn,days_below_24_c,r2,0.99917883836997945,dimensionless,375
+17,4,shared_mtl_nn,days_below_24_c,r2,0.99885477770804476,dimensionless,375
+17,5,shared_mtl_nn,days_below_24_c,r2,0.99599439010212976,dimensionless,375
+29,1,shared_mtl_nn,days_below_24_c,r2,0.9989830275532906,dimensionless,375
+29,2,shared_mtl_nn,days_below_24_c,r2,0.99903940034117755,dimensionless,375
+29,3,shared_mtl_nn,days_below_24_c,r2,0.99829095299458137,dimensionless,375
+29,4,shared_mtl_nn,days_below_24_c,r2,0.99848654039877183,dimensionless,375
+29,5,shared_mtl_nn,days_below_24_c,r2,0.99894186043744726,dimensionless,375
+43,1,shared_mtl_nn,days_below_24_c,r2,0.99709629780199971,dimensionless,375
+43,2,shared_mtl_nn,days_below_24_c,r2,0.99882043255309894,dimensionless,375
+43,3,shared_mtl_nn,days_below_24_c,r2,0.99871534343775292,dimensionless,375
+43,4,shared_mtl_nn,days_below_24_c,r2,0.99914418406247962,dimensionless,375
+43,5,shared_mtl_nn,days_below_24_c,r2,0.99893944291794068,dimensionless,375
+17,1,shared_mtl_nn,days_below_24_c,rmse,1.2582293550604911,days/year,375
+17,2,shared_mtl_nn,days_below_24_c,rmse,1.0984225346340291,days/year,375
+17,3,shared_mtl_nn,days_below_24_c,rmse,1.0214371881849122,days/year,375
+17,4,shared_mtl_nn,days_below_24_c,rmse,1.1790628293590337,days/year,375
+17,5,shared_mtl_nn,days_below_24_c,rmse,2.1987449819390945,days/year,375
+29,1,shared_mtl_nn,days_below_24_c,rmse,1.0913142351327569,days/year,375
+29,2,shared_mtl_nn,days_below_24_c,rmse,1.1089568241085854,days/year,375
+29,3,shared_mtl_nn,days_below_24_c,rmse,1.4503540755025504,days/year,375
+29,4,shared_mtl_nn,days_below_24_c,rmse,1.3679032855352411,days/year,375
+29,5,shared_mtl_nn,days_below_24_c,rmse,1.1293337586309864,days/year,375
+43,1,shared_mtl_nn,days_below_24_c,rmse,1.9186788727722937,days/year,375
+43,2,shared_mtl_nn,days_below_24_c,rmse,1.1946204599508967,days/year,375
+43,3,shared_mtl_nn,days_below_24_c,rmse,1.2395450170395916,days/year,375
+43,4,shared_mtl_nn,days_below_24_c,rmse,1.0263521148090293,days/year,375
+43,5,shared_mtl_nn,days_below_24_c,rmse,1.1386573835980818,days/year,375
+17,1,shared_mtl_nn_mgda,annual_heating_energy_gj,mae,0.074110790683912076,GJ/year,375
+17,2,shared_mtl_nn_mgda,annual_heating_energy_gj,mae,0.06548932494435411,GJ/year,375
+17,3,shared_mtl_nn_mgda,annual_heating_energy_gj,mae,0.069794855344156859,GJ/year,375
+17,4,shared_mtl_nn_mgda,annual_heating_energy_gj,mae,0.070971103565409061,GJ/year,375
+17,5,shared_mtl_nn_mgda,annual_heating_energy_gj,mae,0.078312477581986575,GJ/year,375
+29,1,shared_mtl_nn_mgda,annual_heating_energy_gj,mae,0.078452694093420927,GJ/year,375
+29,2,shared_mtl_nn_mgda,annual_heating_energy_gj,mae,0.079923678678235591,GJ/year,375
+29,3,shared_mtl_nn_mgda,annual_heating_energy_gj,mae,0.10259810528718953,GJ/year,375
+29,4,shared_mtl_nn_mgda,annual_heating_energy_gj,mae,0.076665897398875305,GJ/year,375
+29,5,shared_mtl_nn_mgda,annual_heating_energy_gj,mae,0.11023592666541152,GJ/year,375
+43,1,shared_mtl_nn_mgda,annual_heating_energy_gj,mae,0.13583634554651028,GJ/year,375
+43,2,shared_mtl_nn_mgda,annual_heating_energy_gj,mae,0.10300182043208313,GJ/year,375
+43,3,shared_mtl_nn_mgda,annual_heating_energy_gj,mae,0.082589754471139157,GJ/year,375
+43,4,shared_mtl_nn_mgda,annual_heating_energy_gj,mae,0.073133281319756119,GJ/year,375
+43,5,shared_mtl_nn_mgda,annual_heating_energy_gj,mae,0.079998476076985972,GJ/year,375
+17,1,shared_mtl_nn_mgda,annual_heating_energy_gj,r2,0.99965656636275113,dimensionless,375
+17,2,shared_mtl_nn_mgda,annual_heating_energy_gj,r2,0.99973319144764072,dimensionless,375
+17,3,shared_mtl_nn_mgda,annual_heating_energy_gj,r2,0.99967465195034855,dimensionless,375
+17,4,shared_mtl_nn_mgda,annual_heating_energy_gj,r2,0.99964171950866565,dimensionless,375
+17,5,shared_mtl_nn_mgda,annual_heating_energy_gj,r2,0.9996155645334277,dimensionless,375
+29,1,shared_mtl_nn_mgda,annual_heating_energy_gj,r2,0.99959335632291424,dimensionless,375
+29,2,shared_mtl_nn_mgda,annual_heating_energy_gj,r2,0.99954619197103201,dimensionless,375
+29,3,shared_mtl_nn_mgda,annual_heating_energy_gj,r2,0.9988895977618778,dimensionless,375
+29,4,shared_mtl_nn_mgda,annual_heating_energy_gj,r2,0.99960346296782943,dimensionless,375
+29,5,shared_mtl_nn_mgda,annual_heating_energy_gj,r2,0.99901144943640197,dimensionless,375
+43,1,shared_mtl_nn_mgda,annual_heating_energy_gj,r2,0.99851885251663053,dimensionless,375
+43,2,shared_mtl_nn_mgda,annual_heating_energy_gj,r2,0.99945903847483075,dimensionless,375
+43,3,shared_mtl_nn_mgda,annual_heating_energy_gj,r2,0.9995301699889283,dimensionless,375
+43,4,shared_mtl_nn_mgda,annual_heating_energy_gj,r2,0.99928966126257923,dimensionless,375
+43,5,shared_mtl_nn_mgda,annual_heating_energy_gj,r2,0.99947466112978522,dimensionless,375
+17,1,shared_mtl_nn_mgda,annual_heating_energy_gj,rmse,0.10486528382809387,GJ/year,375
+17,2,shared_mtl_nn_mgda,annual_heating_energy_gj,rmse,0.085771409733763126,GJ/year,375
+17,3,shared_mtl_nn_mgda,annual_heating_energy_gj,rmse,0.097801827003058214,GJ/year,375
+17,4,shared_mtl_nn_mgda,annual_heating_energy_gj,rmse,0.10399308047482239,GJ/year,375
+17,5,shared_mtl_nn_mgda,annual_heating_energy_gj,rmse,0.10634947091767752,GJ/year,375
+29,1,shared_mtl_nn_mgda,annual_heating_energy_gj,rmse,0.10916060731416077,GJ/year,375
+29,2,shared_mtl_nn_mgda,annual_heating_energy_gj,rmse,0.11424696648378115,GJ/year,375
+29,3,shared_mtl_nn_mgda,annual_heating_energy_gj,rmse,0.18412471746349884,GJ/year,375
+29,4,shared_mtl_nn_mgda,annual_heating_energy_gj,rmse,0.10849668391322474,GJ/year,375
+29,5,shared_mtl_nn_mgda,annual_heating_energy_gj,rmse,0.17408381167286541,GJ/year,375
+43,1,shared_mtl_nn_mgda,annual_heating_energy_gj,rmse,0.20268000898725644,GJ/year,375
+43,2,shared_mtl_nn_mgda,annual_heating_energy_gj,rmse,0.1309563862335108,GJ/year,375
+43,3,shared_mtl_nn_mgda,annual_heating_energy_gj,rmse,0.11789001887783275,GJ/year,375
+43,4,shared_mtl_nn_mgda,annual_heating_energy_gj,rmse,0.1449528010106412,GJ/year,375
+43,5,shared_mtl_nn_mgda,annual_heating_energy_gj,rmse,0.12650641900244861,GJ/year,375
+17,1,shared_mtl_nn_mgda,carbon_rate_sum_proxy,mae,7.9955328100585925,rate-index points,375
+17,2,shared_mtl_nn_mgda,carbon_rate_sum_proxy,mae,7.6771460115559877,rate-index points,375
+17,3,shared_mtl_nn_mgda,carbon_rate_sum_proxy,mae,7.2373049658203117,rate-index points,375
+17,4,shared_mtl_nn_mgda,carbon_rate_sum_proxy,mae,7.739216173095703,rate-index points,375
+17,5,shared_mtl_nn_mgda,carbon_rate_sum_proxy,mae,7.8594987325032539,rate-index points,375
+29,1,shared_mtl_nn_mgda,carbon_rate_sum_proxy,mae,7.8127623470052061,rate-index points,375
+29,2,shared_mtl_nn_mgda,carbon_rate_sum_proxy,mae,7.5311853222656238,rate-index points,375
+29,3,shared_mtl_nn_mgda,carbon_rate_sum_proxy,mae,7.2695690812174485,rate-index points,375
+29,4,shared_mtl_nn_mgda,carbon_rate_sum_proxy,mae,7.5744351257324194,rate-index points,375
+29,5,shared_mtl_nn_mgda,carbon_rate_sum_proxy,mae,7.9638858227539044,rate-index points,375
+43,1,shared_mtl_nn_mgda,carbon_rate_sum_proxy,mae,8.7258165592447892,rate-index points,375
+43,2,shared_mtl_nn_mgda,carbon_rate_sum_proxy,mae,7.968022774658202,rate-index points,375
+43,3,shared_mtl_nn_mgda,carbon_rate_sum_proxy,mae,8.0257968672688786,rate-index points,375
+43,4,shared_mtl_nn_mgda,carbon_rate_sum_proxy,mae,6.7236891158040359,rate-index points,375
+43,5,shared_mtl_nn_mgda,carbon_rate_sum_proxy,mae,8.5257356465657548,rate-index points,375
+17,1,shared_mtl_nn_mgda,carbon_rate_sum_proxy,r2,0.97023934843441417,dimensionless,375
+17,2,shared_mtl_nn_mgda,carbon_rate_sum_proxy,r2,0.96738410255373686,dimensionless,375
+17,3,shared_mtl_nn_mgda,carbon_rate_sum_proxy,r2,0.97339914718639664,dimensionless,375
+17,4,shared_mtl_nn_mgda,carbon_rate_sum_proxy,r2,0.96784729670610548,dimensionless,375
+17,5,shared_mtl_nn_mgda,carbon_rate_sum_proxy,r2,0.96540117351089239,dimensionless,375
+29,1,shared_mtl_nn_mgda,carbon_rate_sum_proxy,r2,0.97076978231582256,dimensionless,375
+29,2,shared_mtl_nn_mgda,carbon_rate_sum_proxy,r2,0.9702273956682369,dimensionless,375
+29,3,shared_mtl_nn_mgda,carbon_rate_sum_proxy,r2,0.97375477103868546,dimensionless,375
+29,4,shared_mtl_nn_mgda,carbon_rate_sum_proxy,r2,0.96744668165431058,dimensionless,375
+29,5,shared_mtl_nn_mgda,carbon_rate_sum_proxy,r2,0.9649278285212376,dimensionless,375
+43,1,shared_mtl_nn_mgda,carbon_rate_sum_proxy,r2,0.95812674391110009,dimensionless,375
+43,2,shared_mtl_nn_mgda,carbon_rate_sum_proxy,r2,0.96612045111524836,dimensionless,375
+43,3,shared_mtl_nn_mgda,carbon_rate_sum_proxy,r2,0.97005955969517355,dimensionless,375
+43,4,shared_mtl_nn_mgda,carbon_rate_sum_proxy,r2,0.97417719328830754,dimensionless,375
+43,5,shared_mtl_nn_mgda,carbon_rate_sum_proxy,r2,0.96717250521179909,dimensionless,375
+17,1,shared_mtl_nn_mgda,carbon_rate_sum_proxy,rmse,9.6068730813835455,rate-index points,375
+17,2,shared_mtl_nn_mgda,carbon_rate_sum_proxy,rmse,9.4343312344129604,rate-index points,375
+17,3,shared_mtl_nn_mgda,carbon_rate_sum_proxy,rmse,8.8266719755597407,rate-index points,375
+17,4,shared_mtl_nn_mgda,carbon_rate_sum_proxy,rmse,9.3562822293040604,rate-index points,375
+17,5,shared_mtl_nn_mgda,carbon_rate_sum_proxy,rmse,9.8859578357337821,rate-index points,375
+29,1,shared_mtl_nn_mgda,carbon_rate_sum_proxy,rmse,9.6241664287482696,rate-index points,375
+29,2,shared_mtl_nn_mgda,carbon_rate_sum_proxy,rmse,9.3703529274612745,rate-index points,375
+29,3,shared_mtl_nn_mgda,carbon_rate_sum_proxy,rmse,8.8031503726114693,rate-index points,375
+29,4,shared_mtl_nn_mgda,carbon_rate_sum_proxy,rmse,9.3254515075454254,rate-index points,375
+29,5,shared_mtl_nn_mgda,carbon_rate_sum_proxy,rmse,9.6231650406815721,rate-index points,375
+43,1,shared_mtl_nn_mgda,carbon_rate_sum_proxy,rmse,10.501104733070781,rate-index points,375
+43,2,shared_mtl_nn_mgda,carbon_rate_sum_proxy,rmse,9.8662362249709155,rate-index points,375
+43,3,shared_mtl_nn_mgda,carbon_rate_sum_proxy,rmse,9.5281222434500972,rate-index points,375
+43,4,shared_mtl_nn_mgda,carbon_rate_sum_proxy,rmse,8.3095722310193914,rate-index points,375
+43,5,shared_mtl_nn_mgda,carbon_rate_sum_proxy,rmse,10.299887219846548,rate-index points,375
+17,1,shared_mtl_nn_mgda,cost_rate_sum_proxy,mae,60.999290690104168,rate-index points,375
+17,2,shared_mtl_nn_mgda,cost_rate_sum_proxy,mae,61.629758544921877,rate-index points,375
+17,3,shared_mtl_nn_mgda,cost_rate_sum_proxy,mae,53.750357812499999,rate-index points,375
+17,4,shared_mtl_nn_mgda,cost_rate_sum_proxy,mae,50.644893066406247,rate-index points,375
+17,5,shared_mtl_nn_mgda,cost_rate_sum_proxy,mae,59.495000651041664,rate-index points,375
+29,1,shared_mtl_nn_mgda,cost_rate_sum_proxy,mae,56.435031184895834,rate-index points,375
+29,2,shared_mtl_nn_mgda,cost_rate_sum_proxy,mae,58.465318831380216,rate-index points,375
+29,3,shared_mtl_nn_mgda,cost_rate_sum_proxy,mae,50.157280371093755,rate-index points,375
+29,4,shared_mtl_nn_mgda,cost_rate_sum_proxy,mae,68.389028662109382,rate-index points,375
+29,5,shared_mtl_nn_mgda,cost_rate_sum_proxy,mae,62.294152327473967,rate-index points,375
+43,1,shared_mtl_nn_mgda,cost_rate_sum_proxy,mae,58.295174527994796,rate-index points,375
+43,2,shared_mtl_nn_mgda,cost_rate_sum_proxy,mae,63.252128824869793,rate-index points,375
+43,3,shared_mtl_nn_mgda,cost_rate_sum_proxy,mae,63.320771451822907,rate-index points,375
+43,4,shared_mtl_nn_mgda,cost_rate_sum_proxy,mae,58.011952327473963,rate-index points,375
+43,5,shared_mtl_nn_mgda,cost_rate_sum_proxy,mae,59.571376904296883,rate-index points,375
+17,1,shared_mtl_nn_mgda,cost_rate_sum_proxy,r2,0.86393639761094398,dimensionless,375
+17,2,shared_mtl_nn_mgda,cost_rate_sum_proxy,r2,0.84021429956301863,dimensionless,375
+17,3,shared_mtl_nn_mgda,cost_rate_sum_proxy,r2,0.88690410646143047,dimensionless,375
+17,4,shared_mtl_nn_mgda,cost_rate_sum_proxy,r2,0.90138576170612683,dimensionless,375
+17,5,shared_mtl_nn_mgda,cost_rate_sum_proxy,r2,0.86820443658482516,dimensionless,375
+29,1,shared_mtl_nn_mgda,cost_rate_sum_proxy,r2,0.86106719254411301,dimensionless,375
+29,2,shared_mtl_nn_mgda,cost_rate_sum_proxy,r2,0.85932569745109444,dimensionless,375
+29,3,shared_mtl_nn_mgda,cost_rate_sum_proxy,r2,0.9054969365897273,dimensionless,375
+29,4,shared_mtl_nn_mgda,cost_rate_sum_proxy,r2,0.8344597066854289,dimensionless,375
+29,5,shared_mtl_nn_mgda,cost_rate_sum_proxy,r2,0.8698890180305755,dimensionless,375
+43,1,shared_mtl_nn_mgda,cost_rate_sum_proxy,r2,0.87082923385291111,dimensionless,375
+43,2,shared_mtl_nn_mgda,cost_rate_sum_proxy,r2,0.85599936690959733,dimensionless,375
+43,3,shared_mtl_nn_mgda,cost_rate_sum_proxy,r2,0.87719257610188817,dimensionless,375
+43,4,shared_mtl_nn_mgda,cost_rate_sum_proxy,r2,0.86266429499362773,dimensionless,375
+43,5,shared_mtl_nn_mgda,cost_rate_sum_proxy,r2,0.87292525986799996,dimensionless,375
+17,1,shared_mtl_nn_mgda,cost_rate_sum_proxy,rmse,89.983309227574026,rate-index points,375
+17,2,shared_mtl_nn_mgda,cost_rate_sum_proxy,rmse,90.227530079294894,rate-index points,375
+17,3,shared_mtl_nn_mgda,cost_rate_sum_proxy,rmse,80.736343563140537,rate-index points,375
+17,4,shared_mtl_nn_mgda,cost_rate_sum_proxy,rmse,78.019605671708547,rate-index points,375
+17,5,shared_mtl_nn_mgda,cost_rate_sum_proxy,rmse,87.213484366520305,rate-index points,375
+29,1,shared_mtl_nn_mgda,cost_rate_sum_proxy,rmse,84.211769725656268,rate-index points,375
+29,2,shared_mtl_nn_mgda,cost_rate_sum_proxy,rmse,90.441990899699533,rate-index points,375
+29,3,shared_mtl_nn_mgda,cost_rate_sum_proxy,rmse,75.73292820231103,rate-index points,375
+29,4,shared_mtl_nn_mgda,cost_rate_sum_proxy,rmse,100.647734514205,rate-index points,375
+29,5,shared_mtl_nn_mgda,cost_rate_sum_proxy,rmse,86.447659941280804,rate-index points,375
+43,1,shared_mtl_nn_mgda,cost_rate_sum_proxy,rmse,86.170092848373173,rate-index points,375
+43,2,shared_mtl_nn_mgda,cost_rate_sum_proxy,rmse,89.649449076672383,rate-index points,375
+43,3,shared_mtl_nn_mgda,cost_rate_sum_proxy,rmse,87.385699810789731,rate-index points,375
+43,4,shared_mtl_nn_mgda,cost_rate_sum_proxy,rmse,84.463326219184495,rate-index points,375
+43,5,shared_mtl_nn_mgda,cost_rate_sum_proxy,rmse,86.790270218403379,rate-index points,375
+17,1,shared_mtl_nn_mgda,days_below_24_c,mae,0.53655867513020838,days/year,375
+17,2,shared_mtl_nn_mgda,days_below_24_c,mae,0.47947989908854166,days/year,375
+17,3,shared_mtl_nn_mgda,days_below_24_c,mae,0.69131127929687497,days/year,375
+17,4,shared_mtl_nn_mgda,days_below_24_c,mae,0.49504028320312499,days/year,375
+17,5,shared_mtl_nn_mgda,days_below_24_c,mae,0.64283528645833332,days/year,375
+29,1,shared_mtl_nn_mgda,days_below_24_c,mae,0.51254402669270838,days/year,375
+29,2,shared_mtl_nn_mgda,days_below_24_c,mae,0.57282682291666664,days/year,375
+29,3,shared_mtl_nn_mgda,days_below_24_c,mae,0.69672526041666671,days/year,375
+29,4,shared_mtl_nn_mgda,days_below_24_c,mae,0.56699031575520831,days/year,375
+29,5,shared_mtl_nn_mgda,days_below_24_c,mae,0.66511531575520833,days/year,375
+43,1,shared_mtl_nn_mgda,days_below_24_c,mae,0.88575561523437496,days/year,375
+43,2,shared_mtl_nn_mgda,days_below_24_c,mae,0.72663305664062505,days/year,375
+43,3,shared_mtl_nn_mgda,days_below_24_c,mae,0.76993139648437503,days/year,375
+43,4,shared_mtl_nn_mgda,days_below_24_c,mae,0.46152766927083333,days/year,375
+43,5,shared_mtl_nn_mgda,days_below_24_c,mae,0.59275960286458329,days/year,375
+17,1,shared_mtl_nn_mgda,days_below_24_c,r2,0.99939720640381324,dimensionless,375
+17,2,shared_mtl_nn_mgda,days_below_24_c,r2,0.99958429113802438,dimensionless,375
+17,3,shared_mtl_nn_mgda,days_below_24_c,r2,0.99931451504309665,dimensionless,375
+17,4,shared_mtl_nn_mgda,days_below_24_c,r2,0.99950473827546804,dimensionless,375
+17,5,shared_mtl_nn_mgda,days_below_24_c,r2,0.99917438799388503,dimensionless,375
+29,1,shared_mtl_nn_mgda,days_below_24_c,r2,0.99953151423217801,dimensionless,375
+29,2,shared_mtl_nn_mgda,days_below_24_c,r2,0.99941663431349514,dimensionless,375
+29,3,shared_mtl_nn_mgda,days_below_24_c,r2,0.99926831868283716,dimensionless,375
+29,4,shared_mtl_nn_mgda,days_below_24_c,r2,0.9995013512814851,dimensionless,375
+29,5,shared_mtl_nn_mgda,days_below_24_c,r2,0.99918850708738371,dimensionless,375
+43,1,shared_mtl_nn_mgda,days_below_24_c,r2,0.99802391104568189,dimensionless,375
+43,2,shared_mtl_nn_mgda,days_below_24_c,r2,0.99920038801375111,dimensionless,375
+43,3,shared_mtl_nn_mgda,days_below_24_c,r2,0.99910170596356596,dimensionless,375
+43,4,shared_mtl_nn_mgda,days_below_24_c,r2,0.99959701217000685,dimensionless,375
+43,5,shared_mtl_nn_mgda,days_below_24_c,r2,0.99935768907382616,dimensionless,375
+17,1,shared_mtl_nn_mgda,days_below_24_c,rmse,0.85004864230210431,days/year,375
+17,2,shared_mtl_nn_mgda,days_below_24_c,rmse,0.7161454269124814,days/year,375
+17,3,shared_mtl_nn_mgda,days_below_24_c,rmse,0.93324636213215617,days/year,375
+17,4,shared_mtl_nn_mgda,days_below_24_c,rmse,0.7753707870440768,days/year,375
+17,5,shared_mtl_nn_mgda,days_below_24_c,rmse,0.99822521407753251,days/year,375
+29,1,shared_mtl_nn_mgda,days_below_24_c,rmse,0.74070184749074253,days/year,375
+29,2,shared_mtl_nn_mgda,days_below_24_c,rmse,0.86419920790661642,days/year,375
+29,3,shared_mtl_nn_mgda,days_below_24_c,rmse,0.94898209572794667,days/year,375
+29,4,shared_mtl_nn_mgda,days_below_24_c,rmse,0.78517656694287852,days/year,375
+29,5,shared_mtl_nn_mgda,days_below_24_c,rmse,0.98899295932661213,days/year,375
+43,1,shared_mtl_nn_mgda,days_below_24_c,rmse,1.5828126118150931,days/year,375
+43,2,shared_mtl_nn_mgda,days_below_24_c,rmse,0.98357664305622128,days/year,375
+43,3,shared_mtl_nn_mgda,days_below_24_c,rmse,1.0365208493620857,days/year,375
+43,4,shared_mtl_nn_mgda,days_below_24_c,rmse,0.70429103785779601,days/year,375
+43,5,shared_mtl_nn_mgda,days_below_24_c,rmse,0.88613256571195032,days/year,375

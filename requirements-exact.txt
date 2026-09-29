@@ -1,0 +1,21 @@
+# Reproduces results/exhaustive_analysis/ via scripts/reproduce_exhaustive_analysis.py.
+#
+# Every pin below is the value recorded under "software_versions" in
+# results/exhaustive_analysis/run_metadata.json, which is written by the run
+# that produced the released files in that directory.
+#
+# Interpreter: Python 3.13.9
+
+numpy==2.3.5
+pandas==2.3.3
+matplotlib==3.10.6
+
+# Not listed, and why:
+#   scikit-learn, torch  - not imported by scripts/reproduce_exhaustive_analysis.py
+#                          or by utils/cost.py and utils/carbon.py. Install
+#                          requirements-surrogate.txt instead for the surrogate runs.
+#   scipy                - not used by the exact analysis. It is needed only by
+#                          supplementary_analysis/mcda_supportedness_sweep.py
+#                          (scipy.optimize.linprog); no released artifact records
+#                          the scipy version that produced mcda_outputs.csv, so it
+#                          is deliberately not pinned anywhere in this archive.

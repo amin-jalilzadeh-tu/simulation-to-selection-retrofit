@@ -1,0 +1,94 @@
+{
+  "source_sha256": {
+    "all_configurations.csv": "1eb5a161b9c6871dbbd6551af52086f77b982f7f55f73b04965a89b7043f9c10",
+    "mcdm_weighted_sum_selections.csv": "c8936c9c7a8f8d69e67ebf743586adac5e9a46ce14fd9d433885a69509380662",
+    "reference_solutions.csv": "6ffc9cf2265dbb4cb0273632ee39c4b7d90e5807c8d14c718bfd58096b198d5b"
+  },
+  "weather_cases": [
+    {
+      "weather": "Present TMYx",
+      "day_change_range": [
+        -4,
+        2
+      ],
+      "selections": {
+        "minimum": {
+          "weather_code": "2020",
+          "weather": "Present TMYx",
+          "simulation_id": 625,
+          "heating_reduction_percent": 53.50065309707709,
+          "additional_threshold_days": -1.0,
+          "floor_group": "insulated"
+        },
+        "equal": {
+          "weather_code": "2020",
+          "weather": "Present TMYx",
+          "simulation_id": 25,
+          "heating_reduction_percent": 29.69578702176726,
+          "additional_threshold_days": -4.0,
+          "floor_group": "existing"
+        }
+      }
+    },
+    {
+      "weather": "SSP2-4.5 / 2050",
+      "day_change_range": [
+        -7,
+        39
+      ],
+      "selections": {
+        "minimum": {
+          "weather_code": "2050",
+          "weather": "SSP2-4.5 / 2050",
+          "simulation_id": 625,
+          "heating_reduction_percent": 57.438662428426504,
+          "additional_threshold_days": 39.0,
+          "floor_group": "insulated"
+        },
+        "equal": {
+          "weather_code": "2050",
+          "weather": "SSP2-4.5 / 2050",
+          "simulation_id": 13,
+          "heating_reduction_percent": 29.659727049681265,
+          "additional_threshold_days": -3.0,
+          "floor_group": "existing"
+        }
+      }
+    },
+    {
+      "weather": "SSP5-8.5 / 2080",
+      "day_change_range": [
+        -8,
+        59
+      ],
+      "selections": {
+        "minimum": {
+          "weather_code": "2100",
+          "weather": "SSP5-8.5 / 2080",
+          "simulation_id": 599,
+          "heating_reduction_percent": 58.95422175923631,
+          "additional_threshold_days": 57.0,
+          "floor_group": "insulated"
+        },
+        "equal": {
+          "weather_code": "2100",
+          "weather": "SSP5-8.5 / 2080",
+          "simulation_id": 13,
+          "heating_reduction_percent": 27.620594443624086,
+          "additional_threshold_days": -4.0,
+          "floor_group": "existing"
+        }
+      }
+    }
+  ],
+  "n_packages": 1875,
+  "n_component_pairs": 1500,
+  "paired_values_match_original_helper": true,
+  "figure_width_inches": 6.0481527604815275,
+  "group_sizes": {
+    "existing_floor": 25,
+    "insulated_floor": 100,
+    "changed_floor": 125
+  },
+  "interpretation": "Descriptive summaries of enumerated model cases, not confidence intervals."
+}

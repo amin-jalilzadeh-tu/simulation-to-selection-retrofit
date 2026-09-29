@@ -1,0 +1,3498 @@
+{
+  "script": "scripts/validate_mtl_family.py",
+  "protocol": "Repeated shuffled group-exclusive outer CV with a group-exclusive inner validation split for early stopping.",
+  "configuration": {
+    "seeds": [
+      17,
+      29,
+      43
+    ],
+    "outer_folds": 5,
+    "validation_fraction": 0.15,
+    "trunk_widths": [
+      128,
+      128,
+      64
+    ],
+    "head_hidden_size": 32,
+    "max_epochs": 300,
+    "patience": 30,
+    "min_delta": 1e-06,
+    "learning_rate": 0.001,
+    "weight_decay": 1e-05,
+    "lr_scheduler_factor": 0.5,
+    "lr_scheduler_patience": 10,
+    "minimum_learning_rate": 1e-06,
+    "batch_size": 128,
+    "gradient_clip_norm": 5.0,
+    "rf_estimators": 300,
+    "rf_min_samples_leaf": 1,
+    "rf_max_depth": null,
+    "separate_hidden_size": 128,
+    "deep_balanced_widths": [
+      200,
+      100,
+      50
+    ],
+    "deep_balanced_dropout": 0.5,
+    "hgb_max_iter": 300,
+    "hgb_learning_rate": 0.1
+  },
+  "software_versions": {
+    "python": "3.14.6",
+    "numpy": "2.5.1",
+    "pandas": "3.0.5",
+    "scikit_learn": "1.9.0",
+    "torch": "2.13.0"
+  },
+  "execution": {
+    "device": "cpu",
+    "torch_deterministic_algorithms": true,
+    "torch_threads": 1
+  },
+  "data": {
+    "row_count": 1875,
+    "configuration_group_count": 625,
+    "horizons": [
+      2020,
+      2050,
+      2100
+    ],
+    "features": [
+      "horizon",
+      "windows_U_Factor",
+      "groundfloor_thermal_resistance",
+      "ext_walls_thermal_resistance",
+      "roof_thermal_resistance",
+      "infiltration_design_flow_m3_s"
+    ],
+    "targets": [
+      "annual_heating_energy_gj",
+      "days_below_24_c",
+      "cost_rate_sum_proxy",
+      "carbon_rate_sum_proxy"
+    ],
+    "group_definition": [
+      "windows_U_Factor",
+      "groundfloor_thermal_resistance",
+      "ext_walls_thermal_resistance",
+      "roof_thermal_resistance"
+    ],
+    "input_sha256": {
+      "inputs/2020_merged_simulation_results.csv": "a3c4375e922f2fc9de33078ce4dd3a1187d8f8d4f99a543efbcf56734eebedcd",
+      "inputs/2050_merged_simulation_results.csv": "101791a20c8892b2cb402cff984de2eb1b227c9915c10cb46970fc806a34b9d9",
+      "inputs/2100_merged_simulation_results.csv": "23fdb895fa937a1aa7877e7dda82490b5396c452395897a6d4e936fef288643c"
+    }
+  },
+  "models": {
+    "shared_mtl_nn": "Shared 6->128->128->64 SiLU trunk and one 64->32->1 SiLU head per target; equal standardized MSE across the two targets.",
+    "independent_stl_nn": "Two separately trained networks, each matching one complete input-to-head path of the MTL network, including the full trunk and head.",
+    "random_forest": "Deterministic multi-output RandomForestRegressor fitted to the same standardized inner-training data.",
+    "shared_mtl_nn_mgda": "Same architecture as shared_mtl_nn, trained with the MGDA trainer: per-task gradients on the shared trunk, exact two-task min-norm combination, shared-trunk gradient replaced (not accumulated) after head backprop.",
+    "separate_mtl_nn": "Two-head port of the thesis Separate family: one shared 6->128 SiLU layer, then one 128->128->1 SiLU branch per target; the original output ReLU is removed because targets are standardized. Equal standardized MSE trainer.",
+    "separate_mtl_nn_mgda": "separate_mtl_nn architecture trained with the MGDA trainer.",
+    "deep_balanced_mtl_nn": "Two-head port of the thesis Deep_Balanced family: shared 6->200->100 SiLU trunk with dropout 0.5, energy-style head 100->50->25->1 for heating energy and comfort-style head 100->25->12->1 for days below 24 C. Equal standardized MSE trainer.",
+    "deep_balanced_mtl_nn_mgda": "deep_balanced_mtl_nn architecture trained with the MGDA trainer.",
+    "gradient_boosting": "Per-target HistGradientBoostingRegressor fitted to the same standardized inner-training data; max_iter=300, learning_rate=0.1, no early stopping, seeded per fold and target.",
+    "neural_optimizer": {
+      "name": "AdamW",
+      "learning_rate": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "epsilon": 1e-08,
+      "weight_decay": 1e-05,
+      "amsgrad": false,
+      "gradient_clip_norm": 5.0
+    },
+    "learning_rate_scheduler": {
+      "name": "ReduceLROnPlateau",
+      "monitored_value": "inner_validation_standardized_mse",
+      "mode": "min",
+      "factor": 0.5,
+      "patience": 10,
+      "threshold": 0.0001,
+      "threshold_mode": "rel",
+      "cooldown": 0,
+      "minimum_learning_rate": 1e-06
+    },
+    "initialization": "Kaiming uniform for all linear weights; zero biases.",
+    "random_forest_hyperparameters": {
+      "n_estimators": 300,
+      "criterion": "squared_error",
+      "max_depth": null,
+      "min_samples_leaf": 1,
+      "max_features": 1.0,
+      "bootstrap": true,
+      "n_jobs": 1
+    }
+  },
+  "decision_validation": {
+    "learned_objectives": [
+      "annual_heating_energy_gj",
+      "days_below_24_c",
+      "cost_rate_sum_proxy",
+      "carbon_rate_sum_proxy"
+    ],
+    "exact_objectives": [
+      "cost_rate_sum_proxy",
+      "carbon_rate_sum_proxy"
+    ],
+    "predicted_front_cost_carbon_source": "model predictions",
+    "pareto_directions": [
+      "minimize annual_heating_energy_gj",
+      "minimize cost_rate_sum_proxy",
+      "minimize carbon_rate_sum_proxy",
+      "maximize days_below_24_c"
+    ],
+    "true_score_regret_definition": "Exact-objective weighted score of the surrogate-selected configuration minus the exact optimum score, using min-max bounds from the exact Pareto front.",
+    "days_prediction_policy": {
+      "raw_oof_and_point_metrics": "Unclipped predicted days_below_24_c values are preserved and used for all MAE, RMSE, and R2 metrics.",
+      "pareto_and_weighted_profile_decisions": "Predicted days_below_24_c is clipped to the physically admissible closed interval [0, 365] immediately before constructing predicted Pareto fronts and weighted-profile selections. No other prediction is clipped.",
+      "lower_bound_days": 0.0,
+      "upper_bound_days": 365.0
+    },
+    "raw_days_prediction_diagnostics_by_model": {
+      "deep_balanced_mtl_nn": {
+        "prediction_count": 5625,
+        "count_below_0": 0,
+        "count_above_365": 21,
+        "minimum_raw_prediction": 263.18426513671875,
+        "maximum_raw_prediction": 365.56011962890625
+      },
+      "deep_balanced_mtl_nn_mgda": {
+        "prediction_count": 5625,
+        "count_below_0": 0,
+        "count_above_365": 0,
+        "minimum_raw_prediction": 264.3983459472656,
+        "maximum_raw_prediction": 364.14202880859375
+      },
+      "gradient_boosting": {
+        "prediction_count": 5625,
+        "count_below_0": 0,
+        "count_above_365": 110,
+        "minimum_raw_prediction": 262.6083206962561,
+        "maximum_raw_prediction": 365.39454353960883
+      },
+      "independent_stl_nn": {
+        "prediction_count": 5625,
+        "count_below_0": 0,
+        "count_above_365": 127,
+        "minimum_raw_prediction": 261.2715759277344,
+        "maximum_raw_prediction": 367.7703857421875
+      },
+      "random_forest": {
+        "prediction_count": 5625,
+        "count_below_0": 0,
+        "count_above_365": 2,
+        "minimum_raw_prediction": 262.44000000000034,
+        "maximum_raw_prediction": 365.0000000000002
+      },
+      "separate_mtl_nn": {
+        "prediction_count": 5625,
+        "count_below_0": 0,
+        "count_above_365": 158,
+        "minimum_raw_prediction": 260.4866943359375,
+        "maximum_raw_prediction": 369.1066589355469
+      },
+      "separate_mtl_nn_mgda": {
+        "prediction_count": 5625,
+        "count_below_0": 0,
+        "count_above_365": 137,
+        "minimum_raw_prediction": 259.665771484375,
+        "maximum_raw_prediction": 370.1968688964844
+      },
+      "shared_mtl_nn": {
+        "prediction_count": 5625,
+        "count_below_0": 0,
+        "count_above_365": 152,
+        "minimum_raw_prediction": 261.06561279296875,
+        "maximum_raw_prediction": 376.7643127441406
+      },
+      "shared_mtl_nn_mgda": {
+        "prediction_count": 5625,
+        "count_below_0": 0,
+        "count_above_365": 145,
+        "minimum_raw_prediction": 260.96240234375,
+        "maximum_raw_prediction": 378.2204284667969
+      }
+    },
+    "stakeholder_profiles": {
+      "cost_priority": [
+        0.1,
+        0.7,
+        0.1,
+        0.1
+      ],
+      "carbon_priority": [
+        0.1,
+        0.1,
+        0.7,
+        0.1
+      ],
+      "energy_priority": [
+        0.7,
+        0.1,
+        0.1,
+        0.1
+      ],
+      "days_below_24_priority": [
+        0.1,
+        0.1,
+        0.1,
+        0.7
+      ],
+      "balanced": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ]
+    }
+  },
+  "scalers": [
+    {
+      "repeat_seed": 17,
+      "outer_fold": 1,
+      "fit_role": "inner_train",
+      "fit_row_count": 1275,
+      "feature_columns": [
+        "horizon",
+        "windows_U_Factor",
+        "groundfloor_thermal_resistance",
+        "ext_walls_thermal_resistance",
+        "roof_thermal_resistance",
+        "infiltration_design_flow_m3_s"
+      ],
+      "feature_mean": [
+        2056.6666666666665,
+        1.3832235294117614,
+        4.293694117647073,
+        4.5139999999999265,
+        5.521929411764624,
+        0.018082058823529406
+      ],
+      "feature_scale": [
+        32.99831645537229,
+        0.7792244768542108,
+        1.9223057847193172,
+        2.228710626982228,
+        2.9473757890836043,
+        0.0025901243774493644
+      ],
+      "target_columns": [
+        "annual_heating_energy_gj",
+        "days_below_24_c",
+        "cost_rate_sum_proxy",
+        "carbon_rate_sum_proxy"
+      ],
+      "target_mean": [
+        17.79758599640167,
+        320.30980392156863,
+        638.1063529411774,
+        104.72809411764622
+      ],
+      "target_scale": [
+        5.38508746594352,
+        35.10194260253069,
+        240.4959942082787,
+        53.435624912406325
+      ]
+    },
+    {
+      "repeat_seed": 17,
+      "outer_fold": 2,
+      "fit_role": "inner_train",
+      "fit_row_count": 1275,
+      "feature_columns": [
+        "horizon",
+        "windows_U_Factor",
+        "groundfloor_thermal_resistance",
+        "ext_walls_thermal_resistance",
+        "roof_thermal_resistance",
+        "infiltration_design_flow_m3_s"
+      ],
+      "feature_mean": [
+        2056.6666666666665,
+        1.390823529411762,
+        4.240847058823543,
+        4.524823529411693,
+        5.270258823529333,
+        0.01813294117647058
+      ],
+      "feature_scale": [
+        32.99831645537229,
+        0.7808068402616052,
+        1.9523460970051736,
+        2.2312858923867216,
+        3.078137279180562,
+        0.0026368938159394674
+      ],
+      "target_columns": [
+        "annual_heating_energy_gj",
+        "days_below_24_c",
+        "cost_rate_sum_proxy",
+        "carbon_rate_sum_proxy"
+      ],
+      "target_mean": [
+        18.00749767373562,
+        320.4823529411765,
+        625.3214117647066,
+        103.49604705882277
+      ],
+      "target_scale": [
+        5.490598612745108,
+        35.08294209207983,
+        244.8858305662551,
+        53.530503140657146
+      ]
+    },
+    {
+      "repeat_seed": 17,
+      "outer_fold": 3,
+      "fit_role": "inner_train",
+      "fit_row_count": 1275,
+      "feature_columns": [
+        "horizon",
+        "windows_U_Factor",
+        "groundfloor_thermal_resistance",
+        "ext_walls_thermal_resistance",
+        "roof_thermal_resistance",
+        "infiltration_design_flow_m3_s"
+      ],
+      "feature_mean": [
+        2056.6666666666665,
+        1.3740235294117618,
+        4.193670588235309,
+        4.438235294117573,
+        5.309458823529332,
+        0.018173235294117636
+      ],
+      "feature_scale": [
+        32.99831645537229,
+        0.7728447371119683,
+        1.9975844671133705,
+        2.271846192220601,
+        3.056859432404598,
+        0.0025863521558458498
+      ],
+      "target_columns": [
+        "annual_heating_energy_gj",
+        "days_below_24_c",
+        "cost_rate_sum_proxy",
+        "carbon_rate_sum_proxy"
+      ],
+      "target_mean": [
+        18.049403257255317,
+        320.98980392156864,
+        623.1872941176476,
+        104.65557647058748
+      ],
+      "target_scale": [
+        5.430377554357123,
+        34.85540853128994,
+        237.2106968691522,
+        53.44432143243623
+      ]
+    },
+    {
+      "repeat_seed": 17,
+      "outer_fold": 4,
+      "fit_role": "inner_train",
+      "fit_row_count": 1275,
+      "feature_columns": [
+        "horizon",
+        "windows_U_Factor",
+        "groundfloor_thermal_resistance",
+        "ext_walls_thermal_resistance",
+        "roof_thermal_resistance",
+        "infiltration_design_flow_m3_s"
+      ],
+      "feature_mean": [
+        2056.6666666666665,
+        1.3631529411764678,
+        4.259882352941191,
+        4.5005882352940425,
+        5.410399999999922,
+        0.01808676470588235
+      ],
+      "feature_scale": [
+        32.99831645537229,
+        0.7617199965076282,
+        1.9481662533944704,
+        2.2237606477957863,
+        3.0353763724376734,
+        0.0025475351069430404
+      ],
+      "target_columns": [
+        "annual_heating_energy_gj",
+        "days_below_24_c",
+        "cost_rate_sum_proxy",
+        "carbon_rate_sum_proxy"
+      ],
+      "target_mean": [
+        17.879853507769575,
+        320.4462745098039,
+        634.1030588235302,
+        105.58503529411686
+      ],
+      "target_scale": [
+        5.387295600617885,
+        35.13051374410349,
+        234.4257067113466,
+        53.43751118333767
+      ]
+    },
+    {
+      "repeat_seed": 17,
+      "outer_fold": 5,
+      "fit_role": "inner_train",
+      "fit_row_count": 1275,
+      "feature_columns": [
+        "horizon",
+        "windows_U_Factor",
+        "groundfloor_thermal_resistance",
+        "ext_walls_thermal_resistance",
+        "roof_thermal_resistance",
+        "infiltration_design_flow_m3_s"
+      ],
+      "feature_mean": [
+        2056.6666666666665,
+        1.352258823529409,
+        4.343482352941194,
+        4.36105882352934,
+        5.317976470588158,
+        0.018140882352941173
+      ],
+      "feature_scale": [
+        32.99831645537229,
+        0.7557410566954017,
+        1.8896811098032915,
+        2.2582544135990896,
+        3.0495646207150546,
+        0.0026120558926177634
+      ],
+      "target_columns": [
+        "annual_heating_energy_gj",
+        "days_below_24_c",
+        "cost_rate_sum_proxy",
+        "carbon_rate_sum_proxy"
+      ],
+      "target_mean": [
+        17.964010907281708,
+        320.1278431372549,
+        630.2597647058831,
+        105.97197647058742
+      ],
+      "target_scale": [
+        5.494060327742879,
+        35.06440194247194,
+        238.3902020389679,
+        53.38457253992054
+      ]
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 1,
+      "fit_role": "inner_train",
+      "fit_row_count": 1275,
+      "feature_columns": [
+        "horizon",
+        "windows_U_Factor",
+        "groundfloor_thermal_resistance",
+        "ext_walls_thermal_resistance",
+        "roof_thermal_resistance",
+        "infiltration_design_flow_m3_s"
+      ],
+      "feature_mean": [
+        2056.6666666666665,
+        1.376988235294115,
+        4.286658823529427,
+        4.498823529411691,
+        5.338447058823451,
+        0.018111176470588252
+      ],
+      "feature_scale": [
+        32.99831645537229,
+        0.7713916300559777,
+        1.9332317687835372,
+        2.258953121282559,
+        2.9919660956945093,
+        0.002633995806761016
+      ],
+      "target_columns": [
+        "annual_heating_energy_gj",
+        "days_below_24_c",
+        "cost_rate_sum_proxy",
+        "carbon_rate_sum_proxy"
+      ],
+      "target_mean": [
+        17.91595520572893,
+        320.31529411764706,
+        630.6463529411775,
+        104.60731764705793
+      ],
+      "target_scale": [
+        5.49658957166122,
+        35.10675318270189,
+        246.18690745924312,
+        52.54111513051397
+      ]
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 2,
+      "fit_role": "inner_train",
+      "fit_row_count": 1275,
+      "feature_columns": [
+        "horizon",
+        "windows_U_Factor",
+        "groundfloor_thermal_resistance",
+        "ext_walls_thermal_resistance",
+        "roof_thermal_resistance",
+        "infiltration_design_flow_m3_s"
+      ],
+      "feature_mean": [
+        2056.6666666666665,
+        1.3847294117647033,
+        4.295129411764719,
+        4.361764705882282,
+        5.402964705882273,
+        0.018232058823529393
+      ],
+      "feature_scale": [
+        32.99831645537229,
+        0.7731037429544869,
+        1.9374053102523028,
+        2.2845394317509538,
+        3.0038841774768046,
+        0.0026280741432505527
+      ],
+      "target_columns": [
+        "annual_heating_energy_gj",
+        "days_below_24_c",
+        "cost_rate_sum_proxy",
+        "carbon_rate_sum_proxy"
+      ],
+      "target_mean": [
+        18.02093823526627,
+        320.4729411764706,
+        625.2670588235302,
+        103.49974117646983
+      ],
+      "target_scale": [
+        5.474886182225196,
+        34.92708164914377,
+        237.19145336662743,
+        53.317543045451785
+      ]
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 3,
+      "fit_role": "inner_train",
+      "fit_row_count": 1275,
+      "feature_columns": [
+        "horizon",
+        "windows_U_Factor",
+        "groundfloor_thermal_resistance",
+        "ext_walls_thermal_resistance",
+        "roof_thermal_resistance",
+        "infiltration_design_flow_m3_s"
+      ],
+      "feature_mean": [
+        2056.6666666666665,
+        1.3700470588235265,
+        4.190141176470603,
+        4.496588235294042,
+        5.428564705882272,
+        0.01811382352941177
+      ],
+      "feature_scale": [
+        32.99831645537229,
+        0.7693349290650882,
+        1.9951009359867224,
+        2.222048632358754,
+        3.0934262080477524,
+        0.0026055695603004014
+      ],
+      "target_columns": [
+        "annual_heating_energy_gj",
+        "days_below_24_c",
+        "cost_rate_sum_proxy",
+        "carbon_rate_sum_proxy"
+      ],
+      "target_mean": [
+        17.959154992769264,
+        320.8227450980392,
+        626.9548235294125,
+        105.32818823529334
+      ],
+      "target_scale": [
+        5.43363885906474,
+        35.04204690493937,
+        240.19716916885926,
+        53.6133903929176
+      ]
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 4,
+      "fit_role": "inner_train",
+      "fit_row_count": 1275,
+      "feature_columns": [
+        "horizon",
+        "windows_U_Factor",
+        "groundfloor_thermal_resistance",
+        "ext_walls_thermal_resistance",
+        "roof_thermal_resistance",
+        "infiltration_design_flow_m3_s"
+      ],
+      "feature_mean": [
+        2056.6666666666665,
+        1.3801411764705849,
+        4.360823529411782,
+        4.335058823529339,
+        5.327999999999922,
+        0.018200882352941164
+      ],
+      "feature_scale": [
+        32.99831645537229,
+        0.7807251403503589,
+        1.8537689504895862,
+        2.306814775465178,
+        3.0156379873234656,
+        0.0025926605885336516
+      ],
+      "target_columns": [
+        "annual_heating_energy_gj",
+        "days_below_24_c",
+        "cost_rate_sum_proxy",
+        "carbon_rate_sum_proxy"
+      ],
+      "target_mean": [
+        18.01487079108423,
+        320.01254901960783,
+        622.2600000000006,
+        105.10776470588158
+      ],
+      "target_scale": [
+        5.429356842520851,
+        34.99563893520015,
+        236.18690246099084,
+        53.80667518126617
+      ]
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 5,
+      "fit_role": "inner_train",
+      "fit_row_count": 1275,
+      "feature_columns": [
+        "horizon",
+        "windows_U_Factor",
+        "groundfloor_thermal_resistance",
+        "ext_walls_thermal_resistance",
+        "roof_thermal_resistance",
+        "infiltration_design_flow_m3_s"
+      ],
+      "feature_mean": [
+        2056.6666666666665,
+        1.410729411764703,
+        4.279152941176486,
+        4.576235294117573,
+        5.411435294117565,
+        0.01809823529411763
+      ],
+      "feature_scale": [
+        32.99831645537229,
+        0.7921328971719384,
+        1.9441264150732258,
+        2.2156103800987643,
+        3.0084974653063066,
+        0.002622775775426891
+      ],
+      "target_columns": [
+        "annual_heating_energy_gj",
+        "days_below_24_c",
+        "cost_rate_sum_proxy",
+        "carbon_rate_sum_proxy"
+      ],
+      "target_mean": [
+        17.89906113051595,
+        320.37176470588236,
+        632.8204705882359,
+        101.99999999999906
+      ],
+      "target_scale": [
+        5.445691374006505,
+        35.12592231464437,
+        241.68480140053023,
+        53.940367941339254
+      ]
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 1,
+      "fit_role": "inner_train",
+      "fit_row_count": 1275,
+      "feature_columns": [
+        "horizon",
+        "windows_U_Factor",
+        "groundfloor_thermal_resistance",
+        "ext_walls_thermal_resistance",
+        "roof_thermal_resistance",
+        "infiltration_design_flow_m3_s"
+      ],
+      "feature_mean": [
+        2056.6666666666665,
+        1.3856235294117623,
+        4.288070588235311,
+        4.367999999999928,
+        5.373741176470511,
+        0.018234999999999994
+      ],
+      "feature_scale": [
+        32.99831645537229,
+        0.7726700228119677,
+        1.934627988487916,
+        2.2488819705905034,
+        3.0087942285043336,
+        0.0025679649759385477
+      ],
+      "target_columns": [
+        "annual_heating_energy_gj",
+        "days_below_24_c",
+        "cost_rate_sum_proxy",
+        "carbon_rate_sum_proxy"
+      ],
+      "target_mean": [
+        18.017192899936088,
+        320.518431372549,
+        623.7858823529417,
+        103.64922352941097
+      ],
+      "target_scale": [
+        5.472522587895577,
+        34.94203959234124,
+        238.61051609040086,
+        53.50998157889397
+      ]
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 2,
+      "fit_role": "inner_train",
+      "fit_row_count": 1275,
+      "feature_columns": [
+        "horizon",
+        "windows_U_Factor",
+        "groundfloor_thermal_resistance",
+        "ext_walls_thermal_resistance",
+        "roof_thermal_resistance",
+        "infiltration_design_flow_m3_s"
+      ],
+      "feature_mean": [
+        2056.6666666666665,
+        1.392258823529408,
+        4.183105882352954,
+        4.6718823529410995,
+        5.400847058823451,
+        0.01800647058823529
+      ],
+      "feature_scale": [
+        32.99831645537229,
+        0.7907756899613918,
+        2.005008963004923,
+        2.191103130237277,
+        3.0680043312565575,
+        0.002607405045761851
+      ],
+      "target_columns": [
+        "annual_heating_energy_gj",
+        "days_below_24_c",
+        "cost_rate_sum_proxy",
+        "carbon_rate_sum_proxy"
+      ],
+      "target_mean": [
+        17.870453610915845,
+        320.716862745098,
+        632.724470588236,
+        104.72548235294038
+      ],
+      "target_scale": [
+        5.4016808243608825,
+        35.16670425554325,
+        244.2043777875454,
+        54.20896694494298
+      ]
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 3,
+      "fit_role": "inner_train",
+      "fit_row_count": 1275,
+      "feature_columns": [
+        "horizon",
+        "windows_U_Factor",
+        "groundfloor_thermal_resistance",
+        "ext_walls_thermal_resistance",
+        "roof_thermal_resistance",
+        "infiltration_design_flow_m3_s"
+      ],
+      "feature_mean": [
+        2056.6666666666665,
+        1.3548941176470568,
+        4.342305882352957,
+        4.4597647058822805,
+        5.274541176470505,
+        0.01808588235294119
+      ],
+      "feature_scale": [
+        32.99831645537229,
+        0.7490081602246039,
+        1.8883314391501955,
+        2.2668075381965913,
+        3.0648799748227105,
+        0.0025665651315317306
+      ],
+      "target_columns": [
+        "annual_heating_energy_gj",
+        "days_below_24_c",
+        "cost_rate_sum_proxy",
+        "carbon_rate_sum_proxy"
+      ],
+      "target_mean": [
+        17.93316781977338,
+        319.9121568627451,
+        631.4475294117657,
+        104.44329411764629
+      ],
+      "target_scale": [
+        5.4502693613089965,
+        35.19692679954114,
+        235.12969037085944,
+        52.841066943590626
+      ]
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 4,
+      "fit_role": "inner_train",
+      "fit_row_count": 1275,
+      "feature_columns": [
+        "horizon",
+        "windows_U_Factor",
+        "groundfloor_thermal_resistance",
+        "ext_walls_thermal_resistance",
+        "roof_thermal_resistance",
+        "infiltration_design_flow_m3_s"
+      ],
+      "feature_mean": [
+        2056.6666666666665,
+        1.3982823529411723,
+        4.2408705882353095,
+        4.4591764705881625,
+        5.422305882352862,
+        0.018147941176470568
+      ],
+      "feature_scale": [
+        32.99831645537229,
+        0.7983386368580327,
+        1.9667331993359416,
+        2.178487987121952,
+        2.9985827790652255,
+        0.002667310861492135
+      ],
+      "target_columns": [
+        "annual_heating_energy_gj",
+        "days_below_24_c",
+        "cost_rate_sum_proxy",
+        "carbon_rate_sum_proxy"
+      ],
+      "target_mean": [
+        17.924476524894324,
+        320.66980392156864,
+        626.5508235294126,
+        104.92769411764621
+      ],
+      "target_scale": [
+        5.456275336417989,
+        35.04943273800122,
+        243.37000676632164,
+        54.8583164962301
+      ]
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 5,
+      "fit_role": "inner_train",
+      "fit_row_count": 1275,
+      "feature_columns": [
+        "horizon",
+        "windows_U_Factor",
+        "groundfloor_thermal_resistance",
+        "ext_walls_thermal_resistance",
+        "roof_thermal_resistance",
+        "infiltration_design_flow_m3_s"
+      ],
+      "feature_mean": [
+        2056.6666666666665,
+        1.3611764705882328,
+        4.314376470588251,
+        4.390470588235222,
+        5.5249882352940345,
+        0.018107352941176456
+      ],
+      "feature_scale": [
+        32.99831645537229,
+        0.7571330006166862,
+        1.9181438698201916,
+        2.2221578838821783,
+        3.0143211995371746,
+        0.0025662653785373684
+      ],
+      "target_columns": [
+        "annual_heating_energy_gj",
+        "days_below_24_c",
+        "cost_rate_sum_proxy",
+        "carbon_rate_sum_proxy"
+      ],
+      "target_mean": [
+        17.85543894800514,
+        320.2721568627451,
+        639.852000000001,
+        104.33637647058737
+      ],
+      "target_scale": [
+        5.421928336371792,
+        35.05648731962577,
+        237.2184205762822,
+        53.049315485294116
+      ]
+    }
+  ],
+  "training_runs": [
+    {
+      "repeat_seed": 17,
+      "outer_fold": 1,
+      "model": "shared_mtl_nn",
+      "training_seed": 685961723,
+      "target": "both",
+      "parameter_count": 34116,
+      "best_epoch": 297,
+      "epochs_ran": 300,
+      "best_validation_loss": 0.015164476819336414
+    },
+    {
+      "repeat_seed": 17,
+      "outer_fold": 1,
+      "model": "independent_stl_nn",
+      "training_seed": 1687605803,
+      "target": "annual_heating_energy_gj",
+      "parameter_count": 27777,
+      "best_epoch": 106,
+      "epochs_ran": 136,
+      "best_validation_loss": 0.0007131267921067774
+    },
+    {
+      "repeat_seed": 17,
+      "outer_fold": 1,
+      "model": "independent_stl_nn",
+      "training_seed": 2886609094,
+      "target": "days_below_24_c",
+      "parameter_count": 27777,
+      "best_epoch": 124,
+      "epochs_ran": 154,
+      "best_validation_loss": 0.0005110659403726459
+    },
+    {
+      "repeat_seed": 17,
+      "outer_fold": 1,
+      "model": "independent_stl_nn",
+      "training_seed": 55410254,
+      "target": "cost_rate_sum_proxy",
+      "parameter_count": 27777,
+      "best_epoch": 161,
+      "epochs_ran": 191,
+      "best_validation_loss": 0.024323323741555214
+    },
+    {
+      "repeat_seed": 17,
+      "outer_fold": 1,
+      "model": "independent_stl_nn",
+      "training_seed": 1368819629,
+      "target": "carbon_rate_sum_proxy",
+      "parameter_count": 27777,
+      "best_epoch": 56,
+      "epochs_ran": 86,
+      "best_validation_loss": 0.025578536093235016
+    },
+    {
+      "repeat_seed": 17,
+      "outer_fold": 1,
+      "model": "independent_stl_nn",
+      "target": "combined_parameter_count",
+      "parameter_count": 111108
+    },
+    {
+      "repeat_seed": 17,
+      "outer_fold": 1,
+      "model": "random_forest",
+      "training_seed": 1087882762,
+      "target": "both",
+      "n_estimators": 300,
+      "min_samples_leaf": 1,
+      "max_depth": null
+    },
+    {
+      "repeat_seed": 17,
+      "outer_fold": 1,
+      "model": "shared_mtl_nn_mgda",
+      "training_seed": 513590579,
+      "target": "both",
+      "trainer": "mgda",
+      "parameter_count": 34116,
+      "best_epoch": 170,
+      "epochs_ran": 200,
+      "best_validation_loss": 0.04769563302397728
+    },
+    {
+      "repeat_seed": 17,
+      "outer_fold": 1,
+      "model": "separate_mtl_nn",
+      "training_seed": 2754984288,
+      "target": "both",
+      "trainer": "equal_mse",
+      "parameter_count": 67460,
+      "best_epoch": 156,
+      "epochs_ran": 186,
+      "best_validation_loss": 0.037244804203510284
+    },
+    {
+      "repeat_seed": 17,
+      "outer_fold": 1,
+      "model": "separate_mtl_nn_mgda",
+      "training_seed": 2113558111,
+      "target": "both",
+      "trainer": "mgda",
+      "parameter_count": 67460,
+      "best_epoch": 86,
+      "epochs_ran": 116,
+      "best_validation_loss": 0.04116685315966606
+    },
+    {
+      "repeat_seed": 17,
+      "outer_fold": 1,
+      "model": "deep_balanced_mtl_nn",
+      "training_seed": 999622587,
+      "target": "both",
+      "trainer": "equal_mse",
+      "parameter_count": 57328,
+      "best_epoch": 156,
+      "epochs_ran": 186,
+      "best_validation_loss": 0.12684649229049683
+    },
+    {
+      "repeat_seed": 17,
+      "outer_fold": 1,
+      "model": "deep_balanced_mtl_nn_mgda",
+      "training_seed": 2090736286,
+      "target": "both",
+      "trainer": "mgda",
+      "parameter_count": 57328,
+      "best_epoch": 143,
+      "epochs_ran": 173,
+      "best_validation_loss": 0.12944555282592773
+    },
+    {
+      "repeat_seed": 17,
+      "outer_fold": 1,
+      "model": "gradient_boosting",
+      "training_seed": 1327570947,
+      "target": "annual_heating_energy_gj",
+      "max_iter": 300,
+      "learning_rate": 0.1
+    },
+    {
+      "repeat_seed": 17,
+      "outer_fold": 1,
+      "model": "gradient_boosting",
+      "training_seed": 2003818366,
+      "target": "days_below_24_c",
+      "max_iter": 300,
+      "learning_rate": 0.1
+    },
+    {
+      "repeat_seed": 17,
+      "outer_fold": 1,
+      "model": "gradient_boosting",
+      "training_seed": 1258654896,
+      "target": "cost_rate_sum_proxy",
+      "max_iter": 300,
+      "learning_rate": 0.1
+    },
+    {
+      "repeat_seed": 17,
+      "outer_fold": 1,
+      "model": "gradient_boosting",
+      "training_seed": 2501944677,
+      "target": "carbon_rate_sum_proxy",
+      "max_iter": 300,
+      "learning_rate": 0.1
+    },
+    {
+      "repeat_seed": 17,
+      "outer_fold": 2,
+      "model": "shared_mtl_nn",
+      "training_seed": 3399163165,
+      "target": "both",
+      "parameter_count": 34116,
+      "best_epoch": 300,
+      "epochs_ran": 300,
+      "best_validation_loss": 0.01653282716870308
+    },
+    {
+      "repeat_seed": 17,
+      "outer_fold": 2,
+      "model": "independent_stl_nn",
+      "training_seed": 339680467,
+      "target": "annual_heating_energy_gj",
+      "parameter_count": 27777,
+      "best_epoch": 82,
+      "epochs_ran": 112,
+      "best_validation_loss": 0.0003543696366250515
+    },
+    {
+      "repeat_seed": 17,
+      "outer_fold": 2,
+      "model": "independent_stl_nn",
+      "training_seed": 1727081105,
+      "target": "days_below_24_c",
+      "parameter_count": 27777,
+      "best_epoch": 262,
+      "epochs_ran": 292,
+      "best_validation_loss": 0.000516340252943337
+    },
+    {
+      "repeat_seed": 17,
+      "outer_fold": 2,
+      "model": "independent_stl_nn",
+      "training_seed": 1785977886,
+      "target": "cost_rate_sum_proxy",
+      "parameter_count": 27777,
+      "best_epoch": 206,
+      "epochs_ran": 236,
+      "best_validation_loss": 0.036798641085624695
+    },
+    {
+      "repeat_seed": 17,
+      "outer_fold": 2,
+      "model": "independent_stl_nn",
+      "training_seed": 1564837520,
+      "target": "carbon_rate_sum_proxy",
+      "parameter_count": 27777,
+      "best_epoch": 80,
+      "epochs_ran": 110,
+      "best_validation_loss": 0.033383335918188095
+    },
+    {
+      "repeat_seed": 17,
+      "outer_fold": 2,
+      "model": "independent_stl_nn",
+      "target": "combined_parameter_count",
+      "parameter_count": 111108
+    },
+    {
+      "repeat_seed": 17,
+      "outer_fold": 2,
+      "model": "random_forest",
+      "training_seed": 3112360125,
+      "target": "both",
+      "n_estimators": 300,
+      "min_samples_leaf": 1,
+      "max_depth": null
+    },
+    {
+      "repeat_seed": 17,
+      "outer_fold": 2,
+      "model": "shared_mtl_nn_mgda",
+      "training_seed": 2586338001,
+      "target": "both",
+      "trainer": "mgda",
+      "parameter_count": 34116,
+      "best_epoch": 235,
+      "epochs_ran": 265,
+      "best_validation_loss": 0.04480043426156044
+    },
+    {
+      "repeat_seed": 17,
+      "outer_fold": 2,
+      "model": "separate_mtl_nn",
+      "training_seed": 2969428935,
+      "target": "both",
+      "trainer": "equal_mse",
+      "parameter_count": 67460,
+      "best_epoch": 171,
+      "epochs_ran": 201,
+      "best_validation_loss": 0.0411154106259346
+    },
+    {
+      "repeat_seed": 17,
+      "outer_fold": 2,
+      "model": "separate_mtl_nn_mgda",
+      "training_seed": 2669069402,
+      "target": "both",
+      "trainer": "mgda",
+      "parameter_count": 67460,
+      "best_epoch": 132,
+      "epochs_ran": 162,
+      "best_validation_loss": 0.040268708020448685
+    },
+    {
+      "repeat_seed": 17,
+      "outer_fold": 2,
+      "model": "deep_balanced_mtl_nn",
+      "training_seed": 2768449215,
+      "target": "both",
+      "trainer": "equal_mse",
+      "parameter_count": 57328,
+      "best_epoch": 206,
+      "epochs_ran": 236,
+      "best_validation_loss": 0.1112104058265686
+    },
+    {
+      "repeat_seed": 17,
+      "outer_fold": 2,
+      "model": "deep_balanced_mtl_nn_mgda",
+      "training_seed": 1766928515,
+      "target": "both",
+      "trainer": "mgda",
+      "parameter_count": 57328,
+      "best_epoch": 233,
+      "epochs_ran": 263,
+      "best_validation_loss": 0.11178615689277649
+    },
+    {
+      "repeat_seed": 17,
+      "outer_fold": 2,
+      "model": "gradient_boosting",
+      "training_seed": 2674701693,
+      "target": "annual_heating_energy_gj",
+      "max_iter": 300,
+      "learning_rate": 0.1
+    },
+    {
+      "repeat_seed": 17,
+      "outer_fold": 2,
+      "model": "gradient_boosting",
+      "training_seed": 1028727060,
+      "target": "days_below_24_c",
+      "max_iter": 300,
+      "learning_rate": 0.1
+    },
+    {
+      "repeat_seed": 17,
+      "outer_fold": 2,
+      "model": "gradient_boosting",
+      "training_seed": 2337112048,
+      "target": "cost_rate_sum_proxy",
+      "max_iter": 300,
+      "learning_rate": 0.1
+    },
+    {
+      "repeat_seed": 17,
+      "outer_fold": 2,
+      "model": "gradient_boosting",
+      "training_seed": 2543511326,
+      "target": "carbon_rate_sum_proxy",
+      "max_iter": 300,
+      "learning_rate": 0.1
+    },
+    {
+      "repeat_seed": 17,
+      "outer_fold": 3,
+      "model": "shared_mtl_nn",
+      "training_seed": 2994542210,
+      "target": "both",
+      "parameter_count": 34116,
+      "best_epoch": 300,
+      "epochs_ran": 300,
+      "best_validation_loss": 0.010767972096800804
+    },
+    {
+      "repeat_seed": 17,
+      "outer_fold": 3,
+      "model": "independent_stl_nn",
+      "training_seed": 1269535975,
+      "target": "annual_heating_energy_gj",
+      "parameter_count": 27777,
+      "best_epoch": 71,
+      "epochs_ran": 101,
+      "best_validation_loss": 0.0005206519272178411
+    },
+    {
+      "repeat_seed": 17,
+      "outer_fold": 3,
+      "model": "independent_stl_nn",
+      "training_seed": 3209395752,
+      "target": "days_below_24_c",
+      "parameter_count": 27777,
+      "best_epoch": 91,
+      "epochs_ran": 121,
+      "best_validation_loss": 0.0011369404383003712
+    },
+    {
+      "repeat_seed": 17,
+      "outer_fold": 3,
+      "model": "independent_stl_nn",
+      "training_seed": 3599572129,
+      "target": "cost_rate_sum_proxy",
+      "parameter_count": 27777,
+      "best_epoch": 150,
+      "epochs_ran": 180,
+      "best_validation_loss": 0.022053712978959084
+    },
+    {
+      "repeat_seed": 17,
+      "outer_fold": 3,
+      "model": "independent_stl_nn",
+      "training_seed": 4025109742,
+      "target": "carbon_rate_sum_proxy",
+      "parameter_count": 27777,
+      "best_epoch": 170,
+      "epochs_ran": 200,
+      "best_validation_loss": 0.02300315909087658
+    },
+    {
+      "repeat_seed": 17,
+      "outer_fold": 3,
+      "model": "independent_stl_nn",
+      "target": "combined_parameter_count",
+      "parameter_count": 111108
+    },
+    {
+      "repeat_seed": 17,
+      "outer_fold": 3,
+      "model": "random_forest",
+      "training_seed": 488005848,
+      "target": "both",
+      "n_estimators": 300,
+      "min_samples_leaf": 1,
+      "max_depth": null
+    },
+    {
+      "repeat_seed": 17,
+      "outer_fold": 3,
+      "model": "shared_mtl_nn_mgda",
+      "training_seed": 501657009,
+      "target": "both",
+      "trainer": "mgda",
+      "parameter_count": 34116,
+      "best_epoch": 172,
+      "epochs_ran": 202,
+      "best_validation_loss": 0.04419736564159393
+    },
+    {
+      "repeat_seed": 17,
+      "outer_fold": 3,
+      "model": "separate_mtl_nn",
+      "training_seed": 3674835869,
+      "target": "both",
+      "trainer": "equal_mse",
+      "parameter_count": 67460,
+      "best_epoch": 183,
+      "epochs_ran": 213,
+      "best_validation_loss": 0.03498883545398712
+    },
+    {
+      "repeat_seed": 17,
+      "outer_fold": 3,
+      "model": "separate_mtl_nn_mgda",
+      "training_seed": 1441739171,
+      "target": "both",
+      "trainer": "mgda",
+      "parameter_count": 67460,
+      "best_epoch": 131,
+      "epochs_ran": 161,
+      "best_validation_loss": 0.0347311794757843
+    },
+    {
+      "repeat_seed": 17,
+      "outer_fold": 3,
+      "model": "deep_balanced_mtl_nn",
+      "training_seed": 3515062553,
+      "target": "both",
+      "trainer": "equal_mse",
+      "parameter_count": 57328,
+      "best_epoch": 151,
+      "epochs_ran": 181,
+      "best_validation_loss": 0.15009674429893494
+    },
+    {
+      "repeat_seed": 17,
+      "outer_fold": 3,
+      "model": "deep_balanced_mtl_nn_mgda",
+      "training_seed": 2257167317,
+      "target": "both",
+      "trainer": "mgda",
+      "parameter_count": 57328,
+      "best_epoch": 195,
+      "epochs_ran": 225,
+      "best_validation_loss": 0.12246019393205643
+    },
+    {
+      "repeat_seed": 17,
+      "outer_fold": 3,
+      "model": "gradient_boosting",
+      "training_seed": 3672341497,
+      "target": "annual_heating_energy_gj",
+      "max_iter": 300,
+      "learning_rate": 0.1
+    },
+    {
+      "repeat_seed": 17,
+      "outer_fold": 3,
+      "model": "gradient_boosting",
+      "training_seed": 3397887789,
+      "target": "days_below_24_c",
+      "max_iter": 300,
+      "learning_rate": 0.1
+    },
+    {
+      "repeat_seed": 17,
+      "outer_fold": 3,
+      "model": "gradient_boosting",
+      "training_seed": 3488491449,
+      "target": "cost_rate_sum_proxy",
+      "max_iter": 300,
+      "learning_rate": 0.1
+    },
+    {
+      "repeat_seed": 17,
+      "outer_fold": 3,
+      "model": "gradient_boosting",
+      "training_seed": 475959649,
+      "target": "carbon_rate_sum_proxy",
+      "max_iter": 300,
+      "learning_rate": 0.1
+    },
+    {
+      "repeat_seed": 17,
+      "outer_fold": 4,
+      "model": "shared_mtl_nn",
+      "training_seed": 1304944914,
+      "target": "both",
+      "parameter_count": 34116,
+      "best_epoch": 229,
+      "epochs_ran": 259,
+      "best_validation_loss": 0.009848777204751968
+    },
+    {
+      "repeat_seed": 17,
+      "outer_fold": 4,
+      "model": "independent_stl_nn",
+      "training_seed": 3610197694,
+      "target": "annual_heating_energy_gj",
+      "parameter_count": 27777,
+      "best_epoch": 143,
+      "epochs_ran": 173,
+      "best_validation_loss": 0.0003572324349079281
+    },
+    {
+      "repeat_seed": 17,
+      "outer_fold": 4,
+      "model": "independent_stl_nn",
+      "training_seed": 2960865501,
+      "target": "days_below_24_c",
+      "parameter_count": 27777,
+      "best_epoch": 230,
+      "epochs_ran": 260,
+      "best_validation_loss": 0.00044801743933930993
+    },
+    {
+      "repeat_seed": 17,
+      "outer_fold": 4,
+      "model": "independent_stl_nn",
+      "training_seed": 2035928963,
+      "target": "cost_rate_sum_proxy",
+      "parameter_count": 27777,
+      "best_epoch": 300,
+      "epochs_ran": 300,
+      "best_validation_loss": 0.012961510568857193
+    },
+    {
+      "repeat_seed": 17,
+      "outer_fold": 4,
+      "model": "independent_stl_nn",
+      "training_seed": 3475617750,
+      "target": "carbon_rate_sum_proxy",
+      "parameter_count": 27777,
+      "best_epoch": 95,
+      "epochs_ran": 125,
+      "best_validation_loss": 0.025609740987420082
+    },
+    {
+      "repeat_seed": 17,
+      "outer_fold": 4,
+      "model": "independent_stl_nn",
+      "target": "combined_parameter_count",
+      "parameter_count": 111108
+    },
+    {
+      "repeat_seed": 17,
+      "outer_fold": 4,
+      "model": "random_forest",
+      "training_seed": 2619786512,
+      "target": "both",
+      "n_estimators": 300,
+      "min_samples_leaf": 1,
+      "max_depth": null
+    },
+    {
+      "repeat_seed": 17,
+      "outer_fold": 4,
+      "model": "shared_mtl_nn_mgda",
+      "training_seed": 1129090260,
+      "target": "both",
+      "trainer": "mgda",
+      "parameter_count": 34116,
+      "best_epoch": 252,
+      "epochs_ran": 282,
+      "best_validation_loss": 0.04386959224939346
+    },
+    {
+      "repeat_seed": 17,
+      "outer_fold": 4,
+      "model": "separate_mtl_nn",
+      "training_seed": 1786918182,
+      "target": "both",
+      "trainer": "equal_mse",
+      "parameter_count": 67460,
+      "best_epoch": 295,
+      "epochs_ran": 300,
+      "best_validation_loss": 0.029272431507706642
+    },
+    {
+      "repeat_seed": 17,
+      "outer_fold": 4,
+      "model": "separate_mtl_nn_mgda",
+      "training_seed": 3243758850,
+      "target": "both",
+      "trainer": "mgda",
+      "parameter_count": 67460,
+      "best_epoch": 300,
+      "epochs_ran": 300,
+      "best_validation_loss": 0.03349681571125984
+    },
+    {
+      "repeat_seed": 17,
+      "outer_fold": 4,
+      "model": "deep_balanced_mtl_nn",
+      "training_seed": 2314086947,
+      "target": "both",
+      "trainer": "equal_mse",
+      "parameter_count": 57328,
+      "best_epoch": 99,
+      "epochs_ran": 129,
+      "best_validation_loss": 0.1881469041109085
+    },
+    {
+      "repeat_seed": 17,
+      "outer_fold": 4,
+      "model": "deep_balanced_mtl_nn_mgda",
+      "training_seed": 1341046768,
+      "target": "both",
+      "trainer": "mgda",
+      "parameter_count": 57328,
+      "best_epoch": 144,
+      "epochs_ran": 174,
+      "best_validation_loss": 0.14823777973651886
+    },
+    {
+      "repeat_seed": 17,
+      "outer_fold": 4,
+      "model": "gradient_boosting",
+      "training_seed": 85676146,
+      "target": "annual_heating_energy_gj",
+      "max_iter": 300,
+      "learning_rate": 0.1
+    },
+    {
+      "repeat_seed": 17,
+      "outer_fold": 4,
+      "model": "gradient_boosting",
+      "training_seed": 1500768456,
+      "target": "days_below_24_c",
+      "max_iter": 300,
+      "learning_rate": 0.1
+    },
+    {
+      "repeat_seed": 17,
+      "outer_fold": 4,
+      "model": "gradient_boosting",
+      "training_seed": 2309542236,
+      "target": "cost_rate_sum_proxy",
+      "max_iter": 300,
+      "learning_rate": 0.1
+    },
+    {
+      "repeat_seed": 17,
+      "outer_fold": 4,
+      "model": "gradient_boosting",
+      "training_seed": 1774759422,
+      "target": "carbon_rate_sum_proxy",
+      "max_iter": 300,
+      "learning_rate": 0.1
+    },
+    {
+      "repeat_seed": 17,
+      "outer_fold": 5,
+      "model": "shared_mtl_nn",
+      "training_seed": 1261433070,
+      "target": "both",
+      "parameter_count": 34116,
+      "best_epoch": 282,
+      "epochs_ran": 300,
+      "best_validation_loss": 0.012070301920175552
+    },
+    {
+      "repeat_seed": 17,
+      "outer_fold": 5,
+      "model": "independent_stl_nn",
+      "training_seed": 65095270,
+      "target": "annual_heating_energy_gj",
+      "parameter_count": 27777,
+      "best_epoch": 76,
+      "epochs_ran": 106,
+      "best_validation_loss": 0.0011615707771852612
+    },
+    {
+      "repeat_seed": 17,
+      "outer_fold": 5,
+      "model": "independent_stl_nn",
+      "training_seed": 1004236752,
+      "target": "days_below_24_c",
+      "parameter_count": 27777,
+      "best_epoch": 64,
+      "epochs_ran": 94,
+      "best_validation_loss": 0.0007401109905913472
+    },
+    {
+      "repeat_seed": 17,
+      "outer_fold": 5,
+      "model": "independent_stl_nn",
+      "training_seed": 1646966546,
+      "target": "cost_rate_sum_proxy",
+      "parameter_count": 27777,
+      "best_epoch": 98,
+      "epochs_ran": 128,
+      "best_validation_loss": 0.020915282890200615
+    },
+    {
+      "repeat_seed": 17,
+      "outer_fold": 5,
+      "model": "independent_stl_nn",
+      "training_seed": 4269965614,
+      "target": "carbon_rate_sum_proxy",
+      "parameter_count": 27777,
+      "best_epoch": 51,
+      "epochs_ran": 81,
+      "best_validation_loss": 0.029547974467277527
+    },
+    {
+      "repeat_seed": 17,
+      "outer_fold": 5,
+      "model": "independent_stl_nn",
+      "target": "combined_parameter_count",
+      "parameter_count": 111108
+    },
+    {
+      "repeat_seed": 17,
+      "outer_fold": 5,
+      "model": "random_forest",
+      "training_seed": 2813245358,
+      "target": "both",
+      "n_estimators": 300,
+      "min_samples_leaf": 1,
+      "max_depth": null
+    },
+    {
+      "repeat_seed": 17,
+      "outer_fold": 5,
+      "model": "shared_mtl_nn_mgda",
+      "training_seed": 178369642,
+      "target": "both",
+      "trainer": "mgda",
+      "parameter_count": 34116,
+      "best_epoch": 164,
+      "epochs_ran": 194,
+      "best_validation_loss": 0.03528507798910141
+    },
+    {
+      "repeat_seed": 17,
+      "outer_fold": 5,
+      "model": "separate_mtl_nn",
+      "training_seed": 2092244062,
+      "target": "both",
+      "trainer": "equal_mse",
+      "parameter_count": 67460,
+      "best_epoch": 64,
+      "epochs_ran": 94,
+      "best_validation_loss": 0.030413497239351273
+    },
+    {
+      "repeat_seed": 17,
+      "outer_fold": 5,
+      "model": "separate_mtl_nn_mgda",
+      "training_seed": 2109914296,
+      "target": "both",
+      "trainer": "mgda",
+      "parameter_count": 67460,
+      "best_epoch": 143,
+      "epochs_ran": 173,
+      "best_validation_loss": 0.02815401926636696
+    },
+    {
+      "repeat_seed": 17,
+      "outer_fold": 5,
+      "model": "deep_balanced_mtl_nn",
+      "training_seed": 3783196730,
+      "target": "both",
+      "trainer": "equal_mse",
+      "parameter_count": 57328,
+      "best_epoch": 144,
+      "epochs_ran": 174,
+      "best_validation_loss": 0.12751364707946777
+    },
+    {
+      "repeat_seed": 17,
+      "outer_fold": 5,
+      "model": "deep_balanced_mtl_nn_mgda",
+      "training_seed": 3896432390,
+      "target": "both",
+      "trainer": "mgda",
+      "parameter_count": 57328,
+      "best_epoch": 107,
+      "epochs_ran": 137,
+      "best_validation_loss": 0.13762488961219788
+    },
+    {
+      "repeat_seed": 17,
+      "outer_fold": 5,
+      "model": "gradient_boosting",
+      "training_seed": 2354924272,
+      "target": "annual_heating_energy_gj",
+      "max_iter": 300,
+      "learning_rate": 0.1
+    },
+    {
+      "repeat_seed": 17,
+      "outer_fold": 5,
+      "model": "gradient_boosting",
+      "training_seed": 3884165868,
+      "target": "days_below_24_c",
+      "max_iter": 300,
+      "learning_rate": 0.1
+    },
+    {
+      "repeat_seed": 17,
+      "outer_fold": 5,
+      "model": "gradient_boosting",
+      "training_seed": 1960414533,
+      "target": "cost_rate_sum_proxy",
+      "max_iter": 300,
+      "learning_rate": 0.1
+    },
+    {
+      "repeat_seed": 17,
+      "outer_fold": 5,
+      "model": "gradient_boosting",
+      "training_seed": 1734678157,
+      "target": "carbon_rate_sum_proxy",
+      "max_iter": 300,
+      "learning_rate": 0.1
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 1,
+      "model": "shared_mtl_nn",
+      "training_seed": 3153956619,
+      "target": "both",
+      "parameter_count": 34116,
+      "best_epoch": 299,
+      "epochs_ran": 300,
+      "best_validation_loss": 0.013062560930848122
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 1,
+      "model": "independent_stl_nn",
+      "training_seed": 4267312475,
+      "target": "annual_heating_energy_gj",
+      "parameter_count": 27777,
+      "best_epoch": 121,
+      "epochs_ran": 151,
+      "best_validation_loss": 0.0002988920023199171
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 1,
+      "model": "independent_stl_nn",
+      "training_seed": 3455138609,
+      "target": "days_below_24_c",
+      "parameter_count": 27777,
+      "best_epoch": 241,
+      "epochs_ran": 271,
+      "best_validation_loss": 0.00048672439879737794
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 1,
+      "model": "independent_stl_nn",
+      "training_seed": 2238858477,
+      "target": "cost_rate_sum_proxy",
+      "parameter_count": 27777,
+      "best_epoch": 184,
+      "epochs_ran": 214,
+      "best_validation_loss": 0.019719703122973442
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 1,
+      "model": "independent_stl_nn",
+      "training_seed": 1554679705,
+      "target": "carbon_rate_sum_proxy",
+      "parameter_count": 27777,
+      "best_epoch": 80,
+      "epochs_ran": 110,
+      "best_validation_loss": 0.023717481642961502
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 1,
+      "model": "independent_stl_nn",
+      "target": "combined_parameter_count",
+      "parameter_count": 111108
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 1,
+      "model": "random_forest",
+      "training_seed": 4119875336,
+      "target": "both",
+      "n_estimators": 300,
+      "min_samples_leaf": 1,
+      "max_depth": null
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 1,
+      "model": "shared_mtl_nn_mgda",
+      "training_seed": 821266348,
+      "target": "both",
+      "trainer": "mgda",
+      "parameter_count": 34116,
+      "best_epoch": 211,
+      "epochs_ran": 241,
+      "best_validation_loss": 0.032318659126758575
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 1,
+      "model": "separate_mtl_nn",
+      "training_seed": 4157235856,
+      "target": "both",
+      "trainer": "equal_mse",
+      "parameter_count": 67460,
+      "best_epoch": 128,
+      "epochs_ran": 158,
+      "best_validation_loss": 0.027121560648083687
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 1,
+      "model": "separate_mtl_nn_mgda",
+      "training_seed": 3531973268,
+      "target": "both",
+      "trainer": "mgda",
+      "parameter_count": 67460,
+      "best_epoch": 218,
+      "epochs_ran": 248,
+      "best_validation_loss": 0.028622012585401535
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 1,
+      "model": "deep_balanced_mtl_nn",
+      "training_seed": 1304882263,
+      "target": "both",
+      "trainer": "equal_mse",
+      "parameter_count": 57328,
+      "best_epoch": 172,
+      "epochs_ran": 202,
+      "best_validation_loss": 0.11823488026857376
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 1,
+      "model": "deep_balanced_mtl_nn_mgda",
+      "training_seed": 3508533253,
+      "target": "both",
+      "trainer": "mgda",
+      "parameter_count": 57328,
+      "best_epoch": 153,
+      "epochs_ran": 183,
+      "best_validation_loss": 0.11709554493427277
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 1,
+      "model": "gradient_boosting",
+      "training_seed": 936990144,
+      "target": "annual_heating_energy_gj",
+      "max_iter": 300,
+      "learning_rate": 0.1
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 1,
+      "model": "gradient_boosting",
+      "training_seed": 1696187830,
+      "target": "days_below_24_c",
+      "max_iter": 300,
+      "learning_rate": 0.1
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 1,
+      "model": "gradient_boosting",
+      "training_seed": 1092496658,
+      "target": "cost_rate_sum_proxy",
+      "max_iter": 300,
+      "learning_rate": 0.1
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 1,
+      "model": "gradient_boosting",
+      "training_seed": 4160395588,
+      "target": "carbon_rate_sum_proxy",
+      "max_iter": 300,
+      "learning_rate": 0.1
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 2,
+      "model": "shared_mtl_nn",
+      "training_seed": 2022971191,
+      "target": "both",
+      "parameter_count": 34116,
+      "best_epoch": 281,
+      "epochs_ran": 300,
+      "best_validation_loss": 0.009585686028003693
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 2,
+      "model": "independent_stl_nn",
+      "training_seed": 3975649047,
+      "target": "annual_heating_energy_gj",
+      "parameter_count": 27777,
+      "best_epoch": 157,
+      "epochs_ran": 187,
+      "best_validation_loss": 0.0004201100382488221
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 2,
+      "model": "independent_stl_nn",
+      "training_seed": 4218292316,
+      "target": "days_below_24_c",
+      "parameter_count": 27777,
+      "best_epoch": 170,
+      "epochs_ran": 200,
+      "best_validation_loss": 0.0004924974637106061
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 2,
+      "model": "independent_stl_nn",
+      "training_seed": 3829112415,
+      "target": "cost_rate_sum_proxy",
+      "parameter_count": 27777,
+      "best_epoch": 282,
+      "epochs_ran": 300,
+      "best_validation_loss": 0.010873423889279366
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 2,
+      "model": "independent_stl_nn",
+      "training_seed": 1938190000,
+      "target": "carbon_rate_sum_proxy",
+      "parameter_count": 27777,
+      "best_epoch": 39,
+      "epochs_ran": 69,
+      "best_validation_loss": 0.03484886884689331
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 2,
+      "model": "independent_stl_nn",
+      "target": "combined_parameter_count",
+      "parameter_count": 111108
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 2,
+      "model": "random_forest",
+      "training_seed": 905382559,
+      "target": "both",
+      "n_estimators": 300,
+      "min_samples_leaf": 1,
+      "max_depth": null
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 2,
+      "model": "shared_mtl_nn_mgda",
+      "training_seed": 2304187738,
+      "target": "both",
+      "trainer": "mgda",
+      "parameter_count": 34116,
+      "best_epoch": 180,
+      "epochs_ran": 210,
+      "best_validation_loss": 0.0527055487036705
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 2,
+      "model": "separate_mtl_nn",
+      "training_seed": 755484043,
+      "target": "both",
+      "trainer": "equal_mse",
+      "parameter_count": 67460,
+      "best_epoch": 138,
+      "epochs_ran": 168,
+      "best_validation_loss": 0.04488231986761093
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 2,
+      "model": "separate_mtl_nn_mgda",
+      "training_seed": 2852787203,
+      "target": "both",
+      "trainer": "mgda",
+      "parameter_count": 67460,
+      "best_epoch": 188,
+      "epochs_ran": 218,
+      "best_validation_loss": 0.04226995259523392
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 2,
+      "model": "deep_balanced_mtl_nn",
+      "training_seed": 3554161454,
+      "target": "both",
+      "trainer": "equal_mse",
+      "parameter_count": 57328,
+      "best_epoch": 137,
+      "epochs_ran": 167,
+      "best_validation_loss": 0.14533492922782898
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 2,
+      "model": "deep_balanced_mtl_nn_mgda",
+      "training_seed": 2818418381,
+      "target": "both",
+      "trainer": "mgda",
+      "parameter_count": 57328,
+      "best_epoch": 114,
+      "epochs_ran": 144,
+      "best_validation_loss": 0.13353261351585388
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 2,
+      "model": "gradient_boosting",
+      "training_seed": 494304522,
+      "target": "annual_heating_energy_gj",
+      "max_iter": 300,
+      "learning_rate": 0.1
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 2,
+      "model": "gradient_boosting",
+      "training_seed": 3273264961,
+      "target": "days_below_24_c",
+      "max_iter": 300,
+      "learning_rate": 0.1
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 2,
+      "model": "gradient_boosting",
+      "training_seed": 2105296227,
+      "target": "cost_rate_sum_proxy",
+      "max_iter": 300,
+      "learning_rate": 0.1
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 2,
+      "model": "gradient_boosting",
+      "training_seed": 694417320,
+      "target": "carbon_rate_sum_proxy",
+      "max_iter": 300,
+      "learning_rate": 0.1
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 3,
+      "model": "shared_mtl_nn",
+      "training_seed": 2454117574,
+      "target": "both",
+      "parameter_count": 34116,
+      "best_epoch": 298,
+      "epochs_ran": 300,
+      "best_validation_loss": 0.010506604798138142
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 3,
+      "model": "independent_stl_nn",
+      "training_seed": 407549349,
+      "target": "annual_heating_energy_gj",
+      "parameter_count": 27777,
+      "best_epoch": 112,
+      "epochs_ran": 142,
+      "best_validation_loss": 0.00027240769122727215
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 3,
+      "model": "independent_stl_nn",
+      "training_seed": 1781017906,
+      "target": "days_below_24_c",
+      "parameter_count": 27777,
+      "best_epoch": 270,
+      "epochs_ran": 300,
+      "best_validation_loss": 0.00032931086025200784
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 3,
+      "model": "independent_stl_nn",
+      "training_seed": 1588238602,
+      "target": "cost_rate_sum_proxy",
+      "parameter_count": 27777,
+      "best_epoch": 210,
+      "epochs_ran": 240,
+      "best_validation_loss": 0.013504120521247387
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 3,
+      "model": "independent_stl_nn",
+      "training_seed": 3354387867,
+      "target": "carbon_rate_sum_proxy",
+      "parameter_count": 27777,
+      "best_epoch": 92,
+      "epochs_ran": 122,
+      "best_validation_loss": 0.02945670671761036
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 3,
+      "model": "independent_stl_nn",
+      "target": "combined_parameter_count",
+      "parameter_count": 111108
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 3,
+      "model": "random_forest",
+      "training_seed": 2134413451,
+      "target": "both",
+      "n_estimators": 300,
+      "min_samples_leaf": 1,
+      "max_depth": null
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 3,
+      "model": "shared_mtl_nn_mgda",
+      "training_seed": 4248121971,
+      "target": "both",
+      "trainer": "mgda",
+      "parameter_count": 34116,
+      "best_epoch": 116,
+      "epochs_ran": 146,
+      "best_validation_loss": 0.03891048580408096
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 3,
+      "model": "separate_mtl_nn",
+      "training_seed": 2446666446,
+      "target": "both",
+      "trainer": "equal_mse",
+      "parameter_count": 67460,
+      "best_epoch": 204,
+      "epochs_ran": 234,
+      "best_validation_loss": 0.030509013682603836
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 3,
+      "model": "separate_mtl_nn_mgda",
+      "training_seed": 2446366634,
+      "target": "both",
+      "trainer": "mgda",
+      "parameter_count": 67460,
+      "best_epoch": 116,
+      "epochs_ran": 146,
+      "best_validation_loss": 0.03556694835424423
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 3,
+      "model": "deep_balanced_mtl_nn",
+      "training_seed": 2188115755,
+      "target": "both",
+      "trainer": "equal_mse",
+      "parameter_count": 57328,
+      "best_epoch": 156,
+      "epochs_ran": 186,
+      "best_validation_loss": 0.10879581421613693
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 3,
+      "model": "deep_balanced_mtl_nn_mgda",
+      "training_seed": 3573383873,
+      "target": "both",
+      "trainer": "mgda",
+      "parameter_count": 57328,
+      "best_epoch": 130,
+      "epochs_ran": 160,
+      "best_validation_loss": 0.11085452139377594
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 3,
+      "model": "gradient_boosting",
+      "training_seed": 2383922054,
+      "target": "annual_heating_energy_gj",
+      "max_iter": 300,
+      "learning_rate": 0.1
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 3,
+      "model": "gradient_boosting",
+      "training_seed": 164135677,
+      "target": "days_below_24_c",
+      "max_iter": 300,
+      "learning_rate": 0.1
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 3,
+      "model": "gradient_boosting",
+      "training_seed": 3106601468,
+      "target": "cost_rate_sum_proxy",
+      "max_iter": 300,
+      "learning_rate": 0.1
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 3,
+      "model": "gradient_boosting",
+      "training_seed": 2881451233,
+      "target": "carbon_rate_sum_proxy",
+      "max_iter": 300,
+      "learning_rate": 0.1
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 4,
+      "model": "shared_mtl_nn",
+      "training_seed": 1552399749,
+      "target": "both",
+      "parameter_count": 34116,
+      "best_epoch": 222,
+      "epochs_ran": 252,
+      "best_validation_loss": 0.011303817853331566
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 4,
+      "model": "independent_stl_nn",
+      "training_seed": 3367734931,
+      "target": "annual_heating_energy_gj",
+      "parameter_count": 27777,
+      "best_epoch": 110,
+      "epochs_ran": 140,
+      "best_validation_loss": 0.0004864814691245556
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 4,
+      "model": "independent_stl_nn",
+      "training_seed": 3203705591,
+      "target": "days_below_24_c",
+      "parameter_count": 27777,
+      "best_epoch": 87,
+      "epochs_ran": 117,
+      "best_validation_loss": 0.0022669057361781597
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 4,
+      "model": "independent_stl_nn",
+      "training_seed": 3715336014,
+      "target": "cost_rate_sum_proxy",
+      "parameter_count": 27777,
+      "best_epoch": 155,
+      "epochs_ran": 185,
+      "best_validation_loss": 0.015127865597605705
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 4,
+      "model": "independent_stl_nn",
+      "training_seed": 2962347109,
+      "target": "carbon_rate_sum_proxy",
+      "parameter_count": 27777,
+      "best_epoch": 147,
+      "epochs_ran": 177,
+      "best_validation_loss": 0.027455110102891922
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 4,
+      "model": "independent_stl_nn",
+      "target": "combined_parameter_count",
+      "parameter_count": 111108
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 4,
+      "model": "random_forest",
+      "training_seed": 3652172880,
+      "target": "both",
+      "n_estimators": 300,
+      "min_samples_leaf": 1,
+      "max_depth": null
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 4,
+      "model": "shared_mtl_nn_mgda",
+      "training_seed": 808869873,
+      "target": "both",
+      "trainer": "mgda",
+      "parameter_count": 34116,
+      "best_epoch": 215,
+      "epochs_ran": 245,
+      "best_validation_loss": 0.040377113968133926
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 4,
+      "model": "separate_mtl_nn",
+      "training_seed": 3577589818,
+      "target": "both",
+      "trainer": "equal_mse",
+      "parameter_count": 67460,
+      "best_epoch": 295,
+      "epochs_ran": 300,
+      "best_validation_loss": 0.03268415480852127
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 4,
+      "model": "separate_mtl_nn_mgda",
+      "training_seed": 425433972,
+      "target": "both",
+      "trainer": "mgda",
+      "parameter_count": 67460,
+      "best_epoch": 154,
+      "epochs_ran": 184,
+      "best_validation_loss": 0.03744012862443924
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 4,
+      "model": "deep_balanced_mtl_nn",
+      "training_seed": 1088807731,
+      "target": "both",
+      "trainer": "equal_mse",
+      "parameter_count": 57328,
+      "best_epoch": 126,
+      "epochs_ran": 156,
+      "best_validation_loss": 0.13762331008911133
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 4,
+      "model": "deep_balanced_mtl_nn_mgda",
+      "training_seed": 773057646,
+      "target": "both",
+      "trainer": "mgda",
+      "parameter_count": 57328,
+      "best_epoch": 132,
+      "epochs_ran": 162,
+      "best_validation_loss": 0.13367894291877747
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 4,
+      "model": "gradient_boosting",
+      "training_seed": 3586395915,
+      "target": "annual_heating_energy_gj",
+      "max_iter": 300,
+      "learning_rate": 0.1
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 4,
+      "model": "gradient_boosting",
+      "training_seed": 1019455013,
+      "target": "days_below_24_c",
+      "max_iter": 300,
+      "learning_rate": 0.1
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 4,
+      "model": "gradient_boosting",
+      "training_seed": 244196363,
+      "target": "cost_rate_sum_proxy",
+      "max_iter": 300,
+      "learning_rate": 0.1
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 4,
+      "model": "gradient_boosting",
+      "training_seed": 2567464196,
+      "target": "carbon_rate_sum_proxy",
+      "max_iter": 300,
+      "learning_rate": 0.1
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 5,
+      "model": "shared_mtl_nn",
+      "training_seed": 1419420018,
+      "target": "both",
+      "parameter_count": 34116,
+      "best_epoch": 254,
+      "epochs_ran": 284,
+      "best_validation_loss": 0.009364806115627289
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 5,
+      "model": "independent_stl_nn",
+      "training_seed": 1098898635,
+      "target": "annual_heating_energy_gj",
+      "parameter_count": 27777,
+      "best_epoch": 208,
+      "epochs_ran": 238,
+      "best_validation_loss": 0.0003412358637433499
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 5,
+      "model": "independent_stl_nn",
+      "training_seed": 3139123837,
+      "target": "days_below_24_c",
+      "parameter_count": 27777,
+      "best_epoch": 196,
+      "epochs_ran": 226,
+      "best_validation_loss": 0.00038028863491490483
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 5,
+      "model": "independent_stl_nn",
+      "training_seed": 341300193,
+      "target": "cost_rate_sum_proxy",
+      "parameter_count": 27777,
+      "best_epoch": 188,
+      "epochs_ran": 218,
+      "best_validation_loss": 0.03824828937649727
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 5,
+      "model": "independent_stl_nn",
+      "training_seed": 3567722701,
+      "target": "carbon_rate_sum_proxy",
+      "parameter_count": 27777,
+      "best_epoch": 101,
+      "epochs_ran": 131,
+      "best_validation_loss": 0.02359270676970482
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 5,
+      "model": "independent_stl_nn",
+      "target": "combined_parameter_count",
+      "parameter_count": 111108
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 5,
+      "model": "random_forest",
+      "training_seed": 1680541441,
+      "target": "both",
+      "n_estimators": 300,
+      "min_samples_leaf": 1,
+      "max_depth": null
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 5,
+      "model": "shared_mtl_nn_mgda",
+      "training_seed": 2256789427,
+      "target": "both",
+      "trainer": "mgda",
+      "parameter_count": 34116,
+      "best_epoch": 118,
+      "epochs_ran": 148,
+      "best_validation_loss": 0.046116601675748825
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 5,
+      "model": "separate_mtl_nn",
+      "training_seed": 4255059353,
+      "target": "both",
+      "trainer": "equal_mse",
+      "parameter_count": 67460,
+      "best_epoch": 295,
+      "epochs_ran": 300,
+      "best_validation_loss": 0.031866274774074554
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 5,
+      "model": "separate_mtl_nn_mgda",
+      "training_seed": 13310024,
+      "target": "both",
+      "trainer": "mgda",
+      "parameter_count": 67460,
+      "best_epoch": 294,
+      "epochs_ran": 300,
+      "best_validation_loss": 0.03557923063635826
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 5,
+      "model": "deep_balanced_mtl_nn",
+      "training_seed": 1540756644,
+      "target": "both",
+      "trainer": "equal_mse",
+      "parameter_count": 57328,
+      "best_epoch": 172,
+      "epochs_ran": 202,
+      "best_validation_loss": 0.1465103030204773
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 5,
+      "model": "deep_balanced_mtl_nn_mgda",
+      "training_seed": 864983988,
+      "target": "both",
+      "trainer": "mgda",
+      "parameter_count": 57328,
+      "best_epoch": 172,
+      "epochs_ran": 202,
+      "best_validation_loss": 0.12250937521457672
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 5,
+      "model": "gradient_boosting",
+      "training_seed": 47071485,
+      "target": "annual_heating_energy_gj",
+      "max_iter": 300,
+      "learning_rate": 0.1
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 5,
+      "model": "gradient_boosting",
+      "training_seed": 472773407,
+      "target": "days_below_24_c",
+      "max_iter": 300,
+      "learning_rate": 0.1
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 5,
+      "model": "gradient_boosting",
+      "training_seed": 2549089382,
+      "target": "cost_rate_sum_proxy",
+      "max_iter": 300,
+      "learning_rate": 0.1
+    },
+    {
+      "repeat_seed": 29,
+      "outer_fold": 5,
+      "model": "gradient_boosting",
+      "training_seed": 2936103316,
+      "target": "carbon_rate_sum_proxy",
+      "max_iter": 300,
+      "learning_rate": 0.1
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 1,
+      "model": "shared_mtl_nn",
+      "training_seed": 1035792438,
+      "target": "both",
+      "parameter_count": 34116,
+      "best_epoch": 208,
+      "epochs_ran": 238,
+      "best_validation_loss": 0.029790500178933144
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 1,
+      "model": "independent_stl_nn",
+      "training_seed": 1717489892,
+      "target": "annual_heating_energy_gj",
+      "parameter_count": 27777,
+      "best_epoch": 83,
+      "epochs_ran": 113,
+      "best_validation_loss": 0.003675916464999318
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 1,
+      "model": "independent_stl_nn",
+      "training_seed": 960767333,
+      "target": "days_below_24_c",
+      "parameter_count": 27777,
+      "best_epoch": 122,
+      "epochs_ran": 152,
+      "best_validation_loss": 0.0009213081793859601
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 1,
+      "model": "independent_stl_nn",
+      "training_seed": 796811161,
+      "target": "cost_rate_sum_proxy",
+      "parameter_count": 27777,
+      "best_epoch": 25,
+      "epochs_ran": 55,
+      "best_validation_loss": 0.15328049659729004
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 1,
+      "model": "independent_stl_nn",
+      "training_seed": 3279853222,
+      "target": "carbon_rate_sum_proxy",
+      "parameter_count": 27777,
+      "best_epoch": 33,
+      "epochs_ran": 63,
+      "best_validation_loss": 0.04342862591147423
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 1,
+      "model": "independent_stl_nn",
+      "target": "combined_parameter_count",
+      "parameter_count": 111108
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 1,
+      "model": "random_forest",
+      "training_seed": 559863632,
+      "target": "both",
+      "n_estimators": 300,
+      "min_samples_leaf": 1,
+      "max_depth": null
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 1,
+      "model": "shared_mtl_nn_mgda",
+      "training_seed": 4081373440,
+      "target": "both",
+      "trainer": "mgda",
+      "parameter_count": 34116,
+      "best_epoch": 83,
+      "epochs_ran": 113,
+      "best_validation_loss": 0.048562876880168915
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 1,
+      "model": "separate_mtl_nn",
+      "training_seed": 1307631697,
+      "target": "both",
+      "trainer": "equal_mse",
+      "parameter_count": 67460,
+      "best_epoch": 48,
+      "epochs_ran": 78,
+      "best_validation_loss": 0.054954346269369125
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 1,
+      "model": "separate_mtl_nn_mgda",
+      "training_seed": 3397039601,
+      "target": "both",
+      "trainer": "mgda",
+      "parameter_count": 67460,
+      "best_epoch": 32,
+      "epochs_ran": 62,
+      "best_validation_loss": 0.06363427639007568
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 1,
+      "model": "deep_balanced_mtl_nn",
+      "training_seed": 1836014908,
+      "target": "both",
+      "trainer": "equal_mse",
+      "parameter_count": 57328,
+      "best_epoch": 180,
+      "epochs_ran": 210,
+      "best_validation_loss": 0.12344697117805481
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 1,
+      "model": "deep_balanced_mtl_nn_mgda",
+      "training_seed": 819065272,
+      "target": "both",
+      "trainer": "mgda",
+      "parameter_count": 57328,
+      "best_epoch": 85,
+      "epochs_ran": 115,
+      "best_validation_loss": 0.16304345428943634
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 1,
+      "model": "gradient_boosting",
+      "training_seed": 2873754159,
+      "target": "annual_heating_energy_gj",
+      "max_iter": 300,
+      "learning_rate": 0.1
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 1,
+      "model": "gradient_boosting",
+      "training_seed": 1266992497,
+      "target": "days_below_24_c",
+      "max_iter": 300,
+      "learning_rate": 0.1
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 1,
+      "model": "gradient_boosting",
+      "training_seed": 1868822832,
+      "target": "cost_rate_sum_proxy",
+      "max_iter": 300,
+      "learning_rate": 0.1
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 1,
+      "model": "gradient_boosting",
+      "training_seed": 916466097,
+      "target": "carbon_rate_sum_proxy",
+      "max_iter": 300,
+      "learning_rate": 0.1
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 2,
+      "model": "shared_mtl_nn",
+      "training_seed": 295892146,
+      "target": "both",
+      "parameter_count": 34116,
+      "best_epoch": 295,
+      "epochs_ran": 300,
+      "best_validation_loss": 0.013807445764541626
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 2,
+      "model": "independent_stl_nn",
+      "training_seed": 3751338961,
+      "target": "annual_heating_energy_gj",
+      "parameter_count": 27777,
+      "best_epoch": 144,
+      "epochs_ran": 174,
+      "best_validation_loss": 0.00038905779365450144
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 2,
+      "model": "independent_stl_nn",
+      "training_seed": 808121210,
+      "target": "days_below_24_c",
+      "parameter_count": 27777,
+      "best_epoch": 158,
+      "epochs_ran": 188,
+      "best_validation_loss": 0.0004927690024487674
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 2,
+      "model": "independent_stl_nn",
+      "training_seed": 1140079965,
+      "target": "cost_rate_sum_proxy",
+      "parameter_count": 27777,
+      "best_epoch": 102,
+      "epochs_ran": 132,
+      "best_validation_loss": 0.0416543073952198
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 2,
+      "model": "independent_stl_nn",
+      "training_seed": 3691588777,
+      "target": "carbon_rate_sum_proxy",
+      "parameter_count": 27777,
+      "best_epoch": 139,
+      "epochs_ran": 169,
+      "best_validation_loss": 0.019031397998332977
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 2,
+      "model": "independent_stl_nn",
+      "target": "combined_parameter_count",
+      "parameter_count": 111108
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 2,
+      "model": "random_forest",
+      "training_seed": 1247002465,
+      "target": "both",
+      "n_estimators": 300,
+      "min_samples_leaf": 1,
+      "max_depth": null
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 2,
+      "model": "shared_mtl_nn_mgda",
+      "training_seed": 2622977395,
+      "target": "both",
+      "trainer": "mgda",
+      "parameter_count": 34116,
+      "best_epoch": 75,
+      "epochs_ran": 105,
+      "best_validation_loss": 0.05032427981495857
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 2,
+      "model": "separate_mtl_nn",
+      "training_seed": 4011368436,
+      "target": "both",
+      "trainer": "equal_mse",
+      "parameter_count": 67460,
+      "best_epoch": 111,
+      "epochs_ran": 141,
+      "best_validation_loss": 0.038424719125032425
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 2,
+      "model": "separate_mtl_nn_mgda",
+      "training_seed": 596906224,
+      "target": "both",
+      "trainer": "mgda",
+      "parameter_count": 67460,
+      "best_epoch": 159,
+      "epochs_ran": 189,
+      "best_validation_loss": 0.03996526077389717
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 2,
+      "model": "deep_balanced_mtl_nn",
+      "training_seed": 3339655175,
+      "target": "both",
+      "trainer": "equal_mse",
+      "parameter_count": 57328,
+      "best_epoch": 264,
+      "epochs_ran": 294,
+      "best_validation_loss": 0.08035384863615036
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 2,
+      "model": "deep_balanced_mtl_nn_mgda",
+      "training_seed": 523885039,
+      "target": "both",
+      "trainer": "mgda",
+      "parameter_count": 57328,
+      "best_epoch": 114,
+      "epochs_ran": 144,
+      "best_validation_loss": 0.13327796757221222
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 2,
+      "model": "gradient_boosting",
+      "training_seed": 2497080267,
+      "target": "annual_heating_energy_gj",
+      "max_iter": 300,
+      "learning_rate": 0.1
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 2,
+      "model": "gradient_boosting",
+      "training_seed": 3626385279,
+      "target": "days_below_24_c",
+      "max_iter": 300,
+      "learning_rate": 0.1
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 2,
+      "model": "gradient_boosting",
+      "training_seed": 4280652220,
+      "target": "cost_rate_sum_proxy",
+      "max_iter": 300,
+      "learning_rate": 0.1
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 2,
+      "model": "gradient_boosting",
+      "training_seed": 3904701326,
+      "target": "carbon_rate_sum_proxy",
+      "max_iter": 300,
+      "learning_rate": 0.1
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 3,
+      "model": "shared_mtl_nn",
+      "training_seed": 2758146213,
+      "target": "both",
+      "parameter_count": 34116,
+      "best_epoch": 186,
+      "epochs_ran": 216,
+      "best_validation_loss": 0.01224333606660366
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 3,
+      "model": "independent_stl_nn",
+      "training_seed": 1888014280,
+      "target": "annual_heating_energy_gj",
+      "parameter_count": 27777,
+      "best_epoch": 97,
+      "epochs_ran": 127,
+      "best_validation_loss": 0.0007800359162501991
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 3,
+      "model": "independent_stl_nn",
+      "training_seed": 1008646921,
+      "target": "days_below_24_c",
+      "parameter_count": 27777,
+      "best_epoch": 207,
+      "epochs_ran": 237,
+      "best_validation_loss": 0.0009239525534212589
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 3,
+      "model": "independent_stl_nn",
+      "training_seed": 3279806915,
+      "target": "cost_rate_sum_proxy",
+      "parameter_count": 27777,
+      "best_epoch": 65,
+      "epochs_ran": 95,
+      "best_validation_loss": 0.053305357694625854
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 3,
+      "model": "independent_stl_nn",
+      "training_seed": 308244881,
+      "target": "carbon_rate_sum_proxy",
+      "parameter_count": 27777,
+      "best_epoch": 142,
+      "epochs_ran": 172,
+      "best_validation_loss": 0.03341237083077431
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 3,
+      "model": "independent_stl_nn",
+      "target": "combined_parameter_count",
+      "parameter_count": 111108
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 3,
+      "model": "random_forest",
+      "training_seed": 1496162494,
+      "target": "both",
+      "n_estimators": 300,
+      "min_samples_leaf": 1,
+      "max_depth": null
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 3,
+      "model": "shared_mtl_nn_mgda",
+      "training_seed": 249179100,
+      "target": "both",
+      "trainer": "mgda",
+      "parameter_count": 34116,
+      "best_epoch": 92,
+      "epochs_ran": 122,
+      "best_validation_loss": 0.045120395720005035
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 3,
+      "model": "separate_mtl_nn",
+      "training_seed": 1276302820,
+      "target": "both",
+      "trainer": "equal_mse",
+      "parameter_count": 67460,
+      "best_epoch": 209,
+      "epochs_ran": 239,
+      "best_validation_loss": 0.03253844752907753
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 3,
+      "model": "separate_mtl_nn_mgda",
+      "training_seed": 1067781833,
+      "target": "both",
+      "trainer": "mgda",
+      "parameter_count": 67460,
+      "best_epoch": 87,
+      "epochs_ran": 117,
+      "best_validation_loss": 0.04047579690814018
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 3,
+      "model": "deep_balanced_mtl_nn",
+      "training_seed": 3091168062,
+      "target": "both",
+      "trainer": "equal_mse",
+      "parameter_count": 57328,
+      "best_epoch": 136,
+      "epochs_ran": 166,
+      "best_validation_loss": 0.14750008285045624
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 3,
+      "model": "deep_balanced_mtl_nn_mgda",
+      "training_seed": 198068886,
+      "target": "both",
+      "trainer": "mgda",
+      "parameter_count": 57328,
+      "best_epoch": 161,
+      "epochs_ran": 191,
+      "best_validation_loss": 0.13886283338069916
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 3,
+      "model": "gradient_boosting",
+      "training_seed": 1261272509,
+      "target": "annual_heating_energy_gj",
+      "max_iter": 300,
+      "learning_rate": 0.1
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 3,
+      "model": "gradient_boosting",
+      "training_seed": 1249531160,
+      "target": "days_below_24_c",
+      "max_iter": 300,
+      "learning_rate": 0.1
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 3,
+      "model": "gradient_boosting",
+      "training_seed": 2672274109,
+      "target": "cost_rate_sum_proxy",
+      "max_iter": 300,
+      "learning_rate": 0.1
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 3,
+      "model": "gradient_boosting",
+      "training_seed": 532955917,
+      "target": "carbon_rate_sum_proxy",
+      "max_iter": 300,
+      "learning_rate": 0.1
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 4,
+      "model": "shared_mtl_nn",
+      "training_seed": 2716568813,
+      "target": "both",
+      "parameter_count": 34116,
+      "best_epoch": 256,
+      "epochs_ran": 286,
+      "best_validation_loss": 0.007704812102019787
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 4,
+      "model": "independent_stl_nn",
+      "training_seed": 3598865756,
+      "target": "annual_heating_energy_gj",
+      "parameter_count": 27777,
+      "best_epoch": 111,
+      "epochs_ran": 141,
+      "best_validation_loss": 0.0004481795767787844
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 4,
+      "model": "independent_stl_nn",
+      "training_seed": 651322434,
+      "target": "days_below_24_c",
+      "parameter_count": 27777,
+      "best_epoch": 157,
+      "epochs_ran": 187,
+      "best_validation_loss": 0.000643672829028219
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 4,
+      "model": "independent_stl_nn",
+      "training_seed": 2797345543,
+      "target": "cost_rate_sum_proxy",
+      "parameter_count": 27777,
+      "best_epoch": 146,
+      "epochs_ran": 176,
+      "best_validation_loss": 0.018235856667160988
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 4,
+      "model": "independent_stl_nn",
+      "training_seed": 981874317,
+      "target": "carbon_rate_sum_proxy",
+      "parameter_count": 27777,
+      "best_epoch": 217,
+      "epochs_ran": 247,
+      "best_validation_loss": 0.023413166403770447
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 4,
+      "model": "independent_stl_nn",
+      "target": "combined_parameter_count",
+      "parameter_count": 111108
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 4,
+      "model": "random_forest",
+      "training_seed": 1329290947,
+      "target": "both",
+      "n_estimators": 300,
+      "min_samples_leaf": 1,
+      "max_depth": null
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 4,
+      "model": "shared_mtl_nn_mgda",
+      "training_seed": 2824565694,
+      "target": "both",
+      "trainer": "mgda",
+      "parameter_count": 34116,
+      "best_epoch": 296,
+      "epochs_ran": 300,
+      "best_validation_loss": 0.030629687011241913
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 4,
+      "model": "separate_mtl_nn",
+      "training_seed": 2820320700,
+      "target": "both",
+      "trainer": "equal_mse",
+      "parameter_count": 67460,
+      "best_epoch": 140,
+      "epochs_ran": 170,
+      "best_validation_loss": 0.02437763288617134
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 4,
+      "model": "separate_mtl_nn_mgda",
+      "training_seed": 2435379756,
+      "target": "both",
+      "trainer": "mgda",
+      "parameter_count": 67460,
+      "best_epoch": 154,
+      "epochs_ran": 184,
+      "best_validation_loss": 0.025550005957484245
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 4,
+      "model": "deep_balanced_mtl_nn",
+      "training_seed": 1191142254,
+      "target": "both",
+      "trainer": "equal_mse",
+      "parameter_count": 57328,
+      "best_epoch": 260,
+      "epochs_ran": 290,
+      "best_validation_loss": 0.11354173719882965
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 4,
+      "model": "deep_balanced_mtl_nn_mgda",
+      "training_seed": 1927582842,
+      "target": "both",
+      "trainer": "mgda",
+      "parameter_count": 57328,
+      "best_epoch": 186,
+      "epochs_ran": 216,
+      "best_validation_loss": 0.13054561614990234
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 4,
+      "model": "gradient_boosting",
+      "training_seed": 1222089979,
+      "target": "annual_heating_energy_gj",
+      "max_iter": 300,
+      "learning_rate": 0.1
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 4,
+      "model": "gradient_boosting",
+      "training_seed": 3500893760,
+      "target": "days_below_24_c",
+      "max_iter": 300,
+      "learning_rate": 0.1
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 4,
+      "model": "gradient_boosting",
+      "training_seed": 2088073897,
+      "target": "cost_rate_sum_proxy",
+      "max_iter": 300,
+      "learning_rate": 0.1
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 4,
+      "model": "gradient_boosting",
+      "training_seed": 3621392172,
+      "target": "carbon_rate_sum_proxy",
+      "max_iter": 300,
+      "learning_rate": 0.1
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 5,
+      "model": "shared_mtl_nn",
+      "training_seed": 673780800,
+      "target": "both",
+      "parameter_count": 34116,
+      "best_epoch": 297,
+      "epochs_ran": 300,
+      "best_validation_loss": 0.012186070904135704
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 5,
+      "model": "independent_stl_nn",
+      "training_seed": 1473607857,
+      "target": "annual_heating_energy_gj",
+      "parameter_count": 27777,
+      "best_epoch": 118,
+      "epochs_ran": 148,
+      "best_validation_loss": 0.000493554980494082
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 5,
+      "model": "independent_stl_nn",
+      "training_seed": 3886950682,
+      "target": "days_below_24_c",
+      "parameter_count": 27777,
+      "best_epoch": 230,
+      "epochs_ran": 260,
+      "best_validation_loss": 0.00033331732265651226
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 5,
+      "model": "independent_stl_nn",
+      "training_seed": 950052435,
+      "target": "cost_rate_sum_proxy",
+      "parameter_count": 27777,
+      "best_epoch": 118,
+      "epochs_ran": 148,
+      "best_validation_loss": 0.044662896543741226
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 5,
+      "model": "independent_stl_nn",
+      "training_seed": 3772282665,
+      "target": "carbon_rate_sum_proxy",
+      "parameter_count": 27777,
+      "best_epoch": 123,
+      "epochs_ran": 153,
+      "best_validation_loss": 0.024713266640901566
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 5,
+      "model": "independent_stl_nn",
+      "target": "combined_parameter_count",
+      "parameter_count": 111108
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 5,
+      "model": "random_forest",
+      "training_seed": 3692189665,
+      "target": "both",
+      "n_estimators": 300,
+      "min_samples_leaf": 1,
+      "max_depth": null
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 5,
+      "model": "shared_mtl_nn_mgda",
+      "training_seed": 905819654,
+      "target": "both",
+      "trainer": "mgda",
+      "parameter_count": 34116,
+      "best_epoch": 150,
+      "epochs_ran": 180,
+      "best_validation_loss": 0.03540688008069992
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 5,
+      "model": "separate_mtl_nn",
+      "training_seed": 417770452,
+      "target": "both",
+      "trainer": "equal_mse",
+      "parameter_count": 67460,
+      "best_epoch": 74,
+      "epochs_ran": 104,
+      "best_validation_loss": 0.03124355338513851
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 5,
+      "model": "separate_mtl_nn_mgda",
+      "training_seed": 2839292024,
+      "target": "both",
+      "trainer": "mgda",
+      "parameter_count": 67460,
+      "best_epoch": 183,
+      "epochs_ran": 213,
+      "best_validation_loss": 0.02838009037077427
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 5,
+      "model": "deep_balanced_mtl_nn",
+      "training_seed": 733687144,
+      "target": "both",
+      "trainer": "equal_mse",
+      "parameter_count": 57328,
+      "best_epoch": 107,
+      "epochs_ran": 137,
+      "best_validation_loss": 0.14581161737442017
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 5,
+      "model": "deep_balanced_mtl_nn_mgda",
+      "training_seed": 3658940281,
+      "target": "both",
+      "trainer": "mgda",
+      "parameter_count": 57328,
+      "best_epoch": 119,
+      "epochs_ran": 149,
+      "best_validation_loss": 0.16065402328968048
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 5,
+      "model": "gradient_boosting",
+      "training_seed": 2206135860,
+      "target": "annual_heating_energy_gj",
+      "max_iter": 300,
+      "learning_rate": 0.1
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 5,
+      "model": "gradient_boosting",
+      "training_seed": 49909570,
+      "target": "days_below_24_c",
+      "max_iter": 300,
+      "learning_rate": 0.1
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 5,
+      "model": "gradient_boosting",
+      "training_seed": 1137755727,
+      "target": "cost_rate_sum_proxy",
+      "max_iter": 300,
+      "learning_rate": 0.1
+    },
+    {
+      "repeat_seed": 43,
+      "outer_fold": 5,
+      "model": "gradient_boosting",
+      "training_seed": 978762337,
+      "target": "carbon_rate_sum_proxy",
+      "max_iter": 300,
+      "learning_rate": 0.1
+    }
+  ]
+}
